@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Zigee">
+        <meta name="description" content="A Brewmaster Monk guide that is being made.">
+        <meta name="keywords" content="Brewmaster Monk, Brew Monk, Mythic Plus, Mythic+, M+, Brewmaster Monk Mythic Plus Guide, Brewmaster Monk Mythic+ Guide, Brewmaster Monk M+ Guide, Brew Monk Mythic Plus Guide, Brew Monk Mythic+ Guide, Brew Monk M+ Guide, Guide, Dragonflight">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/77ee47dea4.js" crossorigin="anonymous"></script>
+        <title>Brewmaster Monk Website</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <button id="mobile-button" onclick="menuFunc('mobile-menu')"><i class="fa-solid fa-bars"></i></button>
+                <a href="home.html" id="logo"><img src="images/monk.jpg" alt="Brewmaster Monk Icon">Equinox</a>
+                <ul id="computer-menu" class="menu">
+                    <li>
+                        <a href="introduction.html">Written Guide</a>
+                        <ul id="computer-submenu">
+                            <li><a href="introduction.html">Introduction</a></li>
+                            <li><a href="talents.html">Talents</a></li>
+                            <li><a href="gearing.html">Gearing</a></li>
+                            <li><a href="playstyle.html">Playstyle & Rotation</a></li>
+                            <li><a href="dungeons.html">Dungeons & Affixes</a></li>
+                            <li><a href="advanced.html">Advanced Tips & Tricks</a></li>
+                        </ul>
+                    </li><!--
+                    --><li><a href="" target="_blank">Video Guide</a><div></div></li><!--
+                    --><li><a href="https://discord.gg/FAX73yrW" target="_blank">Discord</a></li><!--
+                    --><li><a href="https://twitter.com/equinoxmonk " target="_blank">Twitter</a></li><!--
+                    --><li><a href="https://www.twitch.tv/equinox" target="_blank">Stream</a></li>
+                </ul>
+            </nav>
+            <ul id="mobile-menu" class="menu">
+                <li>
+                    <a onclick="menuFunc('mobile-submenu')">Written Guide<i class="fa-solid fa-caret-down"></i></a>
+                    <ul id="mobile-submenu">
+                        <li><a href="introduction.html">Introduction</a></li>
+                        <li><a href="talents.html">Talents</a></li>
+                        <li><a href="gearing.html">Gearing</a></li>
+                        <li><a href="playstyle.html">Playstyle & Rotation</a></li>
+                        <li><a href="dungeons.html">Dungeons & Affixes</a></li>
+                        <li><a href="advanced.html">Advanced Tips & Tricks</a></li>
+                    </ul>
+                </li><!--
+                --><li><a href="" target="_blank">Video Guide</a><div></div></li><!--
+                --><li><a href="https://discord.gg/FAX73yrW" target="_blank">Discord</a></li><!--
+                --><li><a href="https://twitter.com/equinoxmonk " target="_blank">Twitter</a></li><!--
+                --><li><a href="https://www.twitch.tv/equinox" target="_blank">Stream</a></li>
+            </ul>
+        </header>
+        <main>
+            <section class="about">
+                <h2>Talents</h2>
+                <p>In 10.2 we use a very similar talent build for all content. We will go into full detail about every single talent, why we are using our current builds, and specific flex talents that can be taken for specific moments.</p>
+            </section>
+            <section id="talents-color-coded" class="image-section">
+                <h2>Talent Tree Overview</h2>
+                <p>This talent tree shows a basic overview of the value for every talent. The talents are ranked as such: <span class="green">Green</span> for required, <span class="purple">purple</span> for situational, <span class="orange">orange</span> for optional, and <span class="red">red</span> for never.</p>
+                <img src="images/talents_color_coded.png">
+            </section>
+            <section id="class-tree" class="info-section">
+                <h2>Class Tree</h2>
+                <p>We will go into detail for each talent in the class tree, discussing what they do and when to take them.</p>
+                <div class="grid-container">
+                    <div class="row-1">
+                        <p class="sub-header orange">Row 1</p>
+                        <img id="soothing-mist" class="selected" src="images/soothing-mist.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="rsk-talent" src="images/rising-sun-kick.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="tigers-lust" src="images/tigers-lust.jpg" onclick="updateInfo(this)">
+                        <h3><a href="https://www.wowhead.com/spell=115175/soothing-mist" target="_blank">Soothing Mist</a></h3>
+                        <h4 class="Required">Required</h4>
+                        <p class="description">Unfortunately, we are required to take this talent in order to access several important talents later in the tree. This ability will never be used.</p>
+                    </div>
+                    <div class="row-2">
+                        <p class="sub-header orange">Row 2</p>
+                        <img id="improved-roll" class="selected" src="images/roll.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="calming-presence" src="images/calming-presence.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="disable" src="images/disable.jpg" onclick="updateInfo(this)">
+                        <h3><a href="https://www.wowhead.com/spell=328669/improved-roll" target="_blank">Improved Roll</a></h3>
+                        <h4 class="Optional">Optional</h4>
+                        <p class="description">A nice talent that can occasionally be taken for an extra movement ability. If you take this talent with <a href="https://www.wowhead.com/spell=115173/celerity" target="_blank" class="orange">Celerity</a>, you gain three charges of <a href="https://www.wowhead.com/spell=109132/roll" target="_blank" class="orange">Roll</a>. If you take this talent with <a href="https://www.wowhead.com/spell=115008/chi-torpedo" target="_blank" class="orange">Chi Torpedo</a>, you gain two charges of <a href="https://www.wowhead.com/spell=115008/chi-torpedo" target="_blank" class="orange">Chi Torpedo</a>.</p>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="row-3">
+                        <p class="sub-header orange">Row 3</p>
+                        <img id="tiger-tail-sweep" class="selected" src="images/leg-sweep.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="vigorous-expulsion" src="images/expel-harm.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="improved-vivify" src="images/vivify.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="detox" src="images/detox.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="paralysis" src="images/paralysis.jpg" onclick="updateInfo(this)">
+                        <h3><a href="https://www.wowhead.com/spell=264348/tiger-tail-sweep" target="_blank">Tiger Tail Sweep</a></h3>
+                        <h4 class="Never">Never</h4>
+                        <p class="description">This talent reduces the cooldown and range of <a href="https://www.wowhead.com/spell=119381/leg-sweep" target="_blank" class="orange">Leg Sweep</a>, which could be useful at times, but, unfortunately, we don't have enough points to grab this along with the better talents in our tree.</p>
+                    </div>
+                    <div class="row-4">
+                        <p class="sub-header orange">Row 4</p>
+                        <img id="grace-of-the-crane" class="selected" src="images/mana-tea.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="vivacious-vivification" src="images/vivify.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="ferocity-of-xuen" src="images/tiger.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="improved-paralysis" src="images/paralysis.jpg" onclick="updateInfo(this)">
+                        <h3><a href="https://www.wowhead.com/spell=388811/grace-of-the-crane" target="_blank">Grace of the Crane</a></h3>
+                        <h4 class="Required">Required</h4>
+                        <p class="description">This increases all healing we receive by 8%, making us much more survivable.</p>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="row-5">
+                        <p class="sub-header orange">Row 5</p>
+                        <img id="elusive-mists" class="selected" src="images/soothing-mist.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="transcendence" src="images/transcendence.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="spear-hand-strike" src="images/spear-hand-strike.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="fort-brew-talent" src="images/fortifying-brew.jpg" onclick="updateInfo(this)">
+                        <h3><a href="https://www.wowhead.com/spell=388681/elusive-mists" target="_blank">Elusive Mists</a></h3>
+                        <h4 class="Never">Never</h4>
+                        <p class="description">This talent gives us 6% damage reduction while channeling <a href="https://www.wowhead.com/spell=115175/soothing-mist" target="_blank" class="orange">Soothing Mist</a>, which is really bad considering we never channel <a href="https://www.wowhead.com/spell=115175/soothing-mist" target="_blank" class="orange">Soothing Mist</a>.</p>
+                    </div>
+                    <div class="row-6">
+                        <p class="sub-header orange">Row 6</p>
+                        <img id="chi-wave-burst" class="selected" src="images/chi-wave-burst.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="hasty-provocation" src="images/provoke.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="ring-song" src="images/ring-song.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="fast-feet" src="images/rising-sun-kick.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="celerity-torpedo" src="images/celerity-torpedo.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="ironshell-expeditious" src="images/ironshell-expeditious.jpg" onclick="updateInfo(this)">
+                        <h3><a href="https://www.wowhead.com/spell=115098/chi-wave" target="_blank">Chi Wave</a> <span class="white">/</span> <a href="https://www.wowhead.com/spell=123986/chi-burst" target="_blank">Chi Burst</a></h3>
+                        <h4 class="Required">Required</h4>
+                        <p class="description">Both of these talents aren't the most useful, but they allow us to branch to some very important healing talents. <a href="https://www.wowhead.com/spell=115098/chi-wave" target="_blank" class="orange">Chi Wave</a> provides more single target damage and healing, along with the ability to pull packs from ranged, while <a href="https://www.wowhead.com/spell=123986/chi-burst" target="_blank" class="orange">Chi Burst</a> does more damage on AoE. You can use one of these abilities whenever you don't want to spend energy on a global cooldown.</p>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="row-7">
+                        <p class="sub-header orange">Row 7</p>
+                        <img id="profound-rebuttal" class="selected" src="images/expel-harm.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="yulon-diffuse" src="images/yulon-diffuse.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="eye-of-the-tiger" src="images/eye-of-the-tiger.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="dance-wind-dampen" src="images/dance-wind-dampen.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="improved-tod" src="images/tod.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="strength-of-spirit" src="images/chi-orb.jpg" onclick="updateInfo(this)">
+                        <h3><a href="https://www.wowhead.com/spell=392910/profound-rebuttal" target="_blank">Profound Rebuttal</a></h3>
+                        <h4 class="Required">Required</h4>
+                        <p class="description">This talent increases the critical healing of <a href="https://www.wowhead.com/spell=115072/expel-harm" target="_blank" class="orange">Expel Harm</a>, further making it an extremely strong self heal.</p>
+                    </div>
+                    <div class="row-8">
+                        <p class="sub-header orange">Row 8</p>
+                        <img id="close-to-heart" class="selected" src="images/close-to-heart.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="escape-from-reality" src="images/transcendence.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="windwalking" src="images/windwalker.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="fatal-touch" src="images/tod.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="generous-pour" src="images/generous-pour.jpg" onclick="updateInfo(this)">
+                        <h3><a href="https://www.wowhead.com/spell=389574/close-to-heart" target="_blank">Close to Heart</a></h3>
+                        <h4 class="Optional">Optional</h4>
+                        <p class="description">This talent is extremely strong and is one of Monk's group buffs. Not only does it increase all healing that you receive by 8%, but it increases the healing that your allies receive, too.</p>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="row-9">
+                        <p class="sub-header orange">Row 9</p>
+                        <img id="save-them-all" class="selected" src="images/save-them-all.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="resonant-fists" src="images/resonant-fists.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="bounce-back" src="images/bounce-back.jpg" onclick="updateInfo(this)">
+                        <h3><a href="https://www.wowhead.com/spell=390105/save-them-all" target="_blank">Save them All</a></h3>
+                        <h4 class="Never">Never</h4>
+                        <p class="description">This talent may sound strong, but we have no reliant way of healing our allies, so it's not worth putting points into.</p>
+                    </div>
+                    <div class="row-10">
+                        <p class="sub-header orange">Row 10</p>
+                        <img id="serpent-statue" class="selected" src="images/serpent-statue.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="tiger-statue" src="images/tiger-statue.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="ox-statue" src="images/ox-statue.jpg" onclick="updateInfo(this)">
+                        <h3><a href="https://www.wowhead.com/spell=115313/summon-jade-serpent-statue" target="_blank">Summon Jade Serpent Statue</a></h3>
+                        <h4 class="Never">Never</h4>
+                        <p class="description">This talent requires a lot of points to get to and doesn't do enough healing to make it worth taking. Having to reapply <a href="https://www.wowhead.com/spell=115175/soothing-mist" target="_blank" class="orange">Soothing Mist</a> to yourself would be really annoying, too.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="spec-tree" class="info-section">
+                <h2>Specialization Tree</h2>
+                <p>We will go into detail for each talent in the class tree, discussing what they do and when to take them.</p>
+                <div class="grid-container">
+                    <div class="row-1">
+                        <p class="sub-header orange">Row 1</p>
+                        <img id="keg-smash-talent" class="selected" src="images/keg-smash.jpg" onclick="updateInfo(this)">
+                        <h3><a href="https://www.wowhead.com/spell=121253/keg-smash" target="_blank">Keg Smash</a></h3>
+                        <h4 class="Required">Required</h4>
+                        <p class="description">This is your most important damaging ability. You want to use it off cooldown to generate AoE threat and reduce your brews' cooldowns. It is also one of your highest damaging abilities in AoE.</p>
+                    </div>
+                    <div class="row-2">
+                        <p class="sub-header orange">Row 2</p>
+                        <img id="purifying-brew-talent" class="selected" src="images/purifying-brew.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="shuffle-talent" src="images/shuffle.jpg" onclick="updateInfo(this)">
+                        <h3><a href="https://www.wowhead.com/spell=119582/purifying-brew" target="_blank">Purifying Brew</a></h3>
+                        <h4 class="Required">Required</h4>
+                        <p class="description">This ability clears 50% of your total stagger, reducing the amount of damage you take. Anytime you are below max health and have high stagger, you want to use this ability. It can also be used when low on stagger during bosses to buff your <a class="orange" href="https://www.wowhead.com/spell=322507/celestial-brew" target="_blank">Celestial Brew</a>.</p>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="row-3">
+                        <p class="sub-header orange">Row 3</p>
+                        <img id="staggering-strikes" class="selected" src="images/staggering-strikes.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="gotox-talent" src="images/gift-of-the-ox.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="spirit-of-the-ox" src="images/spirit-of-the-ox.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="quick-sip" src="images/quick-sip.jpg" onclick="updateInfo(this)">
+                        <h3><a href="https://www.wowhead.com/spell=387625/staggering-strikes" target="_blank">Staggering Strikes</a></h3>
+                        <h4 class="Never">Never</h4>
+                        <p class="description">This talent causes our <a href="https://www.wowhead.com/spell=100784/blackout-kick" target="_blank" class="orange">Blackout Kick</a> to decrease our stagger by a small amount. Unfortunately, the stagger reduction is so small that we do not ever run this talent.</p>
+                    </div>
+                    <div class="row-4">
+                        <p class="sub-header orange">Row 4</p>
+                        <img id="hit-scheme" class="selected" src="images/blackout-kick.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="healing-elixir" src="images/healing-elixir.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="delivery-rushing" src="images/delivery-rushing.jpg" onclick="updateInfo(this)">
+                        <h3><a href="https://www.wowhead.com/spell=331620/hit-scheme" target="_blank">Hit Scheme</a></h3>
+                        <h4 class="Required">Required</h4>
+                        <p class="description">This talent is a massive damage increase. It makes our <a href="https://www.wowhead.com/spell=100784/blackout-kick" target="_blank" class="orange">Blackout Kick</a> increase the damage of our next <a href="https://www.wowhead.com/spell=121253/keg-smash" target="_blank" class="orange">Keg Smash</a> by 10%, stacking up to 4 times.</p>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="row-5">
+                        <p class="sub-header orange">Row 5</p>
+                        <img id="celestial-flames" class="selected" src="images/celestial-flames.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="celestial-brew-talent" src="images/celestial-brew.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="graceful-exit" src="images/sprint.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="zen-meditation" src="images/zen-meditation.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="clash" src="images/clash.jpg" onclick="updateInfo(this)">
+                        <h3><a href="https://www.wowhead.com/spell=325190/celestial-flames" target="_blank">Celestial Flames</a></h3>
+                        <h4 class="Never">Never</h4>
+                        <p class="description">This talent applies our <a href="https://www.wowhead.com/spell=115181/breath-of-fire" target="_blank" class="orange">Breath of Fire</a> to all targets that are hit by our <a href="https://www.wowhead.com/spell=101546/spinning-crane-kick" target="_blank" class="orange">Spinning Crane Kick</a>, which serves absolutely no purpose as you can keep <a href="https://www.wowhead.com/spell=115181/breath-of-fire" target="_blank" class="orange">Breath of Fire</a> up on enemies 100% of the time without it. The extra 5% damage reduction is heavily outweighed by other talents, too.</p>
+                    </div>
+                    <div class="row-6">
+                        <p class="sub-header orange">Row 6</p>
+                        <img id="bof-talent" class="selected" src="images/breath-of-fire.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="improved-celestial-brew" src="images/celestial-brew.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="improved-purifying-brew" src="images/purifying-brew.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="tranquil-gai" src="images/tranquil-gai.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="fundamental-observation" src="images/zen-meditation.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="shadowboxing-fluidity" src="images/shadowboxing-fluidity.jpg" onclick="updateInfo(this)">
+                        <h3><a href="https://www.wowhead.com/spell=115181/breath-of-fire" target="_blank">Breath of Fire</a></h3>
+                        <h4 class="Required">Required</h4>
+                        <p class="description">This ability does a decent amount of damage and makes all enemies that are hit deal 5% reduced damage to you.</p>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="row-7">
+                        <p class="sub-header orange">Row 7</p>
+                        <img id="scalding-salabims" class="selected" src="images/scalding-salabims.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="fort-brew-determination" src="images/fortifying-brew.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="bob-ox-brew" src="images/bob-ox-brew.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="dave" src="images/dave.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="light-training" src="images/light-training.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="pretense-of-instability" src="images/pretense-of-instability.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="counterstrike" src="images/counterstrike.jpg" onclick="updateInfo(this)">
+                        <h3><a href="https://www.wowhead.com/spell=383698/scalding-brew" target="_blank">Scalding Brew</a> <span class="white">/</span> <a href="https://www.wowhead.com/spell=383697/salsalabims-strength" target="_blank">Sal'salabim's Strength</a></h3>
+                        <h4 class="Required">Required</h4>
+                        <p class="description">Both <a href="https://www.wowhead.com/spell=383698/scalding-brew" target="_blank" class="orange">Scalding Brew</a> and <a href="https://www.wowhead.com/spell=383697/salsalabims-strength" target="_blank" class="orange">Sal'salabim's Strength</a> are very good talents. Due to <a href="https://www.wowhead.com/spell=383697/salsalabims-strength" target="_blank" class="orange">Sal'salabim's Strength</a> synergizing with our builds more, however, we currently take this talent in every build we play.</p>
+                    </div>
+                    <div class="row-8">
+                        <p class="sub-header orange">Row 8</p>
+                        <img id="dragonfire-charred" class="selected" src="images/dragonfire-charred.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="high-tolerance" src="images/high-tolerance.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="walk-with-the-ox" src="images/stagger.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="elusive-footwork" src="images/shuffle.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="anvil-stave" src="images/anvil-stave.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="face-palm" src="images/tiger-palm.jpg" onclick="updateInfo(this)">
+                        <h3><a href="https://www.wowhead.com/spell=383994/dragonfire-brew" target="_blank">Dragonfire Brew</a> <span class="white">/</span> <a href="https://www.wowhead.com/spell=386965/charred-passions" target="_blank">Charred Passions</a></a></h3>
+                        <h4 class="Required">Required</h4>
+                        <p class="description">Both of these talents are extremely important as they synergize with our tier set and dictate how our build plays. <a href="https://www.wowhead.com/spell=383994/dragonfire-brew" target="_blank" class="orange">Dragonfire Brew</a> increases the damage of our <a href="https://www.wowhead.com/spell=115181/breath-of-fire" target="_blank" class="orange">Breath of Fire</a> based on 100% of our stagger, making it an extremely high damaging ability on AoE. <a href="https://www.wowhead.com/spell=386965/charred-passions" target="_blank" class="orange">Charred Passions</a> makes our <a href="https://www.wowhead.com/spell=115181/breath-of-fire" target="_blank" class="orange">Breath of Fire</a> apply a buff to ourselves, causing our <a href="https://www.wowhead.com/spell=100784/blackout-kick" target="_blank" class="orange">Blackout Kick</a> and <a href="https://www.wowhead.com/spell=101546/spinning-crane-kick" target="_blank" class="orange">Spinning Crane Kick</a> to deal additional fire damage. In mythic+, we tend to take <a href="https://www.wowhead.com/spell=383994/dragonfire-brew" target="_blank" class="orange">Dragonfire Brew</a>, but, in raid, we tend to take <a href="https://www.wowhead.com/spell=386965/charred-passions" target="_blank" class="orange">Charred Passions</a>. Ultimately, however, you can take either one you want in all situations.</p>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="row-9">
+                        <p class="sub-header orange">Row 9</p>
+                        <img id="bonedust-brew" class="selected" src="images/bonedust-brew.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="improved-dave" src="images/dave.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="exploding-keg" src="images/exploding-keg.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="blackout-combo" src="images/blackout-combo.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="press-woo" src="images/press-woo.jpg" onclick="updateInfo(this)">
+                        <h3><a href="https://www.wowhead.com/spell=386276/bonedust-brew" target="_blank">Bonedust Brew</a></h3>
+                        <h4 class="Required">Required</h4>
+                        <p class="description">This talent gives us a brew that applies a debuff onto enemies. It does a lot of damage, gives us additional brew cooldown reduction, and even benefits from our brew cooldown reduction abilities.</p>
+                    </div>
+                    <div class="row-10">
+                        <p class="sub-header orange">Row 10</p>
+                        <img id="bountiful-attenuation" class="selected" src="images/bountiful-attenuation.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="stormstouts-last-keg" src="images/keg-smash.jpg" onclick="updateInfo(this)"><!--
+                        --><img id="call-surge" src="images/call-surge.jpg" onclick="updateInfo(this)">
+                        <h3><a href="https://www.wowhead.com/spell=386949/bountiful-brew" target="_blank">Bountiful Brew</a> <span class="white">/</span> <a href="https://www.wowhead.com/spell=386941/attenuation" target="_blank">Attenuation</a></a></h3>
+                        <h4 class="Required">Required</h4>
+                        <p class="description"><a href="https://www.wowhead.com/spell=386949/bountiful-brew" target="_blank" class="orange">Bountiful Brew</a> gives us a chance to cast <a href="https://www.wowhead.com/spell=386276/bonedust-brew" target="_blank" class="orange">Bonedust Brew</a> on our enemies, providing us with further uptime. <a href="https://www.wowhead.com/spell=386941/attenuation" target="_blank" class="orange">Attenuation</a> increases the damage and healing of our <a href="https://www.wowhead.com/spell=386276/bonedust-brew" target="_blank" class="orange">Bonedust Brew</a> by 20%, while also decreasing its cooldown every time it does damage or healing. While both are powerful, <a href="https://www.wowhead.com/spell=386949/bountiful-brew" target="_blank" class="orange">Bountiful Brew</a> is currently stronger, as it has a relatively high proc chance.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="talents" class="image-section">
+                <h2>Default Talent Builds</h2>
+                <p>These are the default talent builds that can be ran for mythic+ and raid. Keep in mind that certain talents can change based on your needs, but we always take the required talents for both talent builds.</p>
+                <div class="grid-container">
+                    <div id="dungeon-talents">
+                        <p class="sub-header orange copy">Mythic+ Talents <i class="fa-solid fa-copy" import-code="BwQAAAAAAAAAAAAAAAAAAAAAAAAAAAAASAAAAgUiWLJJQSSpRAAAASLUSiEJ0KkkSSSJBQTi0SrkIA" onclick="copyToClipboard(this)"></i></p>
+                        <img src="images/talents_dungeons.png">
+                        <p class="description">Regarding the situational talents in our class tree, we want to always take <a href="https://www.wowhead.com/spell=116844/ring-of-peace" target="_blank" class="orange">Ring of Peace</a>, as it is an extremely helpful utility spell in all of the dungeons. By default, we run <a href="https://www.wowhead.com/spell=218164/detox" target="_blank" class="orange">Detox</a>, too, but this can be swapped out for dungeons that don't have any poison dispels (more discussed in the <a href="dungeons.html">dungeons & affixes</a> section). We also take <a href="https://www.wowhead.com/spell=116705/spear-hand-strike" target="_blank" class="orange">Spear Hand Strike</a>, our interrupt, for every dungeon. For our optional class talents, I choose to take <a href="https://www.wowhead.com/spell=115173/celerity" target="_blank" class="orange">Celerity</a> and two points into <a href="https://www.wowhead.com/spell=389574/close-to-heart" target="_blank" class="orange">Close to Heart</a>. If you want to take <a href="https://www.wowhead.com/spell=115008/chi-torpedo" target="_blank" class="orange">Chi Torpedo</a> instead, you can take one point out of <a href="https://www.wowhead.com/spell=389574/close-to-heart" target="_blank" class="orange">Close to Heart</a> for <a href="https://www.wowhead.com/spell=328669/improved-roll" target="_blank" class="orange">Improved Roll</a>, but the extra 4% increased healing for us and our allies is very helpful.</p>
+                        <p class="description">There is not much room for choice in our spec tree. We take all of the situational AoE talents, such as <a href="https://www.wowhead.com/spell=383994/dragonfire-brew" target="_blank" class="orange">Dragonfire Brew</a> and <a href="https://www.wowhead.com/spell=383707/stormstouts-last-keg" target="_blank" class="orange">Stormstout's Last Keg</a>. We also take <a href="https://www.wowhead.com/spell=393516/pretense-of-instability" target="_blank" class="orange">Pretense of Instability</a> for increased tankiness, especially in large pulls where a ton of mobs are constantly meleeing us. As discussed previously, if you want fewer keybinds, you can swap out <a href="https://www.wowhead.com/spell=115399/black-ox-brew" target="_blank" class="orange">Black Ox Brew</a> for <a href="https://www.wowhead.com/spell=280515/bob-and-weave" target="_blank" class="orange">Bob and Weave</a>, along with <a href="https://www.wowhead.com/spell=196730/special-delivery" target="_blank" class="orange">Special Delivery</a>, instead of <a href="https://www.wowhead.com/spell=116847/rushing-jade-wind" target="_blank" class="orange">Rushing Jade Wind</a>. If you do choose to take <a href="https://www.wowhead.com/spell=196730/special-delivery" target="_blank" class="orange">Special Delivery</a>, however, you should take <a href="https://www.wowhead.com/spell=325093/light-brewing" target="_blank" class="orange">Light Brewing</a> instead of <a href="https://www.wowhead.com/spell=383714/training-of-niuzao" target="_blank" class="orange">Training of Niuzao</a> for more brews.</p>
+                    </div>
+                    <div id="raid-talents">
+                        <p class="sub-header orange">Raid Talents <i class="fa-solid fa-copy" import-code="BwQAAAAAAAAAAAAAAAAAAAAAAAAAAAAASAAAAQShWLJJQSSrRAAAASLRRiEJSBJpkkUSAaNi0SrEC", onclick="copyToClipboard(this)"></i></p>
+                        <img src="images/talents_raid.png">
+                        <p class="description">Our class tree is very similar to the mythic+ build, with only a few differences. In raid, we only ever take <a href="https://www.wowhead.com/spell=116844/ring-of-peace" target="_blank" class="orange">Ring of Peace</a> when we want <a href="https://www.wowhead.com/spell=196607/eye-of-the-tiger" target="_blank" class="orange">Eye of the Tiger</a> for single target parsing. We can also take <a href="https://www.wowhead.com/spell=322113/improved-touch-of-death" target="_blank" class="orange">Improved Touch of Death</a> for single target parsing, but it requires you to get rid of a point from <a href="https://www.wowhead.com/spell=389574/close-to-heart" target="_blank" class="orange">Close to Heart</a> or <a href="https://www.wowhead.com/spell=389575/generous-pour" target="_blank" class="orange">Generous Pour</a>. If there is another monk in your raid providing <a href="https://www.wowhead.com/spell=389574/close-to-heart" target="_blank" class="orange">Close to Heart</a> or <a href="https://www.wowhead.com/spell=389575/generous-pour" target="_blank" class="orange">Generous Pour</a>, you can put points into <a href="https://www.wowhead.com/spell=196607/eye-of-the-tiger" target="_blank" class="orange">Eye of the Tiger</a> and <a href="https://www.wowhead.com/spell=322113/improved-touch-of-death" target="_blank" class="orange">Improved Touch of Death</a>, too. Again, you can replace <a href="https://www.wowhead.com/spell=115173/celerity" target="_blank" class="orange">Celerity</a> for <a href="https://www.wowhead.com/spell=115008/chi-torpedo" target="_blank" class="orange">Chi Torpedo</a>, but it is then recommended that you also take <a href="https://www.wowhead.com/spell=328669/improved-roll" target="_blank" class="orange">Improved Roll</a>. Lastly, I choose to take <a href="https://www.wowhead.com/spell=328670/hasty-provocation" target="_blank" class="orange">Hasty Provocation</a>, as the increased speed taunt is really helpful on a lot of bosses where the two tanks are spread out.</p>
+                        <p class="description">Our spec tree is also very similar to the mythic+ build, with the only differences being that we don't run <a href="https://www.wowhead.com/spell=383994/dragonfire-brew" target="_blank" class="orange">Dragonfire Brew</a>, <a href="https://www.wowhead.com/spell=393516/pretense-of-instability" target="_blank" class="orange">Pretense of Instability</a>, and <a href="https://www.wowhead.com/spell=383707/stormstouts-last-keg" target="_blank" class="orange">Stormstout's Last Keg</a>. We never want to run <a href="https://www.wowhead.com/spell=393516/pretense-of-instability" target="_blank" class="orange">Pretense of Instability</a> because we don't need the extra survivability, so, instead, we put a point into <a href="https://www.wowhead.com/spell=389942/face-palm" target="_blank" class="orange">Face Palm</a> for a big single target damage increase. Instead of <a href="https://www.wowhead.com/spell=383994/dragonfire-brew" target="_blank" class="orange">Dragonfire Brew</a> and <a href="https://www.wowhead.com/spell=383707/stormstouts-last-keg" target="_blank" class="orange">Stormstout's Last Keg</a>, we run <a href="https://www.wowhead.com/spell=386965/charred-passions" target="_blank" class="orange">Charred Passion</a> and <a href="https://www.wowhead.com/spell=393400/chi-surge" target="_blank" class="orange">Chi Surge</a> for additional single target damage. In the current raid, there is never enough constant AoE to make <a href="https://www.wowhead.com/spell=383994/dragonfire-brew" target="_blank" class="orange">Dragonfire Brew</a> worth it, but, whenever there is a fight with a decent amount of AoE, we want to run <a href="https://www.wowhead.com/spell=383707/stormstouts-last-keg" target="_blank" class="orange">Stormstout's Last Keg</a> instead <a href="https://www.wowhead.com/spell=393400/chi-surge" target="_blank" class="orange">Chi Surge</a>. <a href="https://www.wowhead.com/spell=116847/rushing-jade-wind" target="_blank" class="orange">Rushing Jade Wind</a> is a lot stronger than <a href="https://www.wowhead.com/spell=196730/special-delivery" target="_blank" class="orange">Special Delivery</a> on single target, so we don't want to ever run <a href="https://www.wowhead.com/spell=196730/special-delivery" target="_blank" class="orange">Special Delivery</a>, which means that <a href="https://www.wowhead.com/spell=325093/light-brewing" target="_blank" class="orange">Light Brewing</a> is also not a very good option. You can still run <a href="https://www.wowhead.com/spell=280515/bob-and-weave" target="_blank" class="orange">Bob and Weave</a> instead of <a href="https://www.wowhead.com/spell=115399/black-ox-brew" target="_blank" class="orange">Black Ox Brew</a> if you wish, though.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="next">
+                <h3><a class="orange" href="gearing.html">Next: Gearing <i class="fa-solid fa-arrow-right"></i></a></h3>
+            </section>
+        </main>
+        <script src="myscripts.js"></script>
+    </body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Zigee">
+        <meta name="description" content="A Brewmaster Monk guide that is being made.">
+        <meta name="keywords" content="Brewmaster Monk, Brew Monk, Mythic Plus, Mythic+, M+, Brewmaster Monk Mythic Plus Guide, Brewmaster Monk Mythic+ Guide, Brewmaster Monk M+ Guide, Brew Monk Mythic Plus Guide, Brew Monk Mythic+ Guide, Brew Monk M+ Guide, Guide, Dragonflight">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/77ee47dea4.js" crossorigin="anonymous"></script>
+        <title>Brewmaster Monk Website</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <button id="mobile-button" onclick="menuFunc('mobile-menu')"><i class="fa-solid fa-bars"></i></button>
+                <a href="home.html" id="logo"><img src="images/monk.jpg" alt="Brewmaster Monk Icon">Equinox</a>
+                <ul id="computer-menu" class="menu">
+                    <li>
+                        <a href="introduction.html">Written Guide</a>
+                        <ul id="computer-submenu">
+                            <li><a href="introduction.html">Introduction</a></li>
+                            <li><a href="talents.html">Talents</a></li>
+                            <li><a href="gearing.html">Gearing</a></li>
+                            <li><a href="playstyle.html">Playstyle & Rotation</a></li>
+                            <li><a href="dungeons.html">Dungeons & Affixes</a></li>
+                            <li><a href="advanced.html">Advanced Tips & Tricks</a></li>
+                        </ul>
+                    </li><!--
+                    --><li><a href="" target="_blank">Video Guide</a><div></div></li><!--
+                    --><li><a href="https://discord.gg/FAX73yrW" target="_blank">Discord</a></li><!--
+                    --><li><a href="https://twitter.com/equinoxmonk " target="_blank">Twitter</a></li><!--
+                    --><li><a href="https://www.twitch.tv/equinox" target="_blank">Stream</a></li>
+                </ul>
+            </nav>
+            <ul id="mobile-menu" class="menu">
+                <li>
+                    <a onclick="menuFunc('mobile-submenu')">Written Guide<i class="fa-solid fa-caret-down"></i></a>
+                    <ul id="mobile-submenu">
+                        <li><a href="introduction.html">Introduction</a></li>
+                        <li><a href="talents.html">Talents</a></li>
+                        <li><a href="gearing.html">Gearing</a></li>
+                        <li><a href="playstyle.html">Playstyle & Rotation</a></li>
+                        <li><a href="dungeons.html">Dungeons & Affixes</a></li>
+                        <li><a href="advanced.html">Advanced Tips & Tricks</a></li>
+                    </ul>
+                </li><!--
+                --><li><a href="" target="_blank">Video Guide</a><div></div></li><!--
+                --><li><a href="https://discord.gg/FAX73yrW" target="_blank">Discord</a></li><!--
+                --><li><a href="https://twitter.com/equinoxmonk " target="_blank">Twitter</a></li><!--
+                --><li><a href="https://www.twitch.tv/equinox" target="_blank">Stream</a></li>
+            </ul>
+        </header>
+        <main>
+            <section class="about">
+                <h2>Dungeons & Affixes</h2>
+                <p>This season's mythic+ dungeons has a lot of challenging mobs and bosses. In this section, we will first cover some optimal dungeon routes, along with which enemies to be careful of. Next, we will cover how to live through certain boss encounters, in addition to helping your team live. Finally, we will go over all of the affixes and which ones that can change your route.</p>
+            </section>
+            <section id="dungeons" class="info-section">
+                <h2>Dungeons</h2>
+                <p>We will go over the overall difficulty of each dungeon. Later on this page, we will go into more detail about each boss and certain mobs.</p>
+                <div class="middle-spacing">
+                    <img id="ataldazar" class="selected" src="images/ataldazar.jpg" onclick="updateInfo(this)"><!--
+                    --><img id="black-rook-hold" src="images/blackrookhold.jpg" onclick="updateInfo(this)"><!--
+                    --><img id="darkheart-thicket" src="images/darkheartthicket.jpg" onclick="updateInfo(this)"><!--
+                    --><img id="doti-fall" src="images/doti.jpg" onclick="updateInfo(this)"><!--
+                    --><img id="doti-rise" src="images/doti.jpg" onclick="updateInfo(this)"><!--
+                    --><img id="the-everbloom" src="images/theeverbloom.jpg" onclick="updateInfo(this)"><!--
+                    --><img id="throne-of-the-tides" src="images/throne_of_the_tides.jpg" onclick="updateInfo(this)"><!--
+                    --><img id="waycrest-manor" src="images/waycrestmanor.jpg" onclick="updateInfo(this)">
+                    <h3><a href="https://www.wowhead.com/zone=9028/ataldazar" target="_blank">Atal'Dazar</a></h3>
+                    <h4 class="Easy">Easy</h4>
+                    <p class="description">Atal'Dazar is a very easy dungeon this season. There aren't any mobs that do a lot of tank damage, and all group damage is avoidable or easily healable. Yazma, especially on Tyrannical, can really suck though.</p>
+                </div>
+            </section>
+            <section id="dungeon-routes">
+                <h2>Dungeon Routes</h2>
+                <p>Every route is designed to be as pug friendly as possible. They can be competitive routes all the way up to +26. Of course, certain affixes may change the speed at which you can pull. You should always take into account your group composition, too.</p>
+                <div id="ataldazar-route" class="dungeon-route display">
+                    <div class="dungeon-banner" style="background-image: url(images/ataldazar-banner.jpg);">
+                        <div class="top"><h4 class="dungeon-name">Atal'Dazar</h4></div>
+                        <div class="bottom">
+                            <h4 class="dungeon-percent"><i class="fa-solid fa-check"></i> 101.3%</h4>
+                            <button class="mdt-copy" import-code="!9zvxVTUnm0Fm75AOVO(41UTlWfBORaUypkS0g7USLLSBI9DTVSF7tK0YIoDBaob2hjDoKhsj7So)uUF)HXXdVmFC698dAvU)Vgg(D(UD73F(0ppC56HZNYp4S2c28H95(39)6v)7QF4XXxZ9FD3X5bKOxMVCz400JZhpww)6Z9ZpFC4Rdm21HJdVmH89e(C5AADIF38PxhoF6Z7FRGd5(PHH)4WPxZpN7VCyC6NghVomDLwOQ8)eU0)SigdrrW5JNVK7hhTdJJfmVqfKs(jdDzjck3HGULHG2O4LJUaAiF(Hy(HG4Mefi0p8wuhZYVYQ02fS69a9tgiCYZXmgXPbCyloQDzkbePoF3AG34iryLyyAXwULy0mSduCXdAxYXjCXc)jkEycf7jkbQEMygMnIz3KfjY5tIXAk7yMHnmB3qMBZc4YHxgQUnP24ZwYZ8IQp6KucRwzrSEUcO34OahxHBAHsij2TUczbXnoPBdJHwiVMgrclCt1U4tRXvT)ZSuCCm5lriWobXl2utIOiE1l9HXm3lM20C0cMwELwSSf7jiBb0X)LgiS9H2nvdslNpwpVnjqbPLn20w7sl3wUtZfM4gBz7wcyXsrMJ0iRwdNmMiBnj2A80skhmHwJLtzRH42AjRXU01vRgmB(pusQhA4(WmWfBLl2joIGc)AHMCFNOt7MD3p4ZTM(AYD7g16C4dI01otPRc5N(WwoJAZKOthNgER8)3)L5dNo)wU)8Z)w5W32XL730hR74BPe8Em(7htLUu(iV7OZ8Uhz9iVSEVj0rwr)DMa0H1bguHmGGPoQ1Tc6BGbe01rNLwaJUoQAvbX3(ur1KukcM0kg6sujzf2jGr50(omHi9sQUsgOdn4OagLuRP0GKmrUGr3GncyusfN0Uf4eT)Cf2lGrjvwmXnSKMoUZTcBvn4sVBpKIyaARscut8kStadimtsnl59IRWrbCrsisK4yJLQboDd2iGrjlwpcZgBeTkh0G9cyuYsnfFvzSvgCPvyq1GbuYarcWs6rsaBd2jGrj9PUsRhWscejHgCuaJs6be2lAF86gSraJs6PsSNL0ILyp0G9cyusGkXEwsdgG(0kCq1GdOKavgcMgjbBdwizaLe0yag8lwfchAWrbmjPcTQOQ1qe1nyr7teL0fP9zC7dzvrOb7fWOKokDIOKwf1(etRWjvdoHs6ac2qWagGjBd2jGjjPsCYtWy7Z6NGvpl6tXOoLcL2sVlc(s764Do6qMpDhariOuAaCgWw2yYdT9iRFC(60F)lFd9cSt05v03sTYFaCwxsbgVZOcLo5g)XK2PnLrmMG3wmJYqW)b)gb)oj)fB1NukLVitiwwVG)Osxodc02Yo6sd8)h)2g)13I84UJdttdF(04zuWDZtN)weh)e57Vzo4NqZV3l)pp" onclick="copyToClipboard(this)"><i class="fa-solid fa-copy"></i> Copy MDT string</button>
+                        </div>
+                    </div>
+                    <img class="route" src="images/ataldazar-route.png">
+                    <p class="lust-timings"><span class="red">Bloodlust Timings:</span> Rezan, Pull 10, Yazma</p>
+                    <p>This route is fairly straightforward. At the start, you want to hug left when running past the Toxic Saurids, where you'll pull the two Feasting Skyscreamers into Rezan. From there, you can just follow the route exactly, as there are no more skips and tricks. Make sure that you lust Rezan, the center dinosaur pack (pull 10), and Yazma.</p>
+                </div>
+                <div id="black-rook-hold-route" class="dungeon-route">
+                    <div class="affix-change">
+                        <button class="fort chosen" onclick="changeAffix(this)">Fortified</button>
+                        <button class="tyran" onclick="changeAffix(this)">Tyrannical</button>
+                    </div>
+                    <div class="dungeon-banner" style="background-image: url(images/black-rook-hold-banner.jpg);">
+                        <div class="top"><h4 class="dungeon-name">Black Rook Hold</h4></div>
+                        <div class="bottom">
+                            <h4 class="dungeon-percent"><i class="fa-solid fa-check"></i> 100.6%</h4>
+                            <button class="mdt-copy" fort="!9v12oYjoq0pM8AIKVF51SzhPeTInseL9Ydwq3Tzw2HatOntM9f(2xx2UbmnksTNXUSRtDQtv2yWMVykV0200EEQZ9FMcmYuo1EXu(x)jXD51wXF)L)WuwF5Yq)xTJxBh6nfmk1FQxQ7MSG7NNghT9Upp1159FzD50Po7l2OTN9BE1F4ciGfK4m)pNPGMwWb7fcWaSKblDW)xpB55HUHrtztd120a7sceiAfSPTRON5onGozBaJMyEtRgVTtESO2vGGZxi3qQBbrLLhBWh(XH9HKdlaVl0H1EXgMHXXP04u4uK0GMgSGxyECkasyUmnuPHomCaQ3RAuRoPA8WU4TvbmnBfAz1nzBvpAob6bML5ajxrezriarqvbAFuCOzGqYynubwfD826WcRjz(Z2ep2byciQdyQ21)41hqDpkZebq5bB47SL081iOJQeKGBrrf8qg9iS7A4dn1RAsmd31QfdnbTLIK8kPArtpUrKVrjQXb1f6AYl4GtrpOPatYsVexV5MmjeGBIGBQWsDgJKPR4ULA3D3Drh0YOY0oD8IckefCmQ4BQdBhjHCJqYYnAMG4wAk3DnPGq3P8ImSJ3ci8Fk2feMz)fPLIkj)TPGuh7VwqD7BIsZrxkWQDzCqfvzThz9ZK8gk3Y71FyQ)r7q)hV8kOUutPZA)wB)JMtMYR2o7zh84)QVLJTnUFVP5Q1T8Y(neb6856oRZz)yFZaqX6j3WVa2biF)UZaXe0lFmF1)3F97tT9dVox9WWOF5WP)1h9LGu2d(FjU8bfHR4iQMIrsIqjmnVJf6ZE4DmbLYWsQIrXASVE63IV(9L3d6BPREQ3nx984GZhKHX5kYCvD)L5kp1MRA9JFu390CLByU6r68NM)uB)lTx9hQXz9h)56ZpflRK7ihxZ4eSsqeujtXLaderYjeyTGIuCLN2yf)qYLcrkGjQ6(h7C15HP(ZTDaFdKDCQpsXWUNgUE9TP5FB4KpfA76ULiT9MLp5TJUybhtikMIHPcnElDLejwW8jKIYzlBLt3FB6QNFVzZxf3HVuI8veFe0AndraqOl1kobHLE0PcUIDOCKWpDlIFh(cQs7BbekeNRj8ajzr8vmIVbH67rKiMprsBDi(Px8e3JVuOuuMwGemThQn8x4jVwJycnrWrOFk(SB3t(H1(u8YK5)p" tyran="!9vvtVXTnq0Fm9ubAaeh(HiVM2AaheOAaz0d9aH0UlLRILLC0s54Cr)2dhsUsIA3eGL2Kd58M38MHuAI(rD5P2MM2JtD2VRliz6YP2t6Y)7L7V7EH93Thn6Y6tNg6)xZ452HEDbJsDN6T6Ujd6(XPXrtV9HPUoN)lRlNo0zEZeS9QBZZUdxGbSacZC)S6cACbhTxiqd4sgU0I)F9SLhh6gg1LnnuttdUl4jqWkAtzwrpXDQhDyBadMyotRgVStASOMvGWZxKVHuxcImjp2Gp(JJ7JjhrGExO8RDInoJqctPHP4PG4GghmVxeEykcIFEECiJdLFyruVw1Ogvu14(DjBRceAYQSLvxKTv9O5aQhewIdqQIisIGhcVQI0(wXHMacKWAScSk6KT1Hfwdj(Z2ep2nWeru5XuUR)XPpO6ERmt4bL7TrUYwuZxJGkOsycUffP3J8Gh(DxdVVPEvtcz4UwTqOHSTuesRKYfn92nI8nkrnXRUyxtAbhDk4bngyij9IC9IB5rHaDt4Dt6xQsyuE8kUDP2D1D3SB0Yit0ov4IsMpkKqujxuh2osI5gaj5gnrqSlnL7UMua0DkVib7WTaG)lXUay69xKwkQq6BtEPo0FTG623eZ136sbrUlJ9QOmP9iPFgsBOSlVx)xt9pzg6V)07O6s1LwJ5L2(N0h0LNnDMJw8X)vFlhBBS)ttZzJD5L9liI05H6oJ1AUVVzaPy9KD4pr7iKFC3zWyI6LlMV7(7F)1P2(H3NRE87J196YHdFXf(LOu2JaCkS8ojWL8mQIsYYbHuOB(aZ3OD3hyckLrYPsgLOiUcQBl(6hy(ikWL26PE7C1RJdwxqggNRG5Q6(tZvoUnx16gFRU755k7WC1t05pn)P2(3Ap7ouJ14o(R1hFouxHRihxX4arkabnNj55idebYjeeLGMj5shTjs(njxmeXagPQ9)nZvhhM6p22H81t2XP(af97Ey485)io)LHdUuOTR7sI02Rx(M3o6seCcasMKrOcfzlDZHCIG5sijLZw2kLUFE6SJF)2MplMIVixiLuMsKjykx5cbHgXhYikvgtOabplJHBX(j4hFsIFn(eQcikW1pamvc(5oRcqX5zCxKd4)Z4pCPr(BgZZHUD9pc" import-code="!9v12oYjoq0pM8AIKVF51SzhPeTInseL9Ydwq3Tzw2HatOntM9f(2xx2UbmnksTNXUSRtDQtv2yWMVykV0200EEQZ9FMcmYuo1EXu(x)jXD51wXF)L)WuwF5Yq)xTJxBh6nfmk1FQxQ7MSG7NNghT9Upp1159FzD50Po7l2OTN9BE1F4ciGfK4m)pNPGMwWb7fcWaSKblDW)xpB55HUHrtztd120a7sceiAfSPTRON5onGozBaJMyEtRgVTtESO2vGGZxi3qQBbrLLhBWh(XH9HKdlaVl0H1EXgMHXXP04u4uK0GMgSGxyECkasyUmnuPHomCaQ3RAuRoPA8WU4TvbmnBfAz1nzBvpAob6bML5ajxrezriarqvbAFuCOzGqYynubwfD826WcRjz(Z2ep2byciQdyQ21)41hqDpkZebq5bB47SL081iOJQeKGBrrf8qg9iS7A4dn1RAsmd31QfdnbTLIK8kPArtpUrKVrjQXb1f6AYl4GtrpOPatYsVexV5MmjeGBIGBQWsDgJKPR4ULA3D3Drh0YOY0oD8IckefCmQ4BQdBhjHCJqYYnAMG4wAk3DnPGq3P8ImSJ3ci8Fk2feMz)fPLIkj)TPGuh7VwqD7BIsZrxkWQDzCqfvzThz9ZK8gk3Y71FyQ)r7q)hV8kOUutPZA)wB)JMtMYR2o7zh84)QVLJTnUFVP5Q1T8Y(neb6856oRZz)yFZaqX6j3WVa2biF)UZaXe0lFmF1)3F97tT9dVox9WWOF5WP)1h9LGu2d(FjU8bfHR4iQMIrsIqjmnVJf6ZE4DmbLYWsQIrXASVE63IV(9L3d6BPREQ3nx984GZhKHX5kYCvD)L5kp1MRA9JFu390CLByU6r68NM)uB)lTx9hQXz9h)56ZpflRK7ihxZ4eSsqeujtXLaderYjeyTGIuCLN2yf)qYLcrkGjQ6(h7C15HP(ZTDaFdKDCQpsXWUNgUE9TP5FB4KpfA76ULiT9MLp5TJUybhtikMIHPcnElDLejwW8jKIYzlBLt3FB6QNFVzZxf3HVuI8veFe0AndraqOl1kobHLE0PcUIDOCKWpDlIFh(cQs7BbekeNRj8ajzr8vmIVbH67rKiMprsBDi(Px8e3JVuOuuMwGemThQn8x4jVwJycnrWrOFk(SB3t(H1(u8YK5)p" onclick="copyToClipboard(this)"><i class="fa-solid fa-copy"></i> Copy MDT string</button>
+                        </div>
+                    </div>
+                    <img class="route" src="images/black-rook-hold-route-fortified.png">
+                    <p class="lust-timings" fort="Pull 1, On cd, Pull 14, Kur'talos Ravencrest", tyran="Pull 1, Illysanna Ravencrest, Kur'talos Ravencrest"><span class="red">Bloodlust Timings:</span> Pull 1, On cd, Pull 14, Kur'talos Ravencrest</p>
+                    <p>The start of this route may look confusing, but it is very simple. At the start, you will list the first pull. The pull afterwards, you want to taunt the Ghostly Protector at the top of the stairs. You then invis the mini boss, and taunt the Ghostly Councilor into the boss. After the start of the dungeon, it is a very straightforward route, where you just hold W. On fortified, you want to lust on cooldown, the Felspite Dominator hallway, and the final boss. On tyrannical, you lust Illysanna Ravencrest and Kur'talos Ravencrest.</p>
+                </div>
+                <div id="darkheart-thicket-route" class="dungeon-route">
+                    <div class="dungeon-banner" style="background-image: url(images/darkheart-thicket-banner.jpg);">
+                        <div class="top"><h4 class="dungeon-name">Darkheart Thicket</h4></div>
+                        <div class="bottom">
+                            <h4 class="dungeon-percent"><i class="fa-solid fa-check"></i> 100.4%</h4>
+                            <button class="mdt-copy" import-code="!vAvxloUnu0FmL(qFym67pERmT7cluYUGdTqFqmzMiVKw34UjYBN(Y8BV6EVs2YzgkSqiyDK05CUF5KapSp0F80WWPNMht)ByhNf6)Ny8pZpf6pC8405FnE56PPZHDkPmV58PJH(7DF83)H39LD9t)wO)RhgNJappnF5s8C6tZJJHDML19Zpog)ACeP8ACm(uc4BpSoFS0Yb)55ZFooD(dhFolwOpfJ)1PZFo8yO)YPH0hhgUgtxP7TpFT8f)7Suli1V2jWpCzyNexRGhsaiTphwi3C46ztWPxpv)ttJtxc9ddY4WqLJkkG5JqmuVbXwJu4cDzHK8fA9Q(0oAChfzIneOB9Q6gljJRKtuyiYvTKBWDSTSAAisg9qSTqKLOaxwpVNCod2WvJwsrUP1H6noC4Xwh6jIPSLRTw4FJBdj38TtGH2VjQHuUT96UxL)RGUnPanMF9yIohlWAoMZ2X5vHO60wBqvE)gB4XqZFttuJzSiKJmtwT22gSzAro1MyO0KOkxK3CXdCmLqS1gWL2xf(rt5XegC7VTfEh33K6sOG7l602JwEyHshMN8yCTDzcD7AFfjBvHBMvQh(2U4f95IAxfolyPILJkwSAXcCbKPCiDGp4L9fC6acwHRYBcek6OcnDwHHeryjvessgEPlLR3uXOreb)MCNztOqT78AD1vM7GarJXrz6SCcBZCbP3UxnAwk4QMbes1AFAT(rTrPanzD74IGTX447otXNZF)UVmF680ZH(Ph)J8lMxEzA)XTneD813MEpyK(bFoITyf5oheN3dSosxRxiKDyPS)oLY0HLZmOTdROzqnVdhjRGMvqBguk6W6laQ7WX2ki8tuvuoiLejGJAP9DkmPSaRAGb5uejOEgo4mUDf21adsQCyyGsAKajc(kSObgKulajfOKgvNd73wGnnWGKAliPGKuJhXValzRWsqsdsIKK0aYlLRWQgyqsdAqPPad5F7kSRbgK0IKOyRWk(kSObgK0QWhvlWyJN4BURX(6UMm18sxtjyat774LUMCU2tDneOzfecplhkfu0HvC)ci11qO8sWjRDngBxZpl)TffM3ikqfBsBLOWuIcl2FPxanRG2LKaffUUMF2SAS3RfsNZ5fAMM5uwryipLbk((70Avo0CsT37YpPGT036)Fz(A6Lh(o8f0NrZt)kBLFJ1A9kMWWzwMZZA43ZymPxy9mVszzI)p(fn872Wp3y4kw2IwPZt(xs87e5WsRmcUWAf5jws63KF5lp8JV8GM99R6uF55NomgtP4hopmbcFyon9tao8hkV)MZq)Ft4UH)7d" onclick="copyToClipboard(this)"><i class="fa-solid fa-copy"></i> Copy MDT string</button>
+                        </div>
+                    </div>
+                    <img class="route" src="images/darkheart-thicket-route.png">
+                    <p class="lust-timings"><span class="red">Bloodlust Timings:</span> Pull 1, Oakheart, Shade of Xavius at 50%</p>
+                    <p>This route is pretty standard, just with an extra skip. It starts off with you holding W, where you'll eventually invis pot/warlock skip the two bears. After Archdruid Glaidalis, you want to skip the second pack by holding right against the mountain. If the Rotheart Dryad is running around, you can <a href="https://www.wowhead.com/spell=115078/paralysis" target="_blank" class="orange">Paralysis</a> her and <a href="https://www.wowhead.com/spell=116844/ring-of-peace" target="_blank" class="orange">Ring of Peace</a> her out of the way. From there, you do the standard route, skipping the last Bloodtainted Fury and the first pack on the way to Shade of Xavius. Make sure that you always lust Oakheart and Shade of Xavius.</p>
+                </div>
+                <div id="doti-fall-route" class="dungeon-route">
+                    <div class="dungeon-banner" style="background-image: url(images/doti-banner.jpg);">
+                        <div class="top"><h4 class="dungeon-name">DOTI: Galakrond's Fall</h4></div>
+                        <div class="bottom">
+                            <h4 class="dungeon-percent"><i class="fa-solid fa-check"></i> 100.7%</h4>
+                            <button class="mdt-copy" import-code="!9vvtVnnqq0FmCIdvA)2EVwOvQsqOihXXvK0SUYGXMMSoTCHF7mFy7SoPfPvjENDM38EZmRDqgwhQ21ux38WqB6pHvsrO65y8NWtHQn72139T4(dn9DHvgTgoCOzxOA7XV((B(8(dIMNcvh30oerCEyy)(yx6(H2wiCZSHQHTTXJXwcZdX24djeW14E0V0SNFCO7XyF3D7EbzcKTum(RMUhdBdv7BQtFPU(qmDGdDneie6VH0nBz6hCPOLgioTS0YbHaMZDYo6uc)FDwOsIz9T97dv116yDDwWSJLKJf5G6YbstNBYacHXhN8jhEDe9CIzO24TUrBedlM3WIlHCGnzFLC5rsVYpHQG1fIo4(IuzxWM6TiBa)NQhPtOWA2tIJuUBwSP5TLlkaQ8eQoRAOJZcZDw3ltWzMkZy(joEE3IlYLzYctgwoKYLsNfMjxRs9BohvsvASu6iOagIhws7HQIuXNcqmDmzYSGF(TSShPVjReMLCh3V4juLLB7mbuokHkA8BLsqmqwquqPhPq5Is90e8O(n5ZvNYPNvSHZzbNZXXlFgEBKtTojp6xSOTyxSR8nAsu7WTSDmrf2ithunJ1tdLWlUqHe)Yw2uxl7(jnYoPw7yknHlVlQuxo6PYN2WYsoZPxhLIVa)EZtdnD9VeQ63(d41DZVFQAh)0TgFHruA0cHQu5luH6Rm0f4BVYPKAxHu4fALTaOgFKoWnRRrwx9PHdP)(93r1ZoW2OaNX3ciODETsQKwjqBaenJVv4mcN3OW86TQ)h(Qm81lWhOM1BDcT160qT)e(ga1sPWaFVWyDs14rVk(6t4p1rVFtBmLI31v3JjCZqQ)dOD8ZaxFMp43jmuSH)9d" onclick="copyToClipboard(this)"><i class="fa-solid fa-copy"></i> Copy MDT string</button>
+                        </div>
+                    </div>
+                    <img class="route" src="images/doti-fall-route.png">
+                    <p class="lust-timings"><span class="red">Bloodlust Timings:</span> Pull 1, Manifested Timeways, Iridikron the Stonescaled</p>
+                    <p>There is nothing fancy about the DOTI: Galagrond's Fall route. At the start, you do a big pull with lust. From there, you move through the dungeon normally, lusting Manifested Timeways. Afterwards, for the first Risen Dragon pack, you can hold left and pull just one dragon. Then, you proceed through the dungeon normally, eventually invis skipping the last pack before Iridikron the Stonescaled, whom you will lust.</p>
+                </div>
+                <div id="doti-rise-route" class="dungeon-route">
+                    <div class="dungeon-banner" style="background-image: url(images/doti-banner.jpg);">
+                        <div class="top"><h4 class="dungeon-name">DOTI: Murozond's Rise</h4></div>
+                        <div class="bottom">
+                            <h4 class="dungeon-percent"><i class="fa-solid fa-check"></i> 100.9%</h4>
+                            <button class="mdt-copy" import-code="!9v1wVTPoC8pm7HTkD6e(U9RD70PunXQetB7jlib7wAPqobtpTVWN95lqInlDkee(YVl)VGrcKFxwu3O1n7gBnVkZbzYI)xPE0(KSOQUUV7hQddn9DYCmczxCSPww8ZxFeEXMVC)VekzXZvTJkhp7gpCq1zUDST1dFECX42w1ZQWChA0MVP1dkZGfsUtFJ93YE)8y3DQ(Un1V4SID)gL6PMU7KBLfdQw1oJZkEG2llU9wXoY0YTCSmhkZjYCKmN6hcq(XaOFcOdRDlHDd9xa)COyY3132FqwO1iLwhHyEljKytCgNs)jChyBEAHCs0woIM5TaDLOiveNXYSaJ7Hjsetm7vIVKSqMERLmRaN02mpKh7h2B4)Gtyju6KYBOi8IubcChNuCfI4rlXfkudwEWvX4R8qiSckCmDesCaQhOvjpssIq4KSQyBiwM9DAhd3tJibomXg(oHtHe0V1J9al9si3Ljkabj1zR2E7MMqqrcvbwY5ZKZsYAj9qa(zkAZ9SUmZB7nuu9CUlnhSQegcvusneYxr65ABdMeMcmjmqK3KMtTXHaaMeXOKEiinz05FdwVu2zRIz3RfW4y(4lelPlZPKmkPzhbotUn0cI8RV0xqJwNpVU)0OLtNy(HC3dM1VHz8)She(I9()(FJnD9Vil63(G9WWJN8vuhE6AoIqimbeWribGbL6lX(E7RVKJWeiHtPzzcAgmBEjK3hy5vopu8W4t7Nk716PYQU6PY76Nkn2)BRmMwLUr1w)ptLnM3pmvQRgmQdoZ1zrBchlDYjqbNG4oZiSMH6KJgCcLIOcqgdcGyb32nzxIS2jFDCWmv(oqe)OvrkNdzykKIW2yAMeh)eghA)AfjdcWzy8FLF4u5hASr74(lMUz6Mn6LORR34M1gTM7vDNntmNJA9mz3L9wv3JFmYX4yhBZ8qadWiImsgG5DmAoJiiabdiWzzuktqpBTz2XOPsOt293xnOoP1sJZTvTkJrTPt37eVA00)j38UVIE1Q94(ml2Jv(7d" onclick="copyToClipboard(this)"><i class="fa-solid fa-copy"></i> Copy MDT string</button>
+                        </div>
+                    </div>
+                    <img class="route" src="images/doti-rise-route.png">
+                    <p class="lust-timings"><span class="red">Bloodlust Timings: Pull 1, Pull 6 (if up) OR Alliance Destroyer, Chrono-Lord Deios</span> </p>
+                    <p>This dungeon doesn't leave much room for change, so this route is very straightforward. The first pull, as always, is a big one with lust. I choose to not kill the pat and quad pack, but if you're uncomfortable with that, you can choose to change out later pulls for them. After Tyr, the Infinite Keeper, you want to lust the double dragon pack. If lust isn't up, then you go straight for Time-Lost Battlefield and lust the Alliance Destroyer. From here on, you finish the dungeon, making sure to lust the last boss.</p>
+                </div>
+                <div id="the-everbloom-route" class="dungeon-route">
+                    <div class="dungeon-banner" style="background-image: url(images/the-everbloom-banner.jpg);">
+                        <div class="top"><h4 class="dungeon-name">The Everbloom</h4></div>
+                        <div class="bottom">
+                            <h4 class="dungeon-percent"><i class="fa-solid fa-check"></i> 100%</h4>
+                            <button class="mdt-copy" import-code="!9zvxVTTom0Fm3NUpuatr9H1JR3UcuGH0c4GDFt4MpKlYwM9wICx7l73(KiLTLt6Dicg20uhE4HKYXbU1UM9hABpSB4y4n3kOY18tV)RX7CnB2VVV7Z(tNp035wjrm(YHd7Dn(Z7(7pu)Vp(2Dp7AEzZXbFcNDdNo57cpnC8iT98ZndBp6FXZ2o7p63fs4To9CCfMC8UHUN99DpS)1epKUMG3)TdDp726AoDOn8yB7zF4mVZ1Xng363JbBYY4L0sKwH0LRmHxykAiTK0srlDAfsgkPz)X(tUM2w0326wvx8UCGgDj5G1pZN6sSWsouteWseiQ9jgaarbdXcLHUtvtUQSKV6k2zDo0yzUJLzTCr(YzlWPlW5lWjmSiDLtIvzsJ(rFMZtljfI3l1adhUAoCwg2kkCImZvLmxt(Bk5VUeqmxTy(Jm)rM)ivXwj1KCjfKCjrsUKYS2QyXfRzTanzXWMvJkwoKlR2TB5exNOrMWtnofCLtxoBTfiKAgyemfsxYwQfr8(fNPwHzrI0nUKg4UVYiKkdMIoYjvtH02uCFUk3LZQMIvnfZEj3Kj5MmvUjtA4aAxqEBsuMgbW5HlBjhufLXabxr52wkEWIovnlgAjbTwrCwR5rtCH2UCwmloafJ6f6MEr4mLCTSrFdmwTarjBJC)6JaM4lpgR55ydx8mCO1z9dyNHs9zuqYpjkE6IJscKeT(Y5XruhBiHRojJArHuHyeIXimA)YHzqVGuQfpnLXtZQH8oUyGz2vBXCrzFDAJg36lNtMJVyr8flsargGA31JuG5IS06UEwzIEaNkPtRqhp)7OPrf5uktHCBLGlx1lue77u0YZhb6x8ZyVgV(XFmCOR)vxt)2Ve)e40hTA2Z3DVse)zTwjeVrgpmQ9gjnyD)nYAH0IcuPavfep8m(kE2G65Vnr2MpnCo8R)7ViE0fTLB3NWxAnO1ySiaMkmc9m(kuckdORQvOge60Ru)p4lkWhlXxRvAHXayTYiT26mjt4RR0GTslLA0wvf)0(FaFCg)rb9Pnh9HG)HU2(ua3me6)NK90)n42l8j9Nh4YL73)" onclick="copyToClipboard(this)"><i class="fa-solid fa-copy"></i> Copy MDT string</button>
+                        </div>
+                    </div>
+                    <img class="route" src="images/the-everbloom-route.png">
+                    <p class="lust-timings"><span class="red">Bloodlust Timings: Pull 1, Ancient Protectors, Yalnu</span> </p>
+                    <p>Most of the percent in this dungeon comes from the start. For the first pull, you want to lust to get it on cooldown. Afterwards, you follow the route accordingly. After pull 12, you want to invis to Ancient Protectors, whom you will lust. Finally, you finish out the dungeon normally, lusting Yalnu.</p>
+                </div>
+                <div id="throne-of-the-tides-route" class="dungeon-route">
+                    <div class="dungeon-banner" style="background-image: url(images/throne-of-the-tides-banner.jpg);">
+                        <div class="top"><h4 class="dungeon-name">Throne of the Tides</h4></div>
+                        <div class="bottom">
+                            <h4 class="dungeon-percent"><i class="fa-solid fa-check"></i> 100.7%</h4>
+                            <button class="mdt-copy" import-code="!1z12UTnmm0pM98ac1D9ABxbkWMxrDWEuyjnYfEZZElrUl9L9TpjkBz5lfqWXwK8WdpI0ogWS3uEQUQQ(5(g3BMcyNP8Vw7p93zkpC6ux73SNVu31AkyuQ3yF9jt59F5UBV(0tp8w1JMYxp00Bd48C)5Z2w3J9nnMccnTrz)Xg7R2geZl2g7ZUaG7dph8ZL88U(2xSDTpC6AGjCtPZA)vD7lMJMYZ1vUVwvDX6UedDVpqFO)2NU0oJxki4YFdfxmCXdlxWYwo5cxIgaKtDnDNnLvvuBvvkSrxOdH7ciVoQqmABctEMlP0Zqi4lYf1MHz0rj6OiNHSrNCbdX90OBsKBkeE)PzOOf4IJ2a0gb9EWdS0LBwe6HsNJNVJKS6ONKj2PY1GynndXjLAIRJeotn2Oi55WWwOUrDsoJybcpj2dPuL5siqFfLsAO8dTa0mrtJsfGKPaGii6z5rJcGmX8mohpe84IH5)nREhZgKhWm5JmRiXgVuAedqgrdY7Ou5pmMZcij8JqEaqDdRMiKdZaPINglE0edpu4Oj5qYjl07abb6IeMMNasgXCjpzRiybiMvc8nqKnqWTgYqixmfnHzecwgV4PoSytxWYyjYN1VOJL46(7jshoGMr6y(uiQ68brikSqKekmUvJvAZ(b4Ll6CtMNek5SNulKB8zcmJ7KS3jgFD073Vmmr5gs7QPODRuLW7ZZyuk3XonEKxyClNMsbom2IHUCwiLXiEYvJTX32HJFreJyL32ooeqOBDMg3LmtxjSzpL)Y8LZceXSJa8luo7v)1p9N(62URMYUJ)W)fW0NSkpfV7EPIYLatqikkqeet1hzy)59FukaHuYvCLMSJsqtX2zK(3eQ7Yp3FX9VV)bKvT(9cunhFftRucjHROeLGOhajGVGPi8DmjbuuMGYgs9M4tYWNMJVqPbqQbf4xsfldFLKWacW1(Ctv7qtI3bF6e(JY7JhASoN9H2QUqcp076UnSF4FgCZcFc)1bggR5)d" onclick="copyToClipboard(this)"><i class="fa-solid fa-copy"></i> Copy MDT string</button>
+                        </div>
+                    </div>
+                    <img class="route" src="images/throne-of-the-tides-route.png">
+                    <p class="lust-timings"><span class="red">Bloodlust Timings: Pull 1, Commander Ulthok, the Festering Prince, Ozumat</span> </p>
+                    <p>This route is pretty standard. You pretty much just hold W the entire time, making sure to lust the first pull, Commander Ulthon, the Festering Prince, and Ozumat. Make sure that you are interrupting all of the mobs as much as possible, along with cc'ing them if you can't interrupt.</p>
+                </div>
+                <div id="waycrest-manor-route" class="dungeon-route">
+                    <div class="affix-change">
+                        <button class="fort chosen" onclick="changeAffix(this)">Fortified</button>
+                        <button class="tyran" onclick="changeAffix(this)">Tyrannical</button>
+                    </div>
+                    <div class="dungeon-banner" style="background-image: url(images/waycrest-manor-banner.jpg);">
+                        <div class="top"><h4 class="dungeon-name">Waycrest Manor</h4></div>
+                        <div class="bottom">
+                            <h4 class="dungeon-percent"><i class="fa-solid fa-check"></i> 102.3%</h4>
+                            <button class="mdt-copy" fort="!9z12UnUnq0pM(8wiErKIVM2g0SOWDbuqBFsWY2u2QvRuQmD20x03ENl6cPBsb8fjYzMZzoZWrQsu9Cv5P2MM2J36c)t1orwv538()cUQQS(0PH(FZpETDOVANwPGnV1Ec84N1L)XzT50V7RkFTU7MhJZXBJJ((WxU11bUNVUq5TdD(x9DumV678hdyaFgVhTlSA5pER)SFO)PtVHmrwvg8(V22FU6qv5yBt4xBAU6dxzxFgCeC9faU1v2jSlXf2B3Yn6QDYQDisiE8As6dzMOiYPYJdDdJvLnnkFtdSMloIlERy3vk4l8rtyOmOb7uWx4kfhBZSh5KdwYE28zRPle0wskLG)qx0X4kuR0gnq8oegPRZJBZ2U4HIa2ebCEsmMZKy9YmZ1u1q53YFDgzIMJVwYHMIn0OqrqtWa9mXPHmkncOtphXFhj4YffdkligfeecdbbuFriCecw6durrB4vrtYyfvqAiMP25EfM9Y0UckXLVFhqZbfjOMe)mZDteTMdtCm47Y)GseQIBP4M8tezPgitl(lMZcIJroJZwYc5wXoTMXneeZmRPDuLwTU98oXufRgRPbN1Y5QHLZBhPdyHYqL6O6bO9itfecUKEn9C(U0lUyGjPJLpQuetq(eC2)PXDlJDyfB7StAl4CthhG1eJJekNyIjJXBbKyzHMkei)IOSmwuJDOwmxYvXYFEsbDEOqbjiSKQT8ziUl3qwUSjNeYy45HlMyURs0Q3BYwYGnLCLFlQAOAEiIj2q77eX5rp7sNTQkIQZkoVu25XDRk4COW7NRAlsZk(cEw02iR8egFFUrYTlsgWaHu7(jnQyceDOKNTjelDe05mEoHnIprNm5fD31jTE(8UjkBJkujjc1eT2TUWCBcZ5Uj1IsBQIhGqaY9plpEXUX1IOanpBaFawCtG(UkI7oSjvZKye9q4G)n43F6VV12p820(hhgdTnTE4vfgo8NWZ7xFaD5j(QhZLzff2ScRitRTWJtA(KMo3)4NYDzsHm3kmcTUagfcBXJmO2ZhW8Q8P(xBVoTFS98LW0(d(MHr)0(Wf4Nt8BrmT)AOEeGgywp4fw(IzG1KzYkKzcLQqRH51mmedmkRtzLQcJrQKzVld(LBxbK)oX0NN(m(opt7BbmdJ1xVmT)Bx8Wnpm2wpcRdeTRgTEOh4xDx7R(VpIwQeHbHwikYYCzAxUowyawA1YmL2MxiZlWTYVNwmvolSiAhb4omeUGkZWy)1l1VaVo30(MXHVI8Tn0wdw)c5ZPwFeP0jKkxOLQCGtotoOArKclEkhukD5cRIlK2pqRKrXppPw4uoqQ15oPsjHdVB1IcRtaV6P2y1fcLX()vluBXF5q3xQ78HG)P(MbeW6BHHFaxhFRYhUZg81o1KVv)7d" tyran="!9z12oUTnq0pM(sEjf8ofFDBBksqHtaKrrEIWY2uRvRwPTY0B29f)TNzgQluoUbWWqICUCMZz4q55(T(YJn11nhU0gFZVHZ8LxAo6lF7Dpv81V(U)C7NblQoESV7VddNB678Busjy1H(2(HVu1gIXWh7Q7XivDj2)B46nDp6F4gBo(k4Qp6lFPQ9san)COnCiIXClKz)glU7HlddHUy5L9THxcT4gLpFPT9CYi8pZO9A)gb61gjgz8NHwuspqbemicpAh9GtVPhFtq)sRvKzrc3(Y6AzOUgwZL7(K3YK7sjLqzcaYreOjiijhMsUISxdlfXNWfvRWLCgxlyarGlaRXZmnIPC7sKnJermZUr0rbwCNaJfNecmOL3P4umYDfprUIebROItL4xLEfOLKdMmXySsXACPACeJkMKqG3r3ki34gYpqTW04OOzPFGKH2KwfnHLKyoXHyzJurCUceR5CIfe3xIR3dSqedxUFMrTIG1yyYJr6n9DIikyiVUuIlAbbKPocXAXFY8eH4szMLQwYcXctVwfDe(jKzMl7S(o582J7KdvunMlJuvlgvdBQUDepGcLH6wY0dG7rKYPm4w14PgR3SgbxocL(LZUf5am1vX(HU4Lk2Hk2YzhYbjltyMdqXnsqEPNoApx6jtqchl9POWZHSiNuZdwfFuYL50VELGooLQGiKeLQSPZrPUCdz50MP0lYtFAANjNRKR4Q7n6A1KlPygFtS68jytUH27eXPbrRhEklY0zzQUK2X5VZm4yOW3hvTjQjFcY65x6vi(2AJOBxgnGbcH2TtAK5ai7qzA(gNpP305S0CcBgEYozMw0DtFY85ZBMOSmQqUQqOMO5U1jKBxH8u3KCIPn(8biuct9pt33zxWArwGgNnG3qL3eOUrrC3KBI1mRmA5A5F)s3JH(o6YCot4lJHWt4T97Nn5lWL1iGkhAQJFUU(CioF39yWIHxH))J)7stx)Rx3T9THQUUMdvT(Y(9)d8nbZou2HFhXX0RFqlyffwwHLZuklChv97v0GKp8ETJj4cTLB4kvbmBf2kndI63FajQYp29sZ5R7gAE8u86U9H6(HW1DXtWFhtf21DNJvdq(NVKEncSgMHviyCPSqPGlasPHqGrADsRqwymcPGDxe8xxodz(x4x)01pHe11DnqoJdvNpDD33ofGxEyOPAawhaABfADFhGVQ2Mxc)QF(U)Bigm1CEbJ5ykNwLtmakTkbtQS6cHUa3sFlSsq5rUfZ2biD77JNqMPFO78PQNHp976U6H(Nq82eBQaRFM85ytWVCn)AqP5kHudyYz0aRLbku8KoqkDAUvMes7)dxnolMoCpfAf4MvlKquzsnCUDj0wPrXmgL0PSCH1(ZKb6EfeZux53cH)n1X7)(" import-code="!9z12UnUnq0pM(8wiErKIVM2g0SOWDbuqBFsWY2u2QvRuQmD20x03ENl6cPBsb8fjYzMZzoZWrQsu9Cv5P2MM2J36c)t1orwv538()cUQQS(0PH(FZpETDOVANwPGnV1Ec84N1L)XzT50V7RkFTU7MhJZXBJJ((WxU11bUNVUq5TdD(x9DumV678hdyaFgVhTlSA5pER)SFO)PtVHmrwvg8(V22FU6qv5yBt4xBAU6dxzxFgCeC9faU1v2jSlXf2B3Yn6QDYQDisiE8As6dzMOiYPYJdDdJvLnnkFtdSMloIlERy3vk4l8rtyOmOb7uWx4kfhBZSh5KdwYE28zRPle0wskLG)qx0X4kuR0gnq8oegPRZJBZ2U4HIa2ebCEsmMZKy9YmZ1u1q53YFDgzIMJVwYHMIn0OqrqtWa9mXPHmkncOtphXFhj4YffdkligfeecdbbuFriCecw6durrB4vrtYyfvqAiMP25EfM9Y0UckXLVFhqZbfjOMe)mZDteTMdtCm47Y)GseQIBP4M8tezPgitl(lMZcIJroJZwYc5wXoTMXneeZmRPDuLwTU98oXufRgRPbN1Y5QHLZBhPdyHYqL6O6bO9itfecUKEn9C(U0lUyGjPJLpQuetq(eC2)PXDlJDyfB7StAl4CthhG1eJJekNyIjJXBbKyzHMkei)IOSmwuJDOwmxYvXYFEsbDEOqbjiSKQT8ziUl3qwUSjNeYy45HlMyURs0Q3BYwYGnLCLFlQAOAEiIj2q77eX5rp7sNTQkIQZkoVu25XDRk4COW7NRAlsZk(cEw02iR8egFFUrYTlsgWaHu7(jnQyceDOKNTjelDe05mEoHnIprNm5fD31jTE(8UjkBJkujjc1eT2TUWCBcZ5Uj1IsBQIhGqaY9plpEXUX1IOanpBaFawCtG(UkI7oSjvZKye9q4G)n43F6VV12p820(hhgdTnTE4vfgo8NWZ7xFaD5j(QhZLzff2ScRitRTWJtA(KMo3)4NYDzsHm3kmcTUagfcBXJmO2ZhW8Q8P(xBVoTFS98LW0(d(MHr)0(Wf4Nt8BrmT)AOEeGgywp4fw(IzG1KzYkKzcLQqRH51mmedmkRtzLQcJrQKzVld(LBxbK)oX0NN(m(opt7BbmdJ1xVmT)Bx8Wnpm2wpcRdeTRgTEOh4xDx7R(VpIwQeHbHwikYYCzAxUowyawA1YmL2MxiZlWTYVNwmvolSiAhb4omeUGkZWy)1l1VaVo30(MXHVI8Tn0wdw)c5ZPwFeP0jKkxOLQCGtotoOArKclEkhukD5cRIlK2pqRKrXppPw4uoqQ15oPsjHdVB1IcRtaV6P2y1fcLX()vluBXF5q3xQ78HG)P(MbeW6BHHFaxhFRYhUZg81o1KVv)7d" onclick="copyToClipboard(this)"><i class="fa-solid fa-copy"></i> Copy MDT string</button>
+                        </div>
+                    </div>
+                    <img class="route" src="images/waycrest-manor-route-fortified.png">
+                    <p class="lust-timings" fort="Heartsbane Triad, Soulbound Goliath, Pull 16", tyran="Heartsbane Triad, Soulbound Goliath, Lord and Lady Waycrest"><span class="red">Bloodlust Timings:</span> Heartsbane Triad, Soulbound Goliath, Pull 16</p>
+                    <p>This route may look really complicated, but once you understand it, it's very simple. Right before the dungeon starts, you want to use your invis pot. This way, once the dungeon starts, you can run straight to Heartsbane Triad, whom you will lust. When it's just Briar left alive, make sure to pull the mobs in the room into her. For pull 4, you want to <a href="https://www.wowhead.com/spell=115078/paralysis" target="_blank" class="orange">Paralysis</a> the Coven Thornshaper; you will pull her into the next pull. Afterwards, you pull Matron Bryndle with the two Coven Thornshapers. Once the Coven Thornshapers are dead, you want to pull g17 into Matron Bryndle. If lust is up, you want to fight Soulbound Goliath and lust him. If it's not, then you clear some of the trash before Raal the Gluttonous. Once you do all of this, you just have to hold W. On fortified, make sure you lust pull 16, and on tyrannical, you lust Lord and Lady Waycrest.</p>
+                </div>
+            </section>
+            <section id="dungeon-bosses" class="info-section special-section">
+                <h2>Bosses</h2>
+                <p>Almost every boss has some sort of trick that can make the fight much easier. In this section, we will go over the difficulty of each boss, along with what to be careful of and how you can help your party.</p>
+                <div id="ataldazar-bosses" class="middle-spacing display">
+                    <img id="priestess-alunza" class="selected" src="images/priestess-alunza.png" onclick="updateInfo(this)"><!--
+                    --><img id="volkaal" src="images/volkaal.png" onclick="updateInfo(this)"><!--
+                    --><img id="rezan" src="images/rezan.png" onclick="updateInfo(this)"><!--
+                    --><img id="yazma" src="images/yazma.png" onclick="updateInfo(this)">
+                    <h3><a href="https://www.wowhead.com/npc=129614/priestess-alunza" target="_blank">Priestess Alun'za</a></h3>
+                    <h4 class="Easy">Easy</h4>
+                    <p class="description">This boss is extremely easy. There is pretty much no tank damage, very little group wide damage, and she dies extremely fast, even on tyrannical. There aren't really any tricks for her, either, besides imprisoning one of the ads when they spawn so you don't have to kill it.</p>
+                </div>
+                <div id="black-rook-hold-bosses" class="middle-spacing">
+                    <img id="the-amalgam-of-souls" class="selected" src="images/the-amalgam-of-souls.png" onclick="updateInfo(this)"><!--
+                    --><img id="illysanna-ravencrest" src="images/illysanna-ravencrest.png" onclick="updateInfo(this)"><!--
+                    --><img id="smashspite-the-hateful" src="images/smashspite-the-hateful.png" onclick="updateInfo(this)"><!--
+                    --><img id="lord-kurtalos-ravencrest" src="images/lord-kurtalos-ravencrest.png" onclick="updateInfo(this)">
+                    <h3><a href="https://www.wowhead.com/npc=98542/amalgam-of-souls" target="_blank">The Amalgam of Souls</a></h3>
+                    <h4 class="Easy">Easy</h4>
+                    <p class="description">This boss is super simple. You just dps him, making sure to face him away from the party as much as possible. When the spirits come out, you are really good at controlling them with <a href="https://www.wowhead.com/spell=119381/leg-sweep" target="_blank" class="orange">Leg Sweep</a> and <a href="https://www.wowhead.com/spell=116844/ring-of-peace" target="_blank" class="orange">Ring of Peace</a>.</p>
+                </div>
+                <div id="darkheart-thicket-bosses" class="middle-spacing">
+                    <img id="archdruid-glaidalis" class="selected" src="images/archdruid-glaidalis.png" onclick="updateInfo(this)"><!--
+                    --><img id="oakheart" src="images/oakheart.png" onclick="updateInfo(this)"><!--
+                    --><img id="dresaron" src="images/dresaron.png" onclick="updateInfo(this)"><!--
+                    --><img id="shade-of-xavius" src="images/shade-of-xavius.png" onclick="updateInfo(this)">
+                    <h3><a href="https://www.wowhead.com/npc=96512/archdruid-glaidalis" target="_blank">Archdruid Glaidalis</a></h3>
+                    <h4 class="Easy">Easy</h4>
+                    <p class="description">This boss is super easy if you know the trick. You want to make sure that you tank this boss a small distance from a wall, facing away from your team, and using a defensive for the first hit of his tank buster, Primal Rampage. If you have enough distance between him and the wall behind you, then you should be able to <a href="https://www.wowhead.com/spell=109132/roll" target="_blank" class="orange">Roll</a> out and not get hit by the second hit. The rest of the fight is really easy, and you just rotate him around the room, moving away from the bad stuff on the floor.</p>
+                </div>
+                <div id="doti-fall-bosses" class="middle-spacing">
+                    <img id="chronikar" class="selected" src="images/chronikar.png" onclick="updateInfo(this)"><!--
+                    --><img id="manifested-timeways" src="images/manifested-timeways.png" onclick="updateInfo(this)"><!--
+                    --><img id="blight-of-galakrond" src="images/blight-of-galakrond.png" onclick="updateInfo(this)"><!--
+                    --><img id="iridikron-the-stonescaled" src="images/iridikron-the-stonescaled.png" onclick="updateInfo(this)">
+                    <h3><a href="https://www.wowhead.com/npc=198995/chronikar" target="_blank">Chronikar</a></h3>
+                    <h4 class="Easy">Easy</h4>
+                    <p class="description">This boss is extremely easy. There really are no tricks to it. If you want to make it even easier than it already is, you can save up on <a href="https://www.wowhead.com/spell=124502/gift-of-the-ox" target="_blank" class="orange">Gift of the Ox</a> orbs and instant heal off the heal absorb from Chronoshear.</p>
+                </div>
+                <div id="doti-rise-bosses" class="middle-spacing">
+                    <img id="tyr-the-infinite-keeper" class="selected" src="images/tyr-the-infinite-keeper.png" onclick="updateInfo(this)"><!--
+                    --><img id="morchie" src="images/morchie.png" onclick="updateInfo(this)"><!--
+                    --><img id="time-lost-battlefield" src="images/time-lost-battlefield.png" onclick="updateInfo(this)"><!--
+                    --><img id="chrono-lord-deios" src="images/chrono-lord-deios.png" onclick="updateInfo(this)">
+                    <h3><a href="https://www.wowhead.com/npc=198998/tyr-the-infinite-keeper" target="_blank">Tyr, the Infinite Keeper</a></h3>
+                    <h4 class="Hard">Hard</h4>
+                    <p class="description">This boss is super hard. He takes forever to kill, requires a lot of healing, and his tank buster can delete you if you aren't prepared for it. There really aren't any tricks for him, either. You just want to face him away from your party the entire time, baiting his attacks to the outside.</p>
+                </div>
+                <div id="the-everbloom-bosses" class="middle-spacing">
+                    <img id="witherbark" class="selected" src="images/witherbark.png" onclick="updateInfo(this)"><!--
+                    --><img id="ancient-protectors" src="images/ancient-protectors.png" onclick="updateInfo(this)"><!--
+                    --><img id="archmage-sol" src="images/archmage-sol.png" onclick="updateInfo(this)"><!--
+                    --><img id="yalnu" src="images/yalnu.png" onclick="updateInfo(this)">
+                    <h3><a href="https://www.wowhead.com/npc=81522/witherbark" target="_blank">Witherbark</a></h3>
+                    <h4 class="Hard">Easy</h4>
+                    <p class="description">This is the easiest boss this season. There is no trick, you just pull him to the back of the room, facing him away from your group. When he goes into his Brittle Bark stage you want to pop cds and burst him down as fast as possible.</p>
+                </div>
+                <div id="throne-of-the-tides-bosses" class="middle-spacing">
+                    <img id="lady-nazjar" class="selected" src="images/lady-nazjar.png" onclick="updateInfo(this)"><!--
+                    --><img id="commander-ulthok" src="images/commander-ulthok.png" onclick="updateInfo(this)"><!--
+                    --><img id="mindbender-ghursha" src="images/mindbender-ghursha.png" onclick="updateInfo(this)"><!--
+                    --><img id="ozumat" src="images/ozumat.png" onclick="updateInfo(this)">
+                    <h3><a href="https://www.wowhead.com/npc=40586/lady-nazjar" target="_blank">Lady Naz'jar</a></h3>
+                    <h4 class="Easy">Easy</h4>
+                    <p class="description">This boss is super easy on low to medium keys and can be a little scary for your healer on high keys. When the ads spawn, make sure that you are standing on one of the ranged ads so that you can interrupt her and move everything into the middle for easy grouping.</p>
+                </div>
+                <div id="waycrest-manor-bosses" class="middle-spacing">
+                    <img id="heartsbane-triad" class="selected" src="images/heartsbane-triad.png" onclick="updateInfo(this)"><!--
+                    --><img id="soulbound-goliath" src="images/soulbound-goliath.png" onclick="updateInfo(this)"><!--
+                    --><img id="raal-the-gluttonous" src="images/raal-the-gluttonous.png" onclick="updateInfo(this)"><!--
+                    --><img id="lord-and-lady-waycrest" src="images/lord-and-lady-waycrest.png" onclick="updateInfo(this)"><!--
+                    --><img id="gorak-tul" src="images/gorak-tul.png" onclick="updateInfo(this)">
+                    <h3><a href="https://www.wowhead.com/npc=135360/sister-briar" target="_blank">Heartsbane Triad</a></h3>
+                    <h4 class="Hard">Hard</h4>
+                    <p class="description">This boss is super painful for the group. There are so many interrupts that it's literally impossible to interrupt everything. There are also no tricks to helping out your party, so you just have to have faith in everyone else.</p>
+                </div>
+            </section>
+            <section id="affixes" class="info-section">
+                <h2>Affixes</h2>
+                <p>At the moment there are a lot of punishing affixes in mythic+. In this section, we will go over each one and how they may impact certain dungeons.</p>
+                <div class="middle-spacing display">
+                    <img id="fortified" class="selected" src="images/fortified.jpg" onclick="updateInfo(this)"><!--
+                    --><img id="tyrannical" src="images/tyrannical.jpg" onclick="updateInfo(this)"><!--
+                    --><img id="incorporeal" src="images/incorporeal.jpg" onclick="updateInfo(this)"><!--
+                    --><img id="sanguine" src="images/sanguine.jpg" onclick="updateInfo(this)"><!--
+                    --><img id="afflicted" src="images/afflicted.jpg" onclick="updateInfo(this)"><!--
+                    --><img id="bursting" src="images/bursting.jpg" onclick="updateInfo(this)"><!--
+                    --><img id="spiteful" src="images/spiteful.jpg" onclick="updateInfo(this)"><!--
+                    --><img id="entangling" src="images/entangling.jpg" onclick="updateInfo(this)"><!--
+                    --><img id="bolstering" src="images/bolstering.jpg" onclick="updateInfo(this)"><!--
+                    --><img id="raging" src="images/raging.jpg" onclick="updateInfo(this)"><!--
+                    --><img id="storming" src="images/storming.jpg" onclick="updateInfo(this)"><!--
+                    --><img id="volcanic" src="images/volcanic.jpg" onclick="updateInfo(this)">
+                    <h3><a href="https://www.wowhead.com/affix=10/fortified" target="_blank">Fortified</a></h3>
+                    <p class="description">This affix makes mobs have additional health and do additional damage. This is much preferred over Tyrannical, as it makes dungeons overall easier, and you can still time after a wipe or two. Make sure that you pull a little bit smaller than you would on tyrannical, though.</p>
+                </div>
+            </section>
+            <section class="next">
+                <h3><a class="orange" href="advanced.html">Advanced Tips & Tricks <i class="fa-solid fa-arrow-right"></i></a></h3>
+            </section>
+        </main>
+        <script src="myscripts.js"></script>
+    </body>
+</html>

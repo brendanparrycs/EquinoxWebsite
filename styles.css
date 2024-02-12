@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", "Open Sans", sans-serif;
+    background-color: rgba(11, 12, 13);
+    color: #FAF9F6;
+}
+
+main {
+    margin-top: 3rem;
+}
+
+main > section {
+    padding: 2rem 1rem;
+}
+
+main > section:nth-child(even) {
+    background-color: #171718;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+}
+
+a {
+    color: #00FF98;
+    text-decoration: none;
+}
+
+header ul {
+    list-style: none;
+}
+
+/* navigation bar */
+nav {
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(34, 34, 35);
+    top: 0;
+}
+
+#logo {
+    font-size: 2rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+
+#logo, .menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+    padding: 1rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.5s ease;
+    cursor: pointer;
+}
+
+#logo:hover, .menu a:hover {
+    color: #00FF98;
+}
+
+#logo > img {
+    height: 2.25rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    transition: box-shadow 0.5s ease;
+}
+
+#logo:hover > img {
+    box-shadow: 0 0 0 0.15rem #00FF98;
+}
+
+#mobile-button {
+    height: 3rem;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    padding: 0 1rem;
+    cursor: pointer;
+    color: inherit;
+}
+
+#mobile-menu {
+    z-index: 9999;
+    background-color: rgb(29, 29, 30);
+    position: fixed;
+    top: 3rem;
+    width: 100%;
+    max-height: 0rem;
+    overflow: hidden;
+    transition: max-height 0.415s ease;
+}
+
+#mobile-menu.transition {
+    max-height: 36rem;
+}
+
+.fa-caret-down {
+    text-indent: 0.5rem;
+}
+
+#mobile-submenu {
+    background-color: rgb(34, 34, 35);
+    text-indent: 2rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+#mobile-submenu.transition {
+    max-height: 21rem;
+}
+
+#computer-menu {
+    display: none;
+}
+
+/* home page */
+#home-main::after {
+    content: "";
+    z-index: -9998;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(0,255,152,0.15) 0%, rgba(0,255,152,0) 50%, rgba(0,255,152,0.15) 100%);
+}
+
+#home-main > div {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+#home-main > div h1 {
+    font-size: 2.25rem;
+}
+
+#home-main > div p {
+    font-size: 1.125rem;
+    margin: 1.5rem;
+    color: #00FF98;
+}
+
+#back-video {
+    position: absolute;
+    z-index: -9999;
+    opacity: 0.65;
+    right: 0;
+    bottom: 0;
+    /* display: none; */
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #back-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #back-video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+/* content pages */
+#strengths-weaknesses ul, .info-section div:not(.grid-container) {
+    margin: 0 auto;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+#strengths-weaknesses ul > li:not(:first-child) {
+    text-align: left;
+}
+
+#strengths-weaknesses ul > li:not(:last-child), .info-section h3, .info-section h4, ol > li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+#strength-title, .info-section h3 {
+    color: #00FF98;
+}
+
+#weakness-title {
+    color: #C31013;
+}
+
+#strengths, #passives, #defensives, #spec-tree div:not(.grid-container), #equipment div:not(.grid-container), #enchants, #woo-dragonfire {
+    border-bottom: rgba(11, 12, 13) 0.15rem solid;
+}
+
+.info-section img {
+    border-radius: 50%;
+    margin: 1.5rem 0.5rem;
+    cursor: pointer;
+}
+
+.info-section img:not(.selected) {
+    opacity: 0.25;
+}
+
+.selected {
+    box-shadow: 0 0 0 0.15rem #F19202;
+}
+
+#horde, #class-tree div:not(.grid-container), #dungeon-talents, #unique-gems {
+    border-bottom: rgb(34, 34, 35) 0.15rem solid;
+}
+
+.image-section img {
+    display: block;
+    text-align: center;
+    margin: 1.5rem auto;
+    width: 100%;
+    border-radius: 10px;
+    border: 0.15rem #00FF98 solid;
+}
+
+.image-section div:not(.grid-container) {
+    padding: 1.5rem 0;
+}
+
+.image-section div:not(.grid-container):last-child, .row-10, #offensive-trinkets {
+    border-bottom: none !important;
+}
+
+.image-section .description, .text-section p {
+    margin: 1.5rem 0;
+}
+
+.number-list-section > div:not(.grid-container) {
+    padding: 1.5rem 1.5rem 0;
+}
+
+.number-list-section ol {
+    position: relative;
+    display: inline-block;
+    padding-left: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.number-list-section ol > li {
+    padding-left: 1rem;
+}
+
+#woo-burst h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#woo-dragonfire {
+    padding: 1rem 0 1rem 0;
+}
+
+#woo-charred {
+    padding-top: 1rem;
+}
+
+.dungeon-route {
+    margin: 1.5rem auto;
+    text-align: center;
+    display: none;
+}
+
+#dungeon-routes img {
+    display: block;
+    width: 100%;
+}
+
+.dungeon-banner {
+    background-position: top;
+    background-size: 100%;
+    height: 5rem;
+}
+
+.dungeon-banner > .top, .dungeon-banner > .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.mdt-copy, .affix-change button {
+    border-radius: 5px;
+    color: #FAF9F6;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    border: none;
+}
+
+.mdt-copy {
+    background-color: #F19202;
+}
+
+.affix-change {
+    display: flex;
+}
+
+.affix-change button {
+    border-radius: 0;
+    width: 25%;
+    height: 2rem;
+    background-color: rgb(34, 34, 35);
+}
+
+.fort {
+    margin-right: 0.25rem;
+}
+
+.affix-change button:not(.chosen) {
+    opacity: 0.25;
+}
+
+.chosen {
+    opacity: 1;
+}
+
+.dungeon-name {
+    font-size: 1.5rem;
+}
+
+.dungeon-percent {
+    color: #00FF98;
+}
+
+.dungeon-percent > i {
+    background-color: #00FF98;
+    color: #FAF9F6;
+    border-radius: 50%;
+    padding: 0.25rem;
+}
+
+.lust-timings {
+    margin: 1.5rem 0;
+    border: 0.15rem #C31013 solid;
+    border-radius: 50px;
+    padding: 1rem 0;
+}
+
+.special-section > div {
+    display: none;
+}
+
+/* media queries */
+@media only screen and (min-width: 600px) {
+    /* home page */
+    #home-main > div h1 {
+        font-size: 3.25rem;
+    }
+
+    #home-main > div p {
+        font-size: 1.375rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /* navigation bar */
+    #computer-menu {
+        display: block;
+    }
+
+    #mobile-button {
+        display: none;
+    }
+
+    #logo {
+        position: relative;
+        left: 0;
+        transform: translateX(0);
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    #computer-menu > li {
+        display: inline-block;
+        position: relative;
+    }
+
+    #computer-menu > li > a::after {
+        content: "";
+        position: absolute;
+        background-color: #00FF98;
+        width: calc(100% - 1rem);
+        height: 0.15rem;
+        left: 0.5rem;
+        bottom: 0.5rem;
+        transform: scaleX(0);
+        transition: transform 0.5s ease;
+    }
+
+    #computer-menu > li > a:hover::after {
+        transform: scaleX(1);
+    }
+
+    #computer-submenu {
+        background-color: rgb(34, 34, 35);
+        position: absolute;
+        width: 18rem;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease 0.5s;
+    }
+
+    #computer-menu > li:hover > #computer-submenu {
+        max-height: 21rem;
+    }
+
+    #computer-submenu > li:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        background-color: rgb(11, 12, 13);
+        width: calc(100% - 1rem);
+        height: 0.15rem;
+        left: 0.5rem;
+    }
+
+    /* home page */
+    #home-main > div h1 {
+        font-size: 4.5rem;
+    }
+
+    #home-main > div p {
+        font-size: 1.75rem;
+    }
+
+    /* content pages */
+    section > p, .middle-spacing > p {
+        padding: 0 15rem;
+        text-align: center;
+    }
+
+    #strengths-weaknesses ul, .info-section div:not(.grid-container) {
+        margin: 0;
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    #strengths-weaknesses li:not(:first-child) {
+        width: 75%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 1.5rem;
+        gap: 1rem;
+    }
+
+    #spec-tree div:not(.grid-container):nth-child(odd), #equipment div:not(.grid-container):nth-child(odd) {
+        border-right: rgb(11, 12, 13) 0.15rem solid;
+    }
+
+    #strengths, #passives, #enchants, #woo-dragonfire {
+        border-bottom: none;
+        border-right: rgb(11, 12, 13) 0.15rem solid;
+    }
+
+    #spec-tree div:not(.grid-container), #class-tree div:not(.grid-container), #equipment div:not(.grid-container) {
+        border-bottom: none;
+    }
+
+    #class-tree div:not(.grid-container):nth-child(odd) {
+        border-right: rgb(34, 34, 35) 0.15rem solid;
+    }
+
+    #horde, #dungeon-talents, #unique-gems {
+        border-bottom: none;
+        border-right: rgb(34, 34, 35) 0.15rem solid;
+    }
+
+    #defensives {
+        border-bottom: none;
+    }
+
+    .number-list-section ol {
+        padding-left: 0;
+        width: 35%;
+    }
+
+    #woo-dragonfire, #woo-charred {
+        padding: 0;
+    }
+
+    .image-section img {
+        width: 70%;
+    }
+
+    .image-section > .grid-container img {
+        width: 85%;
+    }
+
+    .image-section p {
+        text-align: center;
+    }
+
+    .image-section .description {
+        padding: 0 1rem;
+    }
+
+    .dungeon-name {
+        font-size: 1.75rem;
+    }
+
+    .dungeon-percent {
+        font-size: 1.125rem;
+    }
+
+    .dungeon-route {
+        width: 50%;
+    }
+
+    .mdt-copy {
+        height: 2rem;
+    }
+}
+
+/* classes */
+.white {
+    color: #FAF9F6;
+}
+
+.Easy, .Required, .green {
+    color: #00FF98;
+}
+
+.Situational, .purple {
+    color: #BC01F2;
+}
+
+.Medium, .orange, .Optional {
+    color: #F19202;
+}
+
+.Hard, .Never, .red {
+    color: #C31013;
+}
+
+.fa-copy {
+    cursor: pointer;
+}
+
+.next, .sub-header {
+    text-align: center;
+}
+
+.sub-header {
+    font-size: 1.17em; 
+    font-weight: bold; 
+    margin-bottom: 1rem;
+}
+
+.no-highlight {
+    user-select: none;
+}
+
+.display {
+    display: block !important;
+}
