@@ -1681,7 +1681,7 @@ function changeAffix(element) {
     element.parentNode.parentNode.getElementsByClassName("mdt-copy")[0];
 
   if (
-    element.innerHTML == "Fortified" &&
+    element.innerHTML.includes("Fortified") &&
     !element.classList.contains("chosen")
   ) {
     element.classList.add("chosen");
@@ -1695,7 +1695,7 @@ function changeAffix(element) {
       lustTimings.getAttribute("fort");
     importCode.setAttribute("import-code", importCode.getAttribute("fort"));
   } else if (
-    element.innerHTML == "Tyrannical" &&
+    element.innerHTML.includes("Tyrannical") &&
     !element.classList.contains("chosen")
   ) {
     element.classList.add("chosen");
@@ -1716,7 +1716,7 @@ if (
   !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
     navigator.userAgent
   ) &&
-  document.getElementById("back-vide")
+  document.getElementById("back-video")
 ) {
   const videoSource = document.createElement("source");
   videoSource.src = "videos/mop-login-screen.mp4";
