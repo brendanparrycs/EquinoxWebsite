@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans:wght@400;500&display=swap");
 
+::selection {
+  color: #faf9f6;
+  background: #f19202;
+}
+
+::-moz-selection {
+  color: #faf9f6;
+  background: #f19202;
+}
+
 * {
   margin: 0;
   padding: 0;
