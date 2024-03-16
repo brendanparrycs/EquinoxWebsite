@@ -1,106 +1,755 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="author" content="Zigee">
-        <meta name="description" content="A Brewmaster Monk guide that is being made.">
-        <meta name="keywords" content="Brewmaster Monk, Brew Monk, Mythic Plus, Mythic+, M+, Brewmaster Monk Mythic Plus Guide, Brewmaster Monk Mythic+ Guide, Brewmaster Monk M+ Guide, Brew Monk Mythic Plus Guide, Brew Monk Mythic+ Guide, Brew Monk M+ Guide, Guide, Dragonflight">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <script src="https://kit.fontawesome.com/77ee47dea4.js" crossorigin="anonymous"></script>
-        <title>Brewmaster Monk Website</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <button id="mobile-button" onclick="menuFunc('mobile-menu')"><i class="fa-solid fa-bars"></i></button>
-                <a href="home.html" id="logo"><img src="images/monk.jpg" alt="Brewmaster Monk Icon">Equinox</a>
-                <ul id="computer-menu" class="menu">
-                    <li>
-                        <a href="introduction.html">Written Guide</a>
-                        <ul id="computer-submenu">
-                            <li><a href="introduction.html">Introduction</a></li>
-                            <li><a href="talents.html">Talents</a></li>
-                            <li><a href="gearing.html">Gearing</a></li>
-                            <li><a href="playstyle.html">Playstyle & Rotation</a></li>
-                            <li><a href="dungeons.html">Dungeons & Affixes</a></li>
-                            <li><a href="advanced.html">Advanced Tips & Tricks</a></li>
-                        </ul>
-                    </li><!--
-                    --><li><a href="" target="_blank">Video Guide</a><div></div></li><!--
-                    --><li><a href="https://discord.gg/FAX73yrW" target="_blank">Discord</a></li><!--
-                    --><li><a href="https://twitter.com/equinoxmonk " target="_blank">Twitter</a></li><!--
-                    --><li><a href="https://www.twitch.tv/equinox" target="_blank">Stream</a></li>
-                </ul>
-            </nav>
-            <ul id="mobile-menu" class="menu">
-                <li>
-                    <a onclick="menuFunc('mobile-submenu')">Written Guide<i class="fa-solid fa-caret-down"></i></a>
-                    <ul id="mobile-submenu">
-                        <li><a href="introduction.html">Introduction</a></li>
-                        <li><a href="talents.html">Talents</a></li>
-                        <li><a href="gearing.html">Gearing</a></li>
-                        <li><a href="playstyle.html">Playstyle & Rotation</a></li>
-                        <li><a href="dungeons.html">Dungeons & Affixes</a></li>
-                        <li><a href="advanced.html">Advanced Tips & Tricks</a></li>
-                    </ul>
-                </li><!--
-                --><li><a href="" target="_blank">Video Guide</a><div></div></li><!--
-                --><li><a href="https://discord.gg/FAX73yrW" target="_blank">Discord</a></li><!--
-                --><li><a href="https://twitter.com/equinoxmonk " target="_blank">Twitter</a></li><!--
-                --><li><a href="https://www.twitch.tv/equinox" target="_blank">Stream</a></li>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Zigee" />
+    <meta
+      name="description"
+      content="A mythic+ and raid Brewmaster monk guide made by equinoxmonk."
+    />
+    <meta
+      name="keywords"
+      content="Brewmaster Monk, Brew Monk, Mythic Plus, Mythic+, M+, Brewmaster Monk Mythic Plus Guide, Brewmaster Monk Mythic+ Guide, Brewmaster Monk M+ Guide, Brew Monk Mythic Plus Guide, Brew Monk Mythic+ Guide, Brew Monk M+ Guide, Guide, Dragonflight"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/77ee47dea4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Equinoxmonk | Advanced Tips & Tricks</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button id="mobile-button" onclick="menuFunc('mobile-menu')">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <a href="home.html" id="logo"
+          ><img src="images/monk.jpg" alt="Brewmaster Monk Icon" />Equinox</a
+        >
+        <ul id="computer-menu" class="menu">
+          <li>
+            <a href="introduction.html">Written Guide</a>
+            <ul id="computer-submenu">
+              <li><a href="introduction.html">Introduction</a></li>
+              <li><a href="talents.html">Talents</a></li>
+              <li><a href="gearing.html">Gearing</a></li>
+              <li><a href="playstyle.html">Playstyle & Rotation</a></li>
+              <li><a href="dungeons.html">Dungeons & Affixes</a></li>
+              <li><a href="advanced.html">Advanced Tips & Tricks</a></li>
             </ul>
-        </header>
-        <main>
-            <section class="about">
-                <h2>Advanced Tips & Tricks</h2>
-                <p>There are countless tips and tricks that can be done as Brewmaster to help you and your group. I will go over some of the more common tips and tricks that benefit you and your team. Some of these examples are from past seasons, but they still serve as excellent examples of what you can do.</p>
-            </section>
-            <section id="when-to-kite" class="text-section middle-spacing">
-                <h2>When to Kite</h2>
-                <p>When should I be kiting? This is an essential question. In short, it's a question of, “Do I have defensive cooldowns available to facetank the pull?” If the answer is no, then you kite. If the answer is yes, then you have to assess whether you're saving any special cooldowns for the next pull. If the answer is no, then you kite when you've exhausted all other options (except the one cooldown you're saving).</p>
-                <p>To show this in real time, here is <a href="https://clips.twitch.tv/RepleteMistyScorpionWoofer-uHgMQpWh4FmgPEzL" target="_blank">a clip</a> of me in Halls of Valor. I only have <a href="https://www.wowhead.com/spell=122278/dampen-harm" target="_blank" class="orange">Dampen Harm</a> going into this wolf pull, so I use my shield trinket on pull and then <a href="https://www.wowhead.com/spell=122278/dampen-harm" target="_blank" class="orange">Dampen Harm</a> so that I don't die between shields. After my <a href="https://www.wowhead.com/spell=122278/dampen-harm" target="_blank" class="orange">Dampen Harm</a> ends, I <a href="https://www.wowhead.com/spell=119381/leg-sweep" target="_blank" class="orange">Leg Sweep</a>, <a href="https://www.wowhead.com/spell=121253/keg-smash" target="_blank" class="orange">Keg Smash</a>, and then <a href="https://www.wowhead.com/spell=116844/ring-of-peace" target="_blank" class="orange">Ring of Peace</a> the wolves away. I know I cannot live in this scenario after <a href="https://www.wowhead.com/spell=122278/dampen-harm" target="_blank" class="orange">Dampen Harm</a> falls off, so I keep the mobs grouped in a controlled manner while staying out of range so my DPS can AoE efficiently.</p>
-            </section>
-            <section id="toolkit-to-kite" class="text-section middle-spacing">
-                <h2>How to use your Toolkit to Kite</h2>
-                <p>Brewmasters have one of the best toolkits in the game when it comes to locking down mobs and kiting with <a href="https://www.wowhead.com/spell=116844/ring-of-peace" target="_blank" class="orange">Ring of Peace</a>, <a href="https://www.wowhead.com/spell=119381/leg-sweep" target="_blank" class="orange">Leg Sweep</a>, and <a href="https://www.wowhead.com/spell=101643/transcendence" target="_blank" class="orange">Transcendence</a>. To successfully use this toolkit to kite, let's look at a couple of clips. Also, a small but important tip is to use <a href="https://www.wowhead.com/spell=116670/vivify" target="_blank" class="orange">Vivify</a> while you're kiting. Not only does it heal you, but it also generates threat at the same time.</p>
-                <p>In <a href="https://clips.twitch.tv/RelievedDeterminedShrewSuperVinlin-9Lt8_8nmeJaXoeZT" target="_blank">this clip</a>, I show you how to use your toolkit to kite until your cooldowns are back up. I start off the pull with <a href="https://www.wowhead.com/spell=122278/dampen-harm" target="_blank" class="orange">Dampen Harm</a> and then focus on keeping my <a href="https://www.wowhead.com/spell=393516/pretense-of-instability" target="_blank" class="orange">Pretense of Instability</a> buff up via <a href="https://www.wowhead.com/spell=119582/purifying-brew" target="_blank" class="orange">Purifying Brew</a>. Then, I go into a <a href="https://www.wowhead.com/spell=322507/celestial-brew" target="_blank" class="orange">Celestial Brew</a> > <a href="https://www.wowhead.com/spell=115399/black-ox-brew" target="_blank" class="orange">Black Ox Brew</a>. After that, I do the same, keeping <a href="https://www.wowhead.com/spell=393516/pretense-of-instability" target="_blank" class="orange">Pretense of Instability</a> up and waiting until I need <a href="https://www.wowhead.com/spell=322507/celestial-brew" target="_blank" class="orange">Celestial Brew</a> again. Afterwards, I <a href="https://www.wowhead.com/spell=328669/improved-roll" target="_blank" class="orange">Roll</a> out, use <a href="https://www.wowhead.com/spell=116844/ring-of-peace" target="_blank" class="orange">Ring of Peace</a>, wait until it ends, then walk in and <a href="https://www.wowhead.com/spell=119381/leg-sweep" target="_blank" class="orange">Leg Sweep</a>. After that, I just kite until <a href="https://www.wowhead.com/spell=243435/fortifying-brew" target="_blank" class="orange">Fortifying Brew</a> is back up, then tank them once again. This clip is a good showcase of something that you can do. It is an important skill to know how long you need to kite and how long you can survive until you need to kite.</p>
-                <p>For an example on how to use <a href="https://www.wowhead.com/spell=101643/transcendence" target="_blank" class="orange">Transcendence</a> to drop stacks of a debuff and minimize incoming damage, I'll use this clip from The Necrotic Wake. You'll see here that I'm getting blasted by melee swings due to having three stacks of the Tenderize debuff from the Goregrind (since each stack is a physical damage increase of 12%). I start walking away partway through the pull (at about 00:16), drop a <a href="https://www.wowhead.com/spell=101643/transcendence" target="_blank" class="orange">Transcendence</a> spirit, and I create some extra distance with a quick <a href="https://www.wowhead.com/spell=109132/roll" target="_blank" class="orange">Roll</a> and <a href="https://www.wowhead.com/spell=116841/tigers-lust" target="_blank" class="orange">Tiger's Lust</a>. I wait for the Goregrind to Gutslice, let him walk a little closer to me, and then port back to my spirit just before the next Tenderize.</p>
-                <p>The best place to use tricks like this is in Halls of Valor, where you have debuffs to drop but you don't want the mobs running all over the place, or when you're just kiting bears or wolves. You will see this in action in the next section.</p>
-            </section>
-            <section id="maximize-celestial-brew" class="text-section middle-spacing">
-                <h2>How to Maximize Celestial Brew</h2>
-                <p>The way to maximize your <a href="https://www.wowhead.com/spell=322507/celestial-brew" target="_blank" class="orange">Celestial Brew</a> is to use it at 10 stacks of <a href="https://www.wowhead.com/spell=325092/purified-chi" target="_blank" class="orange">Purified Chi</a>, right? Well, it's a bit more complicated than that once you factor in the rest of your tool kit. Here is <a href="https://clips.twitch.tv/SpicyWealthyYakinikuFUNgineer-V6APTDWI4SZAf3al" target="_blank" class="orange">a clip</a> of me in Halls of Valor. Pay attention to my <a href="https://www.wowhead.com/spell=119582/purifying-brew" target="_blank" class="orange">Purifying Brew</a> and <a href="https://www.wowhead.com/spell=322507/celestial-brew" target="_blank" class="orange">Celestial Brew</a> usage. I purify to nine stacks while my <a href="https://www.wowhead.com/spell=243435/fortifying-brew" target="_blank" class="orange">Fortifying Brew</a> is running. After that, I <a href="https://www.wowhead.com/spell=119381/leg-sweep" target="_blank" class="orange">Leg Sweep</a> and use my first <a href="https://www.wowhead.com/spell=322507/celestial-brew" target="_blank" class="orange">Celestial Brew</a>. Then, I purify twice while <a href="https://www.wowhead.com/spell=122278/dampen-harm" target="_blank" class="orange">Dampen Harm</a> is running. I then follow that into a <a href="https://www.wowhead.com/spell=115399/black-ox-brew" target="_blank" class="orange">Black Ox Brew</a> > <a href="https://www.wowhead.com/spell=322507/celestial-brew" target="_blank" class="orange">Celestial Brew</a>. This gives me a nine-stack <a href="https://www.wowhead.com/spell=322507/celestial-brew" target="_blank" class="orange">Celestial Brew</a> followed by a six-stack <a href="https://www.wowhead.com/spell=322507/celestial-brew" target="_blank" class="orange">Celestial Brew</a>. While I could have purified immediately to get two nine-stacks, I prefer nine-stack into six-stack, then double purifying at the end of the pull for heals, just in case I take a lot of damage, which ended up happening. The <a href="https://www.wowhead.com/spell=383700/gai-plins-imperial-brew" target="_blank" class="orange">Gai Plin's Imperial Brew</a> healing helped me quite a bit. This is a good clip to showcase how to use <a href="https://www.wowhead.com/spell=115399/black-ox-brew" target="_blank" class="orange">Black Ox Brew</a> properly as well as <a href="https://www.wowhead.com/spell=322507/celestial-brew" target="_blank" class="orange">Celestial Brew</a>.</p>
-            </section>
-            <section id="maximize-gai-plins" class="text-section middle-spacing">
-                <h2>How to Maximize Gai Plin's Imperial Brew</h2>
-                <p><a href="https://www.wowhead.com/spell=383700/gai-plins-imperial-brew" target="_blank" class="orange">Gai Plin's Imperial Brew</a> is basically a heal for 12.5% of your current stagger when you purify. The easiest way to explain maximizing this is that high stagger equals good; you want to sit on high stagger until you need a heal, then you purify once to top yourself, let your stagger build again, then purify again to top yourself. If you're doing a big pull, like in Waycrest Manor or Blackrook Hold, you want to use stuff like <a href="https://www.wowhead.com/spell=243435/fortifying-brew" target="_blank" class="orange">Fortifying Brew</a> and defensive trinkets to let your stagger build. Once those fall off, you rotate <a href="https://www.wowhead.com/spell=119582/purifying-brew" target="_blank" class="orange">Purifying Brews</a> to heal you, <a href="https://www.wowhead.com/spell=322507/celestial-brew" target="_blank" class="orange">Celestial Brew</a>, then go into <a href="https://www.wowhead.com/spell=115399/black-ox-brew" target="_blank" class="orange">Black Ox Brew</a> and repeat the process.</p>
-            </section>
-            <section id="forcing-a-dodge" class="text-section-middle-spacing">
-                <h2>Forcing a Dodge</h2>
-                <p>Another great bonus trick is forcing a dodge on tank busters. You do this by turning your back to the boss or mob, doing dps in between auto attacks to build up <a href="https://www.wowhead.com/spell=117906/mastery-elusive-brawler" target="_blank" class="orange">Elusive Brawler</a> stacks, and then facing the mob during the ability you are trying to dodge is being cast. Here's a clip of this in real time. The logic here is to build up your stacks of <a href="https://www.wowhead.com/spell=117906/mastery-elusive-brawler" target="_blank" class="orange">Elusive Brawler</a> to virtually guarantee that you dodge the Hateful Charge. You pretty much guarantee that you will dodge this attack if you ensure that you do not dodge the boss's autoattack that he uses right before Hateful Charge. This type of force dodge technique takes a lot of practice to time correctly, but it helps your healer out substantially once you get the hang of it.</p>
-            </section>
-            <section id="how-to-zen-med" class="number-list-section">
-                <h2>How to Use Zen Meditation</h2>
-                <p>I left the weirdest ability for last. <a href="https://www.wowhead.com/spell=115176/zen-meditation" target="_blank" class="orange">Zen Meditation</a> can either be useless or a lifesaver, depending on whether or not you choose to min/max it. Basically, you want to find abilities to use it on that hit really hard and do damage instantly. To soften a large incoming hit, you can use <a href="https://www.wowhead.com/spell=115176/zen-meditation" target="_blank" class="orange">Zen Medication</a> as an extra damage reduction. The best way to use <a href="https://www.wowhead.com/spell=115176/zen-meditation" target="_blank" class="orange">Zen Meditation</a> is right at the end of the cast, just in case they're a mob that melees during casts. You can also take a couple steps back during a cast, then press it to ensure safety. Here are some abilities that you can use <a href="https://www.wowhead.com/spell=115176/zen-meditation" target="_blank" class="orange">Zen Meditation</a> on to help you live in Season 3:</p>
-                <div>
-                    <ol>
-                        <li><a href="https://www.wowhead.com/zone=9028/ataldazar" target="_blank" class="orange">Atal'dazar</a>: Skewer (<a href="https://www.wowhead.com/npc=129412/yazma" target="_blank">Yazma</a>)</li>
-                        <li><a href="https://www.wowhead.com/zone=7805/black-rook-hold" target="_blank" class="orange">Black Rook Hold</a>: Strike Down (<a href="https://www.wowhead.com/npc=98538/lady-velandras-ravencrest" target="_blank">Lady Velandras Ravencrest</a>), Soul Burst (<a href="https://www.wowhead.com/npc=98542/amalgam-of-souls" target="_blank">The Amalgam of Souls</a>), Vengeful Shear (<a href="https://www.wowhead.com/npc=98696/illysanna-ravencrest" target="_blank">Illysana Ravencrest</a>), Shadowbolt Volley (<a href="https://www.wowhead.com/npc=94923/lord-kurtalos-ravencrest" target="_blank">Lord Kur'talos Ravencrest</a>)</li>
-                        <li><a href="https://www.wowhead.com/zone=7673/darkheart-thicket" target="_blank" class="orange">Darkheart Thicket</a>: Despair (<a href="https://www.wowhead.com/npc=95771/dreadsoul-ruiner" target="_blank">Dreadsoul Ruiner</a>), Maddening Roar (<a href="https://www.wowhead.com/npc=95779/festerhide-grizzly" target="_blank">Festerhide Grizzly</a>), Crushing Grip and Nightmare Breath (<a href="https://www.wowhead.com/npc=103344/oakheart" target="_blank">Oakheart</a>), Earthshaking Roar (<a href="https://www.wowhead.com/npc=99200/dresaron" target="_blank">Dresaron</a>), Apocalyptic Nightmare and Nightmare Bolt (<a href="https://www.wowhead.com/npc=99192/shade-of-xavius" target="_blank">Shade of Xavius</a>)</li>
-                        <li><a href="https://www.wowhead.com/zone=14514/dawn-of-the-infinite" target="_blank" class="orange">DOTI Fall</a>: Chronoshear (<a href="https://www.wowhead.com/npc=198995/chronikar" target="_blank">Chronikar</a>), Untwist (<a href="https://www.wowhead.com/npc=199749/timestream-anomaly" target="_blank">Timestream Anomaly</a>)</li>
-                        <li><a href="https://www.wowhead.com/zone=14514/dawn-of-the-infinite" target="_blank" class="orange">DOTI Rise</a>: Titanic Blow (<a href="https://www.wowhead.com/npc=198998/tyr-the-infinite-keeper" target="_blank">Tyr, the Infinite Keeper</a>), Bronze Exhalation (<a href="https://www.wowhead.com/npc=208438/infinite-saboteur" target="_blank">Infinite Saboteur</a> and <a href="https://www.wowhead.com/npc=208440/infinite-slayer" target="_blank">Infinite Slayer</a>), Temporal Breath (<a href="https://www.wowhead.com/npc=199000/chrono-lord-deios" target="_blank">Chrono-Lord Deios</a>)</li>
-                        <li><a href="https://www.wowhead.com/zone=7109/the-everbloom" target="_blank" class="orange">Everbloom</a>: Parched Gasp (<a href="https://www.wowhead.com/npc=81522/witherbark" target="_blank">Witherbark</a>), Noxious Charge (<a href="https://www.wowhead.com/npc=83894/dulhu" target="_blank">Ancient Protectors</a>), Any Bolt (<a href="https://www.wowhead.com/npc=82682/archmage-sol" target="_blank">Archmage Sol</a>)</li>
-                        <li><a href="https://www.wowhead.com/zone=5004/throne-of-the-tides" target="_blank" class="orange">Throne of the Tides</a>: Acid Barrage (<a href="https://www.wowhead.com/npc=212673/nazjar-ravager" target="_blank">Naz'jar Ravager</a>), Crushing Claw (<a href="https://www.wowhead.com/npc=40765/commander-ulthok" target="_blank">Commander Ulthok, the Festering Prince</a>)</li>
-                        <li><a href="https://www.wowhead.com/zone=9424/waycrest-manor" target="_blank" class="orange">Waycrest Manor</a>: Crush (<a href="https://www.wowhead.com/npc=131667/soulbound-goliath" target="_blank">Soulbound Goliath</a>), Decaying Touch (<a href="https://www.wowhead.com/npc=135365/matron-alma" target="_blank">Matron Alma</a>), Wasting Strike (<a href="https://www.wowhead.com/npc=131527/lord-waycrest" target="_blank">Lord and Lady Waycrest</a>)</li>
-                    </ol>
-                </div>
-            </section>
-            <section class="next">
-                <h3>If you want to be part of a friendly Brewmaster community and have any further questions, feel free to join the <a href="https://discord.gg/FAX73yrW" target="_blank">Discord</a> and reach out to me!</h3>
-            </section>
-        </main>
-        <script src="myscripts.js"></script>
-    </body>
+          </li>
+          <!--
+                    -->
+          <li>
+            <a href="" target="_blank">Video Guide</a>
+            <div></div>
+          </li>
+          <!--
+                    -->
+          <li>
+            <a href="https://discord.gg/8W7mMekgTP" target="_blank">Discord</a>
+          </li>
+          <!--
+                    -->
+          <li>
+            <a href="https://twitter.com/equinoxmonk " target="_blank"
+              >Twitter</a
+            >
+          </li>
+          <!--
+                    -->
+          <li>
+            <a href="https://www.twitch.tv/equinox" target="_blank">Stream</a>
+          </li>
+        </ul>
+      </nav>
+      <ul id="mobile-menu" class="menu">
+        <li>
+          <a onclick="menuFunc('mobile-submenu')"
+            >Written Guide<i class="fa-solid fa-caret-down"></i
+          ></a>
+          <ul id="mobile-submenu">
+            <li><a href="introduction.html">Introduction</a></li>
+            <li><a href="talents.html">Talents</a></li>
+            <li><a href="gearing.html">Gearing</a></li>
+            <li><a href="playstyle.html">Playstyle & Rotation</a></li>
+            <li><a href="dungeons.html">Dungeons & Affixes</a></li>
+            <li><a href="advanced.html">Advanced Tips & Tricks</a></li>
+          </ul>
+        </li>
+        <!--
+                -->
+        <li>
+          <a href="" target="_blank">Video Guide</a>
+          <div></div>
+        </li>
+        <!--
+                -->
+        <li>
+          <a href="https://discord.gg/8W7mMekgTP" target="_blank">Discord</a>
+        </li>
+        <!--
+                -->
+        <li>
+          <a href="https://twitter.com/equinoxmonk " target="_blank">Twitter</a>
+        </li>
+        <!--
+                -->
+        <li>
+          <a href="https://www.twitch.tv/equinox" target="_blank">Stream</a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <section class="about">
+        <h2>Advanced Tips & Tricks</h2>
+        <p>
+          There are countless tips and tricks that can be done as Brewmaster to
+          help you and your group. I will go over some of the more common tips
+          and tricks that benefit you and your team. Some of these examples are
+          from past seasons, but they still serve as excellent examples of what
+          you can do.
+        </p>
+      </section>
+      <section id="when-to-kite" class="text-section middle-spacing">
+        <h2>When to Kite</h2>
+        <p>
+          When should I be kiting? This is an essential question. In short, it's
+          a question of, “Do I have defensive cooldowns available to facetank
+          the pull?” If the answer is no, then you kite. If the answer is yes,
+          then you have to assess whether you're saving any special cooldowns
+          for the next pull. If the answer is no, then you kite when you've
+          exhausted all other options (except the one cooldown you're saving).
+        </p>
+        <p>
+          To show this in real time, here is
+          <a
+            href="https://clips.twitch.tv/RepleteMistyScorpionWoofer-uHgMQpWh4FmgPEzL"
+            target="_blank"
+            >a clip</a
+          >
+          of me in Halls of Valor. I only have
+          <a
+            href="https://www.wowhead.com/spell=122278/dampen-harm"
+            target="_blank"
+            class="orange"
+            >Dampen Harm</a
+          >
+          going into this wolf pull, so I use my shield trinket on pull and then
+          <a
+            href="https://www.wowhead.com/spell=122278/dampen-harm"
+            target="_blank"
+            class="orange"
+            >Dampen Harm</a
+          >
+          so that I don't die between shields. After my
+          <a
+            href="https://www.wowhead.com/spell=122278/dampen-harm"
+            target="_blank"
+            class="orange"
+            >Dampen Harm</a
+          >
+          ends, I
+          <a
+            href="https://www.wowhead.com/spell=119381/leg-sweep"
+            target="_blank"
+            class="orange"
+            >Leg Sweep</a
+          >,
+          <a
+            href="https://www.wowhead.com/spell=121253/keg-smash"
+            target="_blank"
+            class="orange"
+            >Keg Smash</a
+          >, and then
+          <a
+            href="https://www.wowhead.com/spell=116844/ring-of-peace"
+            target="_blank"
+            class="orange"
+            >Ring of Peace</a
+          >
+          the wolves away. I know I cannot live in this scenario after
+          <a
+            href="https://www.wowhead.com/spell=122278/dampen-harm"
+            target="_blank"
+            class="orange"
+            >Dampen Harm</a
+          >
+          falls off, so I keep the mobs grouped in a controlled manner while
+          staying out of range so my DPS can AoE efficiently.
+        </p>
+      </section>
+      <section id="toolkit-to-kite" class="text-section middle-spacing">
+        <h2>How to use your Toolkit to Kite</h2>
+        <p>
+          Brewmasters have one of the best toolkits in the game when it comes to
+          locking down mobs and kiting with
+          <a
+            href="https://www.wowhead.com/spell=116844/ring-of-peace"
+            target="_blank"
+            class="orange"
+            >Ring of Peace</a
+          >,
+          <a
+            href="https://www.wowhead.com/spell=119381/leg-sweep"
+            target="_blank"
+            class="orange"
+            >Leg Sweep</a
+          >, and
+          <a
+            href="https://www.wowhead.com/spell=101643/transcendence"
+            target="_blank"
+            class="orange"
+            >Transcendence</a
+          >. To successfully use this toolkit to kite, let's look at a couple of
+          clips. Also, a small but important tip is to use
+          <a
+            href="https://www.wowhead.com/spell=116670/vivify"
+            target="_blank"
+            class="orange"
+            >Vivify</a
+          >
+          while you're kiting. Not only does it heal you, but it also generates
+          threat at the same time.
+        </p>
+        <p>
+          In
+          <a
+            href="https://clips.twitch.tv/RelievedDeterminedShrewSuperVinlin-9Lt8_8nmeJaXoeZT"
+            target="_blank"
+            >this clip</a
+          >, I show you how to use your toolkit to kite until your cooldowns are
+          back up. I start off the pull with
+          <a
+            href="https://www.wowhead.com/spell=122278/dampen-harm"
+            target="_blank"
+            class="orange"
+            >Dampen Harm</a
+          >
+          and then focus on keeping my
+          <a
+            href="https://www.wowhead.com/spell=393516/pretense-of-instability"
+            target="_blank"
+            class="orange"
+            >Pretense of Instability</a
+          >
+          buff up via
+          <a
+            href="https://www.wowhead.com/spell=119582/purifying-brew"
+            target="_blank"
+            class="orange"
+            >Purifying Brew</a
+          >. Then, I go into a
+          <a
+            href="https://www.wowhead.com/spell=322507/celestial-brew"
+            target="_blank"
+            class="orange"
+            >Celestial Brew</a
+          >
+          >
+          <a
+            href="https://www.wowhead.com/spell=115399/black-ox-brew"
+            target="_blank"
+            class="orange"
+            >Black Ox Brew</a
+          >. After that, I do the same, keeping
+          <a
+            href="https://www.wowhead.com/spell=393516/pretense-of-instability"
+            target="_blank"
+            class="orange"
+            >Pretense of Instability</a
+          >
+          up and waiting until I need
+          <a
+            href="https://www.wowhead.com/spell=322507/celestial-brew"
+            target="_blank"
+            class="orange"
+            >Celestial Brew</a
+          >
+          again. Afterwards, I
+          <a
+            href="https://www.wowhead.com/spell=328669/improved-roll"
+            target="_blank"
+            class="orange"
+            >Roll</a
+          >
+          out, use
+          <a
+            href="https://www.wowhead.com/spell=116844/ring-of-peace"
+            target="_blank"
+            class="orange"
+            >Ring of Peace</a
+          >, wait until it ends, then walk in and
+          <a
+            href="https://www.wowhead.com/spell=119381/leg-sweep"
+            target="_blank"
+            class="orange"
+            >Leg Sweep</a
+          >. After that, I just kite until
+          <a
+            href="https://www.wowhead.com/spell=243435/fortifying-brew"
+            target="_blank"
+            class="orange"
+            >Fortifying Brew</a
+          >
+          is back up, then tank them once again. This clip is a good showcase of
+          something that you can do. It is an important skill to know how long
+          you need to kite and how long you can survive until you need to kite.
+        </p>
+        <p>
+          For an example on how to use
+          <a
+            href="https://www.wowhead.com/spell=101643/transcendence"
+            target="_blank"
+            class="orange"
+            >Transcendence</a
+          >
+          to drop stacks of a debuff and minimize incoming damage, I'll use this
+          clip from The Necrotic Wake. You'll see here that I'm getting blasted
+          by melee swings due to having three stacks of the Tenderize debuff
+          from the Goregrind (since each stack is a physical damage increase of
+          12%). I start walking away partway through the pull (at about 00:16),
+          drop a
+          <a
+            href="https://www.wowhead.com/spell=101643/transcendence"
+            target="_blank"
+            class="orange"
+            >Transcendence</a
+          >
+          spirit, and I create some extra distance with a quick
+          <a
+            href="https://www.wowhead.com/spell=109132/roll"
+            target="_blank"
+            class="orange"
+            >Roll</a
+          >
+          and
+          <a
+            href="https://www.wowhead.com/spell=116841/tigers-lust"
+            target="_blank"
+            class="orange"
+            >Tiger's Lust</a
+          >. I wait for the Goregrind to Gutslice, let him walk a little closer
+          to me, and then port back to my spirit just before the next Tenderize.
+        </p>
+        <p>
+          The best place to use tricks like this is in Halls of Valor, where you
+          have debuffs to drop but you don't want the mobs running all over the
+          place, or when you're just kiting bears or wolves. You will see this
+          in action in the next section.
+        </p>
+      </section>
+      <section id="maximize-celestial-brew" class="text-section middle-spacing">
+        <h2>How to Maximize Celestial Brew</h2>
+        <p>
+          The way to maximize your
+          <a
+            href="https://www.wowhead.com/spell=322507/celestial-brew"
+            target="_blank"
+            class="orange"
+            >Celestial Brew</a
+          >
+          is to use it at 10 stacks of
+          <a
+            href="https://www.wowhead.com/spell=325092/purified-chi"
+            target="_blank"
+            class="orange"
+            >Purified Chi</a
+          >, right? Well, it's a bit more complicated than that once you factor
+          in the rest of your tool kit. Here is
+          <a
+            href="https://clips.twitch.tv/SpicyWealthyYakinikuFUNgineer-V6APTDWI4SZAf3al"
+            target="_blank"
+            class="orange"
+            >a clip</a
+          >
+          of me in Halls of Valor. Pay attention to my
+          <a
+            href="https://www.wowhead.com/spell=119582/purifying-brew"
+            target="_blank"
+            class="orange"
+            >Purifying Brew</a
+          >
+          and
+          <a
+            href="https://www.wowhead.com/spell=322507/celestial-brew"
+            target="_blank"
+            class="orange"
+            >Celestial Brew</a
+          >
+          usage. I purify to nine stacks while my
+          <a
+            href="https://www.wowhead.com/spell=243435/fortifying-brew"
+            target="_blank"
+            class="orange"
+            >Fortifying Brew</a
+          >
+          is running. After that, I
+          <a
+            href="https://www.wowhead.com/spell=119381/leg-sweep"
+            target="_blank"
+            class="orange"
+            >Leg Sweep</a
+          >
+          and use my first
+          <a
+            href="https://www.wowhead.com/spell=322507/celestial-brew"
+            target="_blank"
+            class="orange"
+            >Celestial Brew</a
+          >. Then, I purify twice while
+          <a
+            href="https://www.wowhead.com/spell=122278/dampen-harm"
+            target="_blank"
+            class="orange"
+            >Dampen Harm</a
+          >
+          is running. I then follow that into a
+          <a
+            href="https://www.wowhead.com/spell=115399/black-ox-brew"
+            target="_blank"
+            class="orange"
+            >Black Ox Brew</a
+          >
+          >
+          <a
+            href="https://www.wowhead.com/spell=322507/celestial-brew"
+            target="_blank"
+            class="orange"
+            >Celestial Brew</a
+          >. This gives me a nine-stack
+          <a
+            href="https://www.wowhead.com/spell=322507/celestial-brew"
+            target="_blank"
+            class="orange"
+            >Celestial Brew</a
+          >
+          followed by a six-stack
+          <a
+            href="https://www.wowhead.com/spell=322507/celestial-brew"
+            target="_blank"
+            class="orange"
+            >Celestial Brew</a
+          >. While I could have purified immediately to get two nine-stacks, I
+          prefer nine-stack into six-stack, then double purifying at the end of
+          the pull for heals, just in case I take a lot of damage, which ended
+          up happening. The
+          <a
+            href="https://www.wowhead.com/spell=383700/gai-plins-imperial-brew"
+            target="_blank"
+            class="orange"
+            >Gai Plin's Imperial Brew</a
+          >
+          healing helped me quite a bit. This is a good clip to showcase how to
+          use
+          <a
+            href="https://www.wowhead.com/spell=115399/black-ox-brew"
+            target="_blank"
+            class="orange"
+            >Black Ox Brew</a
+          >
+          properly as well as
+          <a
+            href="https://www.wowhead.com/spell=322507/celestial-brew"
+            target="_blank"
+            class="orange"
+            >Celestial Brew</a
+          >.
+        </p>
+      </section>
+      <section id="maximize-gai-plins" class="text-section middle-spacing">
+        <h2>How to Maximize Gai Plin's Imperial Brew</h2>
+        <p>
+          <a
+            href="https://www.wowhead.com/spell=383700/gai-plins-imperial-brew"
+            target="_blank"
+            class="orange"
+            >Gai Plin's Imperial Brew</a
+          >
+          is basically a heal for 12.5% of your current stagger when you purify.
+          The easiest way to explain maximizing this is that high stagger equals
+          good; you want to sit on high stagger until you need a heal, then you
+          purify once to top yourself, let your stagger build again, then purify
+          again to top yourself. If you're doing a big pull, like in Waycrest
+          Manor or Blackrook Hold, you want to use stuff like
+          <a
+            href="https://www.wowhead.com/spell=243435/fortifying-brew"
+            target="_blank"
+            class="orange"
+            >Fortifying Brew</a
+          >
+          and defensive trinkets to let your stagger build. Once those fall off,
+          you rotate
+          <a
+            href="https://www.wowhead.com/spell=119582/purifying-brew"
+            target="_blank"
+            class="orange"
+            >Purifying Brews</a
+          >
+          to heal you,
+          <a
+            href="https://www.wowhead.com/spell=322507/celestial-brew"
+            target="_blank"
+            class="orange"
+            >Celestial Brew</a
+          >, then go into
+          <a
+            href="https://www.wowhead.com/spell=115399/black-ox-brew"
+            target="_blank"
+            class="orange"
+            >Black Ox Brew</a
+          >
+          and repeat the process.
+        </p>
+      </section>
+      <section id="forcing-a-dodge" class="text-section-middle-spacing">
+        <h2>Forcing a Dodge</h2>
+        <p>
+          Another great bonus trick is forcing a dodge on tank busters. You do
+          this by turning your back to the boss or mob, doing dps in between
+          auto attacks to build up
+          <a
+            href="https://www.wowhead.com/spell=117906/mastery-elusive-brawler"
+            target="_blank"
+            class="orange"
+            >Elusive Brawler</a
+          >
+          stacks, and then facing the mob during the ability you are trying to
+          dodge is being cast. Here's a clip of this in real time. The logic
+          here is to build up your stacks of
+          <a
+            href="https://www.wowhead.com/spell=117906/mastery-elusive-brawler"
+            target="_blank"
+            class="orange"
+            >Elusive Brawler</a
+          >
+          to virtually guarantee that you dodge the Hateful Charge. You pretty
+          much guarantee that you will dodge this attack if you ensure that you
+          do not dodge the boss's autoattack that he uses right before Hateful
+          Charge. This type of force dodge technique takes a lot of practice to
+          time correctly, but it helps your healer out substantially once you
+          get the hang of it.
+        </p>
+      </section>
+      <section id="how-to-zen-med" class="number-list-section">
+        <h2>How to Use Zen Meditation</h2>
+        <p>
+          I left the weirdest ability for last.
+          <a
+            href="https://www.wowhead.com/spell=115176/zen-meditation"
+            target="_blank"
+            class="orange"
+            >Zen Meditation</a
+          >
+          can either be useless or a lifesaver, depending on whether or not you
+          choose to min/max it. Basically, you want to find abilities to use it
+          on that hit really hard and do damage instantly. To soften a large
+          incoming hit, you can use
+          <a
+            href="https://www.wowhead.com/spell=115176/zen-meditation"
+            target="_blank"
+            class="orange"
+            >Zen Medication</a
+          >
+          as an extra damage reduction. The best way to use
+          <a
+            href="https://www.wowhead.com/spell=115176/zen-meditation"
+            target="_blank"
+            class="orange"
+            >Zen Meditation</a
+          >
+          is right at the end of the cast, just in case they're a mob that
+          melees during casts. You can also take a couple steps back during a
+          cast, then press it to ensure safety. Here are some abilities that you
+          can use
+          <a
+            href="https://www.wowhead.com/spell=115176/zen-meditation"
+            target="_blank"
+            class="orange"
+            >Zen Meditation</a
+          >
+          on to help you live in Season 3:
+        </p>
+        <div>
+          <ol>
+            <li>
+              <a
+                href="https://www.wowhead.com/zone=9028/ataldazar"
+                target="_blank"
+                class="orange"
+                >Atal'dazar</a
+              >: Skewer (<a
+                href="https://www.wowhead.com/npc=129412/yazma"
+                target="_blank"
+                >Yazma</a
+              >)
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/zone=7805/black-rook-hold"
+                target="_blank"
+                class="orange"
+                >Black Rook Hold</a
+              >: Strike Down (<a
+                href="https://www.wowhead.com/npc=98538/lady-velandras-ravencrest"
+                target="_blank"
+                >Lady Velandras Ravencrest</a
+              >), Soul Burst (<a
+                href="https://www.wowhead.com/npc=98542/amalgam-of-souls"
+                target="_blank"
+                >The Amalgam of Souls</a
+              >), Vengeful Shear (<a
+                href="https://www.wowhead.com/npc=98696/illysanna-ravencrest"
+                target="_blank"
+                >Illysana Ravencrest</a
+              >), Shadowbolt Volley (<a
+                href="https://www.wowhead.com/npc=94923/lord-kurtalos-ravencrest"
+                target="_blank"
+                >Lord Kur'talos Ravencrest</a
+              >)
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/zone=7673/darkheart-thicket"
+                target="_blank"
+                class="orange"
+                >Darkheart Thicket</a
+              >: Despair (<a
+                href="https://www.wowhead.com/npc=95771/dreadsoul-ruiner"
+                target="_blank"
+                >Dreadsoul Ruiner</a
+              >), Maddening Roar (<a
+                href="https://www.wowhead.com/npc=95779/festerhide-grizzly"
+                target="_blank"
+                >Festerhide Grizzly</a
+              >), Crushing Grip and Nightmare Breath (<a
+                href="https://www.wowhead.com/npc=103344/oakheart"
+                target="_blank"
+                >Oakheart</a
+              >), Earthshaking Roar (<a
+                href="https://www.wowhead.com/npc=99200/dresaron"
+                target="_blank"
+                >Dresaron</a
+              >), Apocalyptic Nightmare and Nightmare Bolt (<a
+                href="https://www.wowhead.com/npc=99192/shade-of-xavius"
+                target="_blank"
+                >Shade of Xavius</a
+              >)
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/zone=14514/dawn-of-the-infinite"
+                target="_blank"
+                class="orange"
+                >DOTI Fall</a
+              >: Chronoshear (<a
+                href="https://www.wowhead.com/npc=198995/chronikar"
+                target="_blank"
+                >Chronikar</a
+              >), Untwist (<a
+                href="https://www.wowhead.com/npc=199749/timestream-anomaly"
+                target="_blank"
+                >Timestream Anomaly</a
+              >)
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/zone=14514/dawn-of-the-infinite"
+                target="_blank"
+                class="orange"
+                >DOTI Rise</a
+              >: Titanic Blow (<a
+                href="https://www.wowhead.com/npc=198998/tyr-the-infinite-keeper"
+                target="_blank"
+                >Tyr, the Infinite Keeper</a
+              >), Bronze Exhalation (<a
+                href="https://www.wowhead.com/npc=208438/infinite-saboteur"
+                target="_blank"
+                >Infinite Saboteur</a
+              >
+              and
+              <a
+                href="https://www.wowhead.com/npc=208440/infinite-slayer"
+                target="_blank"
+                >Infinite Slayer</a
+              >), Temporal Breath (<a
+                href="https://www.wowhead.com/npc=199000/chrono-lord-deios"
+                target="_blank"
+                >Chrono-Lord Deios</a
+              >)
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/zone=7109/the-everbloom"
+                target="_blank"
+                class="orange"
+                >Everbloom</a
+              >: Parched Gasp (<a
+                href="https://www.wowhead.com/npc=81522/witherbark"
+                target="_blank"
+                >Witherbark</a
+              >), Noxious Charge (<a
+                href="https://www.wowhead.com/npc=83894/dulhu"
+                target="_blank"
+                >Ancient Protectors</a
+              >), Any Bolt (<a
+                href="https://www.wowhead.com/npc=82682/archmage-sol"
+                target="_blank"
+                >Archmage Sol</a
+              >)
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/zone=5004/throne-of-the-tides"
+                target="_blank"
+                class="orange"
+                >Throne of the Tides</a
+              >: Acid Barrage (<a
+                href="https://www.wowhead.com/npc=212673/nazjar-ravager"
+                target="_blank"
+                >Naz'jar Ravager</a
+              >), Crushing Claw (<a
+                href="https://www.wowhead.com/npc=40765/commander-ulthok"
+                target="_blank"
+                >Commander Ulthok, the Festering Prince</a
+              >)
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/zone=9424/waycrest-manor"
+                target="_blank"
+                class="orange"
+                >Waycrest Manor</a
+              >: Crush (<a
+                href="https://www.wowhead.com/npc=131667/soulbound-goliath"
+                target="_blank"
+                >Soulbound Goliath</a
+              >), Decaying Touch (<a
+                href="https://www.wowhead.com/npc=135365/matron-alma"
+                target="_blank"
+                >Matron Alma</a
+              >), Wasting Strike (<a
+                href="https://www.wowhead.com/npc=131527/lord-waycrest"
+                target="_blank"
+                >Lord and Lady Waycrest</a
+              >)
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="next">
+        <h3>
+          If you want to be part of a friendly Brewmaster community and have any
+          further questions, feel free to join the
+          <a href="https://discord.gg/8W7mMekgTP" target="_blank">Discord</a>
+          and reach out to me!
+        </h3>
+      </section>
+    </main>
+    <script src="myscripts.js"></script>
+  </body>
 </html>

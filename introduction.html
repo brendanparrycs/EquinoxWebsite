@@ -1,157 +1,478 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="author" content="Zigee">
-        <meta name="description" content="A Brewmaster Monk guide that is being made.">
-        <meta name="keywords" content="Brewmaster Monk, Brew Monk, Mythic Plus, Mythic+, M+, Brewmaster Monk Mythic Plus Guide, Brewmaster Monk Mythic+ Guide, Brewmaster Monk M+ Guide, Brew Monk Mythic Plus Guide, Brew Monk Mythic+ Guide, Brew Monk M+ Guide, Guide, Dragonflight">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <script src="https://kit.fontawesome.com/77ee47dea4.js" crossorigin="anonymous"></script>
-        <title>Brewmaster Monk Website</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <button id="mobile-button" onclick="menuFunc('mobile-menu')"><i class="fa-solid fa-bars"></i></button>
-                <a href="home.html" id="logo"><img src="images/monk.jpg" alt="Brewmaster Monk Icon">Equinox</a>
-                <ul id="computer-menu" class="menu">
-                    <li>
-                        <a href="introduction.html">Written Guide</a>
-                        <ul id="computer-submenu">
-                            <li><a href="introduction.html">Introduction</a></li>
-                            <li><a href="talents.html">Talents</a></li>
-                            <li><a href="gearing.html">Gearing</a></li>
-                            <li><a href="playstyle.html">Playstyle & Rotation</a></li>
-                            <li><a href="dungeons.html">Dungeons & Affixes</a></li>
-                            <li><a href="advanced.html">Advanced Tips & Tricks</a></li>
-                        </ul>
-                    </li><!--
-                    --><li><a href="" target="_blank">Video Guide</a><div></div></li><!--
-                    --><li><a href="https://discord.gg/FAX73yrW" target="_blank">Discord</a></li><!--
-                    --><li><a href="https://twitter.com/equinoxmonk " target="_blank">Twitter</a></li><!--
-                    --><li><a href="https://www.twitch.tv/equinox" target="_blank">Stream</a></li>
-                </ul>
-            </nav>
-            <ul id="mobile-menu" class="menu">
-                <li>
-                    <a onclick="menuFunc('mobile-submenu')">Written Guide<i class="fa-solid fa-caret-down"></i></a>
-                    <ul id="mobile-submenu">
-                        <li><a href="introduction.html">Introduction</a></li>
-                        <li><a href="talents.html">Talents</a></li>
-                        <li><a href="gearing.html">Gearing</a></li>
-                        <li><a href="playstyle.html">Playstyle & Rotation</a></li>
-                        <li><a href="dungeons.html">Dungeons & Affixes</a></li>
-                        <li><a href="advanced.html">Advanced Tips & Tricks</a></li>
-                    </ul>
-                </li><!--
-                --><li><a href="" target="_blank">Video Guide</a><div></div></li><!--
-                --><li><a href="https://discord.gg/FAX73yrW" target="_blank">Discord</a></li><!--
-                --><li><a href="https://twitter.com/equinoxmonk " target="_blank">Twitter</a></li><!--
-                --><li><a href="https://www.twitch.tv/equinox" target="_blank">Stream</a></li>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Zigee" />
+    <meta
+      name="description"
+      content="A mythic+ and raid Brewmaster monk guide made by equinoxmonk."
+    />
+    <meta
+      name="keywords"
+      content="Brewmaster Monk, Brew Monk, Mythic Plus, Mythic+, M+, Brewmaster Monk Mythic Plus Guide, Brewmaster Monk Mythic+ Guide, Brewmaster Monk M+ Guide, Brew Monk Mythic Plus Guide, Brew Monk Mythic+ Guide, Brew Monk M+ Guide, Guide, Dragonflight"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/77ee47dea4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Equinoxmonk | Introduction</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button id="mobile-button" onclick="menuFunc('mobile-menu')">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <a href="home.html" id="logo"
+          ><img src="images/monk.jpg" alt="Brewmaster Monk Icon" />Equinox</a
+        >
+        <ul id="computer-menu" class="menu">
+          <li>
+            <a href="introduction.html">Written Guide</a>
+            <ul id="computer-submenu">
+              <li><a href="introduction.html">Introduction</a></li>
+              <li><a href="talents.html">Talents</a></li>
+              <li><a href="gearing.html">Gearing</a></li>
+              <li><a href="playstyle.html">Playstyle & Rotation</a></li>
+              <li><a href="dungeons.html">Dungeons & Affixes</a></li>
+              <li><a href="advanced.html">Advanced Tips & Tricks</a></li>
             </ul>
-        </header>
-        <main>
-            <section class="about">
-                <h2>About Equinox</h2>
-                <p>Hello, my name is <a href="" target="_blank">Equinox</a>. I'm just someone who loves keys and being competitive! I've played Brewmaster (BRM) since BFA, and I've been a top 10 Brewmaster ever since Shadowlands. I decided that I wanted to write a guide about how I view Brewmaster in Mythic+ and share some things that I've learned over the course of the past three expansions. I hope you enjoy it, and let me know if there's anything you'd like me to include.</p>
-            </section>
-            <section id="strengths-weaknesses">
-                <h2>Strengths and Weaknesses</h2>
-                <p>Brewmaster monk has a variety of strengths and weaknesses. What are the primary ones?</p>
-                <div class="grid-container">
-                    <ul id="strengths" class="fa-ul">
-                        <li><h3 id="strength-title">Strengths</h3></li>
-                        <li><span class="fa-li"><i class="fa-solid fa-plus green"></i></span>High damage.</li>
-                        <li><span class="fa-li"><i class="fa-solid fa-plus green"></i></span>Short cooldown absorb shield (good for dealing with tank busters).</li>
-                        <li><span class="fa-li"><i class="fa-solid fa-plus green"></i></span>Large array of defensive options for tank busters.</li>
-                        <li><span class="fa-li"><i class="fa-solid fa-plus green"></i></span>Strong passive mitigation and ability to cheese mechanics like Smashpite the Hateful's Hateful Charge in Black Rook Hold (more covered in <a href="dungeons.html">dungeons & affixes</a>).</li>
-                    </ul>
-                    <ul id="weaknesses" class="fa-ul">
-                        <li><h3 id="weakness-title">Weaknesses</h3></li>
-                        <li><span class="fa-li"><i class="fa-solid fa-minus red"></i></span>No utility to help group live during hard bosses.</li>
-                        <li><span class="fa-li"><i class="fa-solid fa-minus red"></i></span>One shottable if you aren't familiar with the dungeons.</li>
-                        <li><span class="fa-li"><i class="fa-solid fa-minus red"></i></span>Semi-trinket reliant this season.</li>
-                    </ul>
-                </div>
-            </section>
-            <section id="races" class="info-section">
-                <h2>Race Selection</h2>
-                <p>Both factions have very competitive races for Brewmaster in the Mythic+ Scene. Keep in mind, however, that the race you choose makes a very small difference until an extremely high level.</p>
-                <div class="grid-container">
-                    <div id="horde">
-                        <p class="sub-header orange">Horde</p>
-                        <img id="vulpera" class="selected" src="images/vulpera.jpg" onclick="updateInfo(this)"><!--
-                        --><img id="tauren" src="images/tauren.jpg" onclick="updateInfo(this)"><!--
-                        --><img id="highmountain-tauren" src="images/highmountain-tauren.jpg" onclick="updateInfo(this)"><!--
-                        --><img id="belf" src="images/blood-elf.jpg" onclick="updateInfo(this)">
-                        <h3>Vulpera</h3>
-                        <p class="description">Vulpera is the best race you could choose on the Horde. They offer strong damage reducton, along with a single target/group heal <a class="orange" href="https://www.wowhead.com/spell=312411/bag-of-tricks" target="blank">(Bag of Tricks)</a>.</p>
-                    </div>
-                    <div id="alliance">
-                        <p class="sub-header orange">Alliance</p>
-                        <img id="dwarf" class="selected" src="images/dwarf.jpg" onclick="updateInfo(this)"><!--
-                        --><img id="darkiron-dwarf" src="images/darkiron-dwarf_male.jpg" onclick="updateInfo(this)"><!--
-                        --><img id="kultiran" src="images/kultiran.jpg" onclick="updateInfo(this)">
-                        <h3>Dwarf</h3>
-                        <p class="description">Dwarf is the strongest defensive race you can choose in the game. Dwarf's racial <a class='orange' href='https://www.wowhead.com/spell=20594/stoneform' target='_blank'>(Stoneform)</a> allows you to remove a multitude of debuffs on yourself, along with a 10% damage reduction for 8 seconds (more covered in the <a href=''>advanced section</a> of the guide).</p>
-                    </div>
-                </div>
-            </section>
-            <section id="abilities" class="info-section">
-                <h2>Ability Breakdown</h2>
-                <p>If you aren't new to Brewmaster, I highly recommend that you <a href="talents.html">skip this</a>. I'll be covering your basic abilities that are important to you and that won't be covered in the advanced section.</p>
-                <div class="grid-container">
-                    <div id="passives">
-                        <p class="sub-header orange">Important Passives</p>
-                        <img id="stagger" class="selected" src="images/stagger.jpg" onclick="updateInfo(this)"><!--
-                        --><img id="gotox" src="images/gift-of-the-ox.jpg" onclick="updateInfo(this)"><!--
-                        --><img id="cf" src="images/celestial-fortune.jpg" onclick="updateInfo(this)">
-                        <h3><a href="https://www.wowhead.com/spell=124255/stagger" target="_blank">Stagger</a></h3>
-                        <p class="description">This passive is what makes Brewmaster unique. It causes you to take all damage over a delayed period of time based off of your agility (more covered in <a href="talents.html">talents</a>).</p>
-                    </div>
-                    <div id="defensives">
-                        <p class="sub-header orange">Important Defensive Abilities</p>
-                        <img id="eh" class="selected" src="images/expel-harm.jpg" onclick="updateInfo(this)"><!--
-                        --><img id="purifying-brew" src="images/purifying-brew.jpg" onclick="updateInfo(this)"><!--
-                        --><img id="fort-brew" src="images/fortifying-brew.jpg" onclick="updateInfo(this)"><!--
-                        --><img id="celestial-brew" src="images/celestial-brew.jpg" onclick="updateInfo(this)">
-                        <h3><a href="https://www.wowhead.com/spell=115072/expel-harm" target="_blank">Expel Harm</a></h3>
-                        <p class="description">This ability is one of your primary ways to pull in all of your <a class="orange" href="https://www.wowhead.com/spell=124502/gift-of-the-ox" target="_blank">Gift of the Ox</a> orbs. If you have enough critical strike, it can also be a strong heal with no <a class="orange" href="https://www.wowhead.com/spell=124502/gift-of-the-ox" target="_blank">Gift of the Ox</a> orbs (more covered in <a href="talents.html">talents</a>).</p>
-                    </div>
-                </div>
-                <div id="offensives" class="middle-spacing">
-                    <p class="sub-header orange">Important Offensive Abilities</p>
-                    <img id="rsk" class="selected" src="images/rising-sun-kick.jpg" onclick="updateInfo(this)"><!--
-                    --><img id="keg-smash" src="images/keg-smash.jpg" onclick="updateInfo(this)"><!--
-                    --><img id="bok" src="images/blackout-kick.jpg" onclick="updateInfo(this)"><!--
-                    --><img id="sck" src="images/spinning-crane-kick.jpg" onclick="updateInfo(this)"><!--
-                    --><img id="tp" src="images/tiger-palm.jpg" onclick="updateInfo(this)"><!--
-                    --><img id="bof" src="images/breath-of-fire.jpg" onclick="updateInfo(this)">
-                    <h3><a href="https://www.wowhead.com/spell=107428/rising-sun-kick" target="_blank">Rising Sun Kick</a></h3>
-                    <p class="description">This is your highest single target damage ability and a good filler option in AoE when you don't want to spend energy on a global cooldown.</p>
-                </div>
-            </section>
-            <section id="addons" class="number-list-section">
-                <h2>Recommended Addons</h2>
-                <p>Interface customization is a very important part of World of Warcraft. This section gives a list of addons that I would consider "required" for any level of raid and mythic+. I will also provide import links for certain addons, and a list of all of my recommended weakauras.</p>
-                <div>
-                    <ol>
-                        <li><a href="https://www.curseforge.com/wow/addons/big-wigs" target="_blank">BigWigs</a> / <a href="https://www.curseforge.com/wow/addons/little-wigs" target="_blank">LittleWigs</a> - Displays timers for boss and trash mechanics in raid and mythic+.</li>
-                        <li><a href="https://www.curseforge.com/wow/addons/details" target="_blank">Details! Damager Meter</a> - Can display a ton of information like damage, healing, interrupts, etc. for you and your party.</li>
-                        <li><a href="https://www.curseforge.com/wow/addons/mythic-dungeon-tools" target="_blank">Mythic Dungeon Tools</a> - An important routing tool for mythic+. You can import the routes from the <a href="dungeons.html">Dungeons & Affixes</a> section of the guide.</li>
-                        <li><a href="https://www.curseforge.com/wow/addons/omnicd" target="_blank">OmniCD</a> - Displays your party members' important cooldowns, so you can track when certain abilities are available. You can import my profile from <a href="" target="_blank">here</a>.</li>
-                        <li><a href="https://www.curseforge.com/wow/addons/plater-nameplates" target="_blank">Plater Nameplates</a> - An extremely important addon that makes holding threat and interrupting mobs easier. You can import my profile from <a href="https://wago.io/OWR70yS-E" target="_blank">here</a>.</li>
-                        <li><a href="https://www.curseforge.com/wow/addons/raiderio" target="_blank">Raider.IO</a> - A necessary addon for any player. This addon displays players' raid bosses killed and mythic+ score.</li>
-                        <li><a href="https://www.curseforge.com/wow/addons/weakauras-2" target="_blank">WeakAuras</a> - An addon that allows you to create "mini addons." You can use this to majorly edit your game and interface. You can get a list of my recommended weakauras <a href="https://controlc.com/c7cb800b" target="_blank">here</a>.</li>
-                    </ol>
-                </div>
-            </section>
-            <section class="next">
-                <h3><a class="orange" href="talents.html">Next: Talents <i class="fa-solid fa-arrow-right"></i></a></h3>
-            </section>
-        </main>
-        <script src="myscripts.js"></script>
-    </body>
+          </li>
+          <!--
+                    -->
+          <li>
+            <a href="" target="_blank">Video Guide</a>
+            <div></div>
+          </li>
+          <!--
+                    -->
+          <li>
+            <a href="https://discord.gg/8W7mMekgTP" target="_blank">Discord</a>
+          </li>
+          <!--
+                    -->
+          <li>
+            <a href="https://twitter.com/equinoxmonk " target="_blank"
+              >Twitter</a
+            >
+          </li>
+          <!--
+                    -->
+          <li>
+            <a href="https://www.twitch.tv/equinox" target="_blank">Stream</a>
+          </li>
+        </ul>
+      </nav>
+      <ul id="mobile-menu" class="menu">
+        <li>
+          <a onclick="menuFunc('mobile-submenu')"
+            >Written Guide<i class="fa-solid fa-caret-down"></i
+          ></a>
+          <ul id="mobile-submenu">
+            <li><a href="introduction.html">Introduction</a></li>
+            <li><a href="talents.html">Talents</a></li>
+            <li><a href="gearing.html">Gearing</a></li>
+            <li><a href="playstyle.html">Playstyle & Rotation</a></li>
+            <li><a href="dungeons.html">Dungeons & Affixes</a></li>
+            <li><a href="advanced.html">Advanced Tips & Tricks</a></li>
+          </ul>
+        </li>
+        <!--
+                -->
+        <li>
+          <a href="" target="_blank">Video Guide</a>
+          <div></div>
+        </li>
+        <!--
+                -->
+        <li>
+          <a href="https://discord.gg/8W7mMekgTP" target="_blank">Discord</a>
+        </li>
+        <!--
+                -->
+        <li>
+          <a href="https://twitter.com/equinoxmonk " target="_blank">Twitter</a>
+        </li>
+        <!--
+                -->
+        <li>
+          <a href="https://www.twitch.tv/equinox" target="_blank">Stream</a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <section class="about">
+        <h2>About Equinox</h2>
+        <p>
+          Hello, my name is <a href="" target="_blank">Equinox</a>. I'm just
+          someone who loves keys and being competitive! I've played Brewmaster
+          (BRM) since BFA, and I've been a top 10 Brewmaster ever since
+          Shadowlands. I decided that I wanted to write a guide about how I view
+          Brewmaster in Mythic+ and share some things that I've learned over the
+          course of the past three expansions. I hope you enjoy it, and let me
+          know if there's anything you'd like me to include.
+        </p>
+      </section>
+      <section id="strengths-weaknesses">
+        <h2>Strengths and Weaknesses</h2>
+        <p>
+          Brewmaster monk has a variety of strengths and weaknesses. What are
+          the primary ones?
+        </p>
+        <div class="grid-container">
+          <ul id="strengths" class="fa-ul">
+            <li><h3 id="strength-title">Strengths</h3></li>
+            <li>
+              <span class="fa-li"><i class="fa-solid fa-plus green"></i></span
+              >High damage.
+            </li>
+            <li>
+              <span class="fa-li"><i class="fa-solid fa-plus green"></i></span
+              >Short cooldown absorb shield (good for dealing with tank
+              busters).
+            </li>
+            <li>
+              <span class="fa-li"><i class="fa-solid fa-plus green"></i></span
+              >Large array of defensive options for tank busters.
+            </li>
+            <li>
+              <span class="fa-li"><i class="fa-solid fa-plus green"></i></span
+              >Strong passive mitigation and ability to cheese mechanics like
+              Smashpite the Hateful's Hateful Charge in Black Rook Hold (more
+              covered in <a href="dungeons">dungeons & affixes</a>).
+            </li>
+          </ul>
+          <ul id="weaknesses" class="fa-ul">
+            <li><h3 id="weakness-title">Weaknesses</h3></li>
+            <li>
+              <span class="fa-li"><i class="fa-solid fa-minus red"></i></span>No
+              utility to help group live during hard bosses.
+            </li>
+            <li>
+              <span class="fa-li"><i class="fa-solid fa-minus red"></i></span
+              >One shottable if you aren't familiar with the dungeons.
+            </li>
+            <li>
+              <span class="fa-li"><i class="fa-solid fa-minus red"></i></span
+              >Semi-trinket reliant this season.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="races" class="info-section">
+        <h2>Race Selection</h2>
+        <p>
+          Both factions have very competitive races for Brewmaster in the
+          Mythic+ Scene. Keep in mind, however, that the race you choose makes a
+          very small difference until an extremely high level.
+        </p>
+        <div class="grid-container">
+          <div id="horde">
+            <p class="sub-header orange">Horde</p>
+            <img
+              id="vulpera"
+              class="selected"
+              src="images/vulpera.jpg"
+              onclick="updateInfo(this)"
+            /><!--
+                        --><img
+              id="tauren"
+              src="images/tauren.jpg"
+              onclick="updateInfo(this)"
+            /><!--
+                        --><img
+              id="highmountain-tauren"
+              src="images/highmountain-tauren.jpg"
+              onclick="updateInfo(this)"
+            /><!--
+                        --><img
+              id="belf"
+              src="images/blood-elf.jpg"
+              onclick="updateInfo(this)"
+            />
+            <h3>Vulpera</h3>
+            <p class="description">
+              Vulpera is the best race you could choose on the Horde. They offer
+              strong damage reducton, along with a single target/group heal
+              <a
+                class="orange"
+                href="https://www.wowhead.com/spell=312411/bag-of-tricks"
+                target="blank"
+                >(Bag of Tricks)</a
+              >.
+            </p>
+          </div>
+          <div id="alliance">
+            <p class="sub-header orange">Alliance</p>
+            <img
+              id="dwarf"
+              class="selected"
+              src="images/dwarf.jpg"
+              onclick="updateInfo(this)"
+            /><!--
+                        --><img
+              id="darkiron-dwarf"
+              src="images/darkiron-dwarf_male.jpg"
+              onclick="updateInfo(this)"
+            /><!--
+                        --><img
+              id="kultiran"
+              src="images/kultiran.jpg"
+              onclick="updateInfo(this)"
+            />
+            <h3>Dwarf</h3>
+            <p class="description">
+              Dwarf is the strongest defensive race you can choose in the game.
+              Dwarf's racial
+              <a
+                class="orange"
+                href="https://www.wowhead.com/spell=20594/stoneform"
+                target="_blank"
+                >(Stoneform)</a
+              >
+              allows you to remove a multitude of debuffs on yourself, along
+              with a 10% damage reduction for 8 seconds (more covered in the
+              <a href="">advanced section</a> of the guide).
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="abilities" class="info-section">
+        <h2>Ability Breakdown</h2>
+        <p>
+          If you aren't new to Brewmaster, I highly recommend that you
+          <a href="talents">skip this</a>. I'll be covering your basic abilities
+          that are important to you and that won't be covered in the advanced
+          section.
+        </p>
+        <div class="grid-container">
+          <div id="passives">
+            <p class="sub-header orange">Important Passives</p>
+            <img
+              id="stagger"
+              class="selected"
+              src="images/stagger.jpg"
+              onclick="updateInfo(this)"
+            /><!--
+                        --><img
+              id="gotox"
+              src="images/gift-of-the-ox.jpg"
+              onclick="updateInfo(this)"
+            /><!--
+                        --><img
+              id="cf"
+              src="images/celestial-fortune.jpg"
+              onclick="updateInfo(this)"
+            />
+            <h3>
+              <a
+                href="https://www.wowhead.com/spell=124255/stagger"
+                target="_blank"
+                >Stagger</a
+              >
+            </h3>
+            <p class="description">
+              This passive is what makes Brewmaster unique. It causes you to
+              take all damage over a delayed period of time based off of your
+              agility (more covered in <a href="talents">talents</a>).
+            </p>
+          </div>
+          <div id="defensives">
+            <p class="sub-header orange">Important Defensive Abilities</p>
+            <img
+              id="eh"
+              class="selected"
+              src="images/expel-harm.jpg"
+              onclick="updateInfo(this)"
+            /><!--
+                        --><img
+              id="purifying-brew"
+              src="images/purifying-brew.jpg"
+              onclick="updateInfo(this)"
+            /><!--
+                        --><img
+              id="fort-brew"
+              src="images/fortifying-brew.jpg"
+              onclick="updateInfo(this)"
+            /><!--
+                        --><img
+              id="celestial-brew"
+              src="images/celestial-brew.jpg"
+              onclick="updateInfo(this)"
+            />
+            <h3>
+              <a
+                href="https://www.wowhead.com/spell=115072/expel-harm"
+                target="_blank"
+                >Expel Harm</a
+              >
+            </h3>
+            <p class="description">
+              This ability is one of your primary ways to pull in all of your
+              <a
+                class="orange"
+                href="https://www.wowhead.com/spell=124502/gift-of-the-ox"
+                target="_blank"
+                >Gift of the Ox</a
+              >
+              orbs. If you have enough critical strike, it can also be a strong
+              heal with no
+              <a
+                class="orange"
+                href="https://www.wowhead.com/spell=124502/gift-of-the-ox"
+                target="_blank"
+                >Gift of the Ox</a
+              >
+              orbs (more covered in <a href="talents">talents</a>).
+            </p>
+          </div>
+        </div>
+        <div id="offensives" class="middle-spacing">
+          <p class="sub-header orange">Important Offensive Abilities</p>
+          <img
+            id="rsk"
+            class="selected"
+            src="images/rising-sun-kick.jpg"
+            onclick="updateInfo(this)"
+          /><!--
+                    --><img
+            id="keg-smash"
+            src="images/keg-smash.jpg"
+            onclick="updateInfo(this)"
+          /><!--
+                    --><img
+            id="bok"
+            src="images/blackout-kick.jpg"
+            onclick="updateInfo(this)"
+          /><!--
+                    --><img
+            id="sck"
+            src="images/spinning-crane-kick.jpg"
+            onclick="updateInfo(this)"
+          /><!--
+                    --><img
+            id="tp"
+            src="images/tiger-palm.jpg"
+            onclick="updateInfo(this)"
+          /><!--
+                    --><img
+            id="bof"
+            src="images/breath-of-fire.jpg"
+            onclick="updateInfo(this)"
+          />
+          <h3>
+            <a
+              href="https://www.wowhead.com/spell=107428/rising-sun-kick"
+              target="_blank"
+              >Rising Sun Kick</a
+            >
+          </h3>
+          <p class="description">
+            This is your highest single target damage ability and a good filler
+            option in AoE when you don't want to spend energy on a global
+            cooldown.
+          </p>
+        </div>
+      </section>
+      <section id="addons" class="number-list-section">
+        <h2>Recommended Addons</h2>
+        <p>
+          Interface customization is a very important part of World of Warcraft.
+          This section gives a list of addons that I would consider "required"
+          for any level of raid and mythic+. I will also provide import links
+          for certain addons, and a list of all of my recommended weakauras.
+        </p>
+        <div>
+          <ol>
+            <li>
+              <a
+                href="https://www.curseforge.com/wow/addons/big-wigs"
+                target="_blank"
+                >BigWigs</a
+              >
+              /
+              <a
+                href="https://www.curseforge.com/wow/addons/little-wigs"
+                target="_blank"
+                >LittleWigs</a
+              >
+              - Displays timers for boss and trash mechanics in raid and
+              mythic+.
+            </li>
+            <li>
+              <a
+                href="https://www.curseforge.com/wow/addons/details"
+                target="_blank"
+                >Details! Damager Meter</a
+              >
+              - Can display a ton of information like damage, healing,
+              interrupts, etc. for you and your party.
+            </li>
+            <li>
+              <a
+                href="https://www.curseforge.com/wow/addons/mythic-dungeon-tools"
+                target="_blank"
+                >Mythic Dungeon Tools</a
+              >
+              - An important routing tool for mythic+. You can import the routes
+              from the <a href="dungeons">Dungeons & Affixes</a> section of the
+              guide.
+            </li>
+            <li>
+              <a
+                href="https://www.curseforge.com/wow/addons/omnicd"
+                target="_blank"
+                >OmniCD</a
+              >
+              - Displays your party members' important cooldowns, so you can
+              track when certain abilities are available. You can import my
+              profile from <a href="" target="_blank">here</a>.
+            </li>
+            <li>
+              <a
+                href="https://www.curseforge.com/wow/addons/plater-nameplates"
+                target="_blank"
+                >Plater Nameplates</a
+              >
+              - An extremely important addon that makes holding threat and
+              interrupting mobs easier. You can import my profile from
+              <a href="https://wago.io/OWR70yS-E" target="_blank">here</a>.
+            </li>
+            <li>
+              <a
+                href="https://www.curseforge.com/wow/addons/raiderio"
+                target="_blank"
+                >Raider.IO</a
+              >
+              - A necessary addon for any player. This addon displays players'
+              raid bosses killed and mythic+ score.
+            </li>
+            <li>
+              <a
+                href="https://www.curseforge.com/wow/addons/weakauras-2"
+                target="_blank"
+                >WeakAuras</a
+              >
+              - An addon that allows you to create "mini addons." You can use
+              this to majorly edit your game and interface. You can get a list
+              of my recommended weakauras
+              <a href="" target="_blank">here</a>.
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="next">
+        <h3>
+          <a class="orange" href="talents"
+            >Next: Talents <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </h3>
+      </section>
+    </main>
+    <script src="myscripts.js"></script>
+  </body>
 </html>

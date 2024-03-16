@@ -1,171 +1,864 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="author" content="Zigee">
-        <meta name="description" content="A Brewmaster Monk guide that is being made.">
-        <meta name="keywords" content="Brewmaster Monk, Brew Monk, Mythic Plus, Mythic+, M+, Brewmaster Monk Mythic Plus Guide, Brewmaster Monk Mythic+ Guide, Brewmaster Monk M+ Guide, Brew Monk Mythic Plus Guide, Brew Monk Mythic+ Guide, Brew Monk M+ Guide, Guide, Dragonflight">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <script src="https://kit.fontawesome.com/77ee47dea4.js" crossorigin="anonymous"></script>
-        <title>Brewmaster Monk Website</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <button id="mobile-button" onclick="menuFunc('mobile-menu')"><i class="fa-solid fa-bars"></i></button>
-                <a href="home.html" id="logo"><img src="images/monk.jpg" alt="Brewmaster Monk Icon">Equinox</a>
-                <ul id="computer-menu" class="menu">
-                    <li>
-                        <a href="introduction.html">Written Guide</a>
-                        <ul id="computer-submenu">
-                            <li><a href="introduction.html">Introduction</a></li>
-                            <li><a href="talents.html">Talents</a></li>
-                            <li><a href="gearing.html">Gearing</a></li>
-                            <li><a href="playstyle.html">Playstyle & Rotation</a></li>
-                            <li><a href="dungeons.html">Dungeons & Affixes</a></li>
-                            <li><a href="advanced.html">Advanced Tips & Tricks</a></li>
-                        </ul>
-                    </li><!--
-                    --><li><a href="" target="_blank">Video Guide</a><div></div></li><!--
-                    --><li><a href="https://discord.gg/FAX73yrW" target="_blank">Discord</a></li><!--
-                    --><li><a href="https://twitter.com/equinoxmonk " target="_blank">Twitter</a></li><!--
-                    --><li><a href="https://www.twitch.tv/equinox" target="_blank">Stream</a></li>
-                </ul>
-            </nav>
-            <ul id="mobile-menu" class="menu">
-                <li>
-                    <a onclick="menuFunc('mobile-submenu')">Written Guide<i class="fa-solid fa-caret-down"></i></a>
-                    <ul id="mobile-submenu">
-                        <li><a href="introduction.html">Introduction</a></li>
-                        <li><a href="talents.html">Talents</a></li>
-                        <li><a href="gearing.html">Gearing</a></li>
-                        <li><a href="playstyle.html">Playstyle & Rotation</a></li>
-                        <li><a href="dungeons.html">Dungeons & Affixes</a></li>
-                        <li><a href="advanced.html">Advanced Tips & Tricks</a></li>
-                    </ul>
-                </li><!--
-                --><li><a href="" target="_blank">Video Guide</a><div></div></li><!--
-                --><li><a href="https://discord.gg/FAX73yrW" target="_blank">Discord</a></li><!--
-                --><li><a href="https://twitter.com/equinoxmonk " target="_blank">Twitter</a></li><!--
-                --><li><a href="https://www.twitch.tv/equinox" target="_blank">Stream</a></li>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Zigee" />
+    <meta
+      name="description"
+      content="A mythic+ and raid Brewmaster monk guide made by equinoxmonk."
+    />
+    <meta
+      name="keywords"
+      content="Brewmaster Monk, Brew Monk, Mythic Plus, Mythic+, M+, Brewmaster Monk Mythic Plus Guide, Brewmaster Monk Mythic+ Guide, Brewmaster Monk M+ Guide, Brew Monk Mythic Plus Guide, Brew Monk Mythic+ Guide, Brew Monk M+ Guide, Guide, Dragonflight"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/77ee47dea4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Equinoxmonk | Playstyle & Rotation</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button id="mobile-button" onclick="menuFunc('mobile-menu')">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <a href="home.html" id="logo"
+          ><img src="images/monk.jpg" alt="Brewmaster Monk Icon" />Equinox</a
+        >
+        <ul id="computer-menu" class="menu">
+          <li>
+            <a href="introduction.html">Written Guide</a>
+            <ul id="computer-submenu">
+              <li><a href="introduction.html">Introduction</a></li>
+              <li><a href="talents.html">Talents</a></li>
+              <li><a href="gearing.html">Gearing</a></li>
+              <li><a href="playstyle.html">Playstyle & Rotation</a></li>
+              <li><a href="dungeons.html">Dungeons & Affixes</a></li>
+              <li><a href="advanced.html">Advanced Tips & Tricks</a></li>
             </ul>
-        </header>
-        <main>
-            <section class="about">
-                <h2>Playstyle & Rotation</h2>
-                <p>Instead of following a set pattern or rotation, Brewmaster is primarily a priority list, utilizing certain abilities over others based on the moment. We will go over the general priority list for both single target and AoE, along with how to properly utilize your defensives to live challenging encounters.</p>
-            </section>
-            <section id="st-rotation" class="number-list-section">
-                <h2>Single Target Damage Rotation</h2>
-                <p>Brewmaster's single target is very straight forward. Your main goal is to keep your buffs up as much as possible, while making sure that you use your hard hitting abilities on cooldown. Regarding our <a href="https://www.wowhead.com/spell=196736/blackout-combo" target="_blank" class="orange">Blackout Combo</a>, it is most important to use it on <a href="https://www.wowhead.com/spell=100780/tiger-palm" target="_blank" class="orange">Tiger Palm</a>, as it does a lot of damage on single target. If you are at extremely high levels of stagger, it can be worth spending <a href="https://www.wowhead.com/spell=196736/blackout-combo" target="_blank" class="orange">Blackout Combo</a> on <a href="https://www.wowhead.com/spell=115181/breath-of-fire" target="_blank" class="orange">Breath of Fire</a>, but this is very rare.</p>
-                <div>
-                    <ol>
-                        <li>Maintain <a href="https://www.wowhead.com/spell=116847/rushing-jade-wind" target="_blank" class="orange">Rushing Jade Wind</a> (if talented)</li>
-                        <li>Maintain <a href="https://www.wowhead.com/spell=386965/charred-passions" target="_blank" class="orange">Charred Passions</a> (if talented)</li>
-                        <li>Maintain <a href="https://www.wowhead.com/spell=386276/bonedust-brew" target="_blank" class="orange">Bonedust Brew</a> as much as possible</li>
-                        <li><a href="https://www.wowhead.com/spell=325153/exploding-keg" target="_blank" class="orange">Exploding Keg</a> if <a href="https://www.wowhead.com/spell=386276/bonedust-brew" target="_blank" class="orange">Bonedust Brew</a> is on the target</li>
-                        <li><a href="https://www.wowhead.com/spell=115181/breath-of-fire" target="_blank" class="orange">Breath of Fire</a> before using <a href="https://www.wowhead.com/spell=121253/keg-smash" target="_blank" class="orange">Keg Smash</a> (if talented into <a href="https://www.wowhead.com/spell=383994/dragonfire-brew" target="_blank" class="orange">Dragonfire Brew</a>)</li>
-                        <li><a href="https://www.wowhead.com/spell=121253/keg-smash" target="_blank" class="orange">Keg Smash</a> if you are at 2 charges</li>
-                        <li><a href="https://www.wowhead.com/spell=107428/rising-sun-kick" target="_blank" class="orange">Rising Sun Kick</a></li>
-                        <li><a href="https://www.wowhead.com/spell=100784/blackout-kick" target="_blank" class="orange">Blackout Kick</a></li>
-                        <li><a href="https://www.wowhead.com/spell=100780/tiger-palm" target="_blank" class="orange">Tiger Palm</a> if buffed by <a href="https://www.wowhead.com/spell=196736/blackout-combo" target="_blank" class="orange">Blackout Combo</a></li>
-                        <li><a href="https://www.wowhead.com/spell=121253/keg-smash" target="_blank" class="orange">Keg Smash</a></li>
-                        <li><a href="https://www.wowhead.com/spell=100780/tiger-palm" target="_blank" class="orange">Tiger Palm</a></li>
-                        <li><a href="https://www.wowhead.com/spell=115098/chi-wave" target="_blank" class="orange">Chi Wave</a> / <a href="https://www.wowhead.com/spell=123986/chi-burst" target="_blank" class="orange">Chi Burst</a></li>
-                    </ol>
-                </div>
-            </section>
-            <section id="aoe-rotation" class="number-list-section">
-                <h2>AoE Damage Rotation</h2>
-                <p>Brewmaster's AoE is very similar to its single target. Unlike the single target rotation, however, where you want to spend every <a href="https://www.wowhead.com/spell=196736/blackout-combo" target="_blank" class="orange">Blackout Combo</a> on <a href="https://www.wowhead.com/spell=100780/tiger-palm" target="_blank" class="orange">Tiger Palm</a>, you can weave it between <a href="https://www.wowhead.com/spell=121253/keg-smash" target="_blank" class="orange">Keg Smash</a> for brew cooldown reduction and <a href="https://www.wowhead.com/spell=115181/breath-of-fire" target="_blank" class="orange">Breath of Fire</a> for additional damage. We also replace <a href="https://www.wowhead.com/spell=100780/tiger-palm" target="_blank" class="orange">Tiger Palm</a> as our filler with Spinning Crane Kick.</p>
-                <div>
-                    <ol>
-                        <li>Maintain <a href="https://www.wowhead.com/spell=116847/rushing-jade-wind" target="_blank" class="orange">Rushing Jade Wind</a> (if talented)</li>
-                        <li>Maintain <a href="https://www.wowhead.com/spell=386965/charred-passions" target="_blank" class="orange">Charred Passions</a> (if talented)</li>
-                        <li>Maintain <a href="https://www.wowhead.com/spell=386276/bonedust-brew" target="_blank" class="orange">Bonedust Brew</a> as much as possible</li>
-                        <li><a href="https://www.wowhead.com/spell=325153/exploding-keg" target="_blank" class="orange">Exploding Keg</a> if <a href="https://www.wowhead.com/spell=386276/bonedust-brew" target="_blank" class="orange">Bonedust Brew</a> is on enemies</li>
-                        <li><a href="https://www.wowhead.com/spell=115181/breath-of-fire" target="_blank" class="orange">Breath of Fire</a> before using <a href="https://www.wowhead.com/spell=121253/keg-smash" target="_blank" class="orange">Keg Smash</a> or if buffed by <a href="https://www.wowhead.com/spell=196736/blackout-combo" target="_blank" class="orange">Blackout Combo</a> (if talented into <a href="https://www.wowhead.com/spell=383994/dragonfire-brew" target="_blank" class="orange">Dragonfire Brew</a>)</li>
-                        <li><a href="https://www.wowhead.com/spell=121253/keg-smash" target="_blank" class="orange">Keg Smash</a> if you are at 2 charges</li>
-                        <li><a href="https://www.wowhead.com/spell=100784/blackout-kick" target="_blank" class="orange">Blackout Kick</a></li>
-                        <li><a href="https://www.wowhead.com/spell=121253/keg-smash" target="_blank" class="orange">Keg Smash</a></li>
-                        <li><a href="https://www.wowhead.com/spell=107428/rising-sun-kick" target="_blank" class="orange">Rising Sun Kick</a> if 4 or less targets</li>
-                        <li><a href="https://www.wowhead.com/spell=101546/spinning-crane-kick" target="_blank" class="orange">Spinning Crane Kick</a></li>
-                        <li><a href="https://www.wowhead.com/spell=115098/chi-wave" target="_blank" class="orange">Chi Wave</a> / <a href="https://www.wowhead.com/spell=123986/chi-burst" target="_blank" class="orange">Chi Burst</a></li>
-                    </ol>
-                </div>
-            </section>
-            <section id="woo-burst" class="number-list-section">
-                <h2>Weapons of Order Burst</h2>
-                <p>Brewmaster has one of the longest and most complex burst rotations in the game. This burst can also change based on if you are running <a href="https://www.wowhead.com/spell=383994/dragonfire-brew" target="_blank" class="orange">Dragonfire Brew</a> or <a href="https://www.wowhead.com/spell=386965/charred-passions" target="_blank" class="orange">Charred Passions</a>. Luckily, this burst rotation remains the same on both single target and AoE, so it comes down to just memorizing every step.</p>
-                <div class="grid-container">
-                    <div id="woo-dragonfire">
-                        <h3><a href="https://www.wowhead.com/spell=383994/dragonfire-brew" target="_blank">Dragonfire Brew</a></h3>
-                        <ol>
-                            <li><a href="https://www.wowhead.com/spell=116847/rushing-jade-wind" target="_blank" class="orange">Rushing Jade Wind</a> (if talented)</li>
-                            <li><a href="https://www.wowhead.com/spell=121253/keg-smash" target="_blank" class="orange">Keg Smash</a></li>
-                            <li><a href="https://www.wowhead.com/spell=100784/blackout-kick" target="_blank" class="orange">Blackout Kick</a></li>
-                            <li><a href="https://www.wowhead.com/spell=115181/breath-of-fire" target="_blank" class="orange">Breath of Fire</a></li>
-                            <li><a href="https://www.wowhead.com/spell=388686/summon-white-tiger-statue" target="_blank" class="orange">Summon White Tiger Statue</a></li>
-                            <li><a href="https://www.wowhead.com/spell=387184/weapons-of-order" target="_blank" class="orange">Weapons of Order</a></li>
-                            <li><a href="https://www.wowhead.com/spell=121253/keg-smash" target="_blank" class="orange">Keg Smash</a></li>
-                            <li><a href="https://www.wowhead.com/spell=107428/rising-sun-kick" target="_blank" class="orange">Rising Sun Kick</a></li>
-                            <li><a href="https://www.wowhead.com/spell=100784/blackout-kick" target="_blank" class="orange">Blackout Kick</a></li>
-                            <li><a href="https://www.wowhead.com/spell=115181/breath-of-fire" target="_blank" class="orange">Breath of Fire</a></li>
-                            <li><a href="https://www.wowhead.com/spell=386276/bonedust-brew" target="_blank" class="orange">Bonedust Brew</a></li>
-                            <li><a href="https://www.wowhead.com/spell=121253/keg-smash" target="_blank" class="orange">Keg Smash</a></li>
-                            <li><a href="https://www.wowhead.com/spell=100784/blackout-kick" target="_blank" class="orange">Blackout Kick</a></li>
-                            <li><a href="https://www.wowhead.com/spell=115181/breath-of-fire" target="_blank" class="orange">Breath of Fire</a></li>
-                            <li><a href="https://www.wowhead.com/spell=116847/rushing-jade-wind" target="_blank" class="orange">Rushing Jade Wind</a> (if talented)</li>
-                            <li><a href="https://www.wowhead.com/spell=325153/exploding-keg" target="_blank" class="orange">Exploding Keg</a></li>
-                            <li>Resume repective rotation</li>
-                        </ol>
-                    </div>
-                    <div id="woo-charred">
-                        <h3><a href="https://www.wowhead.com/spell=386965/charred-passions" target="_blank">Charred Passions</a></h3>
-                        <ol>
-                            <li><a href="https://www.wowhead.com/spell=116847/rushing-jade-wind" target="_blank" class="orange">Rushing Jade Wind</a> (if talented)</li>
-                            <li><a href="https://www.wowhead.com/spell=115181/breath-of-fire" target="_blank" class="orange">Breath of Fire</a></li>
-                            <li><a href="https://www.wowhead.com/spell=388686/summon-white-tiger-statue" target="_blank" class="orange">Summon White Tiger Statue</a></li>
-                            <li><a href="https://www.wowhead.com/spell=121253/keg-smash" target="_blank" class="orange">Keg Smash</a></li>
-                            <li><a href="https://www.wowhead.com/spell=387184/weapons-of-order" target="_blank" class="orange">Weapons of Order</a></li>
-                            <li><a href="https://www.wowhead.com/spell=100784/blackout-kick" target="_blank" class="orange">Blackout Kick</a></li>
-                            <li><a href="https://www.wowhead.com/spell=115181/breath-of-fire" target="_blank" class="orange">Breath of Fire</a></li>
-                            <li><a href="https://www.wowhead.com/spell=121253/keg-smash" target="_blank" class="orange">Keg Smash</a></li>
-                            <li><a href="https://www.wowhead.com/spell=107428/rising-sun-kick" target="_blank" class="orange">Rising Sun Kick</a></li>
-                            <li><a href="https://www.wowhead.com/spell=100784/blackout-kick" target="_blank" class="orange">Blackout Kick</a></li>
-                            <li><a href="https://www.wowhead.com/spell=121253/keg-smash" target="_blank" class="orange">Keg Smash</a></li>
-                            <li><a href="https://www.wowhead.com/spell=116847/rushing-jade-wind" target="_blank" class="orange">Rushing Jade Wind</a> (if talented)</li>
-                            <li><a href="https://www.wowhead.com/spell=100784/blackout-kick" target="_blank" class="orange">Blackout Kick</a></li>
-                            <li><a href="https://www.wowhead.com/spell=115181/breath-of-fire" target="_blank" class="orange">Breath of Fire</a></li>
-                            <li><a href="https://www.wowhead.com/spell=386276/bonedust-brew" target="_blank" class="orange">Bonedust Brew</a></li>
-                            <li><a href="https://www.wowhead.com/spell=121253/keg-smash" target="_blank" class="orange">Keg Smash</a></li>
-                            <li><a href="https://www.wowhead.com/spell=325153/exploding-keg" target="_blank" class="orange">Exploding Keg</a></li>
-                            <li>Resume repective rotation</li>
-                        </ol>
-                    </div>
-                </div>
-            </section>
-            <section id="defensive-priority" class="number-list-section">
-                <h2>Defensive Priority List</h2>
-                <p>While the damage that you deal is important, it is most important to keep yourself alive. A lot of dungeons and raid bosses have extremely hard hitting tank busters where you'll want to pop a big defensive accordingly. These defensives can also be used for when you are taking a lot of sustained damage, such as in a really large pull in mythic+.</p>
-                <div>
-                    <ol>
-                        <li><a href="https://www.wowhead.com/spell=243435/fortifying-brew" target="_blank" class="orange">Fortifying Brew</a></li>
-                        <li>Defensive Trinket</li>
-                        <li><a href="https://www.wowhead.com/spell=122783/diffuse-magic" target="_blank" class="orange">Diffuse Magic</a> (vs magic damage)</li>
-                        <li><a href="https://www.wowhead.com/spell=122278/dampen-harm" target="_blank" class="orange">Dampen Harm</a> (if talented)</li>
-                        <li><a href="https://www.wowhead.com/spell=322507/celestial-brew" target="_blank" class="orange">Celestial Brew</a></li>
-                        <li><a href="https://www.wowhead.com/spell=115399/black-ox-brew" target="_blank" class="orange">Black Ox Brew</a></li>
-                        <li><a href="https://www.wowhead.com/spell=115176/zen-meditation" target="_blank" class="orange">Zen Meditation</a> (more discussed in the <a href="advanced.html">advanced section</a> of the guide)</li>
-                    </ol>
-                </div>
-            </section>
-            <section class="next">
-                <h3><a class="orange" href="dungeons.html">Next: Dungeons & Affixes <i class="fa-solid fa-arrow-right"></i></a></h3>
-            </section>
-        </main>
-        <script src="myscripts.js"></script>
-    </body>
+          </li>
+          <!--
+                    -->
+          <li>
+            <a href="" target="_blank">Video Guide</a>
+            <div></div>
+          </li>
+          <!--
+                    -->
+          <li>
+            <a href="https://discord.gg/8W7mMekgTP" target="_blank">Discord</a>
+          </li>
+          <!--
+                    -->
+          <li>
+            <a href="https://twitter.com/equinoxmonk " target="_blank"
+              >Twitter</a
+            >
+          </li>
+          <!--
+                    -->
+          <li>
+            <a href="https://www.twitch.tv/equinox" target="_blank">Stream</a>
+          </li>
+        </ul>
+      </nav>
+      <ul id="mobile-menu" class="menu">
+        <li>
+          <a onclick="menuFunc('mobile-submenu')"
+            >Written Guide<i class="fa-solid fa-caret-down"></i
+          ></a>
+          <ul id="mobile-submenu">
+            <li><a href="introduction.html">Introduction</a></li>
+            <li><a href="talents.html">Talents</a></li>
+            <li><a href="gearing.html">Gearing</a></li>
+            <li><a href="playstyle.html">Playstyle & Rotation</a></li>
+            <li><a href="dungeons.html">Dungeons & Affixes</a></li>
+            <li><a href="advanced.html">Advanced Tips & Tricks</a></li>
+          </ul>
+        </li>
+        <!--
+                -->
+        <li>
+          <a href="" target="_blank">Video Guide</a>
+          <div></div>
+        </li>
+        <!--
+                -->
+        <li>
+          <a href="https://discord.gg/8W7mMekgTP" target="_blank">Discord</a>
+        </li>
+        <!--
+                -->
+        <li>
+          <a href="https://twitter.com/equinoxmonk " target="_blank">Twitter</a>
+        </li>
+        <!--
+                -->
+        <li>
+          <a href="https://www.twitch.tv/equinox" target="_blank">Stream</a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <section class="about">
+        <h2>Playstyle & Rotation</h2>
+        <p>
+          Instead of following a set pattern or rotation, Brewmaster is
+          primarily a priority list, utilizing certain abilities over others
+          based on the moment. We will go over the general priority list for
+          both single target and AoE, along with how to properly utilize your
+          defensives to live challenging encounters.
+        </p>
+      </section>
+      <section id="st-rotation" class="number-list-section">
+        <h2>Single Target Damage Rotation</h2>
+        <p>
+          Brewmaster's single target is very straight forward. Your main goal is
+          to keep your buffs up as much as possible, while making sure that you
+          use your hard hitting abilities on cooldown. Regarding our
+          <a
+            href="https://www.wowhead.com/spell=196736/blackout-combo"
+            target="_blank"
+            class="orange"
+            >Blackout Combo</a
+          >, it is most important to use it on
+          <a
+            href="https://www.wowhead.com/spell=100780/tiger-palm"
+            target="_blank"
+            class="orange"
+            >Tiger Palm</a
+          >, as it does a lot of damage on single target. If you are at
+          extremely high levels of stagger, it can be worth spending
+          <a
+            href="https://www.wowhead.com/spell=196736/blackout-combo"
+            target="_blank"
+            class="orange"
+            >Blackout Combo</a
+          >
+          on
+          <a
+            href="https://www.wowhead.com/spell=115181/breath-of-fire"
+            target="_blank"
+            class="orange"
+            >Breath of Fire</a
+          >, but this is very rare.
+        </p>
+        <div>
+          <ol>
+            <li>
+              Maintain
+              <a
+                href="https://www.wowhead.com/spell=116847/rushing-jade-wind"
+                target="_blank"
+                class="orange"
+                >Rushing Jade Wind</a
+              >
+              (if talented)
+            </li>
+            <li>
+              Maintain
+              <a
+                href="https://www.wowhead.com/spell=386965/charred-passions"
+                target="_blank"
+                class="orange"
+                >Charred Passions</a
+              >
+              (if talented)
+            </li>
+            <li>
+              Maintain
+              <a
+                href="https://www.wowhead.com/spell=386276/bonedust-brew"
+                target="_blank"
+                class="orange"
+                >Bonedust Brew</a
+              >
+              as much as possible
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/spell=325153/exploding-keg"
+                target="_blank"
+                class="orange"
+                >Exploding Keg</a
+              >
+              if
+              <a
+                href="https://www.wowhead.com/spell=386276/bonedust-brew"
+                target="_blank"
+                class="orange"
+                >Bonedust Brew</a
+              >
+              is on the target
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/spell=115181/breath-of-fire"
+                target="_blank"
+                class="orange"
+                >Breath of Fire</a
+              >
+              before using
+              <a
+                href="https://www.wowhead.com/spell=121253/keg-smash"
+                target="_blank"
+                class="orange"
+                >Keg Smash</a
+              >
+              (if talented into
+              <a
+                href="https://www.wowhead.com/spell=383994/dragonfire-brew"
+                target="_blank"
+                class="orange"
+                >Dragonfire Brew</a
+              >)
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/spell=121253/keg-smash"
+                target="_blank"
+                class="orange"
+                >Keg Smash</a
+              >
+              if you are at 2 charges
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/spell=107428/rising-sun-kick"
+                target="_blank"
+                class="orange"
+                >Rising Sun Kick</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/spell=100784/blackout-kick"
+                target="_blank"
+                class="orange"
+                >Blackout Kick</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/spell=100780/tiger-palm"
+                target="_blank"
+                class="orange"
+                >Tiger Palm</a
+              >
+              if buffed by
+              <a
+                href="https://www.wowhead.com/spell=196736/blackout-combo"
+                target="_blank"
+                class="orange"
+                >Blackout Combo</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/spell=121253/keg-smash"
+                target="_blank"
+                class="orange"
+                >Keg Smash</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/spell=100780/tiger-palm"
+                target="_blank"
+                class="orange"
+                >Tiger Palm</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/spell=115098/chi-wave"
+                target="_blank"
+                class="orange"
+                >Chi Wave</a
+              >
+              /
+              <a
+                href="https://www.wowhead.com/spell=123986/chi-burst"
+                target="_blank"
+                class="orange"
+                >Chi Burst</a
+              >
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section id="aoe-rotation" class="number-list-section">
+        <h2>AoE Damage Rotation</h2>
+        <p>
+          Brewmaster's AoE is very similar to its single target. Unlike the
+          single target rotation, however, where you want to spend every
+          <a
+            href="https://www.wowhead.com/spell=196736/blackout-combo"
+            target="_blank"
+            class="orange"
+            >Blackout Combo</a
+          >
+          on
+          <a
+            href="https://www.wowhead.com/spell=100780/tiger-palm"
+            target="_blank"
+            class="orange"
+            >Tiger Palm</a
+          >, you can weave it between
+          <a
+            href="https://www.wowhead.com/spell=121253/keg-smash"
+            target="_blank"
+            class="orange"
+            >Keg Smash</a
+          >
+          for brew cooldown reduction and
+          <a
+            href="https://www.wowhead.com/spell=115181/breath-of-fire"
+            target="_blank"
+            class="orange"
+            >Breath of Fire</a
+          >
+          for additional damage. We also replace
+          <a
+            href="https://www.wowhead.com/spell=100780/tiger-palm"
+            target="_blank"
+            class="orange"
+            >Tiger Palm</a
+          >
+          as our filler with Spinning Crane Kick.
+        </p>
+        <div>
+          <ol>
+            <li>
+              Maintain
+              <a
+                href="https://www.wowhead.com/spell=116847/rushing-jade-wind"
+                target="_blank"
+                class="orange"
+                >Rushing Jade Wind</a
+              >
+              (if talented)
+            </li>
+            <li>
+              Maintain
+              <a
+                href="https://www.wowhead.com/spell=386965/charred-passions"
+                target="_blank"
+                class="orange"
+                >Charred Passions</a
+              >
+              (if talented)
+            </li>
+            <li>
+              Maintain
+              <a
+                href="https://www.wowhead.com/spell=386276/bonedust-brew"
+                target="_blank"
+                class="orange"
+                >Bonedust Brew</a
+              >
+              as much as possible
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/spell=325153/exploding-keg"
+                target="_blank"
+                class="orange"
+                >Exploding Keg</a
+              >
+              if
+              <a
+                href="https://www.wowhead.com/spell=386276/bonedust-brew"
+                target="_blank"
+                class="orange"
+                >Bonedust Brew</a
+              >
+              is on enemies
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/spell=115181/breath-of-fire"
+                target="_blank"
+                class="orange"
+                >Breath of Fire</a
+              >
+              before using
+              <a
+                href="https://www.wowhead.com/spell=121253/keg-smash"
+                target="_blank"
+                class="orange"
+                >Keg Smash</a
+              >
+              or if buffed by
+              <a
+                href="https://www.wowhead.com/spell=196736/blackout-combo"
+                target="_blank"
+                class="orange"
+                >Blackout Combo</a
+              >
+              (if talented into
+              <a
+                href="https://www.wowhead.com/spell=383994/dragonfire-brew"
+                target="_blank"
+                class="orange"
+                >Dragonfire Brew</a
+              >)
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/spell=121253/keg-smash"
+                target="_blank"
+                class="orange"
+                >Keg Smash</a
+              >
+              if you are at 2 charges
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/spell=100784/blackout-kick"
+                target="_blank"
+                class="orange"
+                >Blackout Kick</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/spell=121253/keg-smash"
+                target="_blank"
+                class="orange"
+                >Keg Smash</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/spell=107428/rising-sun-kick"
+                target="_blank"
+                class="orange"
+                >Rising Sun Kick</a
+              >
+              if 4 or less targets
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/spell=101546/spinning-crane-kick"
+                target="_blank"
+                class="orange"
+                >Spinning Crane Kick</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/spell=115098/chi-wave"
+                target="_blank"
+                class="orange"
+                >Chi Wave</a
+              >
+              /
+              <a
+                href="https://www.wowhead.com/spell=123986/chi-burst"
+                target="_blank"
+                class="orange"
+                >Chi Burst</a
+              >
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section id="woo-burst" class="number-list-section">
+        <h2>Weapons of Order Burst</h2>
+        <p>
+          Brewmaster has one of the longest and most complex burst rotations in
+          the game. This burst can also change based on if you are running
+          <a
+            href="https://www.wowhead.com/spell=383994/dragonfire-brew"
+            target="_blank"
+            class="orange"
+            >Dragonfire Brew</a
+          >
+          or
+          <a
+            href="https://www.wowhead.com/spell=386965/charred-passions"
+            target="_blank"
+            class="orange"
+            >Charred Passions</a
+          >. Luckily, this burst rotation remains the same on both single target
+          and AoE, so it comes down to just memorizing every step.
+        </p>
+        <div class="grid-container">
+          <div id="woo-dragonfire">
+            <h3>
+              <a
+                href="https://www.wowhead.com/spell=383994/dragonfire-brew"
+                target="_blank"
+                >Dragonfire Brew</a
+              >
+            </h3>
+            <ol>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=116847/rushing-jade-wind"
+                  target="_blank"
+                  class="orange"
+                  >Rushing Jade Wind</a
+                >
+                (if talented)
+              </li>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=121253/keg-smash"
+                  target="_blank"
+                  class="orange"
+                  >Keg Smash</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=100784/blackout-kick"
+                  target="_blank"
+                  class="orange"
+                  >Blackout Kick</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=115181/breath-of-fire"
+                  target="_blank"
+                  class="orange"
+                  >Breath of Fire</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=388686/summon-white-tiger-statue"
+                  target="_blank"
+                  class="orange"
+                  >Summon White Tiger Statue</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=387184/weapons-of-order"
+                  target="_blank"
+                  class="orange"
+                  >Weapons of Order</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=121253/keg-smash"
+                  target="_blank"
+                  class="orange"
+                  >Keg Smash</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=107428/rising-sun-kick"
+                  target="_blank"
+                  class="orange"
+                  >Rising Sun Kick</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=100784/blackout-kick"
+                  target="_blank"
+                  class="orange"
+                  >Blackout Kick</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=115181/breath-of-fire"
+                  target="_blank"
+                  class="orange"
+                  >Breath of Fire</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=386276/bonedust-brew"
+                  target="_blank"
+                  class="orange"
+                  >Bonedust Brew</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=121253/keg-smash"
+                  target="_blank"
+                  class="orange"
+                  >Keg Smash</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=100784/blackout-kick"
+                  target="_blank"
+                  class="orange"
+                  >Blackout Kick</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=115181/breath-of-fire"
+                  target="_blank"
+                  class="orange"
+                  >Breath of Fire</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=116847/rushing-jade-wind"
+                  target="_blank"
+                  class="orange"
+                  >Rushing Jade Wind</a
+                >
+                (if talented)
+              </li>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=325153/exploding-keg"
+                  target="_blank"
+                  class="orange"
+                  >Exploding Keg</a
+                >
+              </li>
+              <li>Resume repective rotation</li>
+            </ol>
+          </div>
+          <div id="woo-charred">
+            <h3>
+              <a
+                href="https://www.wowhead.com/spell=386965/charred-passions"
+                target="_blank"
+                >Charred Passions</a
+              >
+            </h3>
+            <ol>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=116847/rushing-jade-wind"
+                  target="_blank"
+                  class="orange"
+                  >Rushing Jade Wind</a
+                >
+                (if talented)
+              </li>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=115181/breath-of-fire"
+                  target="_blank"
+                  class="orange"
+                  >Breath of Fire</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=388686/summon-white-tiger-statue"
+                  target="_blank"
+                  class="orange"
+                  >Summon White Tiger Statue</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=121253/keg-smash"
+                  target="_blank"
+                  class="orange"
+                  >Keg Smash</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=387184/weapons-of-order"
+                  target="_blank"
+                  class="orange"
+                  >Weapons of Order</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=100784/blackout-kick"
+                  target="_blank"
+                  class="orange"
+                  >Blackout Kick</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=115181/breath-of-fire"
+                  target="_blank"
+                  class="orange"
+                  >Breath of Fire</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=121253/keg-smash"
+                  target="_blank"
+                  class="orange"
+                  >Keg Smash</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=107428/rising-sun-kick"
+                  target="_blank"
+                  class="orange"
+                  >Rising Sun Kick</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=100784/blackout-kick"
+                  target="_blank"
+                  class="orange"
+                  >Blackout Kick</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=121253/keg-smash"
+                  target="_blank"
+                  class="orange"
+                  >Keg Smash</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=116847/rushing-jade-wind"
+                  target="_blank"
+                  class="orange"
+                  >Rushing Jade Wind</a
+                >
+                (if talented)
+              </li>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=100784/blackout-kick"
+                  target="_blank"
+                  class="orange"
+                  >Blackout Kick</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=115181/breath-of-fire"
+                  target="_blank"
+                  class="orange"
+                  >Breath of Fire</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=386276/bonedust-brew"
+                  target="_blank"
+                  class="orange"
+                  >Bonedust Brew</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=121253/keg-smash"
+                  target="_blank"
+                  class="orange"
+                  >Keg Smash</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.wowhead.com/spell=325153/exploding-keg"
+                  target="_blank"
+                  class="orange"
+                  >Exploding Keg</a
+                >
+              </li>
+              <li>Resume repective rotation</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section id="defensive-priority" class="number-list-section">
+        <h2>Defensive Priority List</h2>
+        <p>
+          While the damage that you deal is important, it is most important to
+          keep yourself alive. A lot of dungeons and raid bosses have extremely
+          hard hitting tank busters where you'll want to pop a big defensive
+          accordingly. These defensives can also be used for when you are taking
+          a lot of sustained damage, such as in a really large pull in mythic+.
+        </p>
+        <div>
+          <ol>
+            <li>
+              <a
+                href="https://www.wowhead.com/spell=243435/fortifying-brew"
+                target="_blank"
+                class="orange"
+                >Fortifying Brew</a
+              >
+            </li>
+            <li>Defensive Trinket</li>
+            <li>
+              <a
+                href="https://www.wowhead.com/spell=122783/diffuse-magic"
+                target="_blank"
+                class="orange"
+                >Diffuse Magic</a
+              >
+              (vs magic damage)
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/spell=122278/dampen-harm"
+                target="_blank"
+                class="orange"
+                >Dampen Harm</a
+              >
+              (if talented)
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/spell=322507/celestial-brew"
+                target="_blank"
+                class="orange"
+                >Celestial Brew</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/spell=115399/black-ox-brew"
+                target="_blank"
+                class="orange"
+                >Black Ox Brew</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/spell=115176/zen-meditation"
+                target="_blank"
+                class="orange"
+                >Zen Meditation</a
+              >
+              (more discussed in the
+              <a href="advanced">advanced section</a> of the guide)
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="next">
+        <h3>
+          <a class="orange" href="dungeons"
+            >Next: Dungeons & Affixes <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </h3>
+      </section>
+    </main>
+    <script src="myscripts.js"></script>
+  </body>
 </html>
