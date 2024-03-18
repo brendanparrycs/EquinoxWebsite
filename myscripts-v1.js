@@ -1589,10 +1589,6 @@ const infoArray = [
     description:
       "This affix doesn't really do anything. It will occasionally spawn orbs under people at range, knocking them up. This affix doesn't affect you at all, so there is nothing to worry about.",
   },
-
-  // addons
-
-  // weakauras
 ];
 
 function menuFunc(submenu) {
