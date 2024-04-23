@@ -13,7 +13,7 @@
       content="Brewmaster Monk, Brew Monk, Mythic Plus, Mythic+, M+, Brewmaster Monk Mythic Plus Guide, Brewmaster Monk Mythic+ Guide, Brewmaster Monk M+ Guide, Brew Monk Mythic Plus Guide, Brew Monk Mythic+ Guide, Brew Monk M+ Guide, Guide, Dragonflight"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles-v1.css" />
+    <link rel="stylesheet" href="styles-v2.css" />
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <script
       src="https://kit.fontawesome.com/77ee47dea4.js"
@@ -122,29 +122,30 @@
         <h2>Stat Priority</h2>
         <p>
           You want to prioritize your stats as the following:
-          <span class="green">Critical Strike</span> >
-          <span class="orange">Versatility</span> =
+          <span class="green">Versatility</span> >
+          <span class="orange">Critical Strike</span> =
           <span class="purple">Mastery</span> > <span class="red">Haste</span>.
           Once you are fully geared, you want to try and obtain a total of
-          <span class="green">40% Critical Strike</span>,
-          <span class="orange">25% Versatility</span>,
-          <span class="purple">25% Mastery</span>, and close to
+          <span class="green">35% Versatility</span>,
+          <span class="orange">40% Critical Strike</span>,
+          <span class="purple">30% Mastery</span>, and close to
           <span class="red">0% Haste</span>. Leech and Avoidance are very good
           tertiary stats for us, but we currently don't want to ever sacrifice
           item level for them.
         </p>
         <div id="stats">
           <img
+            id="vers"
+            src="images/versatility.jpg"
+            onclick="updateInfo(this)"
+          /><!--
+          --><img
             id="crit-strike"
             class="selected"
             src="images/critical-strike.jpg"
             onclick="updateInfo(this)"
           /><!--
-                    --><img
-            id="vers"
-            src="images/versatility.jpg"
-            onclick="updateInfo(this)"
-          /><!--
+                    
                     --><img
             id="mast"
             src="images/mastery.jpg"
@@ -202,9 +203,9 @@
         </p>
         <div id="tier-pieces">
           <img
-            id="tier-helm"
+            id="tier-shoulders"
             class="selected"
-            src="images/tier-helm.jpg"
+            src="images/tier-shoulders.jpg"
             onclick="updateInfo(this)"
           /><!--
                     --><img
@@ -224,15 +225,16 @@
           />
           <h3>
             <a
-              href="https://www.wowhead.com/item=207245/mystic-herons-hatsuburi"
+              href="https://www.wowhead.com/item=200365/mantle-of-the-waking-fist"
               target="_blank"
-              >Mystic Heron's Hatsuburi</a
+              >Mantle of the Waking Fist</a
             >
           </h3>
-          <h4 class="tier-type orange">Head</h4>
+          <h4 class="tier-type orange">Shoulders</h4>
           <p class="description">
-            You always want to run tier set on your head, as it gives Critical
-            Strike and Versatility, two very good stats for us.
+            Unfortunately, the shoulders have a little bit of haste. The haste
+            on the shoulders is less than the helmet, though, so we want to run
+            shoulders instead.
           </p>
         </div>
       </section>
@@ -244,75 +246,60 @@
           the most important thing outside of necks, rings, and trinkets.
         </p>
         <div class="grid-container">
+          <div id="head">
+            <p class="sub-header orange">Head</p>
+            <img
+              id="crown-of-roaring-storms"
+              class="selected"
+              src="images/crown-of-roaring-storms.jpg"
+              onclick="updateInfo(this)"
+            /><!--
+            --><img
+              id="violent-gravemask"
+              src="images/violent-gravemask.jpg"
+              onclick="updateInfo(this)"
+            />
+            <h3>
+              <a
+                href="https://www.wowhead.com/ptr-2/item=193751/crown-of-roaring-storms"
+                target="_blank"
+                >Crown of Roaring Storms</a
+              >
+            </h3>
+            <p class="description">
+              This helmet gives as lot of Versatility and Critical Strike,
+              making it a great option.
+            </p>
+          </div>
           <div id="neck">
             <p class="sub-header orange">Neck</p>
             <img
-              id="ouroboreal-necklet"
+              id="elemental-lariat"
               class="selected"
+              src="images/elemental-lariat.jpg"
+              onclick="updateInfo(this)"
+            /><!--
+            --><img
+              id="ouroboreal-necklet"
               src="images/ouroboreal-necklet.jpg"
               onclick="updateInfo(this)"
             /><!--
-                        --><img
-              id="torc-of-passed-time"
-              src="images/torc-of-passed-time.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="raven-filigree-pendant"
-              src="images/raven-filigree-pendant.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="chain-of-the-green-flight"
-              src="images/chain-of-the-green-flight.jpg"
+            --><img
+              id="tuskarr-bone-necklace"
+              src="images/tuskarr-bone-necklace.jpg"
               onclick="updateInfo(this)"
             />
             <h3>
               <a
-                href="https://www.wowhead.com/item=210214/ouroboreal-necklet"
+                href="https://www.wowhead.com/item=193001/elemental-lariat"
                 target="_blank"
-                >Ouroboreal Necklet</a
+                >Elemental Lariat</a
               >
             </h3>
             <p class="description">
-              This neck provides us with a lot of Versatility and a little bit
-              of Critical Strike, helping us reach our stat goals. It also has a
-              nice equip effect that makes us gain fire and nature damage
-              shields once every minute. While these shields aren't overly
-              strong, it is a nice little bonus to have on top of this already
-              great neck.
-            </p>
-          </div>
-          <div id="shoulders">
-            <p class="sub-header orange">Shoulders</p>
-            <img
-              id="strigine-epaulets"
-              class="selected"
-              src="images/strigine-epaulets.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="lifebound-shoulderpads"
-              src="images/lifebound-shoulderpads.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="leafmender-mantle"
-              src="images/leafmender-mantle.jpg"
-              onclick="updateInfo(this)"
-            />
-            <h3>
-              <a
-                href="https://www.wowhead.com/ptr-2/item=207127/strigine-epaulets"
-                target="_blank"
-                >Strigine Epaulets</a
-              >
-            </h3>
-            <p class="description">
-              These shoulders are our best shoulders. They give a lot of
-              Critical Strike and a good amount of Mastery, which when paired
-              with the rest of our best in slot, gets us the best stats
-              possible.
+              This neck is extremely strong, as it has a change at strengthening
+              the secondary stats we gain from our gems. You do not want to run
+              this until you have full sockets, though.
             </p>
           </div>
         </div>
@@ -320,71 +307,56 @@
           <div id="back">
             <p class="sub-header orange">Back</p>
             <img
-              id="vibrant-wildercloth-shawl"
-              class="selected"
-              src="images/vibrant-wildercloth-shawl.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
               id="inflammable-drapeleaf"
+              class="selected"
               src="images/inflammable-drapeleaf.jpg"
               onclick="updateInfo(this)"
             /><!--
-                        --><img
-              id="mantle-of-blazing-sacrifice"
-              src="images/mantle-of-blazing-sacrifice.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="periwinkle-cloak"
-              src="images/periwinkle-cloak.jpg"
+            --><img
+              id="vibrant-wildercloth-shawl"
+              src="images/vibrant-wildercloth-shawl.jpg"
               onclick="updateInfo(this)"
             />
             <h3>
               <a
-                href="https://www.wowhead.com/ptr-2/item=193511/vibrant-wildercloth-shawl"
+                href="https://www.wowhead.com/item=207160/inflammable-drapeleaf"
                 target="_blank"
-                >Vibrant Wildercloth Shawl</a
+                >Inflammable Drapeleaf</a
               >
             </h3>
             <p class="description">
-              This cloak is crafted and a very good option because of the
-              ability to customize its stats.
+              This cloak has a lot of Critical Strike and a good amount of
+              Versatility, helping us reach our stat goals.
             </p>
           </div>
           <div id="wrist">
             <p class="sub-header orange">Wrist</p>
             <img
-              id="lifebound-bindings"
-              class="selected"
-              src="images/lifebound-bindings.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="venerated-raptorhide-bindings"
-              src="images/venerated-raptorhide-bindings.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="chronomancer-stasis-shackles"
-              src="images/chronomancer-stasis-shackles.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
               id="primordial-serpent-bindings"
+              class="selected"
               src="images/primordial-serpent-bindings.jpg"
+              onclick="updateInfo(this)"
+            /><!--
+            --><img
+              id="ferocious-hyena-hidebinders"
+              src="images/ferocious-hyena-hidebinders.jpg"
+              onclick="updateInfo(this)"
+            /><!--
+            --><img
+              id="needlessly-complex-wristguards"
+              src="images/needlessly-complex-wristguards.jpg"
               onclick="updateInfo(this)"
             />
             <h3>
               <a
-                href="https://www.wowhead.com/item=193419/life-bound-bindings"
+                href="https://www.wowhead.com/item=207128/primordial-serpents-bindings"
                 target="_blank"
-                >Life-Bound Bindings</a
+                >Primordial Serpent's Bindings</a
               >
             </h3>
             <p class="description">
-              These wrists are craftable and, ideally, will be what we put our
-              Toxified Armor Patch on.
+              These wrists are very similar to the Chronomancer's Stasis
+              Shackles, but have slightly more Versatility.
             </p>
           </div>
         </div>
@@ -397,14 +369,9 @@
               src="images/bloody-dragonhide-belt.jpg"
               onclick="updateInfo(this)"
             /><!--
-                        --><img
-              id="lifebound-belt"
-              src="images/lifebound-belt.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="hound-jowl-waistband"
-              src="images/hound-jowl-waistband.jpg"
+            --><img
+              id="troggskin-waistband"
+              src="images/troggskin-waistband.jpg"
               onclick="updateInfo(this)"
             />
             <h3>
@@ -437,10 +404,9 @@
             <p class="description">
               These boots have good stats for us, helping us get our Versatility
               and Mastery up. Not only this, but they also have an embellishment
-              attached to them that does good damage on single target,
-              especially when paired with a Toxified Armor Patch. There is no
-              other competitive option for boots becausae of how good these are
-              for us.
+              attached to them that does good damage on single target. There is
+              no other competitive option for boots because of how good these
+              are for us.
             </p>
           </div>
         </div>
@@ -448,86 +414,56 @@
           <div id="rings">
             <p class="sub-header orange">Rings</p>
             <img
-              id="signet-of-titanic-insight"
+              id="seal-of-filial-duty"
               class="selected"
+              src="images/seal-of-filial-duty.jpg"
+              onclick="updateInfo(this)"
+            />
+            <img
+              id="seal-of-diurnas-chosen"
+              src="images/seal-of-diurnas-chosen.jpg"
+              onclick="updateInfo(this)"
+            />
+            <img
+              id="signet-of-titanic-insight"
               src="images/signet-of-titanic-insight.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="signet-of-the-last-elder"
-              src="images/signet-of-the-last-elder.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="lord-waycrests-signet"
-              src="images/lord-waycrests-signet.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="band-of-twisted-bark"
-              src="images/band-of-twisted-bark.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="anthias-ring"
-              src="images/anthias-ring.jpg"
               onclick="updateInfo(this)"
             />
             <h3>
               <a
-                href="https://www.wowhead.com/item=192999/signet-of-titanic-insight"
+                href="https://www.wowhead.com/item=195526/seal-of-filial-duty"
                 target="_blank"
-                >Signet of Titanic Insight</a
+                >Seal of Filial Duty</a
               >
             </h3>
             <p class="description">
-              This is our crafted ring. Just like the others we want to
-              customize its stats to our liking. If you have a flavor pocket
-              this can be a really good slot to put it on, too.
+              This ring is extremely powerful. Although it provides a little bit
+              of haste, it gives us a lot of mastery and also has a very strong
+              on equip effect. Whenever we deal damage, this ring has a chance
+              of granting us a shield. This should be your first purchase with
+              the dinar tokens.
             </p>
           </div>
           <div id="weapons">
             <p class="sub-header orange">Weapons</p>
             <img
-              id="rashon-the-immortal-blaze"
+              id="djaruun-pillar-of-the-elder-flame"
               class="selected"
-              src="images/rashon-the-immortal-blaze.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="thorncaller-gholak"
-              src="images/thorncaller-gholak.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="thorncaller-bonesplitter"
-              src="images/thorncaller-bonesplitter.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="borrowed-time"
-              src="images/borrowed-time.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="blightreaper"
-              src="images/blightreaper.jpg"
+              src="images/djaruun-pillar-of-the-elder-flame.jpg"
               onclick="updateInfo(this)"
             />
             <h3>
               <a
-                href="https://www.wowhead.com/item=207793/rashon-the-immortal-blaze"
+                href="https://www.wowhead.com/item=202569/djaruun-pillar-of-the-elder-flame"
                 target="_blank"
-                >Rashon, the Immortal Blaze</a
+                >Djaruun, Pillar of the Elder Flame</a
               >
             </h3>
             <p class="description">
-              While this weapon's stats isn't particularly great for us, it
-              gives us a little bit of Versatility which is better than nothing.
-              What makes this weapon so strong, however, is the equip effect,
-              which gives our abilities a chance to deal extra Shadowflame
-              damage. This weapon is a very nice dps boost, especially on single
-              target.
+              This weapon is extremely powerful. It gives us good stats,
+              providing a lot of Critical Strike and some Mastery, as well as
+              having a very strong on use effect. This should be your second
+              purchase with the dinar tokens.
             </p>
           </div>
         </div>
@@ -535,75 +471,67 @@
           <div id="defensive-trinkets">
             <p class="sub-header orange">Defensive Trinkets</p>
             <img
-              id="fyrakks-tainted-rageheart"
+              id="granyths-enduring-scale"
               class="selected"
+              src="images/granyths-enduring-scale.jpg"
+              onclick="updateInfo(this)"
+            /><!--
+            --><img
+              id="burgeoning-seed"
+              src="images/burgeoning-seed.jpg"
+              onclick="updateInfo(this)"
+            /><!--
+            --><img
+              id="all-totem-of-the-master"
+              src="images/all-totem-of-the-master.jpg"
+              onclick="updateInfo(this)"
+            /><!--
+            --><img
+              id="fyrakks-tainted-rageheart"
               src="images/fyrakks-tainted-rageheart.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="prophetic-stonescales"
-              src="images/prophetic-stonescales.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="xeritacs-unhatched-egg-sac"
-              src="images/xeritacs-unhatched-egg-sac.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="writhing-heart-of-darkness"
-              src="images/writhing-heart-of-darkness.jpg"
               onclick="updateInfo(this)"
             />
             <h3>
               <a
-                href="https://www.wowhead.com/item=207174/fyrakks-tainted-rageheart"
+                href="https://www.wowhead.com/item=193689/granyths-enduring-scale"
                 target="_blank"
-                >Fyrakk's Tainted Rageheart</a
+                >Granyth's Enduring Scale</a
               >
             </h3>
             <p class="description">
-              This trinket is ridiculously strong. Although it doesn't give us
-              primary stat, we still gain Versatility, a very good stat for us.
-              On use, it gives us a massive absorb shield and radiates AoE
-              damage, which is also strong on single target. While it is listed
-              as a defensive trinket, it is also our top damaging trinket and
-              can be used aggressively if you don't think you'll need the absorb
-              shield any time soon.
+              This trinket has been reworked this season and has become
+              extremely powerful. It now is an on-use trinket that grants a
+              massive shield, along with a ton of armor. This is extremely good
+              for Brewmaster, as we really struggle with our low armor. This
+              trinket will always be run on both fortified and tyrannical
+              mythic+ keys.
             </p>
           </div>
           <div id="offensive-trinkets">
             <p class="sub-header orange">Offensive Trinkets</p>
             <img
-              id="augury-of-the-primal-flame"
+              id="manic-grieftorch"
               class="selected"
-              src="images/augury-of-the-primal-flame.jpg"
+              src="images/manic-grieftorch.jpg"
               onclick="updateInfo(this)"
             /><!--
-                        --><img
-              id="bandolier-of-twisted-blades"
-              src="images/bandolier-of-twisted-blades.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="mydas-talisman"
-              src="images/mydas-talisman.jpg"
+            --><img
+              id="storm-eaters-boon"
+              src="images/storm-eaters-boon.jpg"
               onclick="updateInfo(this)"
             />
             <h3>
               <a
-                href="https://www.wowhead.com/ptr-2/item=208614/augury-of-the-primal-flame"
+                href="https://www.wowhead.com/item=194308/manic-grieftorch"
                 target="_blank"
-                >Augury of the Primal Flame</a
+                >Manic Grieftorch</a
               >
             </h3>
             <p class="description">
-              This trinket is an extremely strong damage trinket. Whenever we
-              deal damage, we have a chance to cause our Critical Strikes to
-              deal 50% additional damage as fire damage for 20 seconds. When
-              combined with Fyrakk's Tainted Rageheart, it is our strongest
-              offensive trinket combo for dungeons. It also gives us a good
-              amount of Critical Strike, our most important secondary.
+              This trinket is our best damage trinket. On use, we cast and
+              unleash a massive amount of fire damage. The cooldown is also
+              reduced greatly whenever an allie dies. I will run this on
+              tyrannical mythic+ keys.
             </p>
           </div>
         </div>
@@ -611,8 +539,10 @@
       <section id="embellishments" class="info-section">
         <h2>Embellishments</h2>
         <p>
-          Most embellishments are pretty bad for us this season, so we currently
-          only have one competitive option.
+          This season, there are a few good embellishments for us. Early in the
+          season, you want to run Coated in Slime with the Potion Absorsption
+          Inhibitor, but, once you get full sockets, you will want to run
+          Elemental Lariat instead of the Potion Absorption Inhibitor.
         </p>
         <div class="middle-spacing">
           <img
@@ -621,12 +551,22 @@
             src="images/coated-in-slime.jpg"
             onclick="updateInfo(this)"
           /><!--
-                    --><img
+          --><img
+            id="potion-absorption-inhibitor"
+            src="images/potion-absorption-inhibitor.jpg"
+            onclick="updateInfo(this)"
+          /><!--
+          --><img
             id="toxified-armor-patch"
             src="images/toxified-armor-patch.jpg"
             onclick="updateInfo(this)"
           /><!--
-                    --><img
+          --><img
+            id="elemental-lariat"
+            src="images/elemental-lariat.jpg"
+            onclick="updateInfo(this)"
+          /><!--
+          --><img
             id="alchemical-flavor-pocket"
             src="images/alchemical-flavor-pocket.jpg"
             onclick="updateInfo(this)"
@@ -639,10 +579,9 @@
             >
           </h3>
           <p class="description">
-            This embellishment does good damage on single target, especially
-            when paired with a Toxified Armor Patch. It can only be obtained by
-            crafting Slimy Expulsion Boots, which, fortunately for us, has good
-            secondary stats for us.
+            This embellishment does pretty good damage on single target. It can
+            only be obtained by crafting Slimy Expulsion Boots, which,
+            fortunately for us, has good secondary stats.
           </p>
         </div>
       </section>
@@ -855,6 +794,6 @@
         </h3>
       </section>
     </main>
-    <script src="myscripts-v1.js"></script>
+    <script src="myscripts-v2.js"></script>
   </body>
 </html>

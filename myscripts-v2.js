@@ -272,8 +272,8 @@ const infoArray = [
     id: "chi-wave-burst",
     name: "<a href='https://www.wowhead.com/spell=115098/chi-wave' target='_blank'>Chi Wave</a> <span class='white'>/</span> <a href='https://www.wowhead.com/spell=123986/chi-burst' target='_blank'>Chi Burst</a>",
     description:
-      "Both of these talents aren't the most useful, but they allow us to branch to some very important healing talents. <a href='https://www.wowhead.com/spell=115098/chi-wave' target='_blank' class='orange'>Chi Wave</a> provides more single target damage and healing, along with the ability to pull packs from ranged, while <a href='https://www.wowhead.com/spell=123986/chi-burst' target='_blank' class='orange'>Chi Burst</a> does more damage on AoE. You can use one of these abilities whenever you don't want to spend energy on a global cooldown.",
-    value: "Required",
+      "This season, you only want to run this talent if you need access to <a href='https://www.wowhead.com/spell=389574/close-to-heart' target='_blank' class='orange'>Close to Heart</a> for raid.",
+    value: "Situational",
   },
   {
     id: "hasty-provocation",
@@ -315,8 +315,8 @@ const infoArray = [
     id: "profound-rebuttal",
     name: "<a href='https://www.wowhead.com/spell=392910/profound-rebuttal' target-'_blank'>Profound Rebuttal</a>",
     description:
-      "This talent increases the critical healing of <a href='https://www.wowhead.com/spell=115072/expel-harm' target='_blank' class='orange'>Expel Harm</a>, further making it an extremely strong self heal.",
-    value: "Required",
+      "This talent increases the critical healing of <a href='https://www.wowhead.com/spell=115072/expel-harm' target='_blank' class='orange'>Expel Harm</a>. This season, this is not required for living, so you only want to run this talent if you need access to <a href='https://www.wowhead.com/spell=389574/close-to-heart' target='_blank' class='orange'>Close to Heart</a> for raid.",
+    value: "Situational",
   },
   {
     id: "yulon-diffuse",
@@ -329,14 +329,14 @@ const infoArray = [
     id: "eye-of-the-tiger",
     name: "<a href='https://www.wowhead.com/spell=196607/eye-of-the-tiger' target='_blank'>Eye of the Tiger</a>",
     description:
-      "This talent gives a very small damage increase to your tiger palm. If you are trying to parse in raid on single target fights, you can take this talent.",
+      "This talent gives a very small damage increase to your tiger palm. If you are trying to parse in raid on single target fights or you do not need <a href='https://www.wowhead.com/spell=218164/detox' target='_blank' class='orange'>Detox</a> in a dungeon, you can take this talent.",
     value: "Optional",
   },
   {
     id: "dance-wind-dampen",
     name: "<a href='https://www.wowhead.com/spell=414132/dance-of-the-wind' target='_blank'>Dance of the Wind <span class='white'>/</span> <a href='https://www.wowhead.com/spell=122278/dampen-harm' target='_blank'>Dampen Harm</a>",
     description:
-      "Your choice with this node depends on your current needs. If you want a base dodge increase, you take <a href='https://www.wowhead.com/spell=414132/dance-of-the-wind' target='_blank' class='orange'>Dance of the Wind</a>. If you are expecting very large hits, you take <a href='https://www.wowhead.com/spell=122278/dampen-harm' target='_blank' class='orange'>Dampen Harm</a>. In a mythic+ environment, you typically only run <a href='https://www.wowhead.com/spell=414132/dance-of-the-wind' target='_blank' class='orange'>Dance of the Wind</a>. Occasionally, in raid, you may want to run <a href='https://www.wowhead.com/spell=122278/dampen-harm' target='_blank' class='orange'>Dampen Harm</a>.",
+      "Your choice with this node depends on your current needs. If you want a base dodge increase, you take <a href='https://www.wowhead.com/spell=414132/dance-of-the-wind' target='_blank' class='orange'>Dance of the Wind</a>. If you are expecting very large hits, you take <a href='https://www.wowhead.com/spell=122278/dampen-harm' target='_blank' class='orange'>Dampen Harm</a>. This season, there are a few mythic+ dungeons where you want to run <a href='https://www.wowhead.com/spell=414132/dance-of-the-wind' target='_blank' class='orange'>Dampen Harm</a>, but usually you want to run <a href='https://www.wowhead.com/spell=414132/dance-of-the-wind' target='_blank' class='orange'>Dance of the Wind</a> (more discussed in the <a href='dungeons'>dungeons & affixes</a> section). Occasionally, in raid, you may want to run <a href='https://www.wowhead.com/spell=122278/dampen-harm' target='_blank' class='orange'>Dampen Harm</a>.",
     value: "Required",
   },
   {
@@ -358,7 +358,7 @@ const infoArray = [
     id: "close-to-heart",
     name: "<a href='https://www.wowhead.com/spell=389574/close-to-heart' target='_blank'>Close to Heart</a>",
     description:
-      "This talent is extremely strong and is one of Monk's group buffs. Not only does it increase all healing that you receive by 8%, but it increases the healing that your allies receive, too.",
+      "This talent is extremely strong and is one of Monk's group buffs. Not only does it increase all healing that you receive by 8%, but it increases the healing that your allies receive, too. You want to run this in raid if there is not another monk providing the buff.",
     value: "Optional",
   },
   {
@@ -386,8 +386,8 @@ const infoArray = [
     id: "generous-pour",
     name: "<a href='https://www.wowhead.com/spell=389575/generous-pour' target='_blank'>Generous Pour</a>",
     description:
-      "This talent can be taken to give you and your allies a 4% damage reduction to AoE attacks, which should be run on any progression raid fights. If you want to run this in mythic+, you may have to sacrifice a little bit of damage or utility which typically isn't worth it.",
-    value: "Optional",
+      "This talent can be taken to give you and your allies a 4% damage reduction to AoE attacks. This is extremely powerful and should always be run in all content.",
+    value: "Required",
   },
 
   {
@@ -408,7 +408,7 @@ const infoArray = [
     id: "bounce-back",
     name: "<a href='https://www.wowhead.com/spell=389577/bounce-back' target='_blank'>Bounce Back</a>",
     description:
-      "This talent would be good, but due to our health being very jumpy, especially on pull, it tends to proc when just gathering mobs. The only time you will run it is when you want to run <a href='https://www.wowhead.com/spell=115315/summon-black-ox-statue' target='_blank' class='orange'>Summon Black Ox Statue</a> in Atal'dazar.",
+      "This talent is pretty good this season. In mythic+, where survivability is more of a priority, we always want to run this. In raid, however, you do not need this.",
     value: "Situational",
   },
 
@@ -430,8 +430,8 @@ const infoArray = [
     id: "ox-statue",
     name: "<a href='https://www.wowhead.com/spell=115315/summon-black-ox-statue' target='_blank'>Summon Black Ox Statue</a>",
     description:
-      "This talent pulls aggro onto mobs. You can also taunt the statue to AoE taunt all mobs onto you. Due to Brewmaster easily generating threat, however, this talent is not usually required. There is, however, one situation where you want to run it this season: Atal'dazar. In Atal'dazar, if you place it far out from your group and everyone stacks in melee, the Dazar'ai Juggernauts will charge out to the statue instead of your ranged. This can be extremely beneficial in high keys.",
-    value: "Situational",
+      "This talent pulls aggro on mobs. You can also taunt the statue to AoE taunt all mobs onto you. Due to Brewmaster easily generating threat, however, this talent should never be taken.",
+    value: "Never",
   },
 
   // spec talents
@@ -576,8 +576,8 @@ const infoArray = [
     id: "fundamental-observation",
     name: "<a href='https://www.wowhead.com/spell=387035/fundamental-observation' target='_blank'>Fundamental Observation</a>",
     description:
-      "This talent reduces <a href='https://www.wowhead.com/spell=115176/zen-meditation' target='_blank' class='orange'>Zen Meditation's</a> cooldown by 25%, along with making it not get canceled by moving or receiving melee attacks. Due to us not being able to do damage or healing during this defensive, we don't take it.",
-    value: "Never",
+      "This talent reduces <a href='https://www.wowhead.com/spell=115176/zen-meditation' target='_blank' class='orange'>Zen Meditation's</a> cooldown by 25%, along with making it not get canceled by moving or receiving melee attacks. This talent is a good alternative to <a href='https://www.wowhead.com/spell=383785/counterstrike' target='_blank' class='orange'>CounterStrike</a> or <a href='https://www.wowhead.com/spell=196737/high-tolerance target='_blank' class='orange'>High Tolerance</a> if you want more survivability.",
+    value: "Optional",
   },
   {
     id: "shadowboxing-fluidity",
@@ -633,8 +633,8 @@ const infoArray = [
     id: "counterstrike",
     name: "<a href='https://www.wowhead.com/spell=383785/counterstrike' target='_blank'>Counterstrike</a>",
     description:
-      "This talent is a massive damage increase on both single target and AoE. Whenever we dodge an attack, it increases the damage of our next <a href='https://www.wowhead.com/spell=100780/tiger-palm' target='_blank' class='orange'>Tiger Palm</a> or <a href='https://www.wowhead.com/spell=101546/spinning-crane-kick' target='_blank' class='orange'>Spinning Crane Kick</a> by 100%.",
-    value: "Required",
+      "This talent is a massive damage increase on both single target and AoE. Whenever we dodge an attack, it increases the damage of our next <a href='https://www.wowhead.com/spell=100780/tiger-palm' target='_blank' class='orange'>Tiger Palm</a> or <a href='https://www.wowhead.com/spell=101546/spinning-crane-kick' target='_blank' class='orange'>Spinning Crane Kick</a> by 100%. If you want a more simple playstyle, you can choose to take <a href='https://www.wowhead.com/spell=196737/high-tolerance target='_blank' class='orange'>High Tolerance</a> instead. You can also choose to take <a href='https://www.wowhead.com/spell=387035/fundamental-observation' target='_blank' class='orange'>Fundamental Observation</a> if you want more survivability.",
+    value: "Optional",
   },
 
   {
@@ -773,28 +773,47 @@ const infoArray = [
     value: "Head",
   },
   {
-    id: "tier-chest",
-    name: "<a href='https://www.wowhead.com/item=207248/mystic-herons-burdens' target='_blank'>Mystic Heron's Burdens</a>",
+    id: "tier-shoulders",
+    name: "<a href='https://www.wowhead.com/item=200365/mantle-of-the-waking-fist' target='_blank'>Mantle of the Waking Fist</a>",
     description:
-      "You always want to run tier set on your chest. While it gives us Haste, it also gives us Versatility, a stat that is much harder to obtain than the others.",
+      "Unfortunately, the shoulders have a little bit of haste. The Haste on the shoulders is less than the helmet, though, so we want to run shoulders instead.",
+    value: "Shoulders",
+  },
+  {
+    id: "tier-chest",
+    name: "<a href='https://www.wowhead.com/item=200360/chestwrap-of-the-waking-fist' target='_blank'>Chestwrap of the Waking Fist</a>",
+    description:
+      "You always want to run tier set on your chest. It has great stats, giving us a lot of Versatility and some Critical Strike.",
     value: "Chest",
   },
   {
     id: "tier-gloves",
-    name: "<a href='https://www.wowhead.com/item=207246/mystic-herons-glovebills' target='_blank'>Mystic Heron's Glovebills</a>",
+    name: "<a href='https://www.wowhead.com/item=200362/palms-of-the-waking-fist' target='_blank'>Palms of the Waking Fis</a>",
     description:
-      "You always want to run tier set on your gloves, as it gives Critical Strike and Versatility.",
+      "You always want to run tier set on your gloves, as it gives somes Critical Strike and a lot of Mastery.",
     value: "Hands",
   },
   {
     id: "tier-legs",
-    name: "<a href='https://www.wowhead.com/item=207244/mystic-herons-waders' target='_blank'>Mystic Heron's Waders</a>",
+    name: "<a href='https://www.wowhead.com/item=200364/legguards-of-the-waking-fist' target='_blank'>Legguards of the Waking Fist</a>",
     description:
-      "You always want to run tier set on your legs because it gives Critical Strike and Mastery.",
+      "You always want to run tier set on your legs because it gives a lot of Versatility and some Mastery.",
     value: "Legs",
   },
 
   // necks
+  {
+    id: "elemental-lariat",
+    name: "<a href='https://www.wowhead.com/item=193001/elemental-lariat' target='_blank'>Elemental Lariat</a>",
+    description:
+      "This neck is extremely strong, as it has a change at strengthening the secondary stats we gain from our gems. You do not want to run this until you have full sockets, though.",
+  },
+  {
+    id: "tuskarr-bone-necklace",
+    name: "<a href='https://www.wowhead.com/ptr-2/item=193666/tuskarr-bone-necklace' target='_blank'>Tuskarr Bone Necklace</a>",
+    description:
+      "This neck is a great option, as it gives a lot of Critical Strike and a good amount of Versatility.",
+  },
   {
     id: "ouroboreal-necklet",
     name: "<a href='https://www.wowhead.com/item=210214/ouroboreal-necklet' target='_blank'>Ouroboreal Necklet</a>",
@@ -818,6 +837,20 @@ const infoArray = [
     name: "<a href='https://www.wowhead.com/item=137311/chain-of-the-green-flight' target='_blank'>Chain of the Green Flight</a>",
     description:
       "This neck gives a lot of Mastery and a decent amount of Critical Strike. If you are really low on Mastery, this neck can be a good choice.",
+  },
+
+  // heads
+  {
+    id: "crown-of-roaring-storms",
+    name: "<a href='https://www.wowhead.com/ptr-2/item=193751/crown-of-roaring-storms' target='_blank'>Crown of Roaring Storms</a>",
+    description:
+      "This helmet gives as lot of Versatility and Critical Strike, making it a great option.",
+  },
+  {
+    id: "violent-gravemask",
+    name: "<a href='https://www.wowhead.com/ptr-2/item=202602/violent-gravemask' target='_blank'>Violent Gravemask</a>",
+    description:
+      "This helmet gives a ton of Mastery and decent Versatility. This is a great option if you want more Mastery.",
   },
 
   // shoulders
@@ -868,6 +901,12 @@ const infoArray = [
 
   // wrist
   {
+    id: "ferocious-hyena-hidebinders",
+    name: "<a href='https://www.wowhead.com/ptr-2/item=193793/ferocious-hyena-hidebinders' target='_blank'>Ferocious Hyena Hidebinders</a>",
+    description:
+      "These wrists are a very good option if you need Critical Strike and Versatility.",
+  },
+  {
     id: "lifebound-bindings",
     name: "<a href='https://www.wowhead.com/item=193419/life-bound-bindings' target='_blank'>Life-Bound Bindings</a>",
     description:
@@ -891,8 +930,20 @@ const infoArray = [
     description:
       "These wrists are very similar to the Chronomancer's Stasis Shackles, but have slightly more Versatility.",
   },
+  {
+    id: "needlessly-complex-wristguards",
+    name: "<a href='https://www.wowhead.com/ptr-2/item=198327/needlessly-complex-wristguards' target='_blank'>Needlessly Complex Wristguards</a>",
+    description:
+      "These wrists are very good if you want to run a brez as Brewmaster. Not only this, but they give double of the secondary stat that you choose.",
+  },
 
   // waist
+  {
+    id: "troggskin-waistband",
+    name: "<a href='https://www.wowhead.com/ptr-2/item=193668/troggskin-waistband' target='_blank'>Troggskin Waistband</a>",
+    description:
+      "This belt gives a lot of Critical Strike and a good amount of Versatility, making it a very good choice for us.",
+  },
   {
     id: "bloody-dragonhide-belt",
     name: "<a href='https://www.wowhead.com/item=207131/bloody-dragonhide-belt' target='_blank'>Bloody Dragonhide Belt</a>",
@@ -917,15 +968,27 @@ const infoArray = [
     id: "slimy-expulsion-boots",
     name: "<a href='https://www.wowhead.com/item=193451/slimy-expulsion-boots' target='_blank'>Slimy Expulsion Boots</a>",
     description:
-      "These boots have good stats for us, helping us get our Versatility and Mastery up. Not only this, but they also have an embellishment attached to them that does good damage on single target, especially when paired with a Toxified Armor Patch. There is no other competitive option for boots becausae of how good these are for us.",
+      "These boots have good stats for us, helping us get our Versatility and Mastery up. Not only this, but they also have an embellishment attached to them that does good damage on single target. There is no other competitive option for boots because of how good these are for us.",
   },
 
   // rings
   {
+    id: "seal-of-filial-duty",
+    name: "<a href='https://www.wowhead.com/item=195526/seal-of-filial-duty' target='_blank'>Seal of Filial Duty</a>",
+    description:
+      "This ring is extremely powerful. Although it provides a little bit of haste, it gives us a lot of mastery and also has a very strong on equip effect. Whenever we deal damage, this ring has a chance of granting us a shield. This should be your first purchase with the dinar tokens.",
+  },
+  {
+    id: "seal-of-diurnas-chosen",
+    name: "<a href='https://www.wowhead.com/item=195480/seal-of-diurnas-chosen' target='_blank'>Seal of Diurna's Chosen</a>",
+    description:
+      "This ring is very good for us because of the stats that it provides, as well as the equip effect. It provides us a little bit of Critical Strike, a lot of Versatility, and gives our abilities a chance to ignite enemies on fire, dealing damage over time.",
+  },
+  {
     id: "signet-of-titanic-insight",
     name: "<a href='https://www.wowhead.com/item=192999/signet-of-titanic-insight' target='_blank'>Signet of Titanic Insight</a>",
     description:
-      "This is our crafted ring. Just like the others we want to customize its stats to our liking. If you have a flavor pocket this can be a really good slot to put it on, too.",
+      "This is our crafted ring. If you cannot get your hands on Seal of Diurna's Choice, then this is your best option. Just like the others we want to customize its stats to our liking. If you have a flavor pocket this can be a really good slot to put it on, too.",
   },
   {
     id: "signet-of-the-last-elder",
@@ -953,6 +1016,12 @@ const infoArray = [
   },
 
   // weapons
+  {
+    id: "djaruun-pillar-of-the-elder-flame",
+    name: "<a href='https://www.wowhead.com/item=202569/djaruun-pillar-of-the-elder-flame' target='_blank'>Djaruun, Pillar of the Elder Flame</a>",
+    description:
+      "This weapon is extremely powerful. It gives us good stats, providing a lot of Critical Strike and some Mastery, as well as having a very strong on use effect. This should be your second purchase with the dinar tokens.",
+  },
   {
     id: "rashon-the-immortal-blaze",
     name: "<a href='https://www.wowhead.com/item=207793/rashon-the-immortal-blaze' target='_blank'>Rashon, the Immortal Blaze</a>",
@@ -986,10 +1055,34 @@ const infoArray = [
 
   // defensive trinkets
   {
+    id: "granyths-enduring-scale",
+    name: "<a href='https://www.wowhead.com/item=193689/granyths-enduring-scale' target='_blank'>Granyth's Enduring Scale</a>",
+    description:
+      "This trinket has been reworked this season and has become extremely powerful. It now is an on use trinket that grants a massive shield, along with a ton of armor. This is extremely good for Brewmaster, as we really struggle with our low armor. This trinket will always be run on both fortified and tyrannical mythic+ keys.",
+  },
+  {
+    id: "inexorable-resonator",
+    name: "<a href='https://www.wowhead.com/item=193805/inexorable-resonator' target='_blank'>Inexorable Resonator</a>",
+    description:
+      "This trinket has also been reworked this season. If you want to run a second defensive trinket, this will be your best option. Whenever you fall below 75% max health, you will gain a massive absorb shield that pulses AoE damage. This can only occur once every 1.5 minutes, but it is still very strong. I will run this on fortified mythic+ keys.",
+  },
+  {
+    id: "burgeoning-seed",
+    name: "<a href='https://www.wowhead.com/ptr-2/item=193634/burgeoning-seed' target='_blank'>Burgeoning Seed</a>",
+    description:
+      "This trinket is pretty strong this season. It gives us increased health and versatility, providing some nice passive mitigation. If you want an on equip defensive trinket, this is a great option.",
+  },
+  {
+    id: "all-totem-of-the-master",
+    name: "<a href='https://www.wowhead.com/item=194306/all-totem-of-the-master' target='_blank'>All-Totem of the Master</a>",
+    description:
+      "This trinket cycles through stances every 30 seconds, unleashing an attack based on the element. The most notable stance is the earth stance, which provides a ton of armor, making us extremely tanky. This trinket is a decent option, but not the best because of the stances being uncontrollable and random.",
+  },
+  {
     id: "fyrakks-tainted-rageheart",
     name: "<a href='https://www.wowhead.com/item=207174/fyrakks-tainted-rageheart' target='_blank'>Fyrakk's Tainted Rageheart</a>",
     description:
-      "This trinket is ridiculously strong. Although it doesn't give us Agility, we still gain Versatility, a very good stat for us. On use, it gives us a massive absorb shield and radiates AoE damage, which is also strong on single target. While it is listed as a defensive trinket, it is also our top damaging trinket and can be used aggressively if you don't think you'll need the absorb shield any time soon.",
+      "This trinket is very strong. Although it doesn't give us Agility, we still gain Versatility, a very good stat for us. On use, it gives us an absorb shield and radiates AoE damage, which is also strong on single target. While it may not be as strong as other defensive trinkets, it does good damage too. If you want a trinket that works both offensively and defensively, then this is a great choice.",
   },
   {
     id: "prophetic-stonescales",
@@ -1011,6 +1104,30 @@ const infoArray = [
   },
 
   // offensive trinkets
+  {
+    id: "manic-grieftorch",
+    name: "<a href='https://www.wowhead.com/item=194308/manic-grieftorch' target='_blank'>Manic Grieftorch</a>",
+    description:
+      "This trinket is our best damage trinket. On use, we cast and unleash a massive amount of fire damage. The cooldown is also reduced greatly whenever an allie dies. I will run this on tyrannical mythic+ keys.",
+  },
+  {
+    id: "storm-eaters-boon",
+    name: "<a href='https://www.wowhead.com/ptr-2/item=194302/storm-eaters-boon' target='_blank'>Storm-Eater's Boon</a>",
+    description:
+      "This trinket is extremely powerful on AoE dungeons. It turns you into an elemental, doing a bunch of AoE damage over time. The issue with this trinket, however, is that you cannot move. If you want to do a ton of AoE damage, then this is a great trinket, but be careful.",
+  },
+  {
+    id: "whispering-incarnate-icon",
+    name: "<a href='https://www.wowhead.com/item=194301/whispering-incarnate-icon' target='_blank'>Whispering Incarnate Icon</a>",
+    description:
+      "Not only is this trinket a good option for damage, but it also provides us decent survivability as it gives a lot of versatility and primary stat. If you want a more offensive trinket that is not on use, then this is a great option.",
+  },
+  {
+    id: "ominous-chromatic-essence",
+    name: "<a href='https://www.wowhead.com/item=203729/ominous-chromatic-essence' target='_blank'>Ominous Chromatic Essence</a>",
+    description:
+      "This trinket is similar to Whispering Incarnate Icon. Instead of giving ourself a bunch of stats, however, it gives our party good stats, too. This is a good option if you want to provide extra stats for your party.",
+  },
   {
     id: "augury-of-the-primal-flame",
     name: "<a href='https://www.wowhead.com/ptr-2/item=208614/augury-of-the-primal-flame' target='_blank'>Augury of the Primal Flame</a>",
@@ -1035,19 +1152,25 @@ const infoArray = [
     id: "coated-in-slime",
     name: "<a href='https://www.wowhead.com/spell=378423/coated-in-slime' target='_blank'>Coated in Slime</a>",
     description:
-      "This embellishment does good damage on single target, especially when paired with a Toxified Armor Patch. It can only be obtained by crafting Slimy Expulsion Boots, which, fortunately for us, has good secondary stats for us.",
+      "This embellishment does pretty good damage on single target. It can only be obtained by crafting Slimy Expulsion Boots, which, fortunately for us, has good secondary stats.",
+  },
+  {
+    id: "potion-absorption-inhibitor",
+    name: "<a href='https://www.wowhead.com/item=191532/potion-absorption-inhibitor' target='_blank'>Potion Absorption Inhibitor</a>",
+    description:
+      "This embellishment is very strong, as it increases how long our potions last by 50%. Early on in the season, we will want to run this in combination with Coated in Slime.",
   },
   {
     id: "toxified-armor-patch",
     name: "<a href='https://www.wowhead.com/item=193552/toxified-armor-patch' target='_blank'>Toxified Armor Patch</a>",
     description:
-      "This patch is super important for buffing our Coated in Slime damage. It is recommended that you put this patch on your wrists, as they are a low stat item, but it can ultimately be put on any crafted leatherworking gear.",
+      "This patch buffs our Coated in Slime Damage. This season, it is not as strong as Potion Absorption Inhibitor, but if you do not use potions for whatever reason, this is your best option early on in the season.",
   },
   {
     id: "alchemical-flavor-pocket",
     name: "<a href='https://www.wowhead.com/item=200652/alchemical-flavor-pocket' target='_blank'>Alchemical Flavor Pocket</a>",
     description:
-      "This embellishment is really nice because it makes your Well Fed buff persist through death, while also not consuming one of your two embellishment slots. It is recommended that you put this embellishment on a crafted ring or something that won't ever be replaced this season.",
+      "This embellishment is really nice because it makes your Well Fed buff persist through death, while also not consuming one of your two embellishment slots. It is recommended that you put this embellishment on something that won't ever be replaced this season.",
   },
 
   // enchantments
@@ -1060,9 +1183,9 @@ const infoArray = [
   },
   {
     id: "back-enchant",
-    name: "<a href='https://www.wowhead.com/item=200033/enchant-cloak-regenerative-leech' target='_blank'>Regenerative Leech</a>",
+    name: "<a href='https://www.wowhead.com/item=200031/enchant-cloak-graceful-avoidance' target='_blank'>Graceful Avoidance</a>",
     description:
-      "This enchant is very strong for us because it gives us a small amount of Leech, providing us with more self-healing.",
+      "This enchant is very strong for us because it gives us a small amount of Avoidance, providing us with some extra tankiness.",
     value: "Back",
   },
   {
@@ -1074,9 +1197,9 @@ const infoArray = [
   },
   {
     id: "wrist-enchant",
-    name: "<a href='https://www.wowhead.com/item=200022/enchant-bracer-devotion-of-leech' target='_blank'>Devotion of Leech</a>",
+    name: "<a href='https://www.wowhead.com/item=200021/enchant-bracer-devotion-of-avoidance' target='_blank'>Devotion of Avoidance</a>",
     description:
-      "This enchant provides us with more Leech further making us tankier.",
+      "This enchant provides us with more Avoidance further making us tankier.",
     value: "Wrist",
   },
   {
@@ -1120,7 +1243,7 @@ const infoArray = [
     id: "weapon-runes",
     name: "<a href='https://www.wowhead.com/item=204973/hissing-rune' target='_blank'>Hissing Rune</a>",
     description:
-      "Unlike the rest of our secondary stat choices, you always want to run Hissing Runes because Mastery has a lot more static power than a little bit more Critical Strike.",
+      "Unlike the rest of our secondary stat choices, you always want to run Hissing Runes because Mastery has a lot more static power than a little bit more Versatility or Critical Strike.",
     value: "Weapon Rune(s)",
   },
   {
@@ -1212,6 +1335,70 @@ const infoArray = [
 
   // dungeons
   {
+    id: "the-azure-vault",
+    name: "<a href='https://www.wowhead.com/zone=13954/the-azure-vault' target='_blank'>The Azure Vault</a>",
+    description:
+      "This dungeon is super easy for Brewmaster because all of the damage is extremely predictable and ccable. The only things that are a little tricky to live sometimes are bosses, but that is what Brewmaster excels at. Make sure that you take <a href='https://www.wowhead.com/spell=122278/dampen-harm' target='_blank' class='orange'>Dampen Harm</a> in this dungeon, as it is extremely important for the first and last boss.",
+    value: "Easy",
+    dungeonRoute: "the-azure-vault-route",
+  },
+  {
+    id: "brackenhide-hollow",
+    name: "<a href='https://www.wowhead.com/zone=13991/brackenhide-hollow target='_blank'>Brackenhide Hollow</a>",
+    description:
+      "This dungeon is very easy for Brewmaster to live, as all of the damage pretty much just comes from melees. All of the tank busters hit relatively softly, and each boss is very straightforward.",
+    value: "Easy",
+    dungeonRoute: "brackenhide-hollow-route",
+  },
+  {
+    id: "algethar-academy",
+    name: "<a href='https://www.wowhead.com/zone=14032/algethar-academy' target='_blank'>Algeth'ar Academy</a>",
+    description:
+      "This trash isn't overly hard, but there are a few bleeds and magic attacks that can kill you if you are not careful. Outside of this, though, it is a lot of physical damage that is easy to mitigate as Brewmaster. You want to take Versatility as your buff.",
+    value: "Easy",
+    dungeonRoute: "algethar-academy-route",
+  },
+  {
+    id: "neltharus",
+    name: "<a href='https://www.wowhead.com/zone=14011/neltharus' target='_blank'>Neltharus</a>",
+    description:
+      "Neltharus is a little tricky to survive sometimes. There are a lot of magic damage tank busters that you can't dodge, so if you are not careful they can kill you pretty easily. Chargath is now scary too, as a massive tank buster was added to him this season. You won't necessarily struggle in this dungeon, but you do have to be careful.",
+    value: "Medium",
+    dungeonRoute: "neltharus-route",
+  },
+  {
+    id: "the-nokhud-offensive",
+    name: "<a href='https://www.wowhead.com/zone=13982/the-nokhud-offensive' target='_blank'>The Nokhud Offensive</a>",
+    description:
+      "The Nokhud Offensive has some nasty tank busters, especially the Arcing Strike ability used by the Primalist Arcblades. You can, however, <a href='https://www.wowhead.com/spell=109132/roll' target='_blank' class='orange'>Roll</a> or backpedal out of it, making it much easier to live. The spirit area of the dungeon has a lot of casts that need to be interrupted, so it can be tricky living there, too. Because everything is avoidable with good play, this dungeon is only Medium difficulty.",
+    value: "Medium",
+    dungeonRoute: "the-nokhud-offensive-route",
+  },
+  {
+    id: "ruby-life-pools",
+    name: "<a href='https://www.wowhead.com/zone=14063/ruby-life-pools' target='_blank'>Ruby Life Pools</a>",
+    description:
+      "On both fortified and tyrannical, this dungeon is super painful because of all of the magic damage. Because we have a lot more defensive stats and trinkets this season, it is not the hardest dungeon for us to live, but it is still very challenging.",
+    value: "Hard",
+    dungeonRoute: "ruby-life-pools-route",
+  },
+  {
+    id: "halls-of-infusion",
+    name: "<a href='https://www.wowhead.com/zone=14082/halls-of-infusion' target='_blank'>Halls of Infusion</a>",
+    description:
+      "Halls of Infusion has a bunch of magic damage and bleeds, making it really hard to live. Luckily, it is not as hard as it was in season 2 because we have a lot more defensive options regarding trinkets and stats now. It is extremely recommended that you run <a href='https://www.wowhead.com/spell=122278/dampen-harm' target='_blank' class='orange'>Dampen Harm</a> in this dungeon to help live some of the painful bleeds and casts.",
+    value: "Hard",
+    dungeonRoute: "halls-of-infusion-route",
+  },
+  {
+    id: "uldaman-legacy-of-tyr",
+    name: "<a href='https://www.wowhead.com/zone=13968/uldaman' target='_blank'>Uldaman: Legacy of Tyr</a>",
+    description:
+      "Just like Halls of Infusion, this dungeon has a ton of magic damage and bleeds, making it extremely difficult for us to live. On top of this, though, even the melee damage of the mobs and bosses is extremely painful. You want to make sure that you run <a href='https://www.wowhead.com/spell=122278/dampen-harm' target='_blank' class='orange'>Dampen Harm</a> in this dungeon because you can't rely on dodging Chomp from the Vicious Basilisks, and you can't rely on ccing the casters forever.",
+    value: "Hard",
+    dungeonRoute: "uldaman-legacy-of-tyr-route",
+  },
+  {
     id: "ataldazar",
     name: "<a href='https://www.wowhead.com/zone=9028/ataldazar' target='_blank'>Atal'Dazar</a>",
     description:
@@ -1277,6 +1464,230 @@ const infoArray = [
   },
 
   // dungeon bosses
+  {
+    id: "vexamus",
+    name: "<a href='https://www.wowhead.com/npc=194181/vexamus' target='_blank'>Vexamus</a>",
+    description:
+      "Vexamus is relatively easy as a Brewmaster, so long as you are careful and cycle your defensives for every Arcane Expulsion. If your group is struggling to live, you can help out by pressing a large defensive and grabbing two or three orbs, too.",
+    value: "Medium",
+  },
+  {
+    id: "overgrown-ancient",
+    name: "<a href='https://www.wowhead.com/npc=196482/overgrown-ancient' target='_blank'>Overgrown Ancient</a>",
+    description:
+      "This boss's tank buster, Barkbreaker, can be very scary, as not only does it hit for a decent amount, but it increases all physical damage you take afterwards. Not only do you have to deal with this tank buster, but the Hungry Lashers that spawns also do a ton of tank damage. You want to make sure that you are using a defensive for each tank buster, and you are prepared to tank a bunch of damage when the Hungry Lashers come out.",
+    value: "Hard",
+  },
+  {
+    id: "crawth",
+    name: "<a href='https://www.wowhead.com/npc=191736/crawth' target='_blank'>Crawth</a>",
+    description:
+      "Even though this boss's tank damage has been nerfed this season, it is still very challenging. Its tank buster, Savage Peck, hits hard initially, and puts a nasty bleed on you afterwards. If you are a dwarf, this fight becomes slightly easier, as you can dispel the bleed, but, otherwise, you will likely have to cycle a defensive or two for each Savage Peck.",
+    value: "Hard",
+  },
+  {
+    id: "echo-of-doragosa",
+    name: "<a href='https://www.wowhead.com/npc=190609/echo-of-doragosa' target='_blank'>Echo of Doragosa</a>",
+    description:
+      "This boss's tank damage is pretty much nonexistent. You just want to make sure that you are watching your Overwhelming Power stacks, so you can place the Arcane Rifts in good locations.",
+    value: "Easy",
+  },
+  {
+    id: "hackclaws-war-band",
+    name: "<a href='https://www.wowhead.com/npc=186122/rira-hackclaw' target='_blank'>Hackclaw's War-Band</a>",
+    description:
+      "This boss's tank damage is super low, as long as you cast a defensive for each Savage Charge. As Brewmaster, in lower keys, you can instant <a href='https://www.wowhead.com/spell=115080/touch-of-death' target='_blank' class='orange'>Touch of Death</a > the first Hextrick Totem, making the fight even easier.",
+    value: "Easy",
+  },
+  {
+    id: "treemouth",
+    name: "<a href='https://www.wowhead.com/npc=186120/treemouth' target='_blank'>Treemouth</a>",
+    description:
+      "As Brewmaster, this boss is extremely easy. His tank buster, Vine Whip, does very little damage, especially if you use a defensive. Because of our strength against physical damage bosses, it is actually easier for us to not get consumed and instead just eat his auto attacks with his enrage stacks.",
+    value: "Easy",
+  },
+  {
+    id: "gutshot",
+    name: "<a href='https://www.wowhead.com/npc=186116/gutshot' target='_blank'>Gutshot</a>",
+    description:
+      "This boss isn't necessarily hard, but if you make a mistake, you can definitely die. Just like any tank buster, you want to cycle your defensives for each one. Regarding the hyenas on this fight, they melee pretty hard, especially when enraged, so be careful about that.",
+    value: "Medium",
+  },
+  {
+    id: "decatriarch-wratheye",
+    name: "<a href='https://www.wowhead.com/npc=186121/decatriarch-wratheye' target='_blank'>Decatriarch Wratheye</a>",
+    description:
+      "This boss can be a little tricky, especially when you are first learning how to deal with the massive heal absorb on her tank buster, Decaystrike. I recommend using a defensive for the initial hit of it, and in between every Decaystrike, to try and get as many <a href='https://www.wowhead.com/spell=124502/gift-of-the-ox' target='_blank' class='orange'>Gift of the Ox</a> orbs as possible. This way, you can instantly <a href='https://www.wowhead.com/spell=115072/expel-harm' target='_blank' class='orange'>Expel Harm</a>, soaking in all of the orbs and removing the heal absorb on you.",
+    value: "Medium",
+  },
+  {
+    id: "watcher-irideus",
+    name: "<a href='https://www.wowhead.com/npc=189719/watcher-irideus' target='_blank'>Watcher Irideus</a>",
+    description:
+      "This boss has no tank damage at all since you can step out of Titanic Fist. You just want to make sure that you the Nullification Devices die on the boss and that you are not in their circle.",
+    value: "Easy",
+  },
+  {
+    id: "gulping-goliath",
+    name: "<a href='https://www.wowhead.com/npc=189722/gulping-goliath' target='_blank'>Gulping Goliath</a>",
+    description:
+      "Similar to the previous boss, there is pretty much no tank damage. When you get Gulped, you just want to make sure that you are below five stacks of Gulp Swog Toxin, as it applies another five stacks, instantly killing you at ten.",
+    value: "Easy",
+  },
+  {
+    id: "khajin-the-unyielding",
+    name: "<a href='https://www.wowhead.com/npc=189727/khajin-the-unyielding' target='_blank'>Khajin the Unyielding</a>",
+    description:
+      "This boss does a decent amount of sustain tank damage, but it's nothing too serious. She can become scary, however, if you are not watching the cooldown timer on her Frost Shock. As long as you have a small defensive for each Frost Shock, and you cycle the rest of your defensives throughout the fight when needed, you will be fine.",
+    value: "Medium",
+  },
+  {
+    id: "primal-tsunami",
+    name: "<a href='https://www.wowhead.com/npc=189729/primal-tsunami' target='_blank'>Primal Tsunami</a>",
+    description:
+      "This boss's tank buster, Squall Buffet, does a ton of tank damage. You want to make sure that you have at least two defensives for each one. Not only this, but you also have to be careful of where you are standing when it happens, because you can be knocked back into orbs, instantly killing you. When you get knocked back by Squall Buffet, you want to make sure that you get back into melee range instantly via <a href='https://www.wowhead.com/spell=101643/transcendence' target='_blank' class='orange'>Transcendence</a>.",
+    value: "Hard",
+  },
+  {
+    id: "chargath-bane-of-scales",
+    name: "<a href='https://www.wowhead.com/npc=189340/chargath-bane-of-scales' target='_blank'>Chargath, Bane of Scales</a>",
+    description:
+      "Chargath's Fiery Focus has been reworked this season and turned into a massive tank buster. The first hit will be a charge which does a ton of damage. Afterwards, he proceeds to channel into you for lighter, but still painful attacks. You want to make sure that you use multiple defensives for each Fiery Focus, especially if your group is slow to do chains.",
+    value: "Hard",
+  },
+  {
+    id: "forgemaster-gorek",
+    name: "<a href='https://www.wowhead.com/npc=189478/forgemaster-gorek' target='_blank'>Forgemaster Gorek</a>",
+    description:
+      "This boss's tank damage is extremely low, making it very easy for us to live. You just want to make sure that you have a defensive for each one, and when it knocks you back, that you roll out of it right after the circle appears.",
+    value: "Easy",
+  },
+  {
+    id: "magmatusk",
+    name: "<a href='https://www.wowhead.com/npc=181861/magmatusk' target='_blank'>Magmatusk</a>",
+    description:
+      "This boss has pretty much no tank damage. The only trick to this boss is making sure that you don't hold him in the fire on the floor.",
+    value: "Easy",
+  },
+  {
+    id: "warlord-sargha",
+    name: "<a href='https://www.wowhead.com/npc=189901/warlord-sargha' target='_blank'>Warlord Sargha</a>",
+    description:
+      "This boss has also been given a tank buster this season. Luckily, it only occurs during Magma Shield, which isn't too common and can be canceled quickly. You want to make sure that you use a defensive or two for each one, especially if your group is slow to break her shield.",
+    value: "Easy",
+  },
+  {
+    id: "melidrussa-chillworn",
+    name: "<a href='https://www.wowhead.com/npc=188252/melidrussa-chillworn' target='_blank'>Melidrussa Chillworn</a>",
+    description:
+      "This boss does a ridiculous amount of tank damage, especially because we are weak to magic damage. She spam casts Frigid Shard, which hits us extremely hard. You want to try your best to cycle your defensives to whenever needed.",
+    value: "Hard",
+  },
+  {
+    id: "kokia-blazehoof",
+    name: "<a href='https://www.wowhead.com/npc=189232/kokia-blazehoof' target='_blank'>Kokia Blazehoof</a>",
+    description:
+      "Not only do the initial hits of this boss's tank buster, Searing Blows, do a lot of damage, but they apply a stacking bleed, which does an insane amount of damage. You likely will have to use two defensive for each one, so cycling them can get extremely tricky. If you are a dwarf, your racial becomes very useful on this fight.",
+    value: "Hard",
+  },
+  {
+    id: "kyrakka",
+    name: "<a href='https://www.wowhead.com/npc=199790/kyrakka' target='_blank'>Kyrakka and Erkhart Stormvein</a>",
+    description:
+      "This boss radiates high magic damage out to the entire party, enough so to even hurt you. Not only this, but Erkhart Stormvein's tank buster, Stormslam, hits extremely hard, doing both physical damage and magic damage. It is important to have a defensive for each tank buster, as well as cycling any extras for whenever needed.",
+    value: "Hard",
+  },
+  {
+    id: "leymor",
+    name: "<a href='https://www.wowhead.com/npc=186644/leymor' target='_blank'>Leymor</a>",
+    description:
+      "This season, Leymor's Erupting Fissure is now locked onto the tank, forcing you to eat it. This does massive damage, requiring a defensive for each one. Not only this, but he also applies a huge magic DoT called Infused Strike, which will require another defensive or two over its duration. This boss is extremely challenging to live, and requires very good play, especially in high keys.",
+    value: "Hard",
+  },
+  {
+    id: "azureblade",
+    name: "<a href='https://www.wowhead.com/npc=186739/azureblade' target='_blank'>Azureblade</a>",
+    description:
+      "Azureblade isn't too difficult to live, so long as you are prepared for every tank buster, Arcane Cleave. Just like any tank buster, you want to make sure that you have a defensive for each one. A good trick for this boss, too, is that you can move out of the way of Arcane Cleave the last second, either via <a href='https://www.wowhead.com/spell=109132/roll' target='_blank' class='orange'>Roll</a> or <a href='https://www.wowhead.com/spell=101643/transcendence' target='_blank' class='orange'>Transcendence</a>. Just be careful not to hit your party members with it.",
+    value: "Medium",
+  },
+  {
+    id: "telash-greywing",
+    name: "<a href='https://www.wowhead.com/npc=199614/telash-greywing' target='_blank'>Telash Greywing</a>",
+    description:
+      "Telash doesn't really do any tank damage, especially since he has no tank buster. There also aren't really any tricks with him that make the fight easier.",
+    value: "Easy",
+  },
+  {
+    id: "umbrelskul",
+    name: "<a href='https://www.wowhead.com/npc=186738/umbrelskul' target='_blank'>Umbrelskul</a>",
+    description:
+      "This season, the snare has been removed from the boss, making him much less annoying to tank. He is still very dangerous, though, as his tank buster, Dragon Strike, hits ridiculously hard. Not only this, but the crystals that he summons also radiate for a lot of damage, enough so that it even hurts you a little bit.",
+    value: "Hard",
+  },
+  {
+    id: "granyth",
+    name: "<a href='https://www.wowhead.com/npc=186616/granyth' target='_blank'>Granyth</a>",
+    description:
+      "This boss doesn't do any tank damage. When the adds come out, you want to make sure that you try and cc them onto the boss, that way you are damaging both of them at the same time.",
+    value: "Easy",
+  },
+  {
+    id: "the-raging-tempest",
+    name: "<a href='https://www.wowhead.com/npc=186615/the-raging-tempest' target='_blank'>The Raging Tempest</a>",
+    description:
+      "Luckily, The Raging Tempest doesn't have a tank buster, so this fight isn't incredibly difficult. Still, he does a ton of group-wide magic damage, and it even hurts us quite a bit. As long as you play smart, cycling your defensives when needed throughout the fight, you should be fine.",
+    value: "Medium",
+  },
+  {
+    id: "teera-and-maruuk",
+    name: "<a href='https://www.wowhead.com/npc=195723/teera' target='_blank'>Teera and Maruuk</a>",
+    description:
+      "This boss does a lot of tank damage. Maruuk's tank buster, Brutalize, hits extremely hard, requiring a good defensive for each one. Teera's Gale Arrow, which targets every person in the party, also hits extremely hard. When this is about to go off, it can help to have everyone stack, that way no one can get hit by the tornadoes that shoot out afterwards. To top it off, there is a ton of consistent group-wide magic damage that hurts you quite a bit, as well.",
+    value: "Hard",
+  },
+  {
+    id: "balakar-khan",
+    name: "<a href='https://www.wowhead.com/npc=186151/balakar-khan' target='_blank'>Balakar Khan</a>",
+    description:
+      "Balakar Khan's tank busters are very dangerous, especially in his second phase. In the first phase, he applies a bleed to you with Rending Strike, which hits extremely hard. He also casts Savage Strikes when you have the bleed, which hits you for a lot of damage. In the second phase, these get upgraded, doing magic damage, which is especially bad for Brewmaster. This boss requires careful play, cycling defensives for each tank buster. In the second phase, you can save <a href='https://www.wowhead.com/spell=122783/diffuse-magic' target='_blank' class='orange'>Diffuse Magic</a> for Conductive Strike, sending it back to him (which does a lot of damage), as well as not letting him cast Thunder Strike until the next Conductive Strike.",
+    value: "Hard",
+  },
+  {
+    id: "the-lost-dwarves",
+    name: "<a href='https://www.wowhead.com/npc=6906/baelog' target='_blank'>The Lost Dwarves</a>",
+    description:
+      "This boss's tank damage is a complete joke. While there is a tank buster, it doesn't hit hard at all. While it is a good idea to defensive each tank buster, you can get away without it in low and medium keys.",
+    value: "Easy",
+  },
+  {
+    id: "bromach",
+    name: "<a href='https://www.wowhead.com/npc=184018/bromach' target='_blank'>Bromach</a>",
+    description:
+      "Thankfully, Bromach doesn't have a tank buster. He can be dangerous when his Quaking Totem is out, however, as it radiates a lot of magic damage, and there will be a good amount of adds hitting you, as well. It is recommended that you have a defensive or two up for each Quaking Totem.",
+    value: "Medium",
+  },
+  {
+    id: "sentinel-talondras",
+    name: "<a href='https://www.wowhead.com/npc=184124/sentinel-talondras' target='_blank'>Sentinel Talondras</a>",
+    description:
+      "This boss does a lot of tank damage, and is kind of annoying to tank. While you are having to run her around to orbs the entire fight, she melees extremely hard. You also have no way to help your party with the Earthen Shards, which is a strong bleed that can easily kill your healer and dps.",
+    value: "Hard",
+  },
+  {
+    id: "emberon",
+    name: "<a href='https://www.wowhead.com/npc=184422/emberon' target='_blank'>Emberon</a>",
+    description:
+      "Emberon's Searing Clap does a lot of damage and happens very frequently. Not only does it hit hard, but it also applies a strong magic DoT on you and your entire party. You want to try your best to have a defensive for each one. If you feel like you are living easily enough, you can reflect the magic DoT back to him by using <a href='https://www.wowhead.com/spell=122783/diffuse-magic' target='_blank' class='orange'>Diffuse Magic</a>, doing a ton of damage.",
+    value: "Hard",
+  },
+  {
+    id: "chrono-lord-deios",
+    name: "<a href='https://www.wowhead.com/npc=184125/chrono-lord-deios' target='_blank'>Chrono-Lord Deios</a>",
+    description:
+      "This boss does a ton of damage to you and your party. He constantly is doing high magic AoE damage, as well as having a strong tank buster that requires a defensive. Not only this, but he can be super annoying to tank when the room gets small, because it's hard to position him properly for your melee party members.",
+    value: "Hard",
+  },
   {
     id: "priestess-alunza",
     name: "<a href='https://www.wowhead.com/npc=129614/priestess-alunza' target='_blank'>Priestess Alun'za</a>",
@@ -1415,13 +1826,12 @@ const infoArray = [
     value: "Hard",
   },
   {
-    id: "chrono-lord-deios",
+    id: "chrono-lord-deios-doti",
     name: "<a href='https://www.wowhead.com/npc=199000/chrono-lord-deios' target='_blank'>Chrono-Lord Deios</a>",
     description:
       "This boss is disgusting. He melees you for a ridiculous amount, his tank buster hits stupidly hard, and the ads hit hard, too. To top it off, he does a good amount of group wide damage in phase 2. Unfortunately, we can't do anything to help with this boss.",
     value: "Hard",
   },
-
   {
     id: "witherbark",
     name: "<a href='https://www.wowhead.com/npc=81522/witherbark' target='_blank'>Witherbark</a>",
