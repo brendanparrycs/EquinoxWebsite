@@ -255,7 +255,8 @@ ol > li:not(:last-child) {
 
 #horde,
 #class-tree div:not(.grid-container),
-#dungeon-talents,
+#alternative-talents-1,
+#master-of-harmony-talents,
 #unique-gems {
   border-bottom: rgb(34, 34, 35) 0.15rem solid;
 }
@@ -275,7 +276,7 @@ ol > li:not(:last-child) {
 
 .image-section div:not(.grid-container):last-child,
 .row-10,
-#offensive-trinkets {
+#trinkets {
   border-bottom: none !important;
 }
 
@@ -519,6 +520,10 @@ ol > li:not(:last-child) {
     border-right: rgb(11, 12, 13) 0.15rem solid;
   }
 
+  #trinkets {
+    border-right: none !important;
+  }
+
   #strengths,
   #passives,
   #enchants,
@@ -538,7 +543,8 @@ ol > li:not(:last-child) {
   }
 
   #horde,
-  #dungeon-talents,
+  #alternative-talents-1,
+  #master-of-harmony-talents,
   #unique-gems {
     border-bottom: none;
     border-right: rgb(34, 34, 35) 0.15rem solid;

@@ -34,6 +34,12 @@ const infoArray = [
       "Dwarf is the strongest defensive race you can choose in the game. Dwarf's racial <a class='orange' href='https://www.wowhead.com/spell=20594/stoneform' target='_blank'>(Stoneform)</a> allows you to remove a multitude of debuffs on yourself, along with a 10% damage reduction for 8 seconds (more covered in the <a href='advanced.html'>advanced section</a> of the guide).",
   },
   {
+    id: "earthen-dwarf",
+    name: "The Earthen",
+    description:
+      "The Earthen is a very solid choice, as they gain a passive 10% increase in armor, giving Brewmaster even more natural survivability.",
+  },
+  {
     id: "darkiron-dwarf",
     name: "Dark Iron Dwarf",
     description:
@@ -109,19 +115,19 @@ const infoArray = [
     id: "bok",
     name: "<a href='https://www.wowhead.com/spell=100784/blackout-kick' target='_blank'>Blackout Kick</a>",
     description:
-      "This ability procs your mastery and gives you shuffle; use it off cooldown. It also buffs your <a class='orange' href='https://www.wowhead.com/spell=121253/keg-smash' target='_blank'>Keg Smash</a>, <a class='orange' href='https://www.wowhead.com/spell=100780/tiger-palm' target='_blank'>Tiger Palm, and <a class='orange' href='https://www.wowhead.com/spell=115181/breath-of-fire' target='_blank'>Breath of FIre</a>.",
+      "This ability procs your mastery and gives you shuffle; use it off cooldown. It also buffs your <a class='orange' href='https://www.wowhead.com/spell=121253/keg-smash' target='_blank'>Keg Smash</a>, <a class='orange' href='https://www.wowhead.com/spell=100780/tiger-palm' target='_blank'>Tiger Palm, and <a class='orange' href='https://www.wowhead.com/spell=115181/breath-of-fire' target='_blank'>Breath of Fire</a>.",
   },
   {
     id: "sck",
     name: "<a href='https://www.wowhead.com/spell=101546/spinning-crane-kick' target='_blank'>Spinning Crane Kick</a>",
     description:
-      "This is one of the core components to your rotation in AoE. It does good damage and is a great way to absorb <a class='orange' href='https://www.wowhead.com/spell=124502/gift-of-the-ox' target='_blank'>Gift of the Ox</a> orbs.",
+      "In The War Within, this ability is very undertuned and is rarely ever used. The only time that it can be helpful to use is when you are gathering mobs, so you can build a little bit extra aggro.",
   },
   {
     id: "tp",
     name: "<a href='https://www.wowhead.com/spell=100780/tiger-palm' target='_blank'>Tiger Palm</a>",
     description:
-      "This spell was very important in Shadowlands for light cooldown reduction on your brews, but with the way our class works now in Dragonflight, you only use this in single target when you don't need to absorb <a class='orange' href='https://www.wowhead.com/spell=124502/gift-of-the-ox' target='_blank'>Gift of the Ox</a> orbs via <a class='orange' href='https://www.wowhead.com/spell=101546/spinning-crane-kick' target='_blank'>Spinning Crane Kick</a>.",
+      "This spell is your main filler ability on AoE, and your top damaging ability on single target. There are some tricks utilizing our talents to further buff its damage, which will be discussed in the <a href='talents'>Talents</a> section.",
   },
   {
     id: "bof",
@@ -135,14 +141,14 @@ const infoArray = [
     id: "soothing-mist",
     name: "<a href='https://www.wowhead.com/spell=115175/soothing-mist' target='_blank'>Soothing Mist</a>",
     description:
-      "Unfortunately, we are required to take this in order to access several important talents later in the tree. This ability will never be used.",
-    value: "Required",
+      "This talent serves no purpose for us, as we will never actually have a chance to channel this in combat.",
+    value: "Never",
   },
   {
     id: "rsk-talent",
     name: "<a href='https://www.wowhead.com/spell=107428/rising-sun-kick' target='_blank'>Rising Sun Kick</a>",
     description:
-      "This is your highest single target damage ability and a good filler option in AoE when you don't want to spend energy on a global cooldown.",
+      "This is one of your highest single target damaging abilities and a good filler option in AoE when you don't want to spend energy on a global cooldown.",
     value: "Required",
   },
   {
@@ -173,13 +179,20 @@ const infoArray = [
       "A single target snare which is practically useless due to <a href='https://www.wowhead.com/spell=121253/keg-smash' target='_blank' class='orange'>Keg Smash</a> already snaring enemies.",
     value: "Never",
   },
+  {
+    id: "crashing-disable",
+    name: "<a href='https://www.wowhead.com/spell=450335/crashing-momentum' target='_blank'>Crashing Momentum <span class='white'>/</span> <a href='https://www.wowhead.com/spell=116095/disable' target='_blank'>Disable</a>",
+    description:
+      "This node gives you the choice between snaring enemies that you roll through, and having a spammable single target snare. We have many better talent nodes in our class tree, so you never want to take this talent.",
+    value: "Never",
+  },
 
   {
     id: "tiger-tail-sweep",
     name: "<a href='https://www.wowhead.com/spell=264348/tiger-tail-sweep' target='_blank'>Tiger Tail Sweep</a>",
     description:
-      "This talent reduces the cooldown and range of <a href='https://www.wowhead.com/spell=119381/leg-sweep' target='_blank' class='orange'>Leg Sweep</a>, which could be useful at times, but, unfortunately, we don't have enough points to grab this along with the better talents in our tree.",
-    value: "Never",
+      "This talent increases the range of <a href='https://www.wowhead.com/spell=119381/leg-sweep' target='_blank' class='orange'>Leg Sweep</a>, which can be helpful on large AoE packs, where mobs aren't perfectly grouped up. If you have an extra talent, this node is a great choice.",
+    value: "Optional",
   },
   {
     id: "vigorous-expulsion",
@@ -214,21 +227,42 @@ const infoArray = [
     id: "grace-of-the-crane",
     name: "<a href='https://www.wowhead.com/spell=388811/grace-of-the-crane' target='_blank'>Grace of the Crane</a>",
     description:
-      "This increases all healing we receive by 8%, making us much more survivable.",
+      "This increases all healing we receive by 4%, making us much more survivable.",
     value: "Required",
   },
   {
     id: "vivacious-vivification",
     name: "<a href='https://www.wowhead.com/spell=388812/vivacious-vivification' target='_blank'>Vivacious Vivification</a>",
     description:
-      "This talent makes our vivify instant cast every 10 seconds. There are much better healing talents that we can take instead of the vivify talents, so we skip over this, too.",
-    value: "Never",
+      "This talent makes our <a href='https://www.wowhead.com/spell=116670/vivify' target='_blank' class='orange'>Vivify</a> instant cast every 10 seconds. Because of <a href='https://www.wowhead.com/spell=116670/vivify' target='_blank' class='orange'>Vivify</a> being so strong this expansion, this provides us a way to spot heal not only ourselves, but also party members while in combat.",
+    value: "Required",
+  },
+  {
+    id: "jade-walk",
+    name: "<a href='https://www.wowhead.com/beta/spell=450553/jade-walk' target='_blank'>Jade Walk</a>",
+    description:
+      "This talent increases our movement speed by 15% while outside of combat. If you are in a dungeon where you cannot mount, and you want increased movement speed from pack-to-pack, then this can be a helpful talent.",
+    value: "Optional",
+  },
+  {
+    id: "pressure-points",
+    name: "<a href='https://www.wowhead.com/beta/spell=450432/pressure-points' target='_blank'>Pressure Points</a>",
+    description:
+      "This talent makes our <a href='https://www.wowhead.com/spell=115078/paralysis' target='_blank' class='orange'>Paralysis</a> remove all enrage effects on the enemy. This is a helpful talent whenever a soothe is needed.",
+    value: "Situational",
+  },
+  {
+    id: "ancient-arts",
+    name: "<a href='https://www.wowhead.com/beta/spell=344359/ancient-arts' target='_blank'>Ancient Arts</a>",
+    description:
+      "This talent reduces the cooldown of <a href='https://www.wowhead.com/spell=115078/paralysis' target='_blank' class='orange'>Paralysis</a> by 15 seconds and <a href='https://www.wowhead.com/spell=119381/leg-sweep' target='_blank' class='orange'>Leg Sweep</a> by 10 seconds, which is very important for dungeons.",
+    value: "Required",
   },
   {
     id: "ferocity-of-xuen",
     name: "<a href='https://www.wowhead.com/spell=388674/ferocity-of-xuen' target='_blank'>Ferocity of Xuen</a>",
     description:
-      "This talent increases all damage we deal by 4%, which is very good.",
+      "This talent increases all damage we deal by 2%, which is very good.",
     value: "Required",
   },
   {
@@ -258,7 +292,7 @@ const infoArray = [
     name: "<a href='https://www.wowhead.com/spell=116705/spear-hand-strike' target='_blank'>Spear Hand Strike</a>",
     description:
       "This is our interrupt which is a must take whenever there is something that is interruptible.",
-    value: "Situational",
+    value: "Required",
   },
   {
     id: "fort-brew-talent",
@@ -267,13 +301,48 @@ const infoArray = [
       "This is your primary defensive. It is most effective for tank busters or on pull to take less damage while gathering mobs.",
     value: "Required",
   },
+  {
+    id: "energy-transfer",
+    name: "<a href='https://www.wowhead.com/beta/spell=450631/energy-transfer' target='_blank'>Energy Transfer</a>",
+    description:
+      "This talent makes it so when we interrupt an enemy, the cooldown of <a href='https://www.wowhead.com/spell=115078/paralysis' target='_blank' class='orange'>Paralysis</a> and <a href='https://www.wowhead.com/spell=119381/leg-sweep' target='_blank' class='orange'>Leg Sweep</a> are reduced by 5 seconds. While not required, it is a recommended talent, but it is ultimately up to you if you want to take it.",
+    value: "Optional",
+  },
+  {
+    id: "chi-proficiency",
+    name: "<a href='https://www.wowhead.com/beta/spell=450426/chi-proficiency' target='_blank'>Chi Proficiency</a>",
+    description:
+      "This talent increases magical damage and healing done by 4%. The healing is extremely helpful, and the magic damage increase is slightly helpful. This talent node is very important however, as we want it to branch to later talents.",
+    value: "Required",
+  },
 
   {
     id: "chi-wave-burst",
     name: "<a href='https://www.wowhead.com/spell=115098/chi-wave' target='_blank'>Chi Wave</a> <span class='white'>/</span> <a href='https://www.wowhead.com/spell=123986/chi-burst' target='_blank'>Chi Burst</a>",
     description:
-      "This season, you only want to run this talent if you need access to <a href='https://www.wowhead.com/spell=389574/close-to-heart' target='_blank' class='orange'>Close to Heart</a> for raid.",
-    value: "Situational",
+      "<a href='https://www.wowhead.com/spell=123986/chi-burst' target='_blank' class='orange'>Chi Burst</a> is a casted ability that does a ton of damage on both single target and AoE. We are able to dodge while casting this, so it is a great talent node.",
+    value: "Required",
+  },
+  {
+    id: "escape-linked-spirits",
+    name: "<a href='https://www.wowhead.com/spell=394110/escape-from-reality' target='_blank'>Escape from Reality</a> <span class='white'>/</span> <a href='https://www.wowhead.com/beta/spell=434774/transcendence-linked-spirits' target='_blank'>Transcendence: Linked Spirits</a>",
+    description:
+      "This node gives us the choice to give us two teleports with <a href='https://www.wowhead.com/spell=101643/transcendence' target='_blank' class='orange'>Transcendence</a>, or to teleport to an ally with <a href='https://www.wowhead.com/spell=101643/transcendence' target='_blank' class='orange'>Transcendence</a>. There are much better talent choices, so you should never take this.",
+    value: "Never",
+  },
+  {
+    id: "strength-rebuttal",
+    name: "<a href='https://www.wowhead.com/spell=387276/strength-of-spirit' target='_blank'>Strength of Spirit</a> <span class='white'>/</span> <a href='https://www.wowhead.com/spell=392910/profound-rebuttal' target-'_blank'>Profound Rebuttal</a>",
+    description:
+      "Both of these talents increase the healing done of <a href='https://www.wowhead.com/spell=115072/expel-harm' target='_blank' class='orange'>Expel Harm</a> by a considerable amount. In the end, <a href='https://www.wowhead.com/spell=387276/strength-of-spirit' target='_blank' class='orange'>Strength of Spirit</a> comes out ahead, though, and it should always be ran.",
+    value: "Required",
+  },
+  {
+    id: "quick-hasty-provocation",
+    name: "<a href='https://www.wowhead.com/beta/spell=450503/quick-footed' target='_blank'>Quick Footed</a> <span class='white'>/</span> <a href='https://www.wowhead.com/spell=328670/hasty-provocation' target='_blank'>Hasty Provocation</a>",
+    description:
+      "<a href='https://www.wowhead.com/beta/spell=450503/quick-footed' target='_blank' class='orange'>Quick Footed</a> is essentially useless, but <a href='https://www.wowhead.com/spell=328670/hasty-provocation' target='_blank' class='orange'>Hasty Provocation</a> can be good in certain situations, as it makes <a href='https://www.wowhead.com/spell=115546/provoke' target='_blank' class='orange'>Provoke</a> increase how fast the target runs at us. It can be very nice when we need to taunt bosses on high movement fights.",
+    value: "Optional",
   },
   {
     id: "hasty-provocation",
@@ -283,24 +352,52 @@ const infoArray = [
     value: "Optional",
   },
   {
+    id: "spirits-essence",
+    name: "<a href='https://www.wowhead.com/beta/spell=450595/spirits-essence' target='_blank'>Spirit's Essence</a>",
+    description:
+      "This talent snares all nearby enemies after we teleport with <a href='https://www.wowhead.com/spell=101643/transcendence' target='_blank' class='orange'>Transcendence</a>. This isn't a very good talent, as we have a ton of other ways to kite mobs, so it should never be taken.",
+    value: "Never",
+  },
+  {
     id: "ring-song",
     name: "<a href='https://www.wowhead.com/spell=116844/ring-of-peace' target='_blank'>Ring of Peace</a> <span class='white'>/</span> <a href='https://www.wowhead.com/spell=198898/song-of-chi-ji' target='_blank'>Song of Chi-Ji</a>",
     description:
       "<a href='https://www.wowhead.com/spell=116844/ring-of-peace' target='_blank' class='orange'>Ring of Peace</a> is a million times better than <a href='https://www.wowhead.com/spell=198898/song-of-chi-ji' target='_blank' class='orange'>Song of Chi-Ji</a>. <a href='https://www.wowhead.com/spell=116844/ring-of-peace' target='_blank' class='orange'>Ring of Peace</a> gives us an option to AoE knock mobs, which can be used as an interrupt, cc, or a tool for kiting. <a href='https://www.wowhead.com/spell=198898/song-of-chi-ji' target='_blank' class='orange'>Song of Chi-Ji</a> gives us an AoE cc, with the downside of us having to cast it, where we can be left vulnerable to attacks.",
-    value: "Situational",
+    value: "Required",
+  },
+  {
+    id: "rushing-clash",
+    name: "<a href='https://www.wowhead.com/beta/spell=450154/rushing-reflexes' target='_blank'>Rushing Reflexes</a> <span class='white'>/</span> <a href='https://www.wowhead.com/spell=324312/clash' target='_blank'>Clash</a>",
+    description:
+      "<a href='https://www.wowhead.com/beta/spell=450154/rushing-reflexes' target='_blank' class='orange'>Rushing Reflexes</a> is really bad and serves no purpose. <a href='https://www.wowhead.com/spell=324312/clash' target='_blank' class='orange'>Clash</a> was looking really good, but, unfortunately, it was nerfed and now breaks on damage, making it a useless talent. This node should never be taken.",
+    value: "Never",
   },
   {
     id: "fast-feet",
     name: "<a href='https://www.wowhead.com/spell=388809/fast-feet' target='_blank'>Fast Feet</a>",
     description:
-      "This talent is amazing. It gives a big damage boost to our highest damaging single target ability, <a href='https://www.wowhead.com/spell=107428/rising-sun-kick' target='_blank' class='orange'>Rising Sun Kick</a>, along with increasing <a href='https://www.wowhead.com/spell=101546/spinning-crane-kick' target='_blank' class='orange'>Spinning Crane Kick's</a> damage, too.",
+      "This talent is really good, as it gives a big damage boost to <a href='https://www.wowhead.com/spell=107428/rising-sun-kick' target='_blank' class='orange'>Rising Sun Kick</a>.",
     value: "Required",
+  },
+  {
+    id: "bounding-agility",
+    name: "<a href='https://www.wowhead.com/spell=450520/bounding-agility' target='_blank'>Bounding Agility</a>",
+    description:
+      "This talent makes your <a href='https://www.wowhead.com/spell=109132/roll' target='_blank' class='orange'>Roll</a> and <a href='https://www.wowhead.com/spell=115008/chi-torpedo' target='_blank' class='orange'>Chi Torpedo</a> travel further. If you have extra talent points, and want to be slightly more mobile, you can take this talent.",
+    value: "Optional",
+  },
+  {
+    id: "winds-reach",
+    name: "<a href='https://www.wowhead.com/beta/spell=450514/winds-reach' target='_blank'>Wind's Reach</a>",
+    description:
+      "This talent is useless as it buffs <a href='https://www.wowhead.com/spell=450335/crashing-momentum' target='_blank' class='orange'>Crashing Momentum</a> and <a href='https://www.wowhead.com/spell=116095/disable' target='_blank' class='orange'>Disable</a>, which we never take.",
+    value: "Never",
   },
   {
     id: "celerity-torpedo",
     name: "<a href='https://www.wowhead.com/spell=115173/celerity' target='_blank'>Celerity</a> <span class='white'>/</span> <a href='https://www.wowhead.com/spell=115008/chi-torpedo' target='_blank'>Chi Torpedo</a>",
     description:
-      "<a href='https://www.wowhead.com/spell=115173/celerity' target='_blank' class='orange'>Celerity</a> is just a better version of <a href='https://www.wowhead.com/spell=328669/improved-roll' target='_blank' class='orange'>Improved Roll</a>. Not only does it give us an additional charge of <a href='https://www.wowhead.com/spell=109132/roll' target='_blank' class='orange'>Roll</a>, but it also reduces its cooldown. <a href='https://www.wowhead.com/spell=115008/chi-torpedo' target='_blank' class='orange'>Chi Torpedo</a> can be taken over <a href='https://www.wowhead.com/spell=115173/celerity' target='_blank' class='orange'>Celerity</a> if you prefer it, but it is recommended that you take <a href='https://www.wowhead.com/spell=328669/improved-roll' target='_blank' class='orange'>Improved Roll</a> along with it, or else you will only have one charge.",
+      "<a href='https://www.wowhead.com/spell=115173/celerity' target='_blank' class='orange'>Celerity</a> gives us an additional charge of <a href='https://www.wowhead.com/spell=109132/roll' target='_blank' class='orange'>Roll</a> and also reduces its cooldown. <a href='https://www.wowhead.com/spell=115008/chi-torpedo' target='_blank' class='orange'>Chi Torpedo</a> can be taken over <a href='https://www.wowhead.com/spell=115173/celerity' target='_blank' class='orange'>Celerity</a> if you prefer it, as it goes slightly further and gives a movement speed increase afterwards.",
     value: "Optional",
   },
   {
@@ -315,8 +412,15 @@ const infoArray = [
     id: "profound-rebuttal",
     name: "<a href='https://www.wowhead.com/spell=392910/profound-rebuttal' target-'_blank'>Profound Rebuttal</a>",
     description:
-      "This talent increases the critical healing of <a href='https://www.wowhead.com/spell=115072/expel-harm' target='_blank' class='orange'>Expel Harm</a>. This season, this is not required for living, so you only want to run this talent if you need access to <a href='https://www.wowhead.com/spell=389574/close-to-heart' target='_blank' class='orange'>Close to Heart</a> for raid.",
-    value: "Situational",
+      "This talent increases the critical healing of <a href='https://www.wowhead.com/spell=115072/expel-harm' target='_blank' class='orange'>Expel Harm</a>, which is very good, as it does a good amount of healing.",
+    value: "Required",
+  },
+  {
+    id: "peace-and-prosperity",
+    name: "<a href='https://www.wowhead.com/beta/spell=450448/peace-and-prosperity' target-'_blank'>Peace and Prosperity</a>",
+    description:
+      "This talent reduces the cooldown of <a href='https://www.wowhead.com/spell=116844/ring-of-peace' target='_blank' class='orange'>Ring of Peace</a> by 5 seconds. There are a ton of better optional nodes that can be taken, so this talent is not recommended.",
+    value: "Never",
   },
   {
     id: "yulon-diffuse",
@@ -336,15 +440,15 @@ const infoArray = [
     id: "dance-wind-dampen",
     name: "<a href='https://www.wowhead.com/spell=414132/dance-of-the-wind' target='_blank'>Dance of the Wind <span class='white'>/</span> <a href='https://www.wowhead.com/spell=122278/dampen-harm' target='_blank'>Dampen Harm</a>",
     description:
-      "Your choice with this node depends on your current needs. If you want a base dodge increase, you take <a href='https://www.wowhead.com/spell=414132/dance-of-the-wind' target='_blank' class='orange'>Dance of the Wind</a>. If you are expecting very large hits, you take <a href='https://www.wowhead.com/spell=122278/dampen-harm' target='_blank' class='orange'>Dampen Harm</a>. This season, there are a few mythic+ dungeons where you want to run <a href='https://www.wowhead.com/spell=414132/dance-of-the-wind' target='_blank' class='orange'>Dampen Harm</a>, but usually you want to run <a href='https://www.wowhead.com/spell=414132/dance-of-the-wind' target='_blank' class='orange'>Dance of the Wind</a> (more discussed in the <a href='dungeons'>dungeons & affixes</a> section). Occasionally, in raid, you may want to run <a href='https://www.wowhead.com/spell=122278/dampen-harm' target='_blank' class='orange'>Dampen Harm</a>.",
+      "Your choice with this node depends on your current needs. If you want a base dodge increase, you take <a href='https://www.wowhead.com/spell=414132/dance-of-the-wind' target='_blank' class='orange'>Dance of the Wind</a>. If you are expecting very large hits, you take <a href='https://www.wowhead.com/spell=122278/dampen-harm' target='_blank' class='orange'>Dampen Harm</a>. This season, you want to typically run <a href='https://www.wowhead.com/spell=122278/dampen-harm' target='_blank' class='orange'>Dampen Harm</a>, but if you want less buttons, <a href='https://www.wowhead.com/spell=414132/dance-of-the-wind' target='_blank' class='orange'>Dance of the Wind</a> is still a very good choice.",
     value: "Required",
   },
   {
     id: "improved-tod",
     name: "<a href='https://www.wowhead.com/spell=322113/improved-touch-of-death' target='_blank'>Improved Touch of Death</a>",
     description:
-      "This talent serves no purpose in mythic+ as we always want to ensure that we kill the mob with <a href='https://www.wowhead.com/spell=115080/touch-of-death' target='_blank' class='orange'>Touch of Death</a>. In raid, however, this talent can be taken for parsing on pure single target bosses.",
-    value: "Optional",
+      "This talent serves no purpose, as we always want to finish off an enemy with <a href='https://www.wowhead.com/spell=115080/touch-of-death' target='_blank' class='orange'>Touch of Death</a>.",
+    value: "Never",
   },
   {
     id: "strength-of-spirit",
@@ -372,14 +476,21 @@ const infoArray = [
     id: "windwalking",
     name: "<a href='https://www.wowhead.com/spell=157411/windwalking' target='_blank'>Windwalking</a>",
     description:
-      "This talent grants you and your allies a 4% speed increase, which could be really nice on high movement fights, but it requires a lot of points to get, making it not worth it.",
+      "This talent grants you and your allies a 4% speed increase. This may sound good, but it is only in a 10 yd radius, making it essentially useless.",
+    value: "Never",
+  },
+  {
+    id: "healing-winds",
+    name: "<a href='https://www.wowhead.com/beta/spell=450560/healing-winds' target='_blank'>Healing Winds</a>",
+    description:
+      "This talent makes <a href='https://www.wowhead.com/spell=101643/transcendence' target='_blank' class='orange'>Transcendence</a> heal is for 10% of our maximum health. This is really bad because it heals for such a low amount.",
     value: "Never",
   },
   {
     id: "fatal-touch",
     name: "<a href='https://www.wowhead.com/spell=394123/fatal-touch' target='_blank'>Fatal Touch</a>",
     description:
-      "This talent reduces <a href='https://www.wowhead.com/spell=115080/touch-of-death' target='_blank' class='orange'>Touch of Death's</a> cooldown by 90 seconds, which is really good because it allows us to have an instant finisher for really tough mobs more frequently.",
+      "This talent reduces <a href='https://www.wowhead.com/spell=115080/touch-of-death' target='_blank' class='orange'>Touch of Death's</a> cooldown by 90 seconds, and increases your damage dealt by 5% for 30 seconds after using it.",
     value: "Required",
   },
   {
@@ -394,7 +505,14 @@ const infoArray = [
     id: "save-them-all",
     name: "<a href='https://www.wowhead.com/spell=389579/save-them-all' target='_blank'>Save them All</a>",
     description:
-      "This talent may sound strong, but we have no reliant way of healing our allies, so it's not worth putting points into.",
+      "Because our only way to heal allies is on a 10 second cooldown, this talen has a very low uptime, making it not a good choice.",
+    value: "Never",
+  },
+  {
+    id: "swift-art",
+    name: "<a href='https://www.wowhead.com/beta/spell=450622/swift-art' target='_blank'>Swift Art</a>",
+    description:
+      "This talent is horrible. We already have a way to get rid of snares with <a href='https://www.wowhead.com/spell=116841/tigers-lust' target='_blank' class='orange'>Tiger's Lust</a>, and it can only trigger every 30 seconds. Never take it.",
     value: "Never",
   },
   {
@@ -408,8 +526,29 @@ const infoArray = [
     id: "bounce-back",
     name: "<a href='https://www.wowhead.com/spell=389577/bounce-back' target='_blank'>Bounce Back</a>",
     description:
-      "This talent is pretty good this season. In mythic+, where survivability is more of a priority, we always want to run this. In raid, however, you do not need this.",
-    value: "Situational",
+      "This talent gives us passive damage reduction throughout combat. Unlike the previous season, it is now only one talent point, and should always be taken.",
+    value: "Required",
+  },
+  {
+    id: "lighter-than-air",
+    name: "<a href='https://www.wowhead.com/beta/spell=449582/lighter-than-air' target='_blank'>Lighter than Air</a>",
+    description:
+      "This talent gives you an additional dash that can be activated by pressing spacebar after rolling. If you like the talent or want a little bit extra mobility, you can take this talent.",
+    value: "Optional",
+  },
+  {
+    id: "flow-of-chi",
+    name: "<a href='https://www.wowhead.com/beta/spell=450569/flow-of-chi' target='_blank'>Flow of Chi</a>",
+    description:
+      "This talent is really good, as it gives us certain buffs based on our health. These buffs include a movement speed increase, damage reduction, and a healing increase. This talent should always be ran.",
+    value: "Required",
+  },
+  {
+    id: "martial-instincts",
+    name: "<a href='https://www.wowhead.com/beta/spell=450427/martial-instincts' target='_blank'>Martial Instincts</a>",
+    description:
+      "This talent is extremely good, as it increases your physical damage and avoidance by 4%. Always take this talent.",
+    value: "Required",
   },
 
   {
@@ -425,6 +564,13 @@ const infoArray = [
     description:
       "This talent does a lot of damage. On high AoE packs, if you ramp properly (more discussed in the <a href='playstyle.html'>playstyle & rotation</a> section), it can be one of your top damaging abilities. On single target, it is a nice passive damage buff to just quickly place down.",
     value: "Required",
+  },
+  {
+    id: "celestial-determination",
+    name: "<a href='https://www.wowhead.com/beta/spell=450638/celestial-determination' target='_blank'>Celestial Determination</a>",
+    description:
+      "This talent is extremely bad, as we don't run the ability it works with, and even if we did, it would still be useless. Never take it.",
+    value: "Never",
   },
   {
     id: "ox-statue",
@@ -482,8 +628,8 @@ const infoArray = [
     id: "quick-sip",
     name: "<a href='https://www.wowhead.com/spell=388505/quick-sip' target='_blank'>Quick Sip</a>",
     description:
-      "This talent is just a nice way to decrease the amount of stagger we have at all times.",
-    value: "Required",
+      "This talent reduces our stagger every three seconds when in combat. While this talent isn't bad, there are much better options for us to take, so we never want to take this talent.",
+    value: "Never",
   },
 
   {
@@ -491,6 +637,13 @@ const infoArray = [
     name: "<a href='hhttps://www.wowhead.com/spell=383695/hit-scheme' target='_blank'>Hit Scheme</a>",
     description:
       "This talent is a massive damage increase. It makes our <a href='https://www.wowhead.com/spell=100784/blackout-kick' target='_blank' class='orange'>Blackout Kick</a> increase the damage of our next <a href='https://www.wowhead.com/spell=121253/keg-smash' target='_blank' class='orange'>Keg Smash</a> by 10%, stacking up to 4 times.",
+    value: "Required",
+  },
+  {
+    id: "elixir-of-determination",
+    name: "<a href='https://www.wowhead.com/beta/spell=455139/elixir-of-determination' target='_blank'>Elixir of Determination</a>",
+    description:
+      "This talent gives us an absorb shield whenever our health drops below 40%. This is a nice passive mitigation talent, and should always be taken.",
     value: "Required",
   },
   {
@@ -504,7 +657,7 @@ const infoArray = [
     id: "delivery-rushing",
     name: "<a href='https://www.wowhead.com/spell=196730/special-delivery' target='_blank'>Special Delivery</a> <span class='white'>/</span> <a href='https://www.wowhead.com/spell=116847/rushing-jade-wind' target='_blank'>Rushing Jade Wind</a>",
     description:
-      "Both of these talents do very good damage. <a href='https://www.wowhead.com/spell=196730/special-delivery' target='_blank' class='orange'>Special Delivery</a> makes us drop a keg from the air whenever we purify our stagger, while <a href='https://www.wowhead.com/spell=116847/rushing-jade-wind' target='_blank' class='orange'>Rushing Jade Wind</a> radiates damage around us and is a buff that we have to upkeep. While <a href='https://www.wowhead.com/spell=116847/rushing-jade-wind' target='_blank' class='orange'>Rushing Jade Wind</a> does more damage, <a href='https://www.wowhead.com/spell=196730/special-delivery' target='_blank' class='orange'>Special Delivery</a> is not horrible, so it can be chosen if you want less keybinds to worry about.",
+      "Both of these talents do decent damage. <a href='https://www.wowhead.com/spell=196730/special-delivery' target='_blank' class='orange'>Special Delivery</a> makes us drop a keg from the air whenever we purify our stagger, while <a href='https://www.wowhead.com/spell=116847/rushing-jade-wind' target='_blank' class='orange'>Rushing Jade Wind</a> radiates damage around us and is a buff that we have to upkeep. The talent you take here is a personal decision, but <a href='https://www.wowhead.com/spell=196730/special-delivery' target='_blank' class='orange'>Special Delivery</a> can pull just slightly ahead.",
     value: "Required",
   },
 
@@ -530,11 +683,32 @@ const infoArray = [
     value: "Never",
   },
   {
+    id: "august-blessing",
+    name: "<a href='https://www.wowhead.com/beta/spell=454483/august-blessing' target='_blank'>August Blessing</a>",
+    description:
+      "This talent applies a HoT whenever you overheal. If you find yourself overhealing a lot, then this can be ran instead of <a href='https://www.wowhead.com/beta/spell=454484/one-with-the-wind' target='_blank' class='orange'>One With the Wind</a>.",
+    value: "Optional",
+  },
+  {
+    id: "one-with-the-wind",
+    name: "<a href='https://www.wowhead.com/beta/spell=454484/one-with-the-wind' target='_blank'>One With the Wind</a>",
+    description:
+      "This talent gives us a higher uptime on our Mastery, giving us increased dodge change and a good amount of tankiness. If you wish to take <a href='https://www.wowhead.com/beta/spell=454483/august-blessing' target='_blank' class='orange'>August Blessing</a> instead, then don't take this talent.",
+    value: "Optional",
+  },
+  {
+    id: "strike-at-dawn",
+    name: "<a href=' https://www.wowhead.com/beta/spell=455043/strike-at-dawn' target='_blank'>Strike At Dawn</a>",
+    description:
+      "This talent gives us a stack of our Mastery whenever we use <a href='https://www.wowhead.com/spell=107428/rising-sun-kick' target='_blank' class='orange'>Rising Sun Kick</a>. This is a good alternative to <a href='https://www.wowhead.com/spell=115176/zen-meditation' target='_blank' class='orange'>Zen Meditation</a> if you don't want to run it.",
+    value: "Optional",
+  },
+  {
     id: "zen-meditation",
     name: "<a href='https://www.wowhead.com/spell=115176/zen-meditation' target='_blank'>Zen Meditation</a>",
     description:
-      "A 60% defensive to all sources that is canceled as soon as we are hit by a melee attack. While it may not sound very useful, it can be utilized in pure magic damage situations and for tank busters (more discussed in the <a href='advanced.html'>advanced section</a> of the guide).",
-    value: "Required",
+      "A 60% defensive to all sources that is canceled as soon as we are hit by a melee attack. While it may not sound very useful, it can be utilized in pure magic damage situations and for tank busters (more discussed in the <a href='advanced.html'>advanced section</a> of the guide). If you do not like this ability, or are not using it to its full potential, you should run <a href='https://www.wowhead.com/beta/spell=455043/strike-at-dawn' target='_blank' class='orange'>Strike At Dawn</a> instead.",
+    value: "Optional",
   },
   {
     id: "clash",
@@ -573,10 +747,24 @@ const infoArray = [
     value: "Required",
   },
   {
+    id: "tranquil-spirit",
+    name: "<a href='https://www.wowhead.com/spell=393357/tranquil-spirit' target='_blank'>Tranquil Spirit</a>",
+    description:
+      "This talent reduces our stagger level whenever we consume a <a href='https://www.wowhead.com/spell=124502/gift-of-the-ox' target='_blank' class='orange'>Gift of the Ox</a> orb, which is a very good talent.",
+    value: "Required",
+  },
+  {
+    id: "gai-plins-imperial-brew",
+    name: "<a href='https://www.wowhead.com/spell=383700/gai-plins-imperial-brew' target='_blank'>Gai Plin's Imperial Brew</a>",
+    description:
+      "This talent makes our <a href='https://www.wowhead.com/spell=119582/purifying-brew' target='_blank' class='orange'>Purifying Brew</a> much stronger, as it will now heal us for 25% of the purified stagger.",
+    value: "Required",
+  },
+  {
     id: "fundamental-observation",
     name: "<a href='https://www.wowhead.com/spell=387035/fundamental-observation' target='_blank'>Fundamental Observation</a>",
     description:
-      "This talent reduces <a href='https://www.wowhead.com/spell=115176/zen-meditation' target='_blank' class='orange'>Zen Meditation's</a> cooldown by 25%, along with making it not get canceled by moving or receiving melee attacks. This talent is a good alternative to <a href='https://www.wowhead.com/spell=383785/counterstrike' target='_blank' class='orange'>CounterStrike</a> or <a href='https://www.wowhead.com/spell=196737/high-tolerance target='_blank' class='orange'>High Tolerance</a> if you want more survivability.",
+      "This talent reduces <a href='https://www.wowhead.com/spell=115176/zen-meditation' target='_blank' class='orange'>Zen Meditation's</a> cooldown by 25%, along with making it not get canceled by moving or receiving melee attacks. This talent is a good alternative to <a href='https://www.wowhead.com/spell=383785/counterstrike' target='_blank' class='orange'>Counterstrike</a> or <a href='https://www.wowhead.com/spell=196737/high-tolerance target='_blank' class='orange'>High Tolerance</a> if you want more survivability.",
     value: "Optional",
   },
   {
@@ -598,22 +786,22 @@ const infoArray = [
     id: "fort-brew-determination",
     name: "<a href='https://www.wowhead.com/spell=322960/fortifying-brew-determination' target='_blank'>Fortifying Brew: Determination</a>",
     description:
-      "Although this talent makes our stagger more effective during <a href='https://www.wowhead.com/spell=243435/fortifying-brew' target='_blank' class='orange'>Fortifying Brew</a>, it is not worth taking as <a href='https://www.wowhead.com/spell=243435/fortifying-brew' target='_blank' class='orange'>Fortifying Brew</a> is up so little of the time.",
-    value: "Never",
+      "This talent increases the effectiveness of our stagger whenever we use <a href='https://www.wowhead.com/spell=243435/fortifying-brew' target='blank' class='orange'>Fortifying Brew</a>. Typically, I don't run this talent, but if you find yourself struggling to live, this can be a great talent to take.",
+    value: "Situational",
   },
   {
     id: "bob-ox-brew",
     name: "<a href='https://www.wowhead.com/spell=280515/bob-and-weave' target='_blank'>Bob and Weave <span class='white'>/</span> <a href='https://www.wowhead.com/spell=115399/black-ox-brew' target='_blank'>Black Ox Brew</a>",
     description:
-      "Both of these talents are extremely good. <a href='https://www.wowhead.com/spell=280515/bob-and-weave' target='_blank' class='orange'>Bob and Weave</a> delays the rate at which our stagger damages us, making us overall tankier. <a href='https://www.wowhead.com/spell=115399/black-ox-brew' target='_blank' class='orange'>Black Ox Brew</a> is a cooldown that allows us to reset the cooldown of all of our brews whenever we want. In super high keys, <a href='https://www.wowhead.com/spell=115399/black-ox-brew' target='_blank' class='orange'>Black Ox Brew</a> is basically required to live certain pulls, but <a href='https://www.wowhead.com/spell=280515/bob-and-weave' target='_blank' class='orange'>Bob and Weave</a> can be taken for most key levels if you want less keybinds overall.",
+      "Both of these talents are extremely good. <a href='https://www.wowhead.com/spell=280515/bob-and-weave' target='_blank' class='orange'>Bob and Weave</a> delays the rate at which our stagger damages us, making us overall tankier. <a href='https://www.wowhead.com/spell=115399/black-ox-brew' target='_blank' class='orange'>Black Ox Brew</a> is a cooldown that allows us to reset the cooldown of all of our brews whenever we want. This season, we want to run <a href='https://www.wowhead.com/spell=280515/bob-and-weave' target='_blank' class='orange'>Bob and Weave</a>, as we already have so many defensive cooldowns.",
     value: "Required",
   },
   {
     id: "dave",
     name: "<a href='https://www.wowhead.com/spell=132578/invoke-niuzao-the-black-ox' target='_blank'>Invoke Niuzao, the Black Ox</a>",
     description:
-      "This talent gives us a cooldown that summons a pet who staggers 25% of our stagger while active. Unfortunately, he is not amazing and we are required to take him to branch down to very important talents. It is best to use him off cooldown.",
-    value: "Required",
+      "This talent gives us a cooldown that summons a pet who staggers 25% of our stagger while active. He does close to no damage, and he should never be taken.",
+    value: "Never",
   },
   {
     id: "light-training",
@@ -627,13 +815,13 @@ const infoArray = [
     name: "<a href='https://www.wowhead.com/spell=393516/pretense-of-instability' target='_blank'>Pretense of Instability</a>",
     description:
       "This talent gives us an extra 15% dodge chance after using <a href='https://www.wowhead.com/spell=119582/purifying-brew' target='_blank' class='orange'>Purifying Brew</a>, helping make us much tankier in melee heavy encounters.",
-    value: "Situational",
+    value: "Required",
   },
   {
     id: "counterstrike",
     name: "<a href='https://www.wowhead.com/spell=383785/counterstrike' target='_blank'>Counterstrike</a>",
     description:
-      "This talent is a massive damage increase on both single target and AoE. Whenever we dodge an attack, it increases the damage of our next <a href='https://www.wowhead.com/spell=100780/tiger-palm' target='_blank' class='orange'>Tiger Palm</a> or <a href='https://www.wowhead.com/spell=101546/spinning-crane-kick' target='_blank' class='orange'>Spinning Crane Kick</a> by 100%. If you want a more simple playstyle, you can choose to take <a href='https://www.wowhead.com/spell=196737/high-tolerance target='_blank' class='orange'>High Tolerance</a> instead. You can also choose to take <a href='https://www.wowhead.com/spell=387035/fundamental-observation' target='_blank' class='orange'>Fundamental Observation</a> if you want more survivability.",
+      "This talent is a massive damage increase single target. Whenever we dodge an attack, it increases the damage of our next <a href='https://www.wowhead.com/spell=100780/tiger-palm' target='_blank' class='orange'>Tiger Palm</a> by 100%. If you want more damage over survivability, you can take this talent.",
     value: "Optional",
   },
 
@@ -641,14 +829,14 @@ const infoArray = [
     id: "dragonfire-charred",
     name: "<a href='https://www.wowhead.com/spell=383994/dragonfire-brew' target='_blank'>Dragonfire Brew</a> <span class='white'>/</span> <a href='https://www.wowhead.com/spell=386965/charred-passions' target='_blank'>Charred Passions</a>",
     description:
-      "Both of these talents are extremely important as they synergize with our tier set and dictate how our build plays. <a href='https://www.wowhead.com/spell=383994/dragonfire-brew' target='_blank' class='orange'>Dragonfire Brew</a> increases the damage of our <a href='https://www.wowhead.com/spell=115181/breath-of-fire' target='_blank' class='orange'>Breath of Fire</a> based on 100% of our stagger, making it an extremely high damaging ability on AoE. <a href='https://www.wowhead.com/spell=386965/charred-passions' target='_blank' class='orange'>Charred Passions</a> makes our <a href='https://www.wowhead.com/spell=115181/breath-of-fire' target='_blank' class='orange'>Breath of Fire</a> apply a buff to ourselves, causing our <a href='https://www.wowhead.com/spell=100784/blackout-kick' target='_blank' class='orange'>Blackout Kick</a> and <a href='https://www.wowhead.com/spell=101546/spinning-crane-kick' target='_blank' class='orange'>Spinning Crane Kick</a> to deal additional fire damage. In mythic+, we tend to take <a href='https://www.wowhead.com/spell=383994/dragonfire-brew' target='_blank' class='orange'>Dragonfire Brew</a>, but, in raid, we tend to take <a href='https://www.wowhead.com/spell=386965/charred-passions' target='_blank' class='orange'>Charred Passions</a>. Ultimately, however, you can take either one you want in all situations.",
+      "This season, <a href='https://www.wowhead.com/spell=386965/charred-passions' target='_blank' class='orange'>Charred Passions</a> isn't very strong, but <a href='https://www.wowhead.com/spell=383994/dragonfire-brew' target='_blank' class='orange'>Dragonfire Brew</a> is. <a href='https://www.wowhead.com/spell=383994/dragonfire-brew' target='_blank' class='orange'>Dragonfire Brew</a> increases the damage of our <a href='https://www.wowhead.com/spell=115181/breath-of-fire' target='_blank' class='orange'>Breath of Fire</a> based on 100% of our stagger, making it a good damaging ability on AoE. This should always be taken.",
     value: "Required",
   },
   {
     id: "high-tolerance",
     name: "<a href='https://www.wowhead.com/spell=196737/high-tolerance' target='_blank'>High Tolerance</a>",
     description:
-      "This talent helps delay your stagger and gives you haste based on your current level of stagger. If you want a more simple playstyle, you can sub out certain talents for a point or two into this one.",
+      "This talent helps delay your stagger and gives you haste based on your current level of stagger. If you find yourself out of energy, or have some leftover talent points, you can put a point or two into this.",
     value: "Optional",
   },
   {
@@ -659,25 +847,32 @@ const infoArray = [
     value: "Never",
   },
   {
+    id: "ox-stance",
+    name: "<a href='https://www.wowhead.com/beta/spell=455068/ox-stance' target='_blank'>Ox Stance</a>",
+    description:
+      "Ox Stance is a great talent to take when you want to deal with heavy hitting tank busters. It increases the effectivess on your stagger when an attack hits you for greater than 60% of your maximum health.",
+    value: "Situational",
+  },
+  {
     id: "elusive-footwork",
     name: "<a href='https://www.wowhead.com/spell=387046/elusive-footwork' target='_blank'>Elusive Footwork</a>",
     description:
-      "This talent makes our <a href='https://www.wowhead.com/spell=100784/blackout-kick' target='_blank' class='orange'>Blackout Kick</a> do 10% additional damage and grant us additional dodge chance, which is very good.",
+      "This talent makes our <a href='https://www.wowhead.com/spell=100784/blackout-kick' target='_blank' class='orange'>Blackout Kick</a> do 5% additional damage and grant us additional dodge chance, which is very good.",
     value: "Required",
   },
   {
     id: "anvil-stave",
     name: "<a href='https://www.wowhead.com/spell=386937/anvil-stave' target='_blank'>Anvil & Stave</a>",
     description:
-      "This talent reduces the cooldown of our brews everytime we dodge an attack, but, unfortunately, it can only occur once every three seconds, making it horrible.",
-    value: "Never",
+      "If you are in a melee heavy dungeon, and want additional brew cooldown reduction, this can be a great talent to put a point or two into.",
+    value: "Situational",
   },
   {
     id: "face-palm",
     name: "<a href='https://www.wowhead.com/spell=389942/face-palm' target='_blank'>Face Palm</a>",
     description:
-      "This talent is very strong on single target, buffing our <a href='https://www.wowhead.com/spell=100780/tiger-palm' target='_blank' class='orange'>Tiger Palm</a> damage by a large amount. This should always be taken on single target encounters in raid.",
-    value: "Situational",
+      "This talent is very strong on single target, buffing our <a href='https://www.wowhead.com/spell=100780/tiger-palm' target='_blank' class='orange'>Tiger Palm</a> damage by a large amount. If you want additional single target damage, then you can take this talent.",
+    value: "Optional",
   },
 
   {
@@ -698,21 +893,35 @@ const infoArray = [
     id: "exploding-keg",
     name: "<a href='https://www.wowhead.com/spell=325153/exploding-keg' target='_blank'>Exploding Keg</a>",
     description:
-      "This talent is one of our top damaging abilities. It can be used for large burst damage, especially when we ramp correctly in our Weapon of Order burst windows (more discussed in the <a href='playstyle.html'>playstyle & rotation</a> section).",
+      "This talent is one of our top damaging abilities. It can be used for large burst damage, especially when we ramp correctly in our <a href='https://www.wowhead.com/spell=387184/weapons-of-order' target='_blank' class='orange'>Weapons of Order</a> burst windows (more discussed in the <a href='playstyle.html'>playstyle & rotation</a> section).",
     value: "Required",
   },
   {
     id: "blackout-combo",
     name: "<a href='https://www.wowhead.com/spell=196736/blackout-combo' target='_blank'>Blackout Combo</a>",
     description:
-      "This talent causes <a href='https://www.wowhead.com/spell=100784/blackout-kick' target='_blank' class='orange'>Blackout Kick</a> to buff the next use of <a href='https://www.wowhead.com/spell=100780/tiger-palm' target='_blank' class='orange'>Tiger Palm</a>, <a href='https://www.wowhead.com/spell=115181/breath-of-fire' target='_blank' class='orange'>Breath of Fire</a>, <a href='https://www.wowhead.com/spell=121253/keg-smash' target='_blank' class='orange'>Keg Smash</a>, <a href='https://www.wowhead.com/spell=322507/celestial-brew' target='_blank' class='orange'>Celestial Brew</a>, or <a href='https://www.wowhead.com/spell=119582/purifying-brew' target='_blank' class='orange'>Purifying Brew</a>. Typically, you want to use this buff on <a href='https://www.wowhead.com/spell=100780/tiger-palm' target='_blank' class='orange'>Tiger Palm</a> for single target damage, <a href='https://www.wowhead.com/spell=115181/breath-of-fire' target='_blank' class='orange'>Breath of Fire</a> for AoE damage and tier set healing, and <a href='https://www.wowhead.com/spell=121253/keg-smash' target='_blank' class='orange'>Keg Smash</a> for additional cooldown reduction on your brews.",
+      "This talent causes <a href='https://www.wowhead.com/spell=100784/blackout-kick' target='_blank' class='orange'>Blackout Kick</a> to buff the next use of <a href='https://www.wowhead.com/spell=100780/tiger-palm' target='_blank' class='orange'>Tiger Palm</a>, <a href='https://www.wowhead.com/spell=115181/breath-of-fire' target='_blank' class='orange'>Breath of Fire</a>, <a href='https://www.wowhead.com/spell=121253/keg-smash' target='_blank' class='orange'>Keg Smash</a>, <a href='https://www.wowhead.com/spell=322507/celestial-brew' target='_blank' class='orange'>Celestial Brew</a>, or <a href='https://www.wowhead.com/spell=119582/purifying-brew' target='_blank' class='orange'>Purifying Brew</a>. Typically, you want to use this buff on <a href='https://www.wowhead.com/spell=100780/tiger-palm' target='_blank' class='orange'>Tiger Palm</a> for single target damage, <a href='https://www.wowhead.com/spell=115181/breath-of-fire' target='_blank' class='orange'>Breath of Fire</a> for AoE damage, and <a href='https://www.wowhead.com/spell=121253/keg-smash' target='_blank' class='orange'>Keg Smash</a> for additional cooldown reduction on your brews.",
     value: "Required",
+  },
+  {
+    id: "black-ox-adept",
+    name: "<a href='https://www.wowhead.com/beta/spell=455079/black-ox-adept' target='_blank'>Black Ox Adept</a>",
+    description:
+      "This talent causes <a href='https://www.wowhead.com/spell=107428/rising-sun-kick' target='_blank' class='orange'>Rising Sun Kick</a> to grant us a stack of <a href='https://www.wowhead.com/beta/spell=455068/ox-stance' target='_blank' class='orange'>Ox Stance</a>. This talent is very underwhelming compared to others, so it should never be taken.",
+    value: "Never",
+  },
+  {
+    id: "heightened-guard",
+    name: "<a href='https://www.wowhead.com/beta/spell=455081/heightened-guard' target='_blank'>Heightened Guard</a>",
+    description:
+      "This talent causes <a href='https://www.wowhead.com/beta/spell=455068/ox-stance' target='_blank' class='orange'>Ox Stance</a> to trigger more frequently, as it happens at 40% of our maximum health, rather than 60%. Typically, if you are taking <a href='https://www.wowhead.com/beta/spell=455068/ox-stance' target='_blank' class='orange'>Ox Stance</a>, you want to take this talent, aswell.",
+    value: "Situational",
   },
   {
     id: "press-woo",
     name: "<a href='https://www.wowhead.com/spell=418359/press-the-advantage' target='_blank'>Press the Advantage</a> <span class='white'>/</span> <a href='https://www.wowhead.com/spell=387184/weapons-of-order' target='_blank'>Weapons of Order</a>",
     description:
-      "Unfortunately, there is currently a bug that is causing <a href='https://www.wowhead.com/spell=418359/press-the-advantage' target='_blank' class='orange'>Press the Advantage</a> to not work properly, so we take <a href='https://www.wowhead.com/spell=387184/weapons-of-order' target='_blank' class='orange'>Weapons of Order</a>. <a href='https://www.wowhead.com/spell=387184/weapons-of-order' target='_blank' class='orange'>Weapons of Order</a> is a cooldown that increases our mastery by a large amount and causes our <a href='https://www.wowhead.com/spell=121253/keg-smash' target='_blank' class='orange'>Keg Smash</a> and <a href='https://www.wowhead.com/spell=107428/rising-sun-kick' target='_blank' class='orange'>Rising Sun Kick</a> to apply a debuff to all enemies, causing us to deal 8% additional damage to them, stacking up to 4 times (more discussed in the <a href='playstyle.html'>playstyle & rotation</a> section).",
+      "Because of <a href='https://www.wowhead.com/spell=101546/spinning-crane-kick' target='_blank' class='orange'>Spinning Crane Kick</a> being undertuned right now, we never want to take <a href='https://www.wowhead.com/spell=418359/press-the-advantage' target='_blank' class='orange'>Press the Advantage</a>. <a href='https://www.wowhead.com/spell=387184/weapons-of-order' target='_blank' class='orange'>Weapons of Order</a>, however, is very strong and should always be taken. <a href='https://www.wowhead.com/spell=387184/weapons-of-order' target='_blank' class='orange'>Weapons of Order</a> is a cooldown that increases our mastery by a large amount and causes our <a href='https://www.wowhead.com/spell=121253/keg-smash' target='_blank' class='orange'>Keg Smash</a> and <a href='https://www.wowhead.com/spell=107428/rising-sun-kick' target='_blank' class='orange'>Rising Sun Kick</a> to apply a debuff to all enemies, causing us to deal 8% additional damage to them, stacking up to 4 times (more discussed in the <a href='playstyle.html'>playstyle & rotation</a> section).",
     value: "Required",
   },
 
@@ -727,8 +936,8 @@ const infoArray = [
     id: "stormstouts-last-keg",
     name: "<a href='https://www.wowhead.com/spell=383707/stormstouts-last-keg' target='_blank'>Stormstout's Last Keg</a>",
     description:
-      "This talent gives our <a href='https://www.wowhead.com/spell=121253/keg-smash' target='_blank' class='orange'>Keg Smash</a> an additional charge and causes it to deal 20% additional damage. This is necessary for AoE, as <a href='https://www.wowhead.com/spell=121253/keg-smash' target='_blank' class='orange'>Keg Smash</a> is one of our highest AoE damaging abilities.",
-    value: "Situational",
+      "This talent gives our <a href='https://www.wowhead.com/spell=121253/keg-smash' target='_blank' class='orange'>Keg Smash</a> an additional charge and causes it to deal 20% additional damage. This is a huge damage increase on AoE, and should always be taken.",
+    value: "Required",
   },
   {
     id: "call-surge",
@@ -737,13 +946,27 @@ const infoArray = [
       "<a href='https://www.wowhead.com/spell=397251/call-to-arms' target='_blank' class='orange'>Call to Arms</a> is very underwhelming at the moment as it summons an additional <a href='https://www.wowhead.com/spell=132578/invoke-niuzao-the-black-ox' target='_blank' class='orange'>Invoke Niuzao, the Black Ox</a>. <a href='https://www.wowhead.com/spell=393400/chi-surge' target='_blank' class='orange'>Chi Surge</a>, however, does a good amount of single target damage, and should be taken in raid.",
     value: "Situational",
   },
+  {
+    id: "call-to-arms",
+    name: "<a href='https://www.wowhead.com/spell=397251/call-to-arms' target='_blank'>Call to Arms</a>",
+    description:
+      "<a href='https://www.wowhead.com/spell=397251/call-to-arms' target='_blank' class='orange'>Call to Arms</a> is very underwhelming at the moment as it summons an additional <a href='https://www.wowhead.com/spell=132578/invoke-niuzao-the-black-ox' target='_blank' class='orange'>Invoke Niuzao, the Black Ox</a>. It should never be taken.",
+    value: "Never",
+  },
+  {
+    id: "chi-surge",
+    name: "<a href='https://www.wowhead.com/spell=393400/chi-surge' target='_blank'>Chi Surge</a>",
+    description:
+      "<a href='https://www.wowhead.com/spell=393400/chi-surge' target='_blank' class='orange'>Chi Surge</a> causes our <a href='https://www.wowhead.com/spell=387184/weapons-of-order' target='_blank' class='orange'>Weapons of Order</a> to release a chi blast, reducing its cooldown per enemy hit, and doing a decent amount of damage on single target. If you want to sacrifice some survivability for more single target damage, this talent can be a good choice.",
+    value: "Situational",
+  },
 
   // stats
   {
     id: "crit-strike",
     name: "Critical Strike",
     description:
-      "Critical Strike is strong for us both offensively and defensively, as it increases our <a href='https://www.wowhead.com/spell=216519/celestial-fortune' target='_blank' class='orange'>Celestial Fortune</a> healing. Critical Strike can also make our 2pc healing stronger, as it's based on the damage that you deal.",
+      "Critical Strike is strong for us both offensively and defensively, as it increases our <a href='https://www.wowhead.com/spell=216519/celestial-fortune' target='_blank' class='orange'>Celestial Fortune</a> healing. Try to get as much of this as possible, along with Versatility.",
   },
   {
     id: "vers",
@@ -755,7 +978,7 @@ const infoArray = [
     id: "mast",
     name: "Mastery",
     description:
-      "Mastery is good for us because it increases our damage, gives us increased dodge chance, and makes our <a href='https://www.wowhead.com/spell=124502/gift-of-the-ox' target='_blank' class='orange'>Gift of the Ox</a> and <a href='https://www.wowhead.com/spell=322507/celestial-brew' target='_blank' class='orange'>Celestial Brew</a> stronger.",
+      "Mastery is not as good for us this season, due to changes in our self healing and damage intake. This makes us more like BFA/SL versions, where you take more healing from healers but are smoother overall.",
   },
   {
     id: "haste",
@@ -767,23 +990,20 @@ const infoArray = [
   // tier pieces
   {
     id: "tier-helm",
-    name: "<a href='https://www.wowhead.com/item=207245/mystic-herons-hatsuburi' target='_blank'>Mystic Heron's Hatsuburi</a>",
-    description:
-      "You always want to run tier set on your head, as it gives Critical Strike and Versatility, two very good stats for us.",
+    name: "<a href='https://www.wowhead.com/item=212047/gatecrashers-horns' target='_blank'>Gatecrasher's Horns</a>",
+    description: "Critical Strike / Versatility",
     value: "Head",
   },
   {
     id: "tier-shoulders",
-    name: "<a href='https://www.wowhead.com/item=200365/mantle-of-the-waking-fist' target='_blank'>Mantle of the Waking Fist</a>",
-    description:
-      "Unfortunately, the shoulders have a little bit of haste. The Haste on the shoulders is less than the helmet, though, so we want to run shoulders instead.",
+    name: "<a href='https://www.wowhead.com/item=212045/gatecrashers-enduring-effigy' target='_blank'>Gatecrasher's Enduring Effigy</a>",
+    description: "Haste / Mastery",
     value: "Shoulders",
   },
   {
     id: "tier-chest",
-    name: "<a href='https://www.wowhead.com/item=200360/chestwrap-of-the-waking-fist' target='_blank'>Chestwrap of the Waking Fist</a>",
-    description:
-      "You always want to run tier set on your chest. It has great stats, giving us a lot of Versatility and some Critical Strike.",
+    name: "<a href='https://www.wowhead.com/item=212050/gatecrashers-gi?bonus=10373' target='_blank'>Gatecrasher's Gi</a>",
+    description: "Critical Strike / Versatility",
     value: "Chest",
   },
   {
@@ -795,9 +1015,8 @@ const infoArray = [
   },
   {
     id: "tier-legs",
-    name: "<a href='https://www.wowhead.com/item=200364/legguards-of-the-waking-fist' target='_blank'>Legguards of the Waking Fist</a>",
-    description:
-      "You always want to run tier set on your legs because it gives a lot of Versatility and some Mastery.",
+    name: "<a href='https://www.wowhead.com/item=212046/gatecrashers-kilt' target='_blank'>Gatecrasher's Kilt</a>",
+    description: "Critical Strike / Haste",
     value: "Legs",
   },
 
@@ -807,6 +1026,11 @@ const infoArray = [
     name: "<a href='https://www.wowhead.com/item=193001/elemental-lariat' target='_blank'>Elemental Lariat</a>",
     description:
       "This neck is extremely strong, as it has a change at strengthening the secondary stats we gain from our gems. You do not want to run this until you have full sockets, though.",
+  },
+  {
+    id: "elders-hemolymphal-periapt",
+    name: "<a href='https://www.wowhead.com/item=221181/elders-hemolymphal-periapt' target='_blank'>Elder's Hemolymphal Periapt</a>",
+    description: "Critical Strike / Versatility",
   },
   {
     id: "tuskarr-bone-necklace",
@@ -875,6 +1099,11 @@ const infoArray = [
 
   // back
   {
+    id: "swarmcallers-shroud",
+    name: "<a href='https://www.wowhead.com/item=221154/swarmcallers-shroud' target='_blank'>Swarmcaller's Shroud</a>",
+    description: "Critical Strike / Versatility",
+  },
+  {
     id: "vibrant-wildercloth-shawl",
     name: "<a href='https://www.wowhead.com/ptr-2/item=193511/vibrant-wildercloth-shawl' target='_blank'>Vibrant Wildercloth Shawl</a>",
     description:
@@ -899,12 +1128,29 @@ const infoArray = [
       "This cloak has a lot of Versatility and Mastery. If you are struggling with both of these stats, then this can be a very good choice.",
   },
 
+  // hands
+  {
+    id: "thousand-scar-impalers",
+    name: "<a href='https://www.wowhead.com/item=212432/thousand-scar-impalers' target='_blank'>Thousand Scar Impalers</a>",
+    description: "Critical Strike / Haste",
+  },
+  {
+    id: "rune-branded-grasps",
+    name: "<a href='https://www.wowhead.com/item=219333/rune-branded-grasps' target='_blank'>Rune-Branded Grasps</a>",
+    description: "Critical Strike / Versatility",
+  },
+
   // wrist
   {
     id: "ferocious-hyena-hidebinders",
     name: "<a href='https://www.wowhead.com/ptr-2/item=193793/ferocious-hyena-hidebinders' target='_blank'>Ferocious Hyena Hidebinders</a>",
     description:
       "These wrists are a very good option if you need Critical Strike and Versatility.",
+  },
+  {
+    id: "rune-branded-armbands",
+    name: "<a href='https://www.wowhead.com/item=219334/rune-branded-armbands' target='_blank'>Ferocious Hyena Hidebinders</a>",
+    description: "Versatility / Critical Strike",
   },
   {
     id: "lifebound-bindings",
@@ -945,6 +1191,11 @@ const infoArray = [
       "This belt gives a lot of Critical Strike and a good amount of Versatility, making it a very good choice for us.",
   },
   {
+    id: "adrenal-surge-clasp",
+    name: "<a href='https://www.wowhead.com/item=219502/adrenal-surge-clasp' target='_blank'>Adrenal Surge Clasp</a>",
+    description: "Critical Strike / Versatility",
+  },
+  {
     id: "bloody-dragonhide-belt",
     name: "<a href='https://www.wowhead.com/item=207131/bloody-dragonhide-belt' target='_blank'>Bloody Dragonhide Belt</a>",
     description:
@@ -970,6 +1221,11 @@ const infoArray = [
     description:
       "These boots have good stats for us, helping us get our Versatility and Mastery up. Not only this, but they also have an embellishment attached to them that does good damage on single target. There is no other competitive option for boots because of how good these are for us.",
   },
+  {
+    id: "viscera-stitched-footpads",
+    name: "<a href='https://www.wowhead.com/item=178731/viscera-stitched-footpads' target='_blank'>Viscera Stitched Footpads</a>",
+    description: "Critical Strike / Versatility",
+  },
 
   // rings
   {
@@ -977,6 +1233,22 @@ const infoArray = [
     name: "<a href='https://www.wowhead.com/item=195526/seal-of-filial-duty' target='_blank'>Seal of Filial Duty</a>",
     description:
       "This ring is extremely powerful. Although it provides a little bit of haste, it gives us a lot of mastery and also has a very strong on equip effect. Whenever we deal damage, this ring has a chance of granting us a shield. This should be your first purchase with the dinar tokens.",
+  },
+  {
+    id: "ring-of-dun-algaz",
+    name: "<a href='https://www.wowhead.com/item=133287/ring-of-dun-algaz' target='_blank'>Ring of Dun Algaz</a>",
+    description: "Critical Strike / Versatility",
+  },
+  {
+    id: "seal-of-the-poisoned-pact",
+    name: "<a href='https://www.wowhead.com/item=225578/seal-of-the-poisoned-pact' target='_blank'>Seal of the Poisoned Pact</a>",
+    description:
+      "Critical Strike / Mastery - This ring stacks up to 5 times. At 5 stacks, you inject a poison into your enemy, doing a good amount of single target damage.",
+  },
+  {
+    id: "ritual-commanders-ring",
+    name: "<a href='https://www.wowhead.com/item=178781/ritual-commanders-ring' target='_blank'>Ritual Commander's Ring</a>",
+    description: "Critical Strike / Versatility",
   },
   {
     id: "seal-of-diurnas-chosen",
@@ -1021,6 +1293,22 @@ const infoArray = [
     name: "<a href='https://www.wowhead.com/item=202569/djaruun-pillar-of-the-elder-flame' target='_blank'>Djaruun, Pillar of the Elder Flame</a>",
     description:
       "This weapon is extremely powerful. It gives us good stats, providing a lot of Critical Strike and some Mastery, as well as having a very strong on use effect. This should be your second purchase with the dinar tokens.",
+  },
+  {
+    id: "void-reapers-warp-blade",
+    name: "<a href='https://www.wowhead.com/item=219877/void-reapers-warp-blade' target='_blank'>Void Reaper's Warp Blade</a>",
+    description:
+      "Critical Strike - Gives a proc to your attacks, boosting your damage by about 1% overall.",
+  },
+  {
+    id: "zephyrous-sail-carver",
+    name: "<a href='https://www.wowhead.com/item=221144/zephyrous-sail-carver' target='_blank'>Zephyrous Sail Carver</a>",
+    description: "Critical Strike / Versatility",
+  },
+  {
+    id: "charged-facesmasher",
+    name: "<a href='https://www.wowhead.com/item=222446/charged-facesmasher' target='_blank'>Charged Facesmasher</a>",
+    description: "Critical Strike / Versatility",
   },
   {
     id: "rashon-the-immortal-blaze",
@@ -1103,6 +1391,26 @@ const infoArray = [
       "This trinket is just like Xeri'tac's Unhatched Egg Sac. The difference, however, is that it makes you slightly tankier against physical damage. If you want more physical damage reduction, you run this. If you want more magical damage reduction, you run Xeri'tac's Unhatched Egg Sac.",
   },
 
+  // trinkets
+  {
+    id: "ovinaxs-mercurial-egg",
+    name: "<a href='https://www.wowhead.com/item=220305/ovinaxs-mercurial-egg' target='_blank'>Ovi'nax's Mercurial Egg</a>",
+    description:
+      "This trinket grants us increased Agility when we are standing still, stacking up to 30 times. When we are moving, we gain an increase to our highest secondary stat, stacking up to 30 times. This egg is very strong, as it is a very helpful stat increase. If you can get it from raid, make sure you always run it.",
+  },
+  {
+    id: "dead-eye-spyglass",
+    name: "<a href='https://www.wowhead.com/item=159623/dead-eye-spyglass' target='_blank'>Dead-Eye Spyglass</a>",
+    description:
+      "This trinket gives us an increase to our Critical Strike at all times. You should always run this trinket.",
+  },
+  {
+    id: "harvesters-edict",
+    name: "<a href='https://www.wowhead.com/item=219317/harvesters-edict' target='_blank'>Harvester's Edict</a>",
+    description:
+      "This trinket gives our damaging abilities a chance to do send out a ball of shadow, dealing shadow damage to enemies on contact. You can also run into the shadow orb yourself, granting yourself an increase in Mastery. This is a good alternative if you cannot get Ovi'nax's Mercurial Egg from raid.",
+  },
+
   // offensive trinkets
   {
     id: "manic-grieftorch",
@@ -1155,6 +1463,18 @@ const infoArray = [
       "This embellishment does pretty good damage on single target. It can only be obtained by crafting Slimy Expulsion Boots, which, fortunately for us, has good secondary stats.",
   },
   {
+    id: "writhing-armor-banding",
+    name: "<a href='https://www.wowhead.com/item=219506/writhing-armor-banding' target='_blank'>Writhing Armor Banding</a>",
+    description:
+      "This embellishment doubles the effect of our other embellishment. If you craft gloves, you want to put it on those. Otherwise, you want to put it on your wrists.",
+  },
+  {
+    id: "adrenal-surge-clasp-embellishment",
+    name: "<a href='https://www.wowhead.com/item=219502/adrenal-surge-clasp' target='_blank'>Adrenal Surge Clasp</a>",
+    description:
+      "This embellishment causes our abilities to grant us a large increase in Agility and slightly decreases our Mastery. This is very good and should be the first embellishment you make.",
+  },
+  {
     id: "potion-absorption-inhibitor",
     name: "<a href='https://www.wowhead.com/item=191532/potion-absorption-inhibitor' target='_blank'>Potion Absorption Inhibitor</a>",
     description:
@@ -1183,9 +1503,8 @@ const infoArray = [
   },
   {
     id: "back-enchant",
-    name: "<a href='https://www.wowhead.com/item=200031/enchant-cloak-graceful-avoidance' target='_blank'>Graceful Avoidance</a>",
-    description:
-      "This enchant is very strong for us because it gives us a small amount of Avoidance, providing us with some extra tankiness.",
+    name: "<a href='https://www.wowhead.com/beta/spell=445386/chant-of-winged-grace' target='_blank'>Winged Grace</a>",
+    description: "Increases Avoidance and reduces fall damage taken.",
     value: "Back",
   },
   {
@@ -1197,9 +1516,8 @@ const infoArray = [
   },
   {
     id: "wrist-enchant",
-    name: "<a href='https://www.wowhead.com/item=200021/enchant-bracer-devotion-of-avoidance' target='_blank'>Devotion of Avoidance</a>",
-    description:
-      "This enchant provides us with more Avoidance further making us tankier.",
+    name: "<a href='https://www.wowhead.com/beta/spell=445334/chant-of-armored-avoidance' target='_blank'>Armored Avoidance</a>",
+    description: "Increases Avoidance.",
     value: "Wrist",
   },
   {
@@ -1211,39 +1529,36 @@ const infoArray = [
   },
   {
     id: "leg-enchant",
-    name: "<a href='https://www.wowhead.com/item=193565/fierce-armor-kit' target='_blank'>Fierce Armor Kit</a>",
-    description:
-      "This enchant is very good as not only does it provide us with more Stamina, but it also gives us more Agility.",
+    name: "<a href='https://www.wowhead.com/beta/item=219911/stormbound-armor-kit' target='_blank'>Stormbound Armor Kit</a>",
+    description: "Increases Agility and Stamina.",
     value: "Legs",
   },
   {
     id: "feet-enchant",
-    name: "<a href='https://www.wowhead.com/item=200020/enchant-boots-watchers-loam' target='_blank'>Watcher's Loam</a>",
+    name: "<a href='https://www.wowhead.com/beta/item=223653/enchant-boots-scouts-march' target='_blank'>Scout's March</a> <span class='white'>/</span> <a href='https://www.wowhead.com/beta/item=223656/enchant-boots-defenders-march' target='_blank'>Defender's March</a>",
     description:
-      "This enchant gives us more Stamina, further adding to our survivability.",
+      "Scout's March increaes your movement speed. Defender's March increases your Stamina. Use whichever you prefer.",
     value: "Feet",
   },
   {
     id: "ring-enchants",
-    name: "<a href='https://www.wowhead.com/item=200037/enchant-ring-devotion-of-critical-strike' target='_blank'>Devotion of Critical Strike</a> <span class='white'>/</span> <a href='https://www.wowhead.com/item=199956/enchant-ring-devotion-of-versatility' target='_blank'>Devotion of Versatility</a> <span class='white'>/</span> <a href='https://www.wowhead.com/item=200039/enchant-ring-devotion-of-mastery' target='_blank'>Devotion of Mastery</a>",
-    description:
-      "The enchants that you put on your rings depend on the stats that you currently need. If you need Versatility or Mastery, you can use the respective enchants. Otherwise, you want Critical Strike. It is not a big deal if you mismatch your ring enchants.",
+    name: "<a href='https://www.wowhead.com/beta/item=223680/enchant-ring-radiant-versatility' target='_blank'>Radiant Versatility</a>",
+    description: "Increases Versatility.",
     value: "Rings",
   },
   {
     id: "weapon-enchants",
-    name: "<a href='https://www.wowhead.com/item=200054/enchant-weapon-sophic-devotion' target='_blank'>Sophic Devotion</a>",
+    name: "<a href='https://www.wowhead.com/beta/item=223781/enchant-weapon-authority-of-radiant-power' target='_blank'>Authority of Radiant Power</a>",
     description:
-      "This enchant is ridiculously strong, providing our abilities a chance to grant us a large amount of primary stat. If you dual wield, you can run two of these, providing double the benefit.",
+      "Grants your abilities a chance to increase your Agility and smite the enemy target for damage.",
     value: "Weapon(s)",
   },
 
   // consumables
   {
     id: "weapon-runes",
-    name: "<a href='https://www.wowhead.com/item=204973/hissing-rune' target='_blank'>Hissing Rune</a>",
-    description:
-      "Unlike the rest of our secondary stat choices, you always want to run Hissing Runes because Mastery has a lot more static power than a little bit more Versatility or Critical Strike.",
+    name: "<a href='https://www.wowhead.com/beta/item=222504/ironclaw-whetstone' target='_blank'>Ironclaw Whetstone</a>",
+    description: "Increases attack power.",
     value: "Weapon Rune(s)",
   },
   {
@@ -1254,11 +1569,10 @@ const infoArray = [
     value: "Food",
   },
   {
-    id: "phial",
-    name: "<a href='https://www.wowhead.com/item=191320/phial-of-the-eye-in-the-storm' target='_blank'>Phial of the Eye in the Storm</a> <span class='white'>/</span> <a href='https://www.wowhead.com/ptr/item=191341/phial-of-tepid-versatility' target='_blank'>Phial of Tepid Versatility</a>",
-    description:
-      "The phial that you run depends greatly. For fortified weeks and extremely large AoE, such as Everbloom, you want to run Phial of Eye in the Storm, as it makes you significantly tankier. For tyrannical weeks and raid, however, you want to run Phial of Tepid Versatility.",
-    value: "Battle Potion",
+    id: "flask",
+    name: "<a href='https://www.wowhead.com/beta/item=212277/flask-of-tempered-versatility' target='_blank'>Flask of Tempered Versatility</a>",
+    description: "Increases Versatility.",
+    value: "Flask",
   },
   {
     id: "healing-potion",
@@ -1268,11 +1582,11 @@ const infoArray = [
     value: "Healing Potion",
   },
   {
-    id: "damage-potion",
-    name: "<a href='https://www.wowhead.com/item=191383/elemental-potion-of-ultimate-power' target='_blank'>Elemental Potion of Ultimate Power</a> <span class='white'>/</span> <a href='https://www.wowhead.com/item=191399/potion-of-shocking-disclosure' target='_blank'>Potion of Shocking Disclosure</a>",
+    id: "battle-potion",
+    name: "<a href='https://www.wowhead.com/beta/item=212265/tempered-potion' target='_blank'>Tempered Potion</a>",
     description:
-      "Typically, you want to run Elemental Potion of Ultimate Power, as it is a very large damage increase, providing us with a lot of Agility on use. If you struggle with AoE threat, however, you can run Potion of Shocking Disclosure.",
-    value: "Phial",
+      "Increases Critical Strike, Mastery, and Haste for 30 seconds.",
+    value: "Battle Potion",
   },
 
   // unique gems
@@ -1281,6 +1595,12 @@ const infoArray = [
     name: "<a href='https://www.wowhead.com/item=192982/inscribed-illimited-diamond' target='_blank'>Inscribed Illimited Diamond</a>",
     description:
       "This gem provides Critical Strike and is what should be run if you don't need any additional Versatility or Mastery.",
+  },
+  {
+    id: "culminating-blasphemite",
+    name: "<a href='https://www.wowhead.com/beta/item=213743/culminating-blasphemite' target='_blank'>Culminating Blasphemite</a>",
+    description:
+      "Increase Agility by 181 and increases Critical Strike damage by 0.15% per unique Algari gem color. You can only have one of this gem.",
   },
   {
     id: "resplendent-illimited-diamond",
@@ -1301,6 +1621,18 @@ const infoArray = [
     name: "<a href='https://www.wowhead.com/ptr/item=192925/radiant-alexstraszite' target='_blank'>Radiant Alexstraszite</a>",
     description:
       "If you prefer more Critical Strike with a little bit of Versatility, run this gem.",
+  },
+  {
+    id: "deadly-sapphire",
+    name: "<a href='https://www.wowhead.com/beta/item=213467/deadly-sapphire' target='_blank'>Deadly Sapphire</a>",
+    description:
+      "Increases Versatility by 147 and Critical Strike by 49. Run this if you want more Versatility than Critical Strike.",
+  },
+  {
+    id: "versatile-ruby",
+    name: "<a href='https://www.wowhead.com/beta/item=213459/versatile-ruby' target='_blank'>Versatile Ruby</a>",
+    description:
+      "Increases Critical Strike by 118 and Versatility by 39. Run this if you want more Critical Strike than Versatility.",
   },
   {
     id: "senseis-alexstraszite",
@@ -1461,6 +1793,62 @@ const infoArray = [
       "Waycrest Manor is a pretty easy dungeon. Due to some of the mobs being overtuned, every route is very similar, each avoiding said mobs. The mobs that are typically pulled are pretty easy to kill, as long as things get interrupted. Heartsbane Triad is dangerous for the group, however, especially on Tyrannical. As Brewmaster, Soulbound Goliath is made much easier due to us not having to cleanse in fire as much as other tanks. As long as the thorns die fast enough and the healer is ready for the fire, your group should be fine.",
     value: "Easy",
     dungeonRoute: "waycrest-manor-route",
+  },
+  {
+    id: "grim-batol",
+    name: "<a href='https://www.wowhead.com/beta/zone=4950/grim-batol' target='_blank'>Grim Batol</a>",
+    description: "TODO",
+    value: "Easy",
+    dungeonRoute: "grim-batol-route",
+  },
+  {
+    id: "siege-of-boralus",
+    name: "<a href='https://www.wowhead.com/beta/zone=9354/siege-of-boralus' target='_blank'>Siege of Boralus</a>",
+    description: "TODO",
+    value: "Easy",
+    dungeonRoute: "siege-of-boralus-route",
+  },
+  {
+    id: "mists-of-tirna-scithe",
+    name: "<a href='https://www.wowhead.com/beta/zone=13334/mists-of-tirna-scithe' target='_blank'>Mists of Tirna Scithe</a>",
+    description: "TODO",
+    value: "Easy",
+    dungeonRoute: "mists-of-tirna-scithe-route",
+  },
+  {
+    id: "necrotic-wake",
+    name: "<a href='https://www.wowhead.com/beta/zone=12916/the-necrotic-wake' target='_blank'>The Necrotic Wake</a>",
+    description: "TODO",
+    value: "Easy",
+    dungeonRoute: "necrotic-wake-route",
+  },
+  {
+    id: "ara-kara",
+    name: "<a href='https://www.wowhead.com/beta/zone=15093/ara-kara-city-of-echoes' target='_blank'>Ara-Kara: City of Echoes</a>",
+    description: "TODO",
+    value: "Easy",
+    dungeonRoute: "ara-kara-route",
+  },
+  {
+    id: "city-of-threads",
+    name: "<a href='https://www.wowhead.com/beta/zone=14979/city-of-threads' target='_blank'>City of Threads</a>",
+    description: "TODO",
+    value: "Easy",
+    dungeonRoute: "city-of-threads-route",
+  },
+  {
+    id: "the-dawnbreaker",
+    name: "<a href='https://www.wowhead.com/beta/zone=14971/the-dawnbreaker' target='_blank'>The Dawnbreaker</a>",
+    description: "TODO",
+    value: "Medium",
+    dungeonRoute: "the-dawnbreaker-route",
+  },
+  {
+    id: "the-stonevault",
+    name: "<a href='https://www.wowhead.com/beta/zone=14883/the-stonevault' target='_blank'>The Stonevault</a>",
+    description: "TODO",
+    value: "Medium",
+    dungeonRoute: "the-stonevault-route",
   },
 
   // dungeon bosses
@@ -1925,79 +2313,189 @@ const infoArray = [
       "This boss is extremely easy. As long as you interrupt Dark Lightning and cc the ads when they try casting, nothing can go wrong. There is pretty much no group wide damage, and literally no tank damage.",
     value: "Easy",
   },
-
-  // affixes
   {
-    id: "fortified",
-    name: "<a href='https://www.wowhead.com/affix=10/fortified' target='_blank'>Fortified</a>",
+    id: "general-umbriss",
+    name: "<a href='https://www.wowhead.com/beta/npc=39625/general-umbriss' target='_blank'>General Umbriss</a>",
     description:
-      "This affix makes mobs have additional health and do additional damage. This is much preferred over Tyrannical, as it makes dungeons overall easier, and you can still time after a wipe or two. Make sure that you pull a little bit smaller than you would on tyrannical, though.",
+      "There aren't really any tricks for this boss. Just make sure that you have a defensive for Skullsplitter, as it can hurt quite a bit if you don't.",
+    value: "Medium",
   },
   {
-    id: "tyrannical",
-    name: "<a href='https://www.wowhead.com/affix=9/tyrannical' target='_blank'>Tyrannical</a>",
+    id: "forgemaster-throngus",
+    name: "<a href='https://www.wowhead.com/beta/npc=40177/forgemaster-throngus' target='_blank'>Forgemaster Throngus</a>",
     description:
-      "This affix does the opposite of fortified; it makes the bosses have additional health and do additional damage. It is much more difficult than fortified, due to bosses taking so long that a single wipe can fail a key. The only good thing about this affix is that you can pull slightly larger on trash packs.",
+      "Throngus does a lot of tank damage and should be a boss that is looked out for. Not only do his melee attacks do a lot of damage due to his buff Molten Mace, but he has a strong tank buster called Fiery Cleave that also needs to be looked out for. You want to make sure that you position the Molten Pools left behind after his tank buster correctly, or the room will become very crowded.",
+    value: "Hard",
   },
   {
-    id: "incorporeal",
-    name: "<a href='https://www.wowhead.com/affix=136/incorporeal' target='_blank'>Incorporeal</a>",
+    id: "drahga-shadowburner",
+    name: "<a href='https://www.wowhead.com/beta/npc=40319/drahga-shadowburner' target='_blank'>Drahga Shadowburner</a>",
     description:
-      "This affix spawns two ads at random times during combat, which have to be cc'd or they will make you and your party do reduced damage and healing. This affix can be super annoying, as they can spawn in really awkward spots, making them difficult to cc. Make sure that you are trying to help out with them as much as possible by using <a href='https://www.wowhead.com/spell=115078/paralysis' target='_blank' class='orange'>Paralysis</a>.",
+      "This boss is very easy, as he hits pretty soft. Just like any other boss, defensives should still be a priority for his tank buster.",
+    value: "Easy",
   },
   {
-    id: "sanguine",
-    name: "<a href='https://www.wowhead.com/affix=8/sanguine' target='_blank'>Sanguine</a>",
+    id: "erudax",
+    name: "<a href='https://www.wowhead.com/beta/npc=40484/erudax' target='_blank'>Erudax, the Duke of Below</a>",
     description:
-      "This affix causes mobs to spawn puddles after dying, healing other mobs that are standing within them. This affix can be super annoying, as it causes dungeons to take a lot longer. This season, especially is much more difficult to deal with, as there are a lot of mobs that cast and can't be moved through the use of <a href='https://www.wowhead.com/spell=116844/ring-of-peace' target='_blank' class='orange'>Ring of Peace</a>.",
+      "This boss isn't too bad, as long as you make sure you have proper defensive use. Look out for his tank buster, Crush, as it does a combination of physica and magic damage. Other than that, this boss is pretty easy for Brewmaster.",
+    value: "Medium",
   },
   {
-    id: "afflicted",
-    name: "<a href='https://www.wowhead.com/affix=135/afflicted' target='_blank'>Afflicted</a>",
+    id: "chopper-redhook",
+    name: "<a href='https://www.wowhead.com/beta/npc=144160/chopper-redhook' target='_blank'>Chopper Redhook</a>",
     description:
-      "This affix is a worse version of incorporeal. These ads you have to dispel, or else they will reduce your party's haste. While it may not sound worse, there are a lot of dispel-heavy fights, which become much more difficult when you have to waste a dispel on the ads.",
+      "Once you get the mechanics of this boss down, he is very easy. You want to make sure that you face the Irontide Cleaver's Heavy Slash away from the party. You also want to make sure that you are running over Heavy Ordnance to prevent the damage from being dealt to your party. When you run over them, they do have knockback, so be careful. You also want to try and be out of range of the boss as much as possible, because he will knock you around which can get really annoying.",
+    value: "Easy",
   },
   {
-    id: "bursting",
-    name: "<a href='https://www.wowhead.com/affix=11/bursting' target='_blank'>Bursting</a>",
+    id: "dread-captain-lockwood",
+    name: "<a href='https://www.wowhead.com/beta/npc=129208/dread-captain-lockwood' target='_blank'>Dread Captain Lockwood</a>",
     description:
-      "This affix causes mobs to explode on death, putting a damage over time effect on your party, which can stack. In high target count dungeons, this can be extremely dangerous, one shotting your group after a large amount of mobs die. Even on smaller mob count dungeons, it still requires a decent amount of healing from your healer.",
+      "This boss is really easy for tanks. All you have to do is make sure that you face Crimson Swipe away from the party.",
+    value: "Easy",
   },
   {
-    id: "spiteful",
-    name: "<a href='https://www.wowhead.com/affix=123/spiteful' target='_blank'>Spiteful</a>",
+    id: "hadal-darkfathom",
+    name: "<a href='https://www.wowhead.com/beta/npc=130836/hadal-darkfathom' target='_blank'>Hadal Darkfathom</a>",
     description:
-      "This affix is really easy as a tank and ranged, but is super annoying for melee. When mobs die, ghosts spawn, fixating a random target. As Brewmaster, you can help your allies run from them through the use of <a href='https://www.wowhead.com/spell=119381/leg-sweep' target='_blank' class='orange'>Leg Sweep</a> and <a href='https://www.wowhead.com/spell=116844/ring-of-peace' target='_blank' class='orange'>Ring of Peace</a>.",
+      "Just like the boss before, the only catch to this boss is making sure that you face the tank buster, Crashing Tide, away from the party. Outside of that, there is nothing special about this boss.",
+    value: "Easy",
   },
   {
-    id: "entangling",
-    name: "<a href='https://www.wowhead.com/affix=134/entangling' target='_blank'>Entangling</a>",
+    id: "viqgoth",
+    name: "<a href='https://www.wowhead.com/beta/npc=128652/viqgoth' target='_blank'>Viq'Goth</a>",
     description:
-      "Randomly throughout the dungeon, you will be snared in a circle. If you do not run out of the circle to clear your snare in time, you will be stunned for a few seconds. As a Brewmaster, this is very easy, as you can use <a href='https://www.wowhead.com/spell=116841/tigers-lust' target='_blank' class='orange'>Tiger's Lust</a> to clear it.",
+      "This boss is a complete joke as a tank. You want to make sure that you are always in melee range, or else he will hit your entire party for a ton of damage.",
+    value: "Easy",
   },
   {
-    id: "bolstering",
-    name: "<a href='https://www.wowhead.com/affix=7/bolstering' target='_blank'>Bolstering</a>",
+    id: "ingra-maloch",
+    name: "<a href='https://www.wowhead.com/beta/npc=164567/ingra-maloch' target='_blank'>Ingra Maloch</a>",
     description:
-      "This affix is the worst affix there is. When mobs die, they will bolster their allies, causing them to deal increased damage. This effect can stack, and it can get out of hand extremely quickly, causing the mobs to one shot you and/or your party. When mobs get a lot of bolstering, the only option you have is to kite so that they don't one shot you. You also want to make sure that you pull significantly smaller during bolstering weeks.",
+      "This boss is a complete joke for tanks. You want to try and cycle your interrupt with the rest of your party for Spirit Bolt, and that's it.",
+    value: "Easy",
   },
   {
-    id: "raging",
-    name: "<a href='https://www.wowhead.com/affix=6/raging' target='_blank'>Raging</a>",
+    id: "mistcaller",
+    name: "<a href='https://www.wowhead.com/beta/npc=170217/mistcaller' target='_blank'>Mistcaller</a>",
     description:
-      "This affix can be pretty annoying unless you have an evoker to AoE soothe. When mobs reach 30% health, they become immune to cc. This can cause dangerous mobs to get important cc abilities off, killing people in your party.",
+      "This boss does no tank damage, so long as you interrupt Patty Cake. When the Illusionary Vulpin spawns during Freeze Tag, you can <a href='https://www.wowhead.com/spell=115078/paralysis' target='_blank' class='orange'>Paralysis</a> it to make the boss much easier.",
+    value: "Easy",
   },
   {
-    id: "storming",
-    name: "<a href='https://www.wowhead.com/affix=124/storming' target='_blank'>Storming</a>",
-    description:
-      "This affix can be pretty annoying for you and melees. During combat, tornadoes will spawn, knocking anyone up that runs into them. As a tank, it is your job to try and eat as many of these tornadoes as possible for your melee dps.",
+    id: "tredova",
+    name: "<a href='https://www.wowhead.com/beta/npc=164517/tredova' target='_blank'>Tred'ova</a>",
+    description: `Just like the other two bosses in this dungeon, there are no tank busters. The only "trick" to this boss is controlling the Gormling Larva with <a href='https://www.wowhead.com/spell=119381/leg-sweep' target='_blank' class='orange'>Leg Sweep</a> and <a href='https://www.wowhead.com/spell=116844/ring-of-peace' target='_blank' class='orange'>Ring of Peace</a>.`,
+    value: "Easy",
   },
   {
-    id: "volcanic",
-    name: "<a href='https://www.wowhead.com/affix=3/volcanic' target='_blank'>Volcanic</a>",
-    description:
-      "This affix doesn't really do anything. It will occasionally spawn orbs under people at range, knocking them up. This affix doesn't affect you at all, so there is nothing to worry about.",
+    id: "blightbone",
+    name: "<a href='https://www.wowhead.com/beta/npc=162691/blightbone' target='_blank'>Blightbone</a>",
+    description: ` Blightbone is a weird boss to decide the difficulty of. If you pull a bunch of trash with him, then he is on the tougher side to live. If you don't, however, he is pretty easy to live. He has a pretty hard hitting tank buster, called Crunch, which needs a defensive, especially if there are other mobs hitting you at the same time. Other than that, there isn't really anything special for this boss.`,
+    value: "Hard",
+  },
+  {
+    id: "amarth-the-harvester",
+    name: "<a href='https://www.wowhead.com/beta/npc=162692/amarth' target='_blank'>Amarth, The Harvester</a>",
+    description: `This boss is super easy for tanks, as there is no tank damage. A good strategy on this boss is to <a href='https://www.wowhead.com/spell=115078/paralysis' target='_blank' class='orange'>Paralysis</a> one of the mages, while your party kills the other one.`,
+    value: "Easy",
+  },
+  {
+    id: "surgeon-stitchflesh",
+    name: "<a href='https://www.wowhead.com/beta/npc=166882/surgeon-stitchflesh' target='_blank'>Surgeon Stitchflesh</a>",
+    description: `This boss does a lot of tank damage, especially if your party messes up. There aren't really tricks to the boss, however, as your main job is to help line up the Meat Hooks and to have a defensive for each Mutilate.`,
+    value: "Hard",
+  },
+  {
+    id: "nalthor-the-rimebinder",
+    name: "<a href='https://www.wowhead.com/beta/npc=166945/nalthor-the-rimebinder' target='_blank'>Nalthor the Rimebinder</a>",
+    description: `This boss constantly hits really hard, so proper defensive rotation is important. While you can dispel Frozen Binds with <a href='https://www.wowhead.com/spell=116841/tigers-lust' target='_blank' class='orange'>Tiger's Lust</a> to help your healer, you should be very careful doing so, as it will root anyone else caught in the AoE.`,
+    value: "Hard",
+  },
+  {
+    id: "avanoxx",
+    name: "<a href='https://www.wowhead.com/beta/npc=213179/avanoxx' target='_blank'>Avanoxx</a>",
+    description: `This boss does very little tank damage, but it is still important to have a defensive for each tank buster, Voracious Bite. You also want to make sure that no Starved Crawlers can touch the boss, as this will enrage her, increasing her damage done by 50%. Luckily, <a href='https://www.wowhead.com/spell=116844/ring-of-peace' target='_blank' class='orange'>Ring of Peace</a> is a great tool for this.`,
+    value: "Easy",
+  },
+  {
+    id: "anubzekt",
+    name: "<a href='https://www.wowhead.com/beta/npc=215405/anubzekt' target='_blank'>Anub'zekt</a>",
+    description: `Anub'zekt is another easy boss for Brewmaster, as he does very little damage. You want to make sure that you aim Impale away fromt he group, as it will hit any allies caught in its path. There are no tricks for this boss.`,
+    value: "Easy",
+  },
+  {
+    id: "kikatal-the-harvester",
+    name: "<a href='https://www.wowhead.com/beta/npc=215407/kikatal-the-harvester' target='_blank'>Ki'katal the Harvester</a>",
+    description: `This boss has no tank busters, making it extremely easy for us. If any party members are caught in Grasping Blood, you can free them with <a href='https://www.wowhead.com/spell=116841/tigers-lust' target='_blank' class='orange'>Tiger's Lust</a>.`,
+    value: "Easy",
+  },
+  {
+    id: "orator-krixvizk",
+    name: "<a href='https://www.wowhead.com/beta/npc=216619/orator-krixvizk' target='_blank'>Orator Krix'vizk</a>",
+    description: `Orator Krix'vizk isn't too hard, so long as you are careful. You want to make sure you have a defensive for each tank buster, Subjugate, and that you are not moving the boss around too much. If you pull the boss too for away from a party member, they will take a lot of damage.`,
+    value: "Medium",
+  },
+  {
+    id: "fangs-of-the-queen",
+    name: "<a href='https://www.wowhead.com/beta/npc=216648/nx' target='_blank'>Fangs of the Queen</a>",
+    description: `This boss has a few mechanics to it, but it's not too bad. If you are afflicted with Freezing Blood, make sure that you are near a party member, or you will take a good amount of magic damage over time. If you are targeted by Ice Sickles, you want to make sure that no party members are between you and the boss, aswell. Lastly, the tank buster, Shade Slash, should be turned away from the party to avoid cleaving them. You will want to have a defensive up for each Shade Slash, too.`,
+    value: "Medium",
+  },
+  {
+    id: "the-coaglamation",
+    name: "<a href='https://www.wowhead.com/beta/npc=216320/the-coaglamation' target='_blank'>The Coaglamation</a>",
+    description: `This boss is super easy for Brewmaster to live. To help your party out, it can be a good idea to pick up as much of the black blood traveling towards the boss as possible. Do be careful, however, as it will put a heal absorb on you.`,
+    value: "Easy",
+  },
+  {
+    id: "izo",
+    name: "<a href='https://www.wowhead.com/beta/npc=216658/izo-the-grand-splicer' target='_blank'>Izo, the Grand Splicer</a>",
+    description: `This boss isn't too bad, outside of a tank buster that you have to be careful of. Process of Elimination, the tank buster, does a good amount of damage and will require a defensive or two. You also want to stay away from any party members as it's happening, or it will hit them, too. Outside of the tank buster, however, it is pretty easy for Brewmaster.`,
+    value: "Medium",
+  },
+  {
+    id: "speaker-shadowcrown",
+    name: "<a href='https://www.wowhead.com/beta/npc=211087/speaker-shadowcrown' target='_blank'>Speaker Shadowcrown</a>",
+    description: `This boss requires a lot of movement, mainly through the use of skyriding. The only somewhat difficult part for Brewmaster, however, is the tank buster Obsidian Beam. It hits for a good amount of magic damage, requiring a defensive for each one.`,
+    value: "Medium",
+  },
+  {
+    id: "anubikkaj",
+    name: "<a href='https://www.wowhead.com/beta/npc=211089/anubikkaj' target='_blank'>Anub'ikkaj</a>",
+    description: `This boss is really easy mechanically, but you have to look out for his tank buster, Terrifying Slam. Not only does it hit for a good amount, requiring a defensive, but it will fear any party members caught in the 15 yd radius. There are no tricks to this boss.`,
+    value: "Medium",
+  },
+  {
+    id: "rashanan",
+    name: "<a href='https://www.wowhead.com/beta/npc=224552/rashanan' target='_blank'>Rasha'nan</a>",
+    description: `This boss is very easy for us. You want to make sure that you are moving the boss into Arathi Bombs that are about to explode, as they damage him, aswell. You want to try to not be in the bombs yourself, however, as they do hit for a good amount. Other than this, however, there is nothing specific to do as the tank.`,
+    value: "Easy",
+  },
+  {
+    id: "edna",
+    name: "<a href='https://www.wowhead.com/beta/npc=210108/e-d-n-a' target='_blank'>E.D.N.A.</a>",
+    description: `Because of our Mastery, this boss isn't too bad. While this boss does a lot of group wide damage, enough so that it even hurts a good amount as the tank, we can dodge his tank buster by forcing a doge with our Mastery, which is extremely helpful (more discussed in the <a href='advanced.html'>advanced section</a> of the guide).`,
+    value: "Medium",
+  },
+  {
+    id: "skarmorak",
+    name: "<a href='https://www.wowhead.com/beta/npc=210156/skarmorak' target='_blank'>Skarmorak</a>",
+    description: `This boss does a good amount of tank damage, but it is easily survivable with proper defensive useage. You want to look out for his tank buster, Crystalline Smash. It will hit you hard and spawn an add afterwards, which should be taken care of as quickly as possible. Besides this, there is nothing specific for us to deal with as the tank.`,
+    value: "Medium",
+  },
+  {
+    id: "master-machinists",
+    name: "<a href='https://www.wowhead.com/beta/npc=213216/speaker-dorlita' target='_blank'>Master Machinists</a>",
+    description: `While there isn't a specific mechanic for tanks to deal with on this boss, this boss is incredibly difficult. There is a ton of constant damage, aswell as hard hitting attacks that target not only you, but party members, aswell. Currently, there are no tricks for this boss.`,
+    value: "Hard",
+  },
+  {
+    id: "void-speaker-eirich",
+    name: "<a href='https://www.wowhead.com/beta/npc=213119/void-speaker-eirich' target='_blank'>Void Speaker Eirich</a>",
+    description: `This boss is extremely easy as a tank. There is no special tank buster or mechanics that we have to deal with. The only mechanics that we have to deal with are mechanics that the rest of the party has to deal with, too.`,
+    value: "Easy",
   },
 ];
 

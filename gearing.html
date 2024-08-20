@@ -6,14 +6,14 @@
     <meta name="author" content="Zigee" />
     <meta
       name="description"
-      content="A mythic+ and raid Brewmaster monk guide made by equinoxmonk."
+      content="A mythic+ Brewmaster monk guide made by equinoxmonk."
     />
     <meta
       name="keywords"
       content="Brewmaster Monk, Brew Monk, Mythic Plus, Mythic+, M+, Brewmaster Monk Mythic Plus Guide, Brewmaster Monk Mythic+ Guide, Brewmaster Monk M+ Guide, Brew Monk Mythic Plus Guide, Brew Monk Mythic+ Guide, Brew Monk M+ Guide, Guide, Dragonflight"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles-v2.css" />
+    <link rel="stylesheet" href="styles-v3.css" />
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <script
       src="https://kit.fontawesome.com/77ee47dea4.js"
@@ -42,7 +42,7 @@
               <li><a href="./talents">Talents</a></li>
               <li><a href="./gearing">Gearing</a></li>
               <li><a href="./playstyle">Playstyle & Rotation</a></li>
-              <li><a href="./dungeons">Dungeons & Affixes</a></li>
+              <li><a href="./dungeons">Dungeons</a></li>
               <li><a href="./advanced">Advanced Tips & Tricks</a></li>
             </ul>
           </li>
@@ -81,7 +81,7 @@
             <li><a href="./talents">Talents</a></li>
             <li><a href="./gearing">Gearing</a></li>
             <li><a href="./playstyle">Playstyle & Rotation</a></li>
-            <li><a href="./dungeons">Dungeons & Affixes</a></li>
+            <li><a href="./dungeons">Dungeons</a></li>
             <li><a href="./advanced">Advanced Tips & Tricks</a></li>
           </ul>
         </li>
@@ -122,26 +122,24 @@
         <h2>Stat Priority</h2>
         <p>
           You want to prioritize your stats as the following:
-          <span class="green">Versatility</span> >
-          <span class="orange">Critical Strike</span> =
-          <span class="purple">Mastery</span> > <span class="red">Haste</span>.
-          Once you are fully geared, you want to try and obtain a total of
-          <span class="green">35% Versatility</span>,
-          <span class="orange">40% Critical Strike</span>,
-          <span class="purple">30% Mastery</span>, and close to
-          <span class="red">0% Haste</span>. Leech and Avoidance are very good
-          tertiary stats for us, but we currently don't want to ever sacrifice
-          item level for them.
+          <span class="green">Versatility</span> =
+          <span class="orange">Critical Strike</span> >
+          <span class="purple">Mastery</span> >> <span class="red">Haste</span>.
+          You want to try and prioritize
+          <span class="green">Versatility</span> and
+          <span class="orange">Critical Strike</span> on every piece of gear.
+          Ideally, you want as little <span class="purple">Mastery</span> and
+          <span class="red">Haste</span> as possible.
         </p>
         <div id="stats">
           <img
             id="vers"
+            class="selected"
             src="images/versatility.jpg"
             onclick="updateInfo(this)"
           /><!--
           --><img
             id="crit-strike"
-            class="selected"
             src="images/critical-strike.jpg"
             onclick="updateInfo(this)"
           /><!--
@@ -156,86 +154,60 @@
             src="images/haste.jpg"
             onclick="updateInfo(this)"
           />
-          <h3>Critical Strike</h3>
+          <h3>Versatility</h3>
           <p class="description">
-            Critical Strike is strong for us both offensively and defensively,
-            as it increases our
-            <a
-              href="https://www.wowhead.com/spell=216519/celestial-fortune"
-              target="_blank"
-              class="orange"
-              >Celestial Fortune</a
-            >
-            healing. Critical Strike can also make our 2pc healing stronger, as
-            it's based on the damage that you deal.
+            You want a high percentage of Versatility because it increases your
+            damage and healing, while also decreasing all damage that you take.
+            This is especially helpful against magic damage, as we can't dodge
+            it and our stagger has reduced effectiveness against it.
           </p>
         </div>
       </section>
       <section id="tier-set" class="info-section middle-spacing">
         <h2>Tier Set</h2>
         <p>
-          Our tier set this season is extremely strong, especially on AoE. Our
-          2pc causes our
+          Even though the secondaries on our tier set this season isn't great,
+          the set bonuses make up for it. Not only does it give us a huge damage
+          increase overall, mainly through the use of
           <a
-            href="https://www.wowhead.com/spell=115181/breath-of-fire"
+            href="https://www.wowhead.com/spell=121253/keg-smash"
             target="_blank"
             class="orange"
-            >Breath of Fire</a
-          >
-          to deal 40% additional damage as Shadowflame, while also causing us to
-          heal for 50% of all the fire damage we do. Our 4pc causes all of our
-          attacks to have a chance to deal an additional 15% Shadowflame damage.
-          It also makes our
-          <a
-            href="https://www.wowhead.com/spell=322507/celestial-brew"
-            target="_blank"
-            class="orange"
-            >Celestial Brew</a
-          >
-          a lot stronger, causing it to absorb extra damage based on 100% of all
-          Shadowflame damage that we have dealt since our last
-          <a
-            href="https://www.wowhead.com/spell=322507/celestial-brew"
-            target="_blank"
-            class="orange"
-            >Celestial Brew</a
-          >.
+            >Keg Smash</a
+          >, but it also provides us with a small amount of constant damage
+          reduction.
         </p>
         <div id="tier-pieces">
           <img
-            id="tier-shoulders"
+            id="tier-helm"
             class="selected"
+            src="images/tier-helm.jpg"
+            onclick="updateInfo(this)"
+          /><!--
+          --><img
+            id="tier-shoulders"
             src="images/tier-shoulders.jpg"
             onclick="updateInfo(this)"
           /><!--
-                    --><img
+          --><img
             id="tier-chest"
             src="images/tier-chest.jpg"
             onclick="updateInfo(this)"
           /><!--
-                    --><img
-            id="tier-gloves"
-            src="images/tier-gloves.jpg"
-            onclick="updateInfo(this)"
-          /><!--
-                    --><img
+          --><img
             id="tier-legs"
             src="images/tier-legs.jpg"
             onclick="updateInfo(this)"
           />
           <h3>
             <a
-              href="https://www.wowhead.com/item=200365/mantle-of-the-waking-fist"
+              href="https://www.wowhead.com/item=212047/gatecrashers-horns"
               target="_blank"
-              >Mantle of the Waking Fist</a
+              >Gatecrasher's Horns</a
             >
           </h3>
-          <h4 class="tier-type orange">Shoulders</h4>
-          <p class="description">
-            Unfortunately, the shoulders have a little bit of haste. The haste
-            on the shoulders is less than the helmet, though, so we want to run
-            shoulders instead.
-          </p>
+          <h4 class="tier-type orange">Head</h4>
+          <p class="description">Critical Strike / Versatility</p>
         </div>
       </section>
       <section id="equipment" class="info-section">
@@ -246,342 +218,245 @@
           the most important thing outside of necks, rings, and trinkets.
         </p>
         <div class="grid-container">
-          <div id="head">
-            <p class="sub-header orange">Head</p>
-            <img
-              id="crown-of-roaring-storms"
-              class="selected"
-              src="images/crown-of-roaring-storms.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-            --><img
-              id="violent-gravemask"
-              src="images/violent-gravemask.jpg"
-              onclick="updateInfo(this)"
-            />
-            <h3>
-              <a
-                href="https://www.wowhead.com/ptr-2/item=193751/crown-of-roaring-storms"
-                target="_blank"
-                >Crown of Roaring Storms</a
-              >
-            </h3>
-            <p class="description">
-              This helmet gives as lot of Versatility and Critical Strike,
-              making it a great option.
-            </p>
-          </div>
           <div id="neck">
             <p class="sub-header orange">Neck</p>
             <img
-              id="elemental-lariat"
+              id="elders-hemolymphal-periapt"
               class="selected"
-              src="images/elemental-lariat.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-            --><img
-              id="ouroboreal-necklet"
-              src="images/ouroboreal-necklet.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-            --><img
-              id="tuskarr-bone-necklace"
-              src="images/tuskarr-bone-necklace.jpg"
+              src="images/elders-hemolymphal-periapt.jpg"
               onclick="updateInfo(this)"
             />
             <h3>
               <a
-                href="https://www.wowhead.com/item=193001/elemental-lariat"
+                href="https://www.wowhead.com/item=221181/elders-hemolymphal-periapt"
                 target="_blank"
-                >Elemental Lariat</a
+                >Elder's Hemolymphal Periapt</a
               >
             </h3>
-            <p class="description">
-              This neck is extremely strong, as it has a change at strengthening
-              the secondary stats we gain from our gems. You do not want to run
-              this until you have full sockets, though.
-            </p>
+            <p class="description">Critical Strike / Versatility</p>
           </div>
-        </div>
-        <div class="grid-container">
           <div id="back">
             <p class="sub-header orange">Back</p>
             <img
-              id="inflammable-drapeleaf"
+              id="swarmcallers-shroud"
               class="selected"
-              src="images/inflammable-drapeleaf.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-            --><img
-              id="vibrant-wildercloth-shawl"
-              src="images/vibrant-wildercloth-shawl.jpg"
+              src="images/swarmcallers-shroud.jpg"
               onclick="updateInfo(this)"
             />
             <h3>
               <a
-                href="https://www.wowhead.com/item=207160/inflammable-drapeleaf"
+                href="https://www.wowhead.com/item=221154/swarmcallers-shroud"
                 target="_blank"
-                >Inflammable Drapeleaf</a
+                >Swarmcaller's Shroud</a
               >
             </h3>
-            <p class="description">
-              This cloak has a lot of Critical Strike and a good amount of
-              Versatility, helping us reach our stat goals.
-            </p>
+            <p class="description">Critical Strike / Versatility</p>
           </div>
+        </div>
+        <div class="grid-container">
           <div id="wrist">
             <p class="sub-header orange">Wrist</p>
             <img
-              id="primordial-serpent-bindings"
+              id="rune-branded-armbands"
               class="selected"
-              src="images/primordial-serpent-bindings.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-            --><img
-              id="ferocious-hyena-hidebinders"
-              src="images/ferocious-hyena-hidebinders.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-            --><img
-              id="needlessly-complex-wristguards"
-              src="images/needlessly-complex-wristguards.jpg"
+              src="images/rune-branded-armbands.jpg"
               onclick="updateInfo(this)"
             />
             <h3>
               <a
-                href="https://www.wowhead.com/item=207128/primordial-serpents-bindings"
+                href="https://www.wowhead.com/item=219334/rune-branded-armbands"
                 target="_blank"
-                >Primordial Serpent's Bindings</a
+                >Ferocious Hyena Hidebinders</a
               >
             </h3>
-            <p class="description">
-              These wrists are very similar to the Chronomancer's Stasis
-              Shackles, but have slightly more Versatility.
-            </p>
+            <p class="description">Versatility / Critical Strike</p>
+          </div>
+          <div id="hands">
+            <p class="sub-header orange">Hands</p>
+            <img
+              id="thousand-scar-impalers"
+              class="selected"
+              src="images/thousand-scar-impalers.jpg"
+              onclick="updateInfo(this)"
+            /><!--
+            --><img
+              id="rune-branded-grasps"
+              src="images/rune-branded-grasps.jpg"
+              onclick="updateInfo(this)"
+            />
+            <h3>
+              <a
+                href="https://www.wowhead.com/item=212432/thousand-scar-impalers"
+                target="_blank"
+                >Thousand Scar Impalers</a
+              >
+            </h3>
+            <p class="description">Critical Strike / Haste</p>
           </div>
         </div>
         <div class="grid-container">
           <div id="waist">
             <p class="sub-header orange">Waist</p>
             <img
-              id="bloody-dragonhide-belt"
+              id="adrenal-surge-clasp"
               class="selected"
-              src="images/bloody-dragonhide-belt.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-            --><img
-              id="troggskin-waistband"
-              src="images/troggskin-waistband.jpg"
+              src="images/adrenal-surge-clasp.jpg"
               onclick="updateInfo(this)"
             />
             <h3>
               <a
-                href="https://www.wowhead.com/item=207131/bloody-dragonhide-belt"
+                href="https://www.wowhead.com/item=219502/adrenal-surge-clasp"
                 target="_blank"
-                >Bloody Dragonhide Belt</a
+                >Adrenal Surge Clasp</a
               >
             </h3>
-            <p class="description">
-              This belt is really good for us as it gives a lot of Critical
-              Strike and a little bit of Versatility.
-            </p>
+            <p class="description">Critical Strike / Versatility</p>
           </div>
           <div id="feet">
             <p class="sub-header orange">Feet</p>
             <img
-              id="slimy-expulsion-boots"
+              id="viscera-stitched-footpads"
               class="selected"
-              src="images/slimy-expulsion-boots.jpg"
+              src="images/viscera-stitched-footpads.jpg"
               onclick="updateInfo(this)"
             />
             <h3>
               <a
-                href="https://www.wowhead.com/item=193451/slimy-expulsion-boots"
+                href="https://www.wowhead.com/item=178731/viscera-stitched-footpads"
                 target="_blank"
-                >Slimy Expulsion Boots</a
+                >Viscera Stitched Footpads</a
               >
             </h3>
-            <p class="description">
-              These boots have good stats for us, helping us get our Versatility
-              and Mastery up. Not only this, but they also have an embellishment
-              attached to them that does good damage on single target. There is
-              no other competitive option for boots because of how good these
-              are for us.
-            </p>
+            <p class="description">Critical Strike / Versatility</p>
           </div>
         </div>
         <div class="grid-container">
           <div id="rings">
             <p class="sub-header orange">Rings</p>
             <img
-              id="seal-of-filial-duty"
+              id="seal-of-the-poisoned-pact"
               class="selected"
-              src="images/seal-of-filial-duty.jpg"
+              src="images/seal-of-the-poisoned-pact.jpg"
               onclick="updateInfo(this)"
-            />
-            <img
-              id="seal-of-diurnas-chosen"
-              src="images/seal-of-diurnas-chosen.jpg"
+            /><!--
+            --><img
+              id="ritual-commanders-ring"
+              src="images/ritual-commanders-ring.jpg"
               onclick="updateInfo(this)"
-            />
-            <img
-              id="signet-of-titanic-insight"
-              src="images/signet-of-titanic-insight.jpg"
+            /><!--
+            --><img
+              id="ring-of-dun-algaz"
+              src="images/ring-of-dun-algaz.jpg"
               onclick="updateInfo(this)"
             />
             <h3>
               <a
-                href="https://www.wowhead.com/item=195526/seal-of-filial-duty"
+                href="https://www.wowhead.com/item=225578/seal-of-the-poisoned-pact"
                 target="_blank"
-                >Seal of Filial Duty</a
+                >Seal of the Poisoned Pact</a
               >
             </h3>
             <p class="description">
-              This ring is extremely powerful. Although it provides a little bit
-              of haste, it gives us a lot of mastery and also has a very strong
-              on equip effect. Whenever we deal damage, this ring has a chance
-              of granting us a shield. This should be your first purchase with
-              the dinar tokens.
+              Critical Strike / Mastery - This ring stacks up to 5 times. At 5
+              stacks, you inject a poison into your enemy, doing a good amount
+              of single target damage.
             </p>
           </div>
           <div id="weapons">
             <p class="sub-header orange">Weapons</p>
             <img
-              id="djaruun-pillar-of-the-elder-flame"
+              id="void-reapers-warp-blade"
               class="selected"
-              src="images/djaruun-pillar-of-the-elder-flame.jpg"
+              src="images/void-reapers-warp-blade.jpg"
+              onclick="updateInfo(this)"
+            /><!--
+            --><img
+              id="zephyrous-sail-carver"
+              src="images/zephyrous-sail-carver.jpg"
+              onclick="updateInfo(this)"
+            /><!--
+            --><img
+              id="charged-facesmasher"
+              src="images/charged-facesmasher.jpg"
               onclick="updateInfo(this)"
             />
             <h3>
               <a
-                href="https://www.wowhead.com/item=202569/djaruun-pillar-of-the-elder-flame"
+                href="https://www.wowhead.com/item=219877/void-reapers-warp-blade"
                 target="_blank"
-                >Djaruun, Pillar of the Elder Flame</a
+                >Void Reaper's Warp Blade</a
               >
             </h3>
             <p class="description">
-              This weapon is extremely powerful. It gives us good stats,
-              providing a lot of Critical Strike and some Mastery, as well as
-              having a very strong on use effect. This should be your second
-              purchase with the dinar tokens.
+              Critical Strike - Gives a proc to your attacks, boosting your
+              damage by about 1% overall.
             </p>
           </div>
         </div>
-        <div class="grid-container">
-          <div id="defensive-trinkets">
-            <p class="sub-header orange">Defensive Trinkets</p>
-            <img
-              id="granyths-enduring-scale"
-              class="selected"
-              src="images/granyths-enduring-scale.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-            --><img
-              id="burgeoning-seed"
-              src="images/burgeoning-seed.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-            --><img
-              id="all-totem-of-the-master"
-              src="images/all-totem-of-the-master.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-            --><img
-              id="fyrakks-tainted-rageheart"
-              src="images/fyrakks-tainted-rageheart.jpg"
-              onclick="updateInfo(this)"
-            />
-            <h3>
-              <a
-                href="https://www.wowhead.com/item=193689/granyths-enduring-scale"
-                target="_blank"
-                >Granyth's Enduring Scale</a
-              >
-            </h3>
-            <p class="description">
-              This trinket has been reworked this season and has become
-              extremely powerful. It now is an on-use trinket that grants a
-              massive shield, along with a ton of armor. This is extremely good
-              for Brewmaster, as we really struggle with our low armor. This
-              trinket will always be run on both fortified and tyrannical
-              mythic+ keys.
-            </p>
-          </div>
-          <div id="offensive-trinkets">
-            <p class="sub-header orange">Offensive Trinkets</p>
-            <img
-              id="manic-grieftorch"
-              class="selected"
-              src="images/manic-grieftorch.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-            --><img
-              id="storm-eaters-boon"
-              src="images/storm-eaters-boon.jpg"
-              onclick="updateInfo(this)"
-            />
-            <h3>
-              <a
-                href="https://www.wowhead.com/item=194308/manic-grieftorch"
-                target="_blank"
-                >Manic Grieftorch</a
-              >
-            </h3>
-            <p class="description">
-              This trinket is our best damage trinket. On use, we cast and
-              unleash a massive amount of fire damage. The cooldown is also
-              reduced greatly whenever an allie dies. I will run this on
-              tyrannical mythic+ keys.
-            </p>
-          </div>
+        <div id="trinkets">
+          <p class="sub-header orange">Trinkets</p>
+          <img
+            id="ovinaxs-mercurial-egg"
+            class="selected"
+            src="images/ovinaxs-mercurial-egg.jpg"
+            onclick="updateInfo(this)"
+          /><!--
+          --><img
+            id="dead-eye-spyglass"
+            src="images/dead-eye-spyglass.jpg"
+            onclick="updateInfo(this)"
+          />
+          <!--
+          --><img
+            id="harvesters-edict"
+            src="images/harvesters-edict.jpg"
+            onclick="updateInfo(this)"
+          />
+          <h3>
+            <a
+              href="https://www.wowhead.com/item=220305/ovinaxs-mercurial-egg"
+              target="_blank"
+              >Ovi'nax's Mercurial Egg</a
+            >
+          </h3>
+          <p class="description">
+            This trinket grants us increased Agility when we are standing still,
+            stacking up to 30 times. When we are moving, we gain an increase to
+            our highest secondary stat, stacking up to 30 times. This egg is
+            very strong, as it is a very helpful stat increase. If you can get
+            it from raid, make sure you always run it.
+          </p>
         </div>
       </section>
       <section id="embellishments" class="info-section">
         <h2>Embellishments</h2>
         <p>
-          This season, there are a few good embellishments for us. Early in the
-          season, you want to run Coated in Slime with the Potion Absorsption
-          Inhibitor, but, once you get full sockets, you will want to run
-          Elemental Lariat instead of the Potion Absorption Inhibitor.
+          This season, there are only two good embellishments for us, and we
+          should always run them.
         </p>
         <div class="middle-spacing">
           <img
-            id="coated-in-slime"
+            id="adrenal-surge-clasp-embellishment"
             class="selected"
-            src="images/coated-in-slime.jpg"
+            src="images/adrenal-surge-clasp.jpg"
             onclick="updateInfo(this)"
           /><!--
           --><img
-            id="potion-absorption-inhibitor"
-            src="images/potion-absorption-inhibitor.jpg"
-            onclick="updateInfo(this)"
-          /><!--
-          --><img
-            id="toxified-armor-patch"
-            src="images/toxified-armor-patch.jpg"
-            onclick="updateInfo(this)"
-          /><!--
-          --><img
-            id="elemental-lariat"
-            src="images/elemental-lariat.jpg"
-            onclick="updateInfo(this)"
-          /><!--
-          --><img
-            id="alchemical-flavor-pocket"
-            src="images/alchemical-flavor-pocket.jpg"
+            id="writhing-armor-banding"
+            src="images/writhing-armor-banding.jpg"
             onclick="updateInfo(this)"
           />
           <h3>
             <a
-              href="https://www.wowhead.com/spell=378423/coated-in-slime"
+              href="https://www.wowhead.com/item=219502/adrenal-surge-clasp"
               target="_blank"
-              >Coated in Slime</a
+              >Adrenal Surge Clasp</a
             >
           </h3>
           <p class="description">
-            This embellishment does pretty good damage on single target. It can
-            only be obtained by crafting Slimy Expulsion Boots, which,
-            fortunately for us, has good secondary stats.
+            This embellishment causes our abilities to grant us a large increase
+            in Agility and slightly decreases our Mastery. This is very good and
+            should be the first embellishment you make.
           </p>
         </div>
       </section>
@@ -596,47 +471,32 @@
           <div id="enchants">
             <p class="sub-header orange">Enchantments</p>
             <img
-              id="helm-enchant"
+              id="ring-enchants"
               class="selected"
-              src="images/incandescent-essence.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="back-enchant"
               src="images/enchant-scroll.jpg"
               onclick="updateInfo(this)"
             /><!--
-                        --><img
-              id="chest-enchant"
-              src="images/enchant-scroll.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="wrist-enchant"
-              src="images/enchant-scroll.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="waist-enchant"
-              src="images/shadowed-belt-clasp.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="leg-enchant"
-              src="images/fierce-armor-kit.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
+            --><img
               id="feet-enchant"
               src="images/enchant-scroll.jpg"
               onclick="updateInfo(this)"
             /><!--
-                        --><img
-              id="ring-enchants"
+            --><img
+              id="leg-enchant"
+              src="images/stormbound-armor-kit.jpg"
+              onclick="updateInfo(this)"
+            /><!--
+            --><img
+              id="back-enchant"
               src="images/enchant-scroll.jpg"
               onclick="updateInfo(this)"
             /><!--
-                        --><img
+            --><img
+              id="wrist-enchant"
+              src="images/enchant-scroll.jpg"
+              onclick="updateInfo(this)"
+            /><!--
+            --><img
               id="weapon-enchants"
               src="images/enchant-scroll.jpg"
               onclick="updateInfo(this)"
@@ -660,42 +520,30 @@
             <img
               id="weapon-runes"
               class="selected"
-              src="images/hissing-rune.jpg"
+              src="images/ironclaw-whetstone.jpg"
               onclick="updateInfo(this)"
             /><!--
-                        --><img
-              id="deviously-deviled-eggs"
-              src="images/deviously-deviled-eggs.jpg"
+            -->
+            <img
+              id="flask"
+              src="images/flask-of-tempered-versatility.jpg"
               onclick="updateInfo(this)"
             /><!--
-                        --><img
-              id="phial"
-              src="images/eye-tepid.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="healing-potion"
-              src="images/dreamwalkers-healing-potion.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="damage-potion"
-              src="images/power-shocking.jpg"
+            -->
+            <img
+              id="battle-potion"
+              src="images/tempered-potion.jpg"
               onclick="updateInfo(this)"
             />
             <h3>
               <a
-                href="https://www.wowhead.com/item=204973/hissing-rune"
+                href="https://www.wowhead.com/beta/item=222504/ironclaw-whetstone"
                 target="_blank"
-                >Hissing Rune</a
+                >Ironclaw Whetstone</a
               >
             </h3>
             <h4 class="tier-type orange">Weapon Rune(s)</h4>
-            <p class="description">
-              Unlike the rest of our secondary stat choices, you always want to
-              run Hissing Runes because Mastery has a lot more static power than
-              a little bit more Critical Strike.
-            </p>
+            <p class="description">Increases attack power.</p>
           </div>
         </div>
       </section>
@@ -703,85 +551,53 @@
         <h2>Gems</h2>
         <p>
           The gems that you socket into your gear depends on your own stats.
-          Keep in mind that necks can now also be triple socketed via Tiered
-          Medallian Setting and that you can only have one unique type of gem.
+          Keep in mind that necks and rings can now be double socketed.
         </p>
         <div class="grid-container">
           <div id="unique-gems">
-            <p class="sub-header orange">Unique Gems</p>
+            <p class="sub-header orange">Unique Gem</p>
             <img
-              id="inscribed-illimited-diamond"
+              id="culminating-blasphemite"
               class="selected"
-              src="images/inscribed-illimited-diamond.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="resplendent-illimited-diamond"
-              src="images/resplendent-illimited-diamond.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="skillful-illimited-diamond"
-              src="images/skillful-illimited-diamond.jpg"
+              src="images/culminating-blasphemite.jpg"
               onclick="updateInfo(this)"
             />
             <h3>
               <a
-                href="https://www.wowhead.com/item=192982/inscribed-illimited-diamond"
+                href="https://www.wowhead.com/beta/item=213743/culminating-blasphemite"
                 target="_blank"
-                >Inscribed Illimited Diamond</a
+                >Culminating Blasphemite</a
               >
             </h3>
             <p class="description">
-              The gem that you run depends on the statting that you require. If
-              you don't need any more Versatility or Mastery, you want to run
-              this gem for additional Critical Strike.
+              Increase Agility by 181 and increases Critical Strike damage by
+              0.15% per unique Algari gem color. You can only have one of this
+              gem.
             </p>
           </div>
           <div id="regular-gems">
             <p class="sub-header orange">Regular Gems</p>
             <img
-              id="radiant-alexstraszite"
+              id="deadly-sapphire"
               class="selected"
-              src="images/radiant-alexstraszite.jpg"
+              src="images/deadly-sapphire.jpg"
               onclick="updateInfo(this)"
             /><!--
-                        --><img
-              id="senseis-alexstraszite"
-              src="images/senseis-alexstraszite.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="radiant-malygite"
-              src="images/radiant-malygite.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="zen-malygite"
-              src="images/zen-malygite.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="senseis-neltharite"
-              ,
-              src="images/senseis-neltharite.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-                        --><img
-              id="zen-neltharite"
-              src="images/zen-neltharite.jpg"
+            --><img
+              id="versatile-ruby"
+              src="images/versatile-ruby.jpg"
               onclick="updateInfo(this)"
             />
             <h3>
               <a
-                href="https://www.wowhead.com/ptr/item=192925/radiant-alexstraszite"
+                href="https://www.wowhead.com/beta/item=213467/deadly-sapphire"
                 target="_blank"
-                >Radiant Alexstraszite</a
+                >Deadly Sapphire</a
               >
             </h3>
             <p class="description">
-              If you prefer more Critical Strike with a little bit of
-              Versatility, run this gem.
+              Increases Versatility by 147 and Critical Strike by 49. Run this
+              if you want more Versatility than Critical Strike.
             </p>
           </div>
         </div>
@@ -794,6 +610,6 @@
         </h3>
       </section>
     </main>
-    <script src="myscripts-v2.js"></script>
+    <script src="myscripts-v3.js"></script>
   </body>
 </html>
