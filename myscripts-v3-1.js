@@ -191,8 +191,8 @@ const infoArray = [
     id: "tiger-tail-sweep",
     name: "<a href='https://www.wowhead.com/spell=264348/tiger-tail-sweep' target='_blank'>Tiger Tail Sweep</a>",
     description:
-      "This talent increases the range of <a href='https://www.wowhead.com/spell=119381/leg-sweep' target='_blank' class='orange'>Leg Sweep</a>, which can be helpful on large AoE packs, where mobs aren't perfectly grouped up. If you have an extra talent, this node is a great choice.",
-    value: "Optional",
+      "This talent increases the range of <a href='https://www.wowhead.com/spell=119381/leg-sweep' target='_blank' class='orange'>Leg Sweep</a>, which can be helpful on large AoE packs, where mobs aren't perfectly grouped up. You are required to take this talent node to access the next node.",
+    value: "Required",
   },
   {
     id: "vigorous-expulsion",
@@ -419,8 +419,8 @@ const infoArray = [
     id: "peace-and-prosperity",
     name: "<a href='https://www.wowhead.com/beta/spell=450448/peace-and-prosperity' target-'_blank'>Peace and Prosperity</a>",
     description:
-      "This talent reduces the cooldown of <a href='https://www.wowhead.com/spell=116844/ring-of-peace' target='_blank' class='orange'>Ring of Peace</a> by 5 seconds. There are a ton of better optional nodes that can be taken, so this talent is not recommended.",
-    value: "Never",
+      "This talent reduces the cooldown of <a href='https://www.wowhead.com/spell=116844/ring-of-peace' target='_blank' class='orange'>Ring of Peace</a> by 5 seconds. If you want a cooldown reduction on <a href='https://www.wowhead.com/spell=116844/ring-of-peace' target='_blank' class='orange'>Ring of Peace</a>, then this is a good talent node.",
+    value: "Optional",
   },
   {
     id: "yulon-diffuse",
@@ -476,8 +476,8 @@ const infoArray = [
     id: "windwalking",
     name: "<a href='https://www.wowhead.com/spell=157411/windwalking' target='_blank'>Windwalking</a>",
     description:
-      "This talent grants you and your allies a 4% speed increase. This may sound good, but it is only in a 10 yd radius, making it essentially useless.",
-    value: "Never",
+      "This talent grants you and your allies a 4% speed increase. This can be a good talent node if you have extra points left over.",
+    value: "Optional",
   },
   {
     id: "healing-winds",
@@ -665,8 +665,8 @@ const infoArray = [
     id: "celestial-flames",
     name: "<a href='https://www.wowhead.com/spell=325190/celestial-flames' target='_blank'>Celestial Flames</a>",
     description:
-      "This talent applies our <a href='https://www.wowhead.com/spell=115181/breath-of-fire' target='_blank' class='orange'>Breath of Fire</a> to all targets that are hit by our <a href='https://www.wowhead.com/spell=101546/spinning-crane-kick' target='_blank' class='orange'>Spinning Crane Kick</a>, which serves absolutely no purpose as you can keep <a href='https://www.wowhead.com/spell=115181/breath-of-fire' target='_blank' class='orange'>Breath of Fire</a> up on enemies 100% of the time without it. The extra 5% damage reduction is heavily outweighed by other talents, too.",
-    value: "Never",
+      "This talent applies our <a href='https://www.wowhead.com/spell=115181/breath-of-fire' target='_blank' class='orange'>Breath of Fire</a> to all targets that are hit by our <a href='https://www.wowhead.com/spell=101546/spinning-crane-kick' target='_blank' class='orange'>Spinning Crane Kick</a>, aswell as giving us 5% increased damage reduction. This is very good for our current build, as we have no other way to have 100% uptime on <a href='https://www.wowhead.com/spell=115181/breath-of-fire' target='_blank' class='orange'>Breath of Fire</a>.",
+    value: "Required",
   },
   {
     id: "celestial-brew-talent",
@@ -686,8 +686,8 @@ const infoArray = [
     id: "august-blessing",
     name: "<a href='https://www.wowhead.com/beta/spell=454483/august-blessing' target='_blank'>August Blessing</a>",
     description:
-      "This talent applies a HoT whenever you overheal. If you find yourself overhealing a lot, then this can be ran instead of <a href='https://www.wowhead.com/beta/spell=454484/one-with-the-wind' target='_blank' class='orange'>One With the Wind</a>.",
-    value: "Optional",
+      "This talent applies a HoT whenever you overheal. Currently, there are other talents that are better, so you never want to run this.",
+    value: "Never",
   },
   {
     id: "one-with-the-wind",
@@ -779,7 +779,7 @@ const infoArray = [
     id: "scalding-salabims",
     name: "<a href='https://www.wowhead.com/spell=383698/scalding-brew' target='_blank'>Scalding Brew</a> <span class='white'>/</span> <a href='https://www.wowhead.com/spell=383697/salsalabims-strength' target='_blank'>Sal'salabim's Strength</a>",
     description:
-      "Both <a href='https://www.wowhead.com/spell=383698/scalding-brew' target='_blank' class='orange'>Scalding Brew</a> and <a href='https://www.wowhead.com/spell=383697/salsalabims-strength' target='_blank' class='orange'>Sal'salabim's Strength</a> are very good talents. Due to <a href='https://www.wowhead.com/spell=383697/salsalabims-strength' target='_blank' class='orange'>Sal'salabim's Strength</a> synergizing with our builds more, however, we currently take this talent in every build we play.",
+      "Both <a href='https://www.wowhead.com/spell=383698/scalding-brew' target='_blank' class='orange'>Scalding Brew</a> and <a href='https://www.wowhead.com/spell=383697/salsalabims-strength' target='_blank' class='orange'>Sal'salabim's Strength</a> are very good talents. Due to <a href='https://www.wowhead.com/spell=383698/scalding-brew' target='_blank' class='orange'>Scalding Brew</a> synergizing with our builds more, however, we currently take this talent in every build we play.",
     value: "Required",
   },
   {
@@ -793,7 +793,7 @@ const infoArray = [
     id: "bob-ox-brew",
     name: "<a href='https://www.wowhead.com/spell=280515/bob-and-weave' target='_blank'>Bob and Weave <span class='white'>/</span> <a href='https://www.wowhead.com/spell=115399/black-ox-brew' target='_blank'>Black Ox Brew</a>",
     description:
-      "Both of these talents are extremely good. <a href='https://www.wowhead.com/spell=280515/bob-and-weave' target='_blank' class='orange'>Bob and Weave</a> delays the rate at which our stagger damages us, making us overall tankier. <a href='https://www.wowhead.com/spell=115399/black-ox-brew' target='_blank' class='orange'>Black Ox Brew</a> is a cooldown that allows us to reset the cooldown of all of our brews whenever we want. This season, we want to run <a href='https://www.wowhead.com/spell=280515/bob-and-weave' target='_blank' class='orange'>Bob and Weave</a>, as we already have so many defensive cooldowns.",
+      "Both of these talents are extremely good. <a href='https://www.wowhead.com/spell=280515/bob-and-weave' target='_blank' class='orange'>Bob and Weave</a> delays the rate at which our stagger damages us, making us overall tankier. <a href='https://www.wowhead.com/spell=115399/black-ox-brew' target='_blank' class='orange'>Black Ox Brew</a> is a cooldown that allows us to reset the cooldown of all of our brews whenever we want. This season, we want to run <a href='https://www.wowhead.com/spell=115399/black-ox-brew' target='_blank' class='orange'>Black Ox Brew</a>, as it is a very helpful extra defensive, and can even be used offensively in combination with <a href='https://www.wowhead.com/spell=196730/special-delivery' target='_blank' class='orange'>Special Delivery</a>.",
     value: "Required",
   },
   {
@@ -829,7 +829,7 @@ const infoArray = [
     id: "dragonfire-charred",
     name: "<a href='https://www.wowhead.com/spell=383994/dragonfire-brew' target='_blank'>Dragonfire Brew</a> <span class='white'>/</span> <a href='https://www.wowhead.com/spell=386965/charred-passions' target='_blank'>Charred Passions</a>",
     description:
-      "This season, <a href='https://www.wowhead.com/spell=386965/charred-passions' target='_blank' class='orange'>Charred Passions</a> isn't very strong, but <a href='https://www.wowhead.com/spell=383994/dragonfire-brew' target='_blank' class='orange'>Dragonfire Brew</a> is. <a href='https://www.wowhead.com/spell=383994/dragonfire-brew' target='_blank' class='orange'>Dragonfire Brew</a> increases the damage of our <a href='https://www.wowhead.com/spell=115181/breath-of-fire' target='_blank' class='orange'>Breath of Fire</a> based on 100% of our stagger, making it a good damaging ability on AoE. This should always be taken.",
+      "<a href='https://www.wowhead.com/spell=383994/dragonfire-brew' target='_blank' class='orange'>Dragonfire Brew</a> increases the damage of our <a href='https://www.wowhead.com/spell=115181/breath-of-fire' target='_blank' class='orange'>Breath of Fire</a> based on 100% of our stagger, making it a good damaging ability on AoE. Because of our current build not being surrounded around <a href='https://www.wowhead.com/spell=115181/breath-of-fire' target='_blank' class='orange'>Breath of Fire</a>, we want to take <a href='https://www.wowhead.com/spell=386965/charred-passions' target='_blank' class='orange'>Charred Passions</a>.",
     value: "Required",
   },
   {
@@ -1455,12 +1455,18 @@ const infoArray = [
       "This trinket is extremely strong on single target. When combined with Fyrakk's Tainted Rageheart, it is a very competitive trinket combo in raid for single target fights. On use, it causes our next 5 auto attacks to do massive amounts of damage, along with giving us additional primary stat.",
   },
 
-  // emebellishments
+  // embellishments
   {
     id: "coated-in-slime",
     name: "<a href='https://www.wowhead.com/spell=378423/coated-in-slime' target='_blank'>Coated in Slime</a>",
     description:
       "This embellishment does pretty good damage on single target. It can only be obtained by crafting Slimy Expulsion Boots, which, fortunately for us, has good secondary stats.",
+  },
+  {
+    id: "darkmoon-sigil-symbiosis",
+    name: "<a href='https://www.wowhead.com/item=226030/darkmoon-sigil-symbiosis' target='_blank'>Darkmoon Sigil: Symbiosis</a>",
+    description:
+      "This embellishment puts a tiny DoT on us, in exchange for a 889 Versatility. This Versatility stacks up to 5 times, making it very strong.",
   },
   {
     id: "writhing-armor-banding",
