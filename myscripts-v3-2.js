@@ -836,8 +836,8 @@ const infoArray = [
     id: "high-tolerance",
     name: "<a href='https://www.wowhead.com/spell=196737/high-tolerance' target='_blank'>High Tolerance</a>",
     description:
-      "This talent helps delay your stagger and gives you haste based on your current level of stagger. If you find yourself out of energy, or have some leftover talent points, you can put a point or two into this.",
-    value: "Optional",
+      "This talent helps delay your stagger and gives you haste based on your current level of stagger. Currently, we have much better talents, so this should never be ran.",
+    value: "Never",
   },
   {
     id: "walk-with-the-ox",
@@ -864,8 +864,8 @@ const infoArray = [
     id: "anvil-stave",
     name: "<a href='https://www.wowhead.com/spell=386937/anvil-stave' target='_blank'>Anvil & Stave</a>",
     description:
-      "If you are in a melee heavy dungeon, and want additional brew cooldown reduction, this can be a great talent to put a point or two into.",
-    value: "Situational",
+      "This talent gives us a significant amount of brew cooldown reduction. Currently, this heavily synergizes with our build and should always be ran.",
+    value: "Required",
   },
   {
     id: "face-palm",
