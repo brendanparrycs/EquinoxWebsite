@@ -403,6 +403,10 @@ ol > li:not(:last-child) {
   display: none;
 }
 
+.special-col {
+  column-count: 1;
+}
+
 /* media queries */
 @media only screen and (min-width: 600px) {
   /* home page */
@@ -594,6 +598,11 @@ ol > li:not(:last-child) {
 
   .mdt-copy {
     height: 2rem;
+  }
+
+  .special-col {
+    column-count: 2;
+    gap: 4rem;
   }
 }
 

@@ -6,14 +6,14 @@
         <meta name="author" content="Zigee" />
         <meta
           name="description"
-          content="A mythic+ Brewmaster monk guide made by equinoxmonk."
+          content="A mythic+ and raid Brewmaster monk guide made by equinoxmonk."
         />
         <meta
           name="keywords"
           content="Brewmaster Monk, Brew Monk, Mythic Plus, Mythic+, M+, Brewmaster Monk Mythic Plus Guide, Brewmaster Monk Mythic+ Guide, Brewmaster Monk M+ Guide, Brew Monk Mythic Plus Guide, Brew Monk Mythic+ Guide, Brew Monk M+ Guide, Guide, Dragonflight"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="styles-v3.css" />
+        <link rel="stylesheet" href="styles-v3-1.css" />
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
         <script
           src="https://kit.fontawesome.com/77ee47dea4.js"
@@ -26,88 +26,86 @@
         />
       </head>
     <body>
-        <header>
-            <nav>
-              <button id="mobile-button" onclick="menuFunc('mobile-menu')">
-                <i class="fa-solid fa-bars"></i>
-              </button>
-              <a href="./" id="logo"
-                ><img src="images/monk.jpg" alt="Brewmaster Monk Icon" />Equinox</a
-              >
-              <ul id="computer-menu" class="menu">
-                <li>
-                  <a href="./introduction">Written Guide</a>
-                  <ul id="computer-submenu">
-                    <li><a href="./introduction">Introduction</a></li>
-                    <li><a href="./talents">Talents</a></li>
-                    <li><a href="./gearing">Gearing</a></li>
-                    <li><a href="./playstyle">Playstyle & Rotation</a></li>
-                    <li><a href="./dungeons">Dungeons</a></li>
-                    <li><a href="./advanced">Advanced Tips & Tricks</a></li>
-                  </ul>
-                </li>
-                <!--
-                          -->
-                <li>
-                  <!--<a href="" target="_blank">Video Guide</a>-->
-                  <div></div>
-                </li>
-                <!--
-                          -->
-                <li>
-                  <a href="https://discord.gg/42TM4cuAjF" target="_blank">Discord</a>
-                </li>
-                <!--
-                          -->
-                <li>
-                  <a href="https://twitter.com/equinoxmonk " target="_blank"
-                    >Twitter</a
-                  >
-                </li>
-                <!--
-                          -->
-                <li>
-                  <a href="https://www.twitch.tv/equinox" target="_blank">Stream</a>
-                </li>
+      <header>
+        <nav>
+          <button id="mobile-button" onclick="menuFunc('mobile-menu')">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <a href="./" id="logo"
+            ><img src="images/monk.jpg" alt="Brewmaster Monk Icon" />Equinox</a
+          >
+          <ul id="computer-menu" class="menu">
+            <li>
+              <a href="./introduction">Mythic+ Guide</a>
+              <ul id="computer-submenu">
+                <li><a href="./introduction">Introduction</a></li>
+                <li><a href="./talents">Talents</a></li>
+                <li><a href="./gearing">Gearing</a></li>
+                <li><a href="./playstyle">Playstyle & Rotation</a></li>
+                <li><a href="./dungeons">Dungeons</a></li>
+                <li><a href="./advanced">Advanced Tips & Tricks</a></li>
               </ul>
-            </nav>
-            <ul id="mobile-menu" class="menu">
-              <li>
-                <a onclick="menuFunc('mobile-submenu')"
-                  >Written Guide<i class="fa-solid fa-caret-down"></i
-                ></a>
-                <ul id="mobile-submenu">
-                  <li><a href="./introduction">Introduction</a></li>
-                  <li><a href="./talents">Talents</a></li>
-                  <li><a href="./gearing">Gearing</a></li>
-                  <li><a href="./playstyle">Playstyle & Rotation</a></li>
-                  <li><a href="./dungeons">Dungeons</a></li>
-                  <li><a href="./advanced">Advanced Tips & Tricks</a></li>
-                </ul>
-              </li>
-              <!--
-                      -->
-              <li>
-                <!--<a href="" target="_blank">Video Guide</a>-->
-                <div></div>
-              </li>
-              <!--
-                      -->
-              <li>
-                <a href="https://discord.gg/42TM4cuAjF" target="_blank">Discord</a>
-              </li>
-              <!--
-                      -->
-              <li>
-                <a href="https://twitter.com/equinoxmonk " target="_blank">Twitter</a>
-              </li>
-              <!--
-                      -->
-              <li>
-                <a href="https://www.twitch.tv/equinox" target="_blank">Stream</a>
-              </li>
+            </li>
+            <!--
+            -->
+            <li>
+              <a href="./raid" target="_blank">Raid Guide</a>
+            </li>
+            <!--
+            -->
+            <li>
+              <a href="https://discord.gg/42TM4cuAjF" target="_blank">Discord</a>
+            </li>
+            <!--
+            -->
+            <li>
+              <a href="https://twitter.com/equinoxmonk " target="_blank"
+                >Twitter</a
+              >
+            </li>
+            <!--
+            -->
+            <li>
+              <a href="https://www.twitch.tv/equinox" target="_blank">Stream</a>
+            </li>
+          </ul>
+        </nav>
+        <ul id="mobile-menu" class="menu">
+          <li>
+            <a onclick="menuFunc('mobile-submenu')"
+              >Mythic+ Guide<i class="fa-solid fa-caret-down"></i
+            ></a>
+            <ul id="mobile-submenu">
+              <li><a href="./introduction">Introduction</a></li>
+              <li><a href="./talents">Talents</a></li>
+              <li><a href="./gearing">Gearing</a></li>
+              <li><a href="./playstyle">Playstyle & Rotation</a></li>
+              <li><a href="./dungeons">Dungeons</a></li>
+              <li><a href="./advanced">Advanced Tips & Tricks</a></li>
             </ul>
-          </header>
+          </li>
+          <!--
+          -->
+          <li>
+            <a href="./raid" target="_blank">Raid Guide</a>
+          </li>
+          <!--
+          -->
+          <li>
+            <a href="https://discord.gg/42TM4cuAjF" target="_blank">Discord</a>
+          </li>
+          <!--
+          -->
+          <li>
+            <a href="https://twitter.com/equinoxmonk " target="_blank">Twitter</a>
+          </li>
+          <!--
+          -->
+          <li>
+            <a href="https://www.twitch.tv/equinox" target="_blank">Stream</a>
+          </li>
+        </ul>
+      </header>
         <main>
             <section class="about">
                 <h2>Talents</h2>
