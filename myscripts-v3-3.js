@@ -665,8 +665,8 @@ const infoArray = [
     id: "celestial-flames",
     name: "<a href='https://www.wowhead.com/spell=325190/celestial-flames' target='_blank'>Celestial Flames</a>",
     description:
-      "This talent applies our <a href='https://www.wowhead.com/spell=115181/breath-of-fire' target='_blank' class='orange'>Breath of Fire</a> to all targets that are hit by our <a href='https://www.wowhead.com/spell=101546/spinning-crane-kick' target='_blank' class='orange'>Spinning Crane Kick</a>, aswell as giving us 5% increased damage reduction. This is very good for our current build, as we have no other way to have 100% uptime on <a href='https://www.wowhead.com/spell=115181/breath-of-fire' target='_blank' class='orange'>Breath of Fire</a>.",
-    value: "Required",
+      "This talent applies our <a href='https://www.wowhead.com/spell=115181/breath-of-fire' target='_blank' class='orange'>Breath of Fire</a> to all targets that are hit by our <a href='https://www.wowhead.com/spell=101546/spinning-crane-kick' target='_blank' class='orange'>Spinning Crane Kick</a>, aswell as giving us 5% increased damage reduction. This talent shouldn't be taken as we can already get high <a href='https://www.wowhead.com/spell=115181/breath-of-fire' target='_blank' class='orange'>Breath of Fire</a> uptime without it.",
+    value: "Never",
   },
   {
     id: "celestial-brew-talent",
@@ -764,8 +764,8 @@ const infoArray = [
     id: "fundamental-observation",
     name: "<a href='https://www.wowhead.com/spell=387035/fundamental-observation' target='_blank'>Fundamental Observation</a>",
     description:
-      "This talent reduces <a href='https://www.wowhead.com/spell=115176/zen-meditation' target='_blank' class='orange'>Zen Meditation's</a> cooldown by 25%, along with making it not get canceled by moving or receiving melee attacks. This talent is a good alternative to <a href='https://www.wowhead.com/spell=383785/counterstrike' target='_blank' class='orange'>Counterstrike</a> or <a href='https://www.wowhead.com/spell=196737/high-tolerance target='_blank' class='orange'>High Tolerance</a> if you want more survivability.",
-    value: "Optional",
+      "This talent reduces <a href='https://www.wowhead.com/spell=115176/zen-meditation' target='_blank' class='orange'>Zen Meditation's</a> cooldown by 25%, along with making it not get canceled by moving or receiving melee attacks. You should always run 1 point in this talent. If you want some more survivability, you can run 2.",
+    value: "Required",
   },
   {
     id: "shadowboxing-fluidity",
@@ -786,8 +786,8 @@ const infoArray = [
     id: "fort-brew-determination",
     name: "<a href='https://www.wowhead.com/spell=322960/fortifying-brew-determination' target='_blank'>Fortifying Brew: Determination</a>",
     description:
-      "This talent increases the effectiveness of our stagger whenever we use <a href='https://www.wowhead.com/spell=243435/fortifying-brew' target='blank' class='orange'>Fortifying Brew</a>. Typically, I don't run this talent, but if you find yourself struggling to live, this can be a great talent to take.",
-    value: "Situational",
+      "This talent increases the effectiveness of our stagger whenever we use <a href='https://www.wowhead.com/spell=243435/fortifying-brew' target='blank' class='orange'>Fortifying Brew</a>. This talent is very strong, especially since our tier set helps us use <a href='https://www.wowhead.com/spell=243435/fortifying-brew' target='blank' class='orange'>Fortifying Brew</a> more often.",
+    value: "Required",
   },
   {
     id: "bob-ox-brew",
@@ -850,8 +850,8 @@ const infoArray = [
     id: "ox-stance",
     name: "<a href='https://www.wowhead.com/beta/spell=455068/ox-stance' target='_blank'>Ox Stance</a>",
     description:
-      "Ox Stance is a great talent to take when you want to deal with heavy hitting tank busters. It increases the effectivess on your stagger when an attack hits you for greater than 60% of your maximum health.",
-    value: "Situational",
+      "Ox Stance is a great talent to take when you want to deal with heavy hitting tank busters. It increases the effectivess on your stagger when an attack hits you for greater than 60% of your maximum health. This gets little to no use in dungeons and should never be taken.",
+    value: "Never",
   },
   {
     id: "elusive-footwork",
@@ -864,7 +864,7 @@ const infoArray = [
     id: "anvil-stave",
     name: "<a href='https://www.wowhead.com/spell=386937/anvil-stave' target='_blank'>Anvil & Stave</a>",
     description:
-      "This talent gives us a significant amount of brew cooldown reduction. Currently, this heavily synergizes with our build and should always be ran.",
+      "This talent gives us a significant amount of brew cooldown reduction. Currently, this heavily synergizes with our build and you should always run 1 point in this.",
     value: "Required",
   },
   {
@@ -915,7 +915,7 @@ const infoArray = [
     name: "<a href='https://www.wowhead.com/beta/spell=455081/heightened-guard' target='_blank'>Heightened Guard</a>",
     description:
       "This talent causes <a href='https://www.wowhead.com/beta/spell=455068/ox-stance' target='_blank' class='orange'>Ox Stance</a> to trigger more frequently, as it happens at 40% of our maximum health, rather than 60%. Typically, if you are taking <a href='https://www.wowhead.com/beta/spell=455068/ox-stance' target='_blank' class='orange'>Ox Stance</a>, you want to take this talent, aswell.",
-    value: "Situational",
+    value: "Never",
   },
   {
     id: "press-woo",
@@ -958,7 +958,7 @@ const infoArray = [
     name: "<a href='https://www.wowhead.com/spell=393400/chi-surge' target='_blank'>Chi Surge</a>",
     description:
       "<a href='https://www.wowhead.com/spell=393400/chi-surge' target='_blank' class='orange'>Chi Surge</a> causes our <a href='https://www.wowhead.com/spell=387184/weapons-of-order' target='_blank' class='orange'>Weapons of Order</a> to release a chi blast, reducing its cooldown per enemy hit, and doing a decent amount of damage on single target. If you want to sacrifice some survivability for more single target damage, this talent can be a good choice.",
-    value: "Situational",
+    value: "Optional",
   },
 
   // stats
@@ -1008,9 +1008,8 @@ const infoArray = [
   },
   {
     id: "tier-gloves",
-    name: "<a href='https://www.wowhead.com/item=200362/palms-of-the-waking-fist' target='_blank'>Palms of the Waking Fis</a>",
-    description:
-      "You always want to run tier set on your gloves, as it gives somes Critical Strike and a lot of Mastery.",
+    name: "<a href='https://www.wowhead.com/item=212048/gatecrashers-protectors' target='_blank'>Gatecrasher's Protectors</a>",
+    description: "Critical Strike / Haste",
     value: "Hands",
   },
   {
@@ -1078,6 +1077,21 @@ const infoArray = [
   },
 
   // shoulders
+  {
+    id: "sanguine-experiments-bandages",
+    name: "<a href='https://www.wowhead.com/item=225588/sanguine-experiments-bandages' target='_blank'>Sanguine Experiment's Bandages</a>",
+    description: "Critical Strike / Versatility",
+  },
+  {
+    id: "rune-branded-mantle",
+    name: "<a href='https://www.wowhead.com/item=219330/rune-branded-mantle' target='_blank'>Rune Branded Mantle</a>",
+    description: "Critical Strike / Versatility",
+  },
+  {
+    id: "whispering-umbral-mantle",
+    name: "<a href='https://www.wowhead.com/item=221094/whispering-umbral-mantle' target='_blank'>Whispering Umbral Mantle</a>",
+    description: "Critical Strike / Versatility",
+  },
   {
     id: "strigine-epaulets",
     name: "<a href='https://www.wowhead.com/item=207127/strigine-epaulets' target='_blank'>Strigine Epaulets</a>",
@@ -1410,6 +1424,18 @@ const infoArray = [
     description:
       "This trinket gives our damaging abilities a chance to do send out a ball of shadow, dealing shadow damage to enemies on contact. You can also run into the shadow orb yourself, granting yourself an increase in Mastery. This is a good alternative if you cannot get Ovi'nax's Mercurial Egg from raid.",
   },
+  {
+    id: "refracting-aggression-module",
+    name: "<a href='https://www.wowhead.com/item=219315/refracting-aggression-module' target='_blank'>Refracting Aggression Module</a>",
+    description:
+      "This trinket is a great defensive option. When you taunt, you gain a massive absorb shield which grants you 50% reduced damage until the shield is destroyed. This can occur every 1 minute.",
+  },
+  {
+    id: "mad-queens-mandate",
+    name: "<a href='https://www.wowhead.com/item=212454/mad-queens-mandate' target='_blank'>Mad Queen's Mandate</a>",
+    description:
+      "This trinket is a really good option if you want increased single target damage. It provides a lot of additional execute damage along with <a href='https://www.wowhead.com/spell=115080/touch-of-death' target='_blank' class='orange'>Touch of Death</a>.",
+  },
 
   // offensive trinkets
   {
@@ -1457,6 +1483,12 @@ const infoArray = [
 
   // embellishments
   {
+    id: "elemental-focusing-lens",
+    name: "<a href='https://www.wowhead.com/item=213770/elemental-focusing-lens' target='_blank'>Elemental Focusing Lens</a>",
+    description:
+      "This embellishment gives our attacks a chance to proc and deal additional magic damage. This is a great embellishment for raid and mythic+ once you are fully geared.",
+  },
+  {
     id: "coated-in-slime",
     name: "<a href='https://www.wowhead.com/spell=378423/coated-in-slime' target='_blank'>Coated in Slime</a>",
     description:
@@ -1472,7 +1504,7 @@ const infoArray = [
     id: "writhing-armor-banding",
     name: "<a href='https://www.wowhead.com/item=219506/writhing-armor-banding' target='_blank'>Writhing Armor Banding</a>",
     description:
-      "This embellishment doubles the effect of our other embellishment. If you craft gloves, you want to put it on those. Otherwise, you want to put it on your wrists.",
+      "This embellishment doubles the effect of our other embellishment. Ideally, this will go on crafted gloves.",
   },
   {
     id: "adrenal-surge-clasp-embellishment",
@@ -1515,7 +1547,7 @@ const infoArray = [
   },
   {
     id: "chest-enchant",
-    name: "<a href='https://www.wowhead.com/item=200030/enchant-chest-waking-stats' target='_blank'>Waking Stats</a>",
+    name: "<a href='https://www.wowhead.com/item=223692/enchant-chest-crystalline-radiance' target='_blank'>Crystalline Radiance</a>",
     description:
       "This enchant increases our primary stat, providing us with more damage and survivability.",
     value: "Chest",
@@ -1576,8 +1608,8 @@ const infoArray = [
   },
   {
     id: "flask",
-    name: "<a href='https://www.wowhead.com/beta/item=212277/flask-of-tempered-versatility' target='_blank'>Flask of Tempered Versatility</a>",
-    description: "Increases Versatility.",
+    name: "<a href='https://www.wowhead.com/item=212271/flask-of-tempered-aggression' target='_blank'>Flask of Tempered Aggression</a>",
+    description: "Increases Critical Strike.",
     value: "Flask",
   },
   {
@@ -1890,7 +1922,7 @@ const infoArray = [
     id: "hackclaws-war-band",
     name: "<a href='https://www.wowhead.com/npc=186122/rira-hackclaw' target='_blank'>Hackclaw's War-Band</a>",
     description:
-      "This boss's tank damage is super low, as long as you cast a defensive for each Savage Charge. As Brewmaster, in lower keys, you can instant <a href='https://www.wowhead.com/spell=115080/touch-of-death' target='_blank' class='orange'>Touch of Death</a > the first Hextrick Totem, making the fight even easier.",
+      "This boss's tank damage is super low, as long as you cast a defensive for each Savage Charge. As Brewmaster, in lower keys, you can instant <a href='https://www.wowhead.com/spell=115080/touch-of-death' target='_blank' class='orange'>Touch of Death</a> the first Hextrick Totem, making the fight even easier.",
     value: "Easy",
   },
   {

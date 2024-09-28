@@ -193,6 +193,11 @@
             onclick="updateInfo(this)"
           /><!--
           --><img
+            id="tier-gloves"
+            src="images/tier-gloves.jpg"
+            onclick="updateInfo(this)"
+          /><!--
+          --><img
             id="tier-legs"
             src="images/tier-legs.jpg"
             onclick="updateInfo(this)"
@@ -215,6 +220,52 @@
           for each slot, along with why. Keep in mind that item level is always
           the most important thing outside of necks, rings, and trinkets.
         </p>
+        <div class="grid-container">
+          <div id="head">
+            <p class="sub-header orange">Head</p>
+            <img
+              id="tier-helm"
+              class="selected"
+              src="images/tier-helm.jpg"
+              onclick="updateInfo(this)"
+            />
+            <h3>
+              <a
+                href="https://www.wowhead.com/item=212047/gatecrashers-horns"
+                target="_blank"
+                >Gatecrasher's Horns</a
+              >
+            </h3>
+            <p class="description">Critical Strike / Versatility</p>
+          </div>
+          <div id="shoulders">
+            <p class="sub-header orange">Shoulders</p>
+            <img
+              id="tier-shoulders"
+              class="selected"
+              src="images/tier-shoulders.jpg"
+              onclick="updateInfo(this)"
+            />
+            <img
+              id="whispering-umbral-mantle"
+              src="images/whispering-umbral-mantle.jpg"
+              onclick="updateInfo(this)"
+            />
+            <img
+              id="rune-branded-mantle"
+              src="images/rune-branded-mantle.jpg"
+              onclick="updateInfo(this)"
+            />
+            <h3>
+              <a
+                href="https://www.wowhead.com/item=212045/gatecrashers-enduring-effigy"
+                target="_blank"
+                >Gatecrasher's Enduring Effigy</a
+              >
+            </h3>
+            <p class="description">Haste / Mastery</p>
+          </div>
+        </div>
         <div class="grid-container">
           <div id="neck">
             <p class="sub-header orange">Neck</p>
@@ -255,16 +306,16 @@
           <div id="wrist">
             <p class="sub-header orange">Wrist</p>
             <img
-              id="rune-branded-armbands"
+              id="sanguine-experiments-bandages"
               class="selected"
-              src="images/rune-branded-armbands.jpg"
+              src="images/sanguine-experiments-bandages.jpg"
               onclick="updateInfo(this)"
             />
             <h3>
               <a
-                href="https://www.wowhead.com/item=219333/rune-branded-grasps"
+                href="https://www.wowhead.com/item=225588/sanguine-experiments-bandages"
                 target="_blank"
-                >Rune-Branded Grasps</a
+                >Sanguine Experiment's Bandages</a
               >
             </h3>
             <p class="description">Critical Strike / Versatility</p>
@@ -275,6 +326,11 @@
               id="thousand-scar-impalers"
               class="selected"
               src="images/thousand-scar-impalers.jpg"
+              onclick="updateInfo(this)"
+            /><!--
+            --><img
+              id="tier-gloves"
+              src="images/tier-gloves.jpg"
               onclick="updateInfo(this)"
             /><!--
             --><img
@@ -310,6 +366,25 @@
             </h3>
             <p class="description">Critical Strike / Versatility</p>
           </div>
+          <div id="legs">
+            <p class="sub-header orange">Legs</p>
+            <img
+              id="tier-legs"
+              class="selected"
+              src="images/tier-legs.jpg"
+              onclick="updateInfo(this)"
+            />
+            <h3>
+              <a
+                href="https://www.wowhead.com/item=212046/gatecrashers-kilt"
+                target="_blank"
+                >Gatecrasher's Kilt</a
+              >
+            </h3>
+            <p class="description">Critical Strike / Versatility</p>
+          </div>
+        </div>
+        <div class="grid-container">
           <div id="feet">
             <p class="sub-header orange">Feet</p>
             <img
@@ -327,8 +402,6 @@
             </h3>
             <p class="description">Critical Strike / Versatility</p>
           </div>
-        </div>
-        <div class="grid-container">
           <div id="rings">
             <p class="sub-header orange">Rings</p>
             <img
@@ -360,6 +433,8 @@
               of single target damage.
             </p>
           </div>
+        </div>
+        <div class="grid-container">
           <div id="weapons">
             <p class="sub-header orange">Weapons</p>
             <img
@@ -390,40 +465,46 @@
               damage by about 1% overall.
             </p>
           </div>
-        </div>
-        <div id="trinkets">
-          <p class="sub-header orange">Trinkets</p>
-          <img
-            id="ovinaxs-mercurial-egg"
-            class="selected"
-            src="images/ovinaxs-mercurial-egg.jpg"
-            onclick="updateInfo(this)"
-          /><!--
-          --><img
-            id="dead-eye-spyglass"
-            src="images/dead-eye-spyglass.jpg"
-            onclick="updateInfo(this)"
-          />
-          <!--
-          --><img
-            id="harvesters-edict"
-            src="images/harvesters-edict.jpg"
-            onclick="updateInfo(this)"
-          />
-          <h3>
-            <a
-              href="https://www.wowhead.com/item=220305/ovinaxs-mercurial-egg"
-              target="_blank"
-              >Ovi'nax's Mercurial Egg</a
-            >
-          </h3>
-          <p class="description">
-            This trinket grants us increased Agility when we are standing still,
-            stacking up to 30 times. When we are moving, we gain an increase to
-            our highest secondary stat, stacking up to 30 times. This egg is
-            very strong, as it is a very helpful stat increase. If you can get
-            it from raid, make sure you always run it.
-          </p>
+          <div id="trinkets">
+            <p class="sub-header orange">Trinkets</p>
+            <img
+              id="ovinaxs-mercurial-egg"
+              class="selected"
+              src="images/ovinaxs-mercurial-egg.jpg"
+              onclick="updateInfo(this)"
+            /><!--
+            --><img
+              id="dead-eye-spyglass"
+              src="images/dead-eye-spyglass.jpg"
+              onclick="updateInfo(this)"
+            />
+            <!--
+            --><img
+              id="refracting-aggression-module"
+              src="images/refracting-aggression-module.jpg"
+              onclick="updateInfo(this)"
+            />
+            <!--
+            --><img
+              id="mad-queens-mandate"
+              src="images/mad-queens-mandate.jpg"
+              onclick="updateInfo(this)"
+            />
+            <h3>
+              <a
+                href="https://www.wowhead.com/item=220305/ovinaxs-mercurial-egg"
+                target="_blank"
+                >Ovi'nax's Mercurial Egg</a
+              >
+            </h3>
+            <p class="description">
+              This trinket grants us increased Agility when we are standing
+              still, stacking up to 30 times. When we are moving, we gain an
+              increase to our highest secondary stat, stacking up to 30 times.
+              This egg is very strong, as it is a very helpful stat increase. If
+              you can get it from raid, make sure you always run it.
+            </p>
+          </div>
         </div>
       </section>
       <section id="embellishments" class="info-section">
@@ -431,8 +512,7 @@
         <p>
           You should run Adrenal Surge Clasp + Crafted Gloves with Writhing
           Armor Banding until you get 639 gloves. Once you get the gloves, you
-          can swap away from the Adrenal Surge Clasp in exchange for a crafted 1
-          hand weapon with Darkmoon Sigil: Symbiosis.
+          can swap to a crafted weapon with Elemental Focusing Lens.
         </p>
         <div class="middle-spacing">
           <img
@@ -442,13 +522,13 @@
             onclick="updateInfo(this)"
           /><!--
           --><img
-            id="darkmoon-sigil-symbiosis"
-            src="images/darkmoon-sigil-symbiosis.jpg"
+            id="writhing-armor-banding"
+            src="images/writhing-armor-banding.jpg"
             onclick="updateInfo(this)"
           /><!--
           --><img
-            id="writhing-armor-banding"
-            src="images/writhing-armor-banding.jpg"
+            id="elemental-focusing-lens"
+            src="images/elemental-focusing-lens.jpg"
             onclick="updateInfo(this)"
           />
           <h3>
@@ -478,6 +558,11 @@
             <img
               id="ring-enchants"
               class="selected"
+              src="images/enchant-scroll.jpg"
+              onclick="updateInfo(this)"
+            /><!--
+            --><img
+              id="chest-enchant"
               src="images/enchant-scroll.jpg"
               onclick="updateInfo(this)"
             /><!--
@@ -527,7 +612,7 @@
             -->
             <img
               id="flask"
-              src="images/flask-of-tempered-versatility.jpg"
+              src="images/flask-of-tempered-aggression.jpg"
               onclick="updateInfo(this)"
             /><!--
             -->
@@ -611,6 +696,6 @@
         </h3>
       </section>
     </main>
-    <script src="myscripts-v3-2.js"></script>
+    <script src="myscripts-v3-3.js"></script>
   </body>
 </html>
