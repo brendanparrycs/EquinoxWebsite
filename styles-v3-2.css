@@ -255,7 +255,7 @@ ol > li:not(:last-child) {
 
 #horde,
 #class-tree div:not(.grid-container),
-#alternative-talents-1,
+#talent-build-1,
 #master-of-harmony-talents,
 #unique-gems {
   border-bottom: rgb(34, 34, 35) 0.15rem solid;
@@ -547,7 +547,7 @@ ol > li:not(:last-child) {
   }
 
   #horde,
-  #alternative-talents-1,
+  #talent-build-1,
   #master-of-harmony-talents,
   #unique-gems {
     border-bottom: none;

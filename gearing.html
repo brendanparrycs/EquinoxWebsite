@@ -13,7 +13,7 @@
       content="Brewmaster Monk, Brew Monk, Mythic Plus, Mythic+, M+, Brewmaster Monk Mythic Plus Guide, Brewmaster Monk Mythic+ Guide, Brewmaster Monk M+ Guide, Brew Monk Mythic Plus Guide, Brew Monk Mythic+ Guide, Brew Monk M+ Guide, Guide, Dragonflight"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles-v3-1.css" />
+    <link rel="stylesheet" href="styles-v3-2.css" />
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <script
       src="https://kit.fontawesome.com/77ee47dea4.js"
@@ -303,6 +303,23 @@
           </div>
         </div>
         <div class="grid-container">
+          <div id="chest">
+            <p class="sub-header orange">Chest</p>
+            <img
+              id="tier-chest"
+              class="selected"
+              src="images/tier-chest.jpg"
+              onclick="updateInfo(this)"
+            />
+            <h3>
+              <a
+                href="https://www.wowhead.com/item=212050/gatecrashers-gi?bonus=10373"
+                target="_blank"
+                >Gatecrasher's Gi</a
+              >
+            </h3>
+            <p class="description">Critical Strike / Versatility</p>
+          </div>
           <div id="wrist">
             <p class="sub-header orange">Wrist</p>
             <img
@@ -320,6 +337,8 @@
             </h3>
             <p class="description">Critical Strike / Versatility</p>
           </div>
+        </div>
+        <div class="grid-container">
           <div id="hands">
             <p class="sub-header orange">Hands</p>
             <img
@@ -347,8 +366,6 @@
             </h3>
             <p class="description">Critical Strike / Haste</p>
           </div>
-        </div>
-        <div class="grid-container">
           <div id="waist">
             <p class="sub-header orange">Waist</p>
             <img
@@ -366,6 +383,8 @@
             </h3>
             <p class="description">Critical Strike / Versatility</p>
           </div>
+        </div>
+        <div class="grid-container">
           <div id="legs">
             <p class="sub-header orange">Legs</p>
             <img
@@ -383,8 +402,6 @@
             </h3>
             <p class="description">Critical Strike / Versatility</p>
           </div>
-        </div>
-        <div class="grid-container">
           <div id="feet">
             <p class="sub-header orange">Feet</p>
             <img
@@ -402,6 +419,8 @@
             </h3>
             <p class="description">Critical Strike / Versatility</p>
           </div>
+        </div>
+        <div class="grid-container">
           <div id="rings">
             <p class="sub-header orange">Rings</p>
             <img
@@ -433,86 +452,84 @@
               of single target damage.
             </p>
           </div>
-        </div>
-        <div class="grid-container">
           <div id="weapons">
             <p class="sub-header orange">Weapons</p>
             <img
-              id="void-reapers-warp-blade"
+              id="harvesters-interdiction"
               class="selected"
-              src="images/void-reapers-warp-blade.jpg"
+              src="images/harvesters-interdiction.jpg"
               onclick="updateInfo(this)"
             /><!--
             --><img
-              id="zephyrous-sail-carver"
-              src="images/zephyrous-sail-carver.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-            --><img
-              id="charged-facesmasher"
-              src="images/charged-facesmasher.jpg"
+              id="spire-of-transfused-horrors"
+              src="images/spire-of-transfused-horrors.jpg"
               onclick="updateInfo(this)"
             />
             <h3>
               <a
-                href="https://www.wowhead.com/item=219877/void-reapers-warp-blade"
+                href="https://www.wowhead.com/item=221159/harvesters-interdiction"
                 target="_blank"
-                >Void Reaper's Warp Blade</a
+                >Harvester's Interdiction</a
               >
             </h3>
             <p class="description">
-              Critical Strike - Gives a proc to your attacks, boosting your
-              damage by about 1% overall.
+              Versatility / Mastery - Gives a proc to your attacks.
             </p>
           </div>
-          <div id="trinkets">
-            <p class="sub-header orange">Trinkets</p>
-            <img
-              id="ovinaxs-mercurial-egg"
-              class="selected"
-              src="images/ovinaxs-mercurial-egg.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-            --><img
-              id="dead-eye-spyglass"
-              src="images/dead-eye-spyglass.jpg"
-              onclick="updateInfo(this)"
-            />
-            <!--
-            --><img
-              id="refracting-aggression-module"
-              src="images/refracting-aggression-module.jpg"
-              onclick="updateInfo(this)"
-            />
-            <!--
-            --><img
-              id="mad-queens-mandate"
-              src="images/mad-queens-mandate.jpg"
-              onclick="updateInfo(this)"
-            />
-            <h3>
-              <a
-                href="https://www.wowhead.com/item=220305/ovinaxs-mercurial-egg"
-                target="_blank"
-                >Ovi'nax's Mercurial Egg</a
-              >
-            </h3>
-            <p class="description">
-              This trinket grants us increased Agility when we are standing
-              still, stacking up to 30 times. When we are moving, we gain an
-              increase to our highest secondary stat, stacking up to 30 times.
-              This egg is very strong, as it is a very helpful stat increase. If
-              you can get it from raid, make sure you always run it.
-            </p>
-          </div>
+        </div>
+        <div id="trinkets">
+          <p class="sub-header orange">Trinkets</p>
+          <img
+            id="ovinaxs-mercurial-egg"
+            class="selected"
+            src="images/ovinaxs-mercurial-egg.jpg"
+            onclick="updateInfo(this)"
+          /><!--
+          --><img
+            id="dead-eye-spyglass"
+            src="images/dead-eye-spyglass.jpg"
+            onclick="updateInfo(this)"
+          />
+          <!--
+          --><img
+            id="refracting-aggression-module"
+            src="images/refracting-aggression-module.jpg"
+            onclick="updateInfo(this)"
+          />
+          <!--
+          --><img
+            id="swarmlords-authority"
+            src="images/swarmlords-authority.jpg"
+            onclick="updateInfo(this)"
+          />
+          <!--
+          --><img
+            id="mad-queens-mandate"
+            src="images/mad-queens-mandate.jpg"
+            onclick="updateInfo(this)"
+          />
+          <h3>
+            <a
+              href="https://www.wowhead.com/item=220305/ovinaxs-mercurial-egg"
+              target="_blank"
+              >Ovi'nax's Mercurial Egg</a
+            >
+          </h3>
+          <p class="description">
+            This trinket grants us increased Agility when we are standing still,
+            stacking up to 30 times. When we are moving, we gain an increase to
+            our highest secondary stat, stacking up to 30 times. This egg is
+            very strong, as it is a very helpful stat increase. If you can get
+            it from raid, make sure you always run it.
+          </p>
         </div>
       </section>
       <section id="embellishments" class="info-section">
         <h2>Embellishments</h2>
         <p>
-          You should run Adrenal Surge Clasp + Crafted Gloves with Writhing
-          Armor Banding until you get 639 gloves. Once you get the gloves, you
-          can swap to a crafted weapon with Elemental Focusing Lens.
+          You should run Adrenal Surge Clasp + Crafted Gloves/Shoulders with
+          Writhing Armor Banding until you get 639 gloves/shoulders. Then, you
+          should move the Writhing Armor Banding to crafted wrists.
         </p>
         <div class="middle-spacing">
           <img
@@ -524,11 +541,6 @@
           --><img
             id="writhing-armor-banding"
             src="images/writhing-armor-banding.jpg"
-            onclick="updateInfo(this)"
-          /><!--
-          --><img
-            id="elemental-focusing-lens"
-            src="images/elemental-focusing-lens.jpg"
             onclick="updateInfo(this)"
           />
           <h3>
@@ -612,7 +624,7 @@
             -->
             <img
               id="flask"
-              src="images/flask-of-tempered-aggression.jpg"
+              src="images/flask-of-tempered-versatility-aggression-.jpg"
               onclick="updateInfo(this)"
             /><!--
             -->
@@ -696,6 +708,6 @@
         </h3>
       </section>
     </main>
-    <script src="myscripts-v3-3.js"></script>
+    <script src="myscripts-v3-4.js"></script>
   </body>
 </html>

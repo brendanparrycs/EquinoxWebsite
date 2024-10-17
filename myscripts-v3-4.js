@@ -576,8 +576,8 @@ const infoArray = [
     id: "ox-statue",
     name: "<a href='https://www.wowhead.com/spell=115315/summon-black-ox-statue' target='_blank'>Summon Black Ox Statue</a>",
     description:
-      "This talent pulls aggro on mobs. You can also taunt the statue to AoE taunt all mobs onto you. Due to Brewmaster easily generating threat, however, this talent should never be taken.",
-    value: "Never",
+      "This talent is pretty good right now on certain bosses. Even for regular dungeons, however, it makes AoE threat much easier, due to the AoE taunt it gives us.",
+    value: "Optional",
   },
 
   // spec talents
@@ -628,8 +628,8 @@ const infoArray = [
     id: "quick-sip",
     name: "<a href='https://www.wowhead.com/spell=388505/quick-sip' target='_blank'>Quick Sip</a>",
     description:
-      "This talent reduces our stagger every three seconds when in combat. While this talent isn't bad, there are much better options for us to take, so we never want to take this talent.",
-    value: "Never",
+      "This talent is really strong right now, as it synergizes really well with our tier set, as it gives us a considerable amount of stagger reduction.",
+    value: "Required",
   },
 
   {
@@ -693,22 +693,22 @@ const infoArray = [
     id: "one-with-the-wind",
     name: "<a href='https://www.wowhead.com/beta/spell=454484/one-with-the-wind' target='_blank'>One With the Wind</a>",
     description:
-      "This talent gives us a higher uptime on our Mastery, giving us increased dodge change and a good amount of tankiness. If you wish to take <a href='https://www.wowhead.com/beta/spell=454483/august-blessing' target='_blank' class='orange'>August Blessing</a> instead, then don't take this talent.",
-    value: "Optional",
+      "This talent gives us a higher uptime on our Mastery, giving us increased dodge change and a good amount of tankiness. We are a little tight on talents at the moment, so you should never take this.",
+    value: "Never",
   },
   {
     id: "strike-at-dawn",
     name: "<a href=' https://www.wowhead.com/beta/spell=455043/strike-at-dawn' target='_blank'>Strike At Dawn</a>",
     description:
-      "This talent gives us a stack of our Mastery whenever we use <a href='https://www.wowhead.com/spell=107428/rising-sun-kick' target='_blank' class='orange'>Rising Sun Kick</a>. This is a good alternative to <a href='https://www.wowhead.com/spell=115176/zen-meditation' target='_blank' class='orange'>Zen Meditation</a> if you don't want to run it.",
-    value: "Optional",
+      "This talent gives us a stack of our Mastery whenever we use <a href='https://www.wowhead.com/spell=107428/rising-sun-kick' target='_blank' class='orange'>Rising Sun Kick</a>. We are a little tight on talents at the moment, so you should never take this.",
+    value: "Never",
   },
   {
     id: "zen-meditation",
     name: "<a href='https://www.wowhead.com/spell=115176/zen-meditation' target='_blank'>Zen Meditation</a>",
     description:
-      "A 60% defensive to all sources that is canceled as soon as we are hit by a melee attack. While it may not sound very useful, it can be utilized in pure magic damage situations and for tank busters (more discussed in the <a href='advanced.html'>advanced section</a> of the guide). If you do not like this ability, or are not using it to its full potential, you should run <a href='https://www.wowhead.com/beta/spell=455043/strike-at-dawn' target='_blank' class='orange'>Strike At Dawn</a> instead.",
-    value: "Optional",
+      "A 60% defensive to all sources that is canceled as soon as we are hit by a melee attack. While it may not sound very useful, it can be utilized in pure magic damage situations and for tank busters (more discussed in the <a href='advanced.html'>advanced section</a> of the guide). This is an essential talent to branch to later nodes, so you should always take this.",
+    value: "Required",
   },
   {
     id: "clash",
@@ -786,8 +786,8 @@ const infoArray = [
     id: "fort-brew-determination",
     name: "<a href='https://www.wowhead.com/spell=322960/fortifying-brew-determination' target='_blank'>Fortifying Brew: Determination</a>",
     description:
-      "This talent increases the effectiveness of our stagger whenever we use <a href='https://www.wowhead.com/spell=243435/fortifying-brew' target='blank' class='orange'>Fortifying Brew</a>. This talent is very strong, especially since our tier set helps us use <a href='https://www.wowhead.com/spell=243435/fortifying-brew' target='blank' class='orange'>Fortifying Brew</a> more often.",
-    value: "Required",
+      "This talent increases the effectiveness of our stagger whenever we use <a href='https://www.wowhead.com/spell=243435/fortifying-brew' target='blank' class='orange'>Fortifying Brew</a>. This talent is very strong, especially since our tier set helps us use <a href='https://www.wowhead.com/spell=243435/fortifying-brew' target='blank' class='orange'>Fortifying Brew</a> more often. It is recommended you run this if you want to be as tanky as possible, or if you are running Master of Harmony.",
+    value: "Situational",
   },
   {
     id: "bob-ox-brew",
@@ -829,15 +829,15 @@ const infoArray = [
     id: "dragonfire-charred",
     name: "<a href='https://www.wowhead.com/spell=383994/dragonfire-brew' target='_blank'>Dragonfire Brew</a> <span class='white'>/</span> <a href='https://www.wowhead.com/spell=386965/charred-passions' target='_blank'>Charred Passions</a>",
     description:
-      "<a href='https://www.wowhead.com/spell=383994/dragonfire-brew' target='_blank' class='orange'>Dragonfire Brew</a> increases the damage of our <a href='https://www.wowhead.com/spell=115181/breath-of-fire' target='_blank' class='orange'>Breath of Fire</a> based on 100% of our stagger, making it a good damaging ability on AoE. Because of our current build not being surrounded around <a href='https://www.wowhead.com/spell=115181/breath-of-fire' target='_blank' class='orange'>Breath of Fire</a>, we want to take <a href='https://www.wowhead.com/spell=386965/charred-passions' target='_blank' class='orange'>Charred Passions</a>.",
-    value: "Required",
+      "<a href='https://www.wowhead.com/spell=383994/dragonfire-brew' target='_blank' class='orange'>Dragonfire Brew</a> increases the damage of our <a href='https://www.wowhead.com/spell=115181/breath-of-fire' target='_blank' class='orange'>Breath of Fire</a> based on 100% of our stagger, making it a good damaging ability on AoE. Because our current build is focused on big <a href='https://www.wowhead.com/spell=121253/keg-smash' target='_blank' class='orange'>Keg Smash</a> damage rather than <a href='https://www.wowhead.com/spell=115181/breath-of-fire' target='_blank' class='orange'>Breath of Fire</a> resets, this should never be taken.",
+    value: "Never",
   },
   {
     id: "high-tolerance",
     name: "<a href='https://www.wowhead.com/spell=196737/high-tolerance' target='_blank'>High Tolerance</a>",
     description:
-      "This talent helps delay your stagger and gives you haste based on your current level of stagger. Currently, we have much better talents, so this should never be ran.",
-    value: "Never",
+      "This talent helps delay your stagger and gives you haste based on your current level of stagger. This is a very strong talent for us and you should always have at least one point in it.",
+    value: "Required",
   },
   {
     id: "walk-with-the-ox",
@@ -850,8 +850,8 @@ const infoArray = [
     id: "ox-stance",
     name: "<a href='https://www.wowhead.com/beta/spell=455068/ox-stance' target='_blank'>Ox Stance</a>",
     description:
-      "Ox Stance is a great talent to take when you want to deal with heavy hitting tank busters. It increases the effectivess on your stagger when an attack hits you for greater than 60% of your maximum health. This gets little to no use in dungeons and should never be taken.",
-    value: "Never",
+      "Ox Stance is a great talent to take when you want to deal with heavy hitting tank busters. It increases the effectivess on your stagger when an attack hits you for greater than 60% of your maximum health. if you are pushing higher keys and want to be as tanky as possible, then this is a good talent to take.",
+    value: "Optional",
   },
   {
     id: "elusive-footwork",
@@ -915,7 +915,7 @@ const infoArray = [
     name: "<a href='https://www.wowhead.com/beta/spell=455081/heightened-guard' target='_blank'>Heightened Guard</a>",
     description:
       "This talent causes <a href='https://www.wowhead.com/beta/spell=455068/ox-stance' target='_blank' class='orange'>Ox Stance</a> to trigger more frequently, as it happens at 40% of our maximum health, rather than 60%. Typically, if you are taking <a href='https://www.wowhead.com/beta/spell=455068/ox-stance' target='_blank' class='orange'>Ox Stance</a>, you want to take this talent, aswell.",
-    value: "Never",
+    value: "Optional",
   },
   {
     id: "press-woo",
@@ -957,8 +957,8 @@ const infoArray = [
     id: "chi-surge",
     name: "<a href='https://www.wowhead.com/spell=393400/chi-surge' target='_blank'>Chi Surge</a>",
     description:
-      "<a href='https://www.wowhead.com/spell=393400/chi-surge' target='_blank' class='orange'>Chi Surge</a> causes our <a href='https://www.wowhead.com/spell=387184/weapons-of-order' target='_blank' class='orange'>Weapons of Order</a> to release a chi blast, reducing its cooldown per enemy hit, and doing a decent amount of damage on single target. If you want to sacrifice some survivability for more single target damage, this talent can be a good choice.",
-    value: "Optional",
+      "<a href='https://www.wowhead.com/spell=393400/chi-surge' target='_blank' class='orange'>Chi Surge</a> causes our <a href='https://www.wowhead.com/spell=387184/weapons-of-order' target='_blank' class='orange'>Weapons of Order</a> to release a chi blast, reducing its cooldown per enemy hit, and doing a decent amount of damage on single target. This is recommended if you want more damage or are running Shado-Pan, as it synergizes well with that hero tree.",
+    value: "Situational",
   },
 
   // stats
@@ -1309,6 +1309,16 @@ const infoArray = [
       "This weapon is extremely powerful. It gives us good stats, providing a lot of Critical Strike and some Mastery, as well as having a very strong on use effect. This should be your second purchase with the dinar tokens.",
   },
   {
+    id: "harvesters-interdiction",
+    name: "<a href='https://www.wowhead.com/item=221159/harvesters-interdiction' target='_blank'>Harvester's Interdiction</a>",
+    description: "Versatility / Mastery - Gives a proc to your attacks.",
+  },
+  {
+    id: "spire-of-transfused-horrors",
+    name: "<a href='https://www.wowhead.com/item=212389/spire-of-transfused-horrors' target='_blank'>Spire of Transfused Horrors</a>",
+    description: "Versatility / Mastery",
+  },
+  {
     id: "void-reapers-warp-blade",
     name: "<a href='https://www.wowhead.com/item=219877/void-reapers-warp-blade' target='_blank'>Void Reaper's Warp Blade</a>",
     description:
@@ -1431,6 +1441,12 @@ const infoArray = [
       "This trinket is a great defensive option. When you taunt, you gain a massive absorb shield which grants you 50% reduced damage until the shield is destroyed. This can occur every 1 minute.",
   },
   {
+    id: "swarmlords-authority",
+    name: "<a href='https://www.wowhead.com/item=212450/swarmlords-authority' target='_blank'>Swarmlord's Authority</a>",
+    description:
+      "This trinket is a great defensive option. It can be used a little bit before a tank beater, or as a way to get some passive mitigation for a lot of constant damage.",
+  },
+  {
     id: "mad-queens-mandate",
     name: "<a href='https://www.wowhead.com/item=212454/mad-queens-mandate' target='_blank'>Mad Queen's Mandate</a>",
     description:
@@ -1504,7 +1520,7 @@ const infoArray = [
     id: "writhing-armor-banding",
     name: "<a href='https://www.wowhead.com/item=219506/writhing-armor-banding' target='_blank'>Writhing Armor Banding</a>",
     description:
-      "This embellishment doubles the effect of our other embellishment. Ideally, this will go on crafted gloves.",
+      "This embellishment doubles the effect of our other embellishment.",
   },
   {
     id: "adrenal-surge-clasp-embellishment",
@@ -1608,8 +1624,9 @@ const infoArray = [
   },
   {
     id: "flask",
-    name: "<a href='https://www.wowhead.com/item=212271/flask-of-tempered-aggression' target='_blank'>Flask of Tempered Aggression</a>",
-    description: "Increases Critical Strike.",
+    name: "<a href='https://www.wowhead.com/beta/item=212277/flask-of-tempered-versatility' target='_blank'>Flask of Tempered Versatility</a> <span class='white'>/</span> <a href='https://www.wowhead.com/item=212271/flask-of-tempered-aggression' target='_blank'>Flask of Tempered Aggression</a>",
+    description:
+      "I recommend Tempered Versatility when your unbuffed crit is sitting at around 34-35%.",
     value: "Flask",
   },
   {
