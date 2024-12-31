@@ -141,8 +141,8 @@ const infoArray = [
     id: "soothing-mist",
     name: "<a href='https://www.wowhead.com/spell=115175/soothing-mist' target='_blank'>Soothing Mist</a>",
     description:
-      "This talent serves no purpose for us, as we will never actually have a chance to channel this in combat.",
-    value: "Never",
+      "When combined with <a href='https://www.wowhead.com/spell=388681/elusive-mists' target='_blank' class='orange'>Elusive Mists</a>, this talent can provide us very strong off-healing. Make sure that you roll out of combat, otherwise you will quickly die since you cannot dodge when channeling this.",
+    value: "Situational",
   },
   {
     id: "rsk-talent",
@@ -277,8 +277,8 @@ const infoArray = [
     id: "elusive-mists",
     name: "<a href='https://www.wowhead.com/spell=388681/elusive-mists' target='_blank'>Elusive Mists</a>",
     description:
-      "This talent gives us 6% damage reduction while channeling <a href='https://www.wowhead.com/spell=115175/soothing-mist' target='_blank' class='orange'>Soothing Mist</a>, which is really bad considering we never channel <a href='https://www.wowhead.com/spell=115175/soothing-mist' target='_blank' class='orange'>Soothing Mist</a>.",
-    value: "Never",
+      "This talent gives us and our target 6% damage reduction while channeling <a href='https://www.wowhead.com/spell=115175/soothing-mist' target='_blank' class='orange'>Soothing Mist</a>, which can be good when we are running <a href='https://www.wowhead.com/spell=115175/soothing-mist' target='_blank' class='orange'>Soothing Mist</a>.",
+    value: "Situational",
   },
   {
     id: "transcendence",
@@ -327,8 +327,8 @@ const infoArray = [
     id: "escape-linked-spirits",
     name: "<a href='https://www.wowhead.com/spell=394110/escape-from-reality' target='_blank'>Escape from Reality</a> <span class='white'>/</span> <a href='https://www.wowhead.com/beta/spell=434774/transcendence-linked-spirits' target='_blank'>Transcendence: Linked Spirits</a>",
     description:
-      "This node gives us the choice to give us two teleports with <a href='https://www.wowhead.com/spell=101643/transcendence' target='_blank' class='orange'>Transcendence</a>, or to teleport to an ally with <a href='https://www.wowhead.com/spell=101643/transcendence' target='_blank' class='orange'>Transcendence</a>. There are much better talent choices, so you should never take this.",
-    value: "Never",
+      "This node gives us the choice to give us two teleports with <a href='https://www.wowhead.com/spell=101643/transcendence' target='_blank' class='orange'>Transcendence</a>, or to teleport to an ally with <a href='https://www.wowhead.com/spell=101643/transcendence' target='_blank' class='orange'>Transcendence</a>. There are some interesting tricks that can be done with <a href='https://www.wowhead.com/spell=434774/transcendence-linked-spirits' target='_blank' class='orange'>Transcendence: Linked Spirits</a>, so this can be good take at times.",
+    value: "Situational",
   },
   {
     id: "strength-rebuttal",
@@ -369,8 +369,8 @@ const infoArray = [
     id: "rushing-clash",
     name: "<a href='https://www.wowhead.com/beta/spell=450154/rushing-reflexes' target='_blank'>Rushing Reflexes</a> <span class='white'>/</span> <a href='https://www.wowhead.com/spell=324312/clash' target='_blank'>Clash</a>",
     description:
-      "<a href='https://www.wowhead.com/beta/spell=450154/rushing-reflexes' target='_blank' class='orange'>Rushing Reflexes</a> is really bad and serves no purpose. <a href='https://www.wowhead.com/spell=324312/clash' target='_blank' class='orange'>Clash</a> was looking really good, but, unfortunately, it was nerfed and now breaks on damage, making it a useless talent. This node should never be taken.",
-    value: "Never",
+      "<a href='https://www.wowhead.com/beta/spell=450154/rushing-reflexes' target='_blank' class='orange'>Rushing Reflexes</a> is really bad and serves no purpose. <a href='https://www.wowhead.com/spell=324312/clash' target='_blank' class='orange'>Clash</a> can be good in situations where you need to quickly bring a mob in.",
+    value: "Situational",
   },
   {
     id: "fast-feet",
@@ -829,7 +829,7 @@ const infoArray = [
     id: "dragonfire-charred",
     name: "<a href='https://www.wowhead.com/spell=383994/dragonfire-brew' target='_blank'>Dragonfire Brew</a> <span class='white'>/</span> <a href='https://www.wowhead.com/spell=386965/charred-passions' target='_blank'>Charred Passions</a>",
     description:
-      "<a href='https://www.wowhead.com/spell=383994/dragonfire-brew' target='_blank' class='orange'>Dragonfire Brew</a> increases the damage of our <a href='https://www.wowhead.com/spell=115181/breath-of-fire' target='_blank' class='orange'>Breath of Fire</a> based on 100% of our stagger, making it a good damaging ability on AoE. Because our current build is focused on big <a href='https://www.wowhead.com/spell=121253/keg-smash' target='_blank' class='orange'>Keg Smash</a> damage rather than <a href='https://www.wowhead.com/spell=115181/breath-of-fire' target='_blank' class='orange'>Breath of Fire</a> resets, this should never be taken.",
+      "<a href='https://www.wowhead.com/spell=383994/dragonfire-brew' target='_blank' class='orange'>Dragonfire Brew</a> increases the damage of our <a href='https://www.wowhead.com/spell=115181/breath-of-fire' target='_blank' class='orange'>Breath of Fire</a> based on 100% of our stagger, making it a good damaging ability on AoE. Because our current build is focused on big <a href='https://www.wowhead.com/spell=121253/keg-smash' target='_blank' class='orange'>Keg Smash</a> damage rather than <a href='https://www.wowhead.com/spell=115181/breath-of-fire' target='_blank' class='orange'>Breath of Fire</a> resets, <a href='https://www.wowhead.com/spell=386965/charred-passions' target='_blank' class='orange'>Charred Passions</a> syngerizes much better. This talent can be taken if you want a little bit more damage on ST.",
     value: "Never",
   },
   {
@@ -864,8 +864,8 @@ const infoArray = [
     id: "anvil-stave",
     name: "<a href='https://www.wowhead.com/spell=386937/anvil-stave' target='_blank'>Anvil & Stave</a>",
     description:
-      "This talent gives us a significant amount of brew cooldown reduction. Currently, this heavily synergizes with our build and you should always run 1 point in this.",
-    value: "Required",
+      "This talent gives us a significant amount of brew cooldown reduction. While this talent isn't bad, we can utilize an extra point in better talents, so this should never be taken.",
+    value: "Never",
   },
   {
     id: "face-palm",
@@ -958,7 +958,7 @@ const infoArray = [
     name: "<a href='https://www.wowhead.com/spell=393400/chi-surge' target='_blank'>Chi Surge</a>",
     description:
       "<a href='https://www.wowhead.com/spell=393400/chi-surge' target='_blank' class='orange'>Chi Surge</a> causes our <a href='https://www.wowhead.com/spell=387184/weapons-of-order' target='_blank' class='orange'>Weapons of Order</a> to release a chi blast, reducing its cooldown per enemy hit, and doing a decent amount of damage on single target. This is recommended if you want more damage or are running Shado-Pan, as it synergizes well with that hero tree.",
-    value: "Situational",
+    value: "Optional",
   },
 
   // stats
@@ -1249,6 +1249,12 @@ const infoArray = [
       "This ring is extremely powerful. Although it provides a little bit of haste, it gives us a lot of mastery and also has a very strong on equip effect. Whenever we deal damage, this ring has a chance of granting us a shield. This should be your first purchase with the dinar tokens.",
   },
   {
+    id: "cyrces-circlet",
+    name: "<a href='https://www.wowhead.com/item=228411/cyrces-circlet' target='_blank'>Cyrce's Circlet</a>",
+    description:
+      "This is the new ring from Siren Isle and it is very strong. The gems that you want to run on it are Legendary Skipper's Citrine, Fathomdweller's Runed Citrine, and Stormbringer's Runed Cintrine or Thunderlord's Crackling Citrine. Stormbringer's provides more survivability and consistency, while Thunderlord's provides more ST. Thunderlord's is really good in keys like City of Threads and Dawnbreaker where it's a lot of ST and low target count pulls.",
+  },
+  {
     id: "ring-of-dun-algaz",
     name: "<a href='https://www.wowhead.com/item=133287/ring-of-dun-algaz' target='_blank'>Ring of Dun Algaz</a>",
     description: "Critical Strike / Versatility",
@@ -1421,6 +1427,18 @@ const infoArray = [
     name: "<a href='https://www.wowhead.com/item=220305/ovinaxs-mercurial-egg' target='_blank'>Ovi'nax's Mercurial Egg</a>",
     description:
       "This trinket grants us increased Agility when we are standing still, stacking up to 30 times. When we are moving, we gain an increase to our highest secondary stat, stacking up to 30 times. This egg is very strong, as it is a very helpful stat increase. If you can get it from raid, make sure you always run it.",
+  },
+  {
+    id: "empowering-crystal-of-anubikkaj",
+    name: "<a href='https://www.wowhead.com/item=219312/empowering-crystal-of-anubikkaj' target='_blank'>Empowering Crystal of Anub'ikkaj</a>",
+    description:
+      "This trinket grants us a ton of a random secondary stat. Since 3/4 of the stats are very good for us, this is a great trinket for boosting your secondaries.",
+  },
+  {
+    id: "ara-kara-sacbrood",
+    name: "<a href='https://www.wowhead.com/item=219314/ara-kara-sacbrood' target='_blank'>Ara-Kara Sacbrood</a>",
+    description:
+      "This trinket grants us a ton of passive agility, which benefits us both offensively and defensively. This is an excellent stat stick that can be used.",
   },
   {
     id: "dead-eye-spyglass",
@@ -1853,14 +1871,14 @@ const infoArray = [
     id: "grim-batol",
     name: "<a href='https://www.wowhead.com/beta/zone=4950/grim-batol' target='_blank'>Grim Batol</a>",
     description: "TODO",
-    value: "Easy",
+    value: "Hard",
     dungeonRoute: "grim-batol-route",
   },
   {
     id: "siege-of-boralus",
     name: "<a href='https://www.wowhead.com/beta/zone=9354/siege-of-boralus' target='_blank'>Siege of Boralus</a>",
     description: "TODO",
-    value: "Easy",
+    value: "Medium",
     dungeonRoute: "siege-of-boralus-route",
   },
   {
@@ -1874,21 +1892,21 @@ const infoArray = [
     id: "necrotic-wake",
     name: "<a href='https://www.wowhead.com/beta/zone=12916/the-necrotic-wake' target='_blank'>The Necrotic Wake</a>",
     description: "TODO",
-    value: "Easy",
+    value: "Hard",
     dungeonRoute: "necrotic-wake-route",
   },
   {
     id: "ara-kara",
     name: "<a href='https://www.wowhead.com/beta/zone=15093/ara-kara-city-of-echoes' target='_blank'>Ara-Kara: City of Echoes</a>",
     description: "TODO",
-    value: "Easy",
+    value: "Medium",
     dungeonRoute: "ara-kara-route",
   },
   {
     id: "city-of-threads",
     name: "<a href='https://www.wowhead.com/beta/zone=14979/city-of-threads' target='_blank'>City of Threads</a>",
     description: "TODO",
-    value: "Easy",
+    value: "Medium",
     dungeonRoute: "city-of-threads-route",
   },
   {
@@ -1902,7 +1920,7 @@ const infoArray = [
     id: "the-stonevault",
     name: "<a href='https://www.wowhead.com/beta/zone=14883/the-stonevault' target='_blank'>The Stonevault</a>",
     description: "TODO",
-    value: "Medium",
+    value: "Hard",
     dungeonRoute: "the-stonevault-route",
   },
 
@@ -2379,28 +2397,28 @@ const infoArray = [
     id: "forgemaster-throngus",
     name: "<a href='https://www.wowhead.com/beta/npc=40177/forgemaster-throngus' target='_blank'>Forgemaster Throngus</a>",
     description:
-      "Throngus does a lot of tank damage and should be a boss that is looked out for. Not only do his melee attacks do a lot of damage due to his buff Molten Mace, but he has a strong tank buster called Fiery Cleave that also needs to be looked out for. You want to make sure that you position the Molten Pools left behind after his tank buster correctly, or the room will become very crowded.",
-    value: "Hard",
+      "This boss is pretty straightforward. You want to make sure that you have two defensives up for each Fiery Cleave, and that you kite the during Molten Mace. It is also helpful to help bait the frontal to avoid running out of room quickly.",
+    value: "Medium",
   },
   {
     id: "drahga-shadowburner",
     name: "<a href='https://www.wowhead.com/beta/npc=40319/drahga-shadowburner' target='_blank'>Drahga Shadowburner</a>",
     description:
-      "This boss is very easy, as he hits pretty soft. Just like any other boss, defensives should still be a priority for his tank buster.",
+      "This boss is very easy, as he hits pretty soft. There is a trick where you can tank him in the upper right corner (facing where he spawns) once he hops on his dragon. This will make it so the adds spawn stacked on each other and your dps can get a lot more uptime on the boss. You will have to eat the frontal, however, so make sure you treat that as a tank buster and defensive it.",
     value: "Easy",
   },
   {
     id: "erudax",
     name: "<a href='https://www.wowhead.com/beta/npc=40484/erudax' target='_blank'>Erudax, the Duke of Below</a>",
     description:
-      "This boss isn't too bad, as long as you make sure you have proper defensive use. Look out for his tank buster, Crush, as it does a combination of physica and magic damage. Other than that, this boss is pretty easy for Brewmaster.",
+      "This boss isn't too bad, as long as you make sure you have proper defensive use. Look out for his tank buster, Crush, as it does a combination of physical and magic damage. Other than that, this boss is pretty easy for Brewmaster.",
     value: "Medium",
   },
   {
     id: "chopper-redhook",
     name: "<a href='https://www.wowhead.com/beta/npc=144160/chopper-redhook' target='_blank'>Chopper Redhook</a>",
     description:
-      "Once you get the mechanics of this boss down, he is very easy. You want to make sure that you face the Irontide Cleaver's Heavy Slash away from the party. You also want to make sure that you are running over Heavy Ordnance to prevent the damage from being dealt to your party. When you run over them, they do have knockback, so be careful. You also want to try and be out of range of the boss as much as possible, because he will knock you around which can get really annoying.",
+      "This boss is very easy. You want to try and bait the frontals from the adds away from the boss, that way they don't hit your party when he pulls them in. You can also use a defensive to soak a bomb if your party will not be able to kite him into them soon enough.",
     value: "Easy",
   },
   {
@@ -2414,15 +2432,15 @@ const infoArray = [
     id: "hadal-darkfathom",
     name: "<a href='https://www.wowhead.com/beta/npc=130836/hadal-darkfathom' target='_blank'>Hadal Darkfathom</a>",
     description:
-      "Just like the boss before, the only catch to this boss is making sure that you face the tank buster, Crashing Tide, away from the party. Outside of that, there is nothing special about this boss.",
-    value: "Easy",
+      "Just like the boss before, the only catch to this boss is making sure that you face the tank buster, Crashing Tide, away from the party. Outside of that, there is nothing special about this boss, he just does a decent amount of constant tank damage.",
+    value: "Medium",
   },
   {
     id: "viqgoth",
     name: "<a href='https://www.wowhead.com/beta/npc=128652/viqgoth' target='_blank'>Viq'Goth</a>",
     description:
-      "This boss is a complete joke as a tank. You want to make sure that you are always in melee range, or else he will hit your entire party for a ton of damage.",
-    value: "Easy",
+      "This boss's mechanics are very easy for a tank. He does a decent amount of tank damage, however, so you want to make sure that you are using defensives where needed.",
+    value: "Medium",
   },
   {
     id: "ingra-maloch",
@@ -2447,20 +2465,20 @@ const infoArray = [
   {
     id: "blightbone",
     name: "<a href='https://www.wowhead.com/beta/npc=162691/blightbone' target='_blank'>Blightbone</a>",
-    description: ` Blightbone is a weird boss to decide the difficulty of. If you pull a bunch of trash with him, then he is on the tougher side to live. If you don't, however, he is pretty easy to live. He has a pretty hard hitting tank buster, called Crunch, which needs a defensive, especially if there are other mobs hitting you at the same time. Other than that, there isn't really anything special for this boss.`,
-    value: "Hard",
+    description: `Blightbone is a weird boss to decide the difficulty of. If you pull a bunch of trash with him, then he is on the tougher side to live. If you don't, however, he is pretty easy to live. He has a pretty hard hitting tank buster, called Crunch, which needs a defensive, especially if there are other mobs hitting you at the same time. Other than that, there isn't really anything special for this boss.`,
+    value: "Medium",
   },
   {
     id: "amarth-the-harvester",
     name: "<a href='https://www.wowhead.com/beta/npc=162692/amarth' target='_blank'>Amarth, The Harvester</a>",
-    description: `This boss is super easy for tanks, as there is no tank damage. A good strategy on this boss is to <a href='https://www.wowhead.com/spell=115078/paralysis' target='_blank' class='orange'>Paralysis</a> one of the mages, while your party kills the other one.`,
-    value: "Easy",
+    description: `Mechanically, this boss is easy for tanks, but he does a lot of constant magic damage to you. A good strategy on this boss is to <a href='https://www.wowhead.com/spell=115078/paralysis' target='_blank' class='orange'>Paralysis</a> one of the mages, while your party kills the other one.`,
+    value: "Medium",
   },
   {
     id: "surgeon-stitchflesh",
     name: "<a href='https://www.wowhead.com/beta/npc=166882/surgeon-stitchflesh' target='_blank'>Surgeon Stitchflesh</a>",
     description: `This boss does a lot of tank damage, especially if your party messes up. There aren't really tricks to the boss, however, as your main job is to help line up the Meat Hooks and to have a defensive for each Mutilate.`,
-    value: "Hard",
+    value: "Medium",
   },
   {
     id: "nalthor-the-rimebinder",
@@ -2471,19 +2489,19 @@ const infoArray = [
   {
     id: "avanoxx",
     name: "<a href='https://www.wowhead.com/beta/npc=213179/avanoxx' target='_blank'>Avanoxx</a>",
-    description: `This boss does very little tank damage, but it is still important to have a defensive for each tank buster, Voracious Bite. You also want to make sure that no Starved Crawlers can touch the boss, as this will enrage her, increasing her damage done by 50%. Luckily, <a href='https://www.wowhead.com/spell=116844/ring-of-peace' target='_blank' class='orange'>Ring of Peace</a> is a great tool for this.`,
-    value: "Easy",
+    description: `This boss's tank beater can do a lot damage, especially if you don't have a defensive for it. You want to make sure that no Starved Crawlers can touch the boss, as this will enrage her, increasing her damage done by 50%. Luckily, <a href='https://www.wowhead.com/spell=116844/ring-of-peace' target='_blank' class='orange'>Ring of Peace</a> is a great tool for this.`,
+    value: "Medium",
   },
   {
     id: "anubzekt",
     name: "<a href='https://www.wowhead.com/beta/npc=215405/anubzekt' target='_blank'>Anub'zekt</a>",
-    description: `Anub'zekt is another easy boss for Brewmaster, as he does very little damage. You want to make sure that you aim Impale away fromt he group, as it will hit any allies caught in its path. There are no tricks for this boss.`,
+    description: `Anub'zekt is another easy boss for Brewmaster, as he does very little damage. You want to make sure that you aim Impale away from the group, as it will hit any allies caught in its path. There are no tricks for this boss.`,
     value: "Easy",
   },
   {
     id: "kikatal-the-harvester",
     name: "<a href='https://www.wowhead.com/beta/npc=215407/kikatal-the-harvester' target='_blank'>Ki'katal the Harvester</a>",
-    description: `This boss has no tank busters, making it extremely easy for us. If any party members are caught in Grasping Blood, you can free them with <a href='https://www.wowhead.com/spell=116841/tigers-lust' target='_blank' class='orange'>Tiger's Lust</a>.`,
+    description: `This boss has no tank busters, making it extremely easy for us. The mechanics are straightforward, and you have a ton of tools to help free allies from the purple puddles.`,
     value: "Easy",
   },
   {
@@ -2501,8 +2519,8 @@ const infoArray = [
   {
     id: "the-coaglamation",
     name: "<a href='https://www.wowhead.com/beta/npc=216320/the-coaglamation' target='_blank'>The Coaglamation</a>",
-    description: `This boss is super easy for Brewmaster to live. To help your party out, it can be a good idea to pick up as much of the black blood traveling towards the boss as possible. Do be careful, however, as it will put a heal absorb on you.`,
-    value: "Easy",
+    description: `This boss does a ton of tank damage. He also puts a nasty healing reduction on you after his tank buster. To help your party out, it can be a good idea to pick up as much of the black blood traveling towards the boss as possible. Do be careful, however, as it will put a heal absorb on you.`,
+    value: "Hard",
   },
   {
     id: "izo",
@@ -2525,26 +2543,26 @@ const infoArray = [
   {
     id: "rashanan",
     name: "<a href='https://www.wowhead.com/beta/npc=224552/rashanan' target='_blank'>Rasha'nan</a>",
-    description: `This boss is very easy for us. You want to make sure that you are moving the boss into Arathi Bombs that are about to explode, as they damage him, aswell. You want to try to not be in the bombs yourself, however, as they do hit for a good amount. Other than this, however, there is nothing specific to do as the tank.`,
+    description: `This boss is very easy for us and has simple mechanics. There are no tricks for this boss.`,
     value: "Easy",
   },
   {
     id: "edna",
     name: "<a href='https://www.wowhead.com/beta/npc=210108/e-d-n-a' target='_blank'>E.D.N.A.</a>",
-    description: `Because of our Mastery, this boss isn't too bad. While this boss does a lot of group wide damage, enough so that it even hurts a good amount as the tank, we can dodge his tank buster by forcing a doge with our Mastery, which is extremely helpful (more discussed in the <a href='advanced.html'>advanced section</a> of the guide).`,
+    description: `This boss's mechanics are very simple. You want to make sure that you have a defensive for each tank buster, and that you are cycling defensives where needed for the constant ticking damage.`,
     value: "Medium",
   },
   {
     id: "skarmorak",
     name: "<a href='https://www.wowhead.com/beta/npc=210156/skarmorak' target='_blank'>Skarmorak</a>",
-    description: `This boss does a good amount of tank damage, but it is easily survivable with proper defensive useage. You want to look out for his tank buster, Crystalline Smash. It will hit you hard and spawn an add afterwards, which should be taken care of as quickly as possible. Besides this, there is nothing specific for us to deal with as the tank.`,
-    value: "Medium",
+    description: `This boss does a good amount of tank damage, but it is easily survivable with proper defensive useage. You want to look out for his tank buster, Crystalline Smash. Besides this, there is nothing specific for us to deal with as the tank.`,
+    value: "Easy",
   },
   {
     id: "master-machinists",
     name: "<a href='https://www.wowhead.com/beta/npc=213216/speaker-dorlita' target='_blank'>Master Machinists</a>",
-    description: `While there isn't a specific mechanic for tanks to deal with on this boss, this boss is incredibly difficult. There is a ton of constant damage, aswell as hard hitting attacks that target not only you, but party members, aswell. Currently, there are no tricks for this boss.`,
-    value: "Hard",
+    description: `This boss's damage isn't bad on us, especially if you use a defensive or two on each tank buster. If needed, you can also use a small defensive during the ticking damage phase. You want to make sure that you are holding the boss on the steaming vent at all times.`,
+    value: "Easy",
   },
   {
     id: "void-speaker-eirich",
