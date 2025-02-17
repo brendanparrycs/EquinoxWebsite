@@ -404,7 +404,7 @@ const infoArray = [
     id: "ironshell-expeditious",
     name: "<a href='https://www.wowhead.com/spell=388814/ironshell-brew' target='_blank'>Ironshell Brew <span class='white'>/</span> <a href='https://www.wowhead.com/spell=388813/expeditious-fortification' target='_blank'>Expeditious Fortification</a>",
     description:
-      "Both of these talents are very good. <a href='https://www.wowhead.com/spell=388814/ironshell-brew' target='_blank' class='orange'>Ironshell Brew</a> can be taken whenever you want your <a href='https://www.wowhead.com/spell=243435/fortifying-brew' target='_blank' class='orange'>Fortifying Brew</a> to be a stronger defensive and <a href='https://www.wowhead.com/spell=388813/expeditious-fortification' target='_blank' class='orange'>Expeditious Fortification</a> is taken otherwise to reduce its cooldown. In the current season, <a href='https://www.wowhead.com/spell=388813/expeditious-fortification' target='_blank' class='orange'>Expeditious Fortification</a> comes out on top in almost all situations.",
+      "Both of these talents are very good. <a href='https://www.wowhead.com/spell=388814/ironshell-brew' target='_blank' class='orange'>Ironshell Brew</a> can be taken whenever you want your <a href='https://www.wowhead.com/spell=243435/fortifying-brew' target='_blank' class='orange'>Fortifying Brew</a> to be a stronger defensive and <a href='https://www.wowhead.com/spell=388813/expeditious-fortification' target='_blank' class='orange'>Expeditious Fortification</a> is taken otherwise to reduce its cooldown. In the current season, you should always take <a href='https://www.wowhead.com/spell=388814/ironshell-brew' target='_blank' class='orange'>Ironshell Brew</a> since it has good synergy with our tier set.",
     value: "Required",
   },
 
@@ -628,8 +628,8 @@ const infoArray = [
     id: "quick-sip",
     name: "<a href='https://www.wowhead.com/spell=388505/quick-sip' target='_blank'>Quick Sip</a>",
     description:
-      "This talent is really strong right now, as it synergizes really well with our tier set, as it gives us a considerable amount of stagger reduction.",
-    value: "Required",
+      "This talent is a decent choice as of right now. If you want a little bit of extra stagger reduction, you can choose to take this.",
+    value: "Optional",
   },
 
   {
@@ -786,8 +786,8 @@ const infoArray = [
     id: "fort-brew-determination",
     name: "<a href='https://www.wowhead.com/spell=322960/fortifying-brew-determination' target='_blank'>Fortifying Brew: Determination</a>",
     description:
-      "This talent increases the effectiveness of our stagger whenever we use <a href='https://www.wowhead.com/spell=243435/fortifying-brew' target='blank' class='orange'>Fortifying Brew</a>. This talent is very strong, especially since our tier set helps us use <a href='https://www.wowhead.com/spell=243435/fortifying-brew' target='blank' class='orange'>Fortifying Brew</a> more often. It is recommended you run this if you want to be as tanky as possible, or if you are running Master of Harmony.",
-    value: "Situational",
+      "This talent increases the effectiveness of our stagger whenever we use <a href='https://www.wowhead.com/spell=243435/fortifying-brew' target='blank' class='orange'>Fortifying Brew</a>. This talent is very strong, especially since our tier set helps us use <a href='https://www.wowhead.com/spell=243435/fortifying-brew' target='blank' class='orange'>Fortifying Brew</a> more often. With our current tier set and us running Master of Harmony, this should always be taken.",
+    value: "Required",
   },
   {
     id: "bob-ox-brew",
@@ -821,16 +821,16 @@ const infoArray = [
     id: "counterstrike",
     name: "<a href='https://www.wowhead.com/spell=383785/counterstrike' target='_blank'>Counterstrike</a>",
     description:
-      "This talent is a massive damage increase single target. Whenever we dodge an attack, it increases the damage of our next <a href='https://www.wowhead.com/spell=100780/tiger-palm' target='_blank' class='orange'>Tiger Palm</a> by 100%. If you want more damage over survivability, you can take this talent.",
-    value: "Optional",
+      "This talent is a massive damage increase single target. Whenever we dodge an attack, it increases the damage of our next <a href='https://www.wowhead.com/spell=100780/tiger-palm' target='_blank' class='orange'>Tiger Palm</a> by 100%. This should always be ran.",
+    value: "Required",
   },
 
   {
     id: "dragonfire-charred",
     name: "<a href='https://www.wowhead.com/spell=383994/dragonfire-brew' target='_blank'>Dragonfire Brew</a> <span class='white'>/</span> <a href='https://www.wowhead.com/spell=386965/charred-passions' target='_blank'>Charred Passions</a>",
     description:
-      "<a href='https://www.wowhead.com/spell=383994/dragonfire-brew' target='_blank' class='orange'>Dragonfire Brew</a> increases the damage of our <a href='https://www.wowhead.com/spell=115181/breath-of-fire' target='_blank' class='orange'>Breath of Fire</a> based on 100% of our stagger, making it a good damaging ability on AoE. Because our current build is focused on big <a href='https://www.wowhead.com/spell=121253/keg-smash' target='_blank' class='orange'>Keg Smash</a> damage rather than <a href='https://www.wowhead.com/spell=115181/breath-of-fire' target='_blank' class='orange'>Breath of Fire</a> resets, <a href='https://www.wowhead.com/spell=386965/charred-passions' target='_blank' class='orange'>Charred Passions</a> syngerizes much better. This talent can be taken if you want a little bit more damage on ST.",
-    value: "Never",
+      "<a href='https://www.wowhead.com/spell=383994/dragonfire-brew' target='_blank' class='orange'>Dragonfire Brew</a> increases the damage of our <a href='https://www.wowhead.com/spell=115181/breath-of-fire' target='_blank' class='orange'>Breath of Fire</a> based on 100% of our stagger, making it a good damaging ability on AoE. Because of the increased stagger generation we get from Master of Harmony, you should run <a href='https://www.wowhead.com/spell=383994/dragonfire-brew' target='_blank' class='orange'>Dragonfire Brew</a> for a damage increase on AoE.",
+    value: "Required",
   },
   {
     id: "high-tolerance",
@@ -850,8 +850,8 @@ const infoArray = [
     id: "ox-stance",
     name: "<a href='https://www.wowhead.com/beta/spell=455068/ox-stance' target='_blank'>Ox Stance</a>",
     description:
-      "Ox Stance is a great talent to take when you want to deal with heavy hitting tank busters. It increases the effectivess on your stagger when an attack hits you for greater than 60% of your maximum health. if you are pushing higher keys and want to be as tanky as possible, then this is a good talent to take.",
-    value: "Optional",
+      "Ox Stance is a great talent to take when you want to deal with heavy hitting tank busters. It increases the effectivess on your stagger when an attack hits you for greater than 60% of your maximum health. We have much better talents to run, so this should never be taken.",
+    value: "Never",
   },
   {
     id: "elusive-footwork",
@@ -864,15 +864,15 @@ const infoArray = [
     id: "anvil-stave",
     name: "<a href='https://www.wowhead.com/spell=386937/anvil-stave' target='_blank'>Anvil & Stave</a>",
     description:
-      "This talent gives us a significant amount of brew cooldown reduction. While this talent isn't bad, we can utilize an extra point in better talents, so this should never be taken.",
-    value: "Never",
+      "This talent gives us a significant amount of brew cooldown reduction. In dungeons where you are taking a lot of melees, this can be a good option.",
+    value: "Optional",
   },
   {
     id: "face-palm",
     name: "<a href='https://www.wowhead.com/spell=389942/face-palm' target='_blank'>Face Palm</a>",
     description:
-      "This talent is very strong on single target, buffing our <a href='https://www.wowhead.com/spell=100780/tiger-palm' target='_blank' class='orange'>Tiger Palm</a> damage by a large amount. If you want additional single target damage, then you can take this talent.",
-    value: "Optional",
+      "This talent is very strong on single target and AoE with Master of Harmony, buffing our <a href='https://www.wowhead.com/spell=100780/tiger-palm' target='_blank' class='orange'>Tiger Palm</a> damage by a large amount. This should always be taken.",
+    value: "Required",
   },
 
   {
@@ -914,8 +914,8 @@ const infoArray = [
     id: "heightened-guard",
     name: "<a href='https://www.wowhead.com/beta/spell=455081/heightened-guard' target='_blank'>Heightened Guard</a>",
     description:
-      "This talent causes <a href='https://www.wowhead.com/beta/spell=455068/ox-stance' target='_blank' class='orange'>Ox Stance</a> to trigger more frequently, as it happens at 40% of our maximum health, rather than 60%. Typically, if you are taking <a href='https://www.wowhead.com/beta/spell=455068/ox-stance' target='_blank' class='orange'>Ox Stance</a>, you want to take this talent, aswell.",
-    value: "Optional",
+      "This talent causes <a href='https://www.wowhead.com/beta/spell=455068/ox-stance' target='_blank' class='orange'>Ox Stance</a> to trigger more frequently, as it happens at 40% of our maximum health, rather than 60%. Because we currently never take <a href='https://www.wowhead.com/beta/spell=455068/ox-stance' target='_blank' class='orange'>Ox Stance</a>, you should never take this.",
+    value: "Never",
   },
   {
     id: "press-woo",
@@ -978,7 +978,7 @@ const infoArray = [
     id: "mast",
     name: "Mastery",
     description:
-      "Mastery is not as good for us this season, due to changes in our self healing and damage intake. This makes us more like BFA/SL versions, where you take more healing from healers but are smoother overall.",
+      "We want a bit more Mastery this season than last. Because of the buff to <a class='orange' href='https://www.wowhead.com/spell=322507/celestial-brew' target='_blank'>Celestial Brew</a>, it is much stronger.",
   },
   {
     id: "haste",
@@ -990,36 +990,41 @@ const infoArray = [
   // tier pieces
   {
     id: "tier-helm",
-    name: "<a href='https://www.wowhead.com/item=212047/gatecrashers-horns' target='_blank'>Gatecrasher's Horns</a>",
-    description: "Critical Strike / Versatility",
+    name: "<a href='https://www.wowhead.com/ptr-2/item=229298/ageless-serpents-mane' target='_blank'>Ageless Serpent's Mane</a>",
+    description: "Haste / Mastery",
     value: "Head",
   },
   {
     id: "tier-shoulders",
-    name: "<a href='https://www.wowhead.com/item=212045/gatecrashers-enduring-effigy' target='_blank'>Gatecrasher's Enduring Effigy</a>",
-    description: "Haste / Mastery",
+    name: "<a href='https://www.wowhead.com/ptr-2/item=229296/ageless-serpents-shoulderpads' target='_blank'>Ageless Serpent's Shoulderpads</a>",
+    description: "Critical Strike / Haste",
     value: "Shoulders",
   },
   {
     id: "tier-chest",
-    name: "<a href='https://www.wowhead.com/item=212050/gatecrashers-gi?bonus=10373' target='_blank'>Gatecrasher's Gi</a>",
-    description: "Critical Strike / Versatility",
+    name: "<a href='https://www.wowhead.com/ptr-2/item=229301/ageless-serpents-inked-coils' target='_blank'>Ageless Serpent's Inked Coils</a>",
+    description: "Critical Strike / Haste",
     value: "Chest",
   },
   {
     id: "tier-gloves",
-    name: "<a href='https://www.wowhead.com/item=212048/gatecrashers-protectors' target='_blank'>Gatecrasher's Protectors</a>",
-    description: "Critical Strike / Haste",
+    name: "<a href='https://www.wowhead.com/ptr-2/item=229299/ageless-serpents-handguards' target='_blank'>Ageless Serpent's Handguards</a>",
+    description: "Haste / Versatility",
     value: "Hands",
   },
   {
     id: "tier-legs",
-    name: "<a href='https://www.wowhead.com/item=212046/gatecrashers-kilt' target='_blank'>Gatecrasher's Kilt</a>",
-    description: "Critical Strike / Haste",
+    name: "<a href='https://www.wowhead.com/ptr-2/item=229297/ageless-serpents-leggings' target='_blank'>Ageless Serpent's Leggings</a>",
+    description: "Critical Strike / Versatility",
     value: "Legs",
   },
 
   // necks
+  {
+    id: "flickering-glowtorc",
+    name: "<a href='https://www.wowhead.com/ptr-2/item=221103/flickering-glowtorc' target='_blank'>Flickering Glowtorc</a>",
+    description: "Critical Strike / Versatility",
+  },
   {
     id: "elemental-lariat",
     name: "<a href='https://www.wowhead.com/item=193001/elemental-lariat' target='_blank'>Elemental Lariat</a>",
@@ -1113,6 +1118,11 @@ const infoArray = [
 
   // back
   {
+    id: "candlebearers-shroud",
+    name: "<a href='https://www.wowhead.com/ptr-2/item=221109/candlebearers-shroud' target='_blank'>Candlebearers Shroud</a>",
+    description: "Critical Strike / Versatility",
+  },
+  {
     id: "swarmcallers-shroud",
     name: "<a href='https://www.wowhead.com/item=221154/swarmcallers-shroud' target='_blank'>Swarmcaller's Shroud</a>",
     description: "Critical Strike / Versatility",
@@ -1144,6 +1154,16 @@ const infoArray = [
 
   // hands
   {
+    id: "self-sanitizing-handwraps",
+    name: "<a href='https://www.wowhead.com/ptr-2/item=168985/self-sanitizing-handwraps' target='_blank'>Self-Sanitizing Handwraps</a>",
+    description: "Critical Strike / Mastery",
+  },
+  {
+    id: "enforcers-sticky-fingers",
+    name: "<a href='https://www.wowhead.com/ptr-2/item=228863/enforcers-sticky-fingers' target='_blank'>Enforcer's Sticky Fingers</a>",
+    description: "Critical Strike / Versatility",
+  },
+  {
     id: "thousand-scar-impalers",
     name: "<a href='https://www.wowhead.com/item=212432/thousand-scar-impalers' target='_blank'>Thousand Scar Impalers</a>",
     description: "Critical Strike / Haste",
@@ -1156,6 +1176,11 @@ const infoArray = [
 
   // wrist
   {
+    id: "hustlers-ante-uppers",
+    name: "<a href='https://www.wowhead.com/ptr-2/item=228885/hustlers-ante-uppers' target='_blank'>Hustler's Ante-Uppers</a>",
+    description: "Versatility / Mastery",
+  },
+  {
     id: "ferocious-hyena-hidebinders",
     name: "<a href='https://www.wowhead.com/ptr-2/item=193793/ferocious-hyena-hidebinders' target='_blank'>Ferocious Hyena Hidebinders</a>",
     description:
@@ -1163,7 +1188,7 @@ const infoArray = [
   },
   {
     id: "rune-branded-armbands",
-    name: "<a href='https://www.wowhead.com/item=219334/rune-branded-armbands' target='_blank'>Ferocious Hyena Hidebinders</a>",
+    name: "<a href='https://www.wowhead.com/item=219334/rune-branded-armbands' target='_blank'>Rune-Branded Armbands</a>",
     description: "Versatility / Critical Strike",
   },
   {
@@ -1230,6 +1255,11 @@ const infoArray = [
 
   // feet
   {
+    id: "ageless-serpents-ankleweights",
+    name: "<a href='https://www.wowhead.com/ptr-2/item=229300/ageless-serpents-ankleweights' target='_blank'>Ageless Serpent's Ankleweights</a>",
+    description: "Critical Strike / Versatility",
+  },
+  {
     id: "slimy-expulsion-boots",
     name: "<a href='https://www.wowhead.com/item=193451/slimy-expulsion-boots' target='_blank'>Slimy Expulsion Boots</a>",
     description:
@@ -1242,6 +1272,27 @@ const infoArray = [
   },
 
   // rings
+  {
+    id: "ring-of-earthen-craftsmanship",
+    name: "<a href='https://www.wowhead.com/ptr-2/item=215135/ring-of-earthen-craftsmanship' target='_blank'>Ring of Earthen Craftsmanship</a>",
+    description: "Critical Strike / Versatility",
+  },
+  {
+    id: "ring-of-perpetual-conflict",
+    name: "<a href='https://www.wowhead.com/ptr-2/item=178872/ring-of-perpetual-conflict' target='_blank'>Ring of Perpetual Conflict</a>",
+    description: "Critical Strike / Mastery",
+  },
+  {
+    id: "ritual-bone-band",
+    name: "<a href='https://www.wowhead.com/ptr-2/item=178870/ritual-bone-band' target='_blank'>Ritual Bone Band</a>",
+    description: "Versatility / Mastery",
+  },
+  {
+    id: "miniature-roulette-wheel",
+    name: "<a href='https://www.wowhead.com/ptr-2/item=228843/miniature-roulette-wheel' target='_blank'>Miniature Roulette Wheel</a>",
+    description:
+      "Versatility > Critical Strike or Critical Strike > Verastility",
+  },
   {
     id: "seal-of-filial-duty",
     name: "<a href='https://www.wowhead.com/item=195526/seal-of-filial-duty' target='_blank'>Seal of Filial Duty</a>",
@@ -1308,6 +1359,21 @@ const infoArray = [
   },
 
   // weapons
+  {
+    id: "giga-bank-breaker",
+    name: "<a href='https://www.wowhead.com/ptr-2/item=228905/giga-bank-breaker' target='_blank'>Giga Bank-Breaker</a>",
+    description: "Critical Strike / Mastery",
+  },
+  {
+    id: "charged-halberd",
+    name: "<a href='https://www.wowhead.com/ptr-2/item=222448/charged-halberd' target='_blank'>Charged Halberd</a>",
+    description: "Critical Strike / Versatility",
+  },
+  {
+    id: "gallytech-turbo-tiller",
+    name: "<a href='https://www.wowhead.com/ptr-2/item=234494/gallytech-turbo-tiller' target='_blank'>Gallytech Turbo-Tiller</a>",
+    description: "Critical Strike / Mastery",
+  },
   {
     id: "djaruun-pillar-of-the-elder-flame",
     name: "<a href='https://www.wowhead.com/item=202569/djaruun-pillar-of-the-elder-flame' target='_blank'>Djaruun, Pillar of the Elder Flame</a>",
@@ -1422,6 +1488,36 @@ const infoArray = [
   },
 
   // trinkets
+  {
+    id: "signet-of-the-priory",
+    name: "<a href='https://www.wowhead.com/ptr-2/item=219308/signet-of-the-priory' target='_blank'>Signet of the Priory</a>",
+    description:
+      "This trinket is an on-use that increases your highest secondary stat by a lot, which is great for your <a href='https://www.wowhead.com/spell=387184/weapons-of-order' target='_blank' class='orange'>Weapons of Order</a> window. This should always be ran.",
+  },
+  {
+    id: "house-of-cards",
+    name: "<a href='https://www.wowhead.com/ptr-2/item=230027/house-of-cards' target='_blank'>House of Cards</a>",
+    description:
+      "This trinket is an on-use that increases your Mastery by a lot. If you have access to raid loot, you should always run this trinket along with Signet of the Priory.",
+  },
+  {
+    id: "improvised-seaforium-pacemaker",
+    name: "<a href='https://www.wowhead.com/ptr-2/item=232541/improvised-seaforium-pacemaker' target='_blank'>Improvised Seaforium Pacemaker</a>",
+    description:
+      "This trinket randomly procs every 60 seconds and gives us a ton of Critical Strike. It is great for both our damage and survivability. If you don't have a House of Cards, you should always run this trinket.",
+  },
+  {
+    id: "ringing-ritual-mud",
+    name: "<a href='https://www.wowhead.com/ptr-2/item=232543/ringing-ritual-mud' target='_blank'>Ringing Ritual Mud</a>",
+    description:
+      "This trinket serves as a big absorb shield that also pulses a little bit of damage. If you want a strong defensive trinket, this is a great option.",
+  },
+  {
+    id: "chromebustible-bomb-suit",
+    name: "<a href='https://www.wowhead.com/ptr-2/item=230029/chromebustible-bomb-suit' target='_blank'>Chromebustible Bomb Suit</a>",
+    description:
+      "This trinket is similar to Ringing Ritual Mud, as it is an on-use defensive trinket that also does a little bit of damage. If you want a defensive trinket that has a lower cooldown in exchange for a slightly weaker one, then this trinket is a great option.",
+  },
   {
     id: "ovinaxs-mercurial-egg",
     name: "<a href='https://www.wowhead.com/item=220305/ovinaxs-mercurial-egg' target='_blank'>Ovi'nax's Mercurial Egg</a>",
@@ -1705,7 +1801,13 @@ const infoArray = [
     id: "versatile-ruby",
     name: "<a href='https://www.wowhead.com/beta/item=213459/versatile-ruby' target='_blank'>Versatile Ruby</a>",
     description:
-      "Increases Critical Strike by 118 and Versatility by 39. Run this if you want more Critical Strike than Versatility.",
+      "Increases Critical Strike by 147 and Versatility by 49. Run this if you want more Critical Strike than Versatility.",
+  },
+  {
+    id: "masterful-sapphire",
+    name: "<a href='https://www.wowhead.com/item=213473/masterful-sapphire' target='_blank'>Masterful Sapphire</a>",
+    description:
+      "Increases Versatility by 147 and Mastery by 49. Run this if you want more Versatility than Critical Strike.",
   },
   {
     id: "senseis-alexstraszite",

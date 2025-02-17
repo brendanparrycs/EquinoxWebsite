@@ -108,14 +108,9 @@
         <h2>Stat Priority</h2>
         <p>
           You want to prioritize your stats as the following:
-          <span class="green">Versatility</span> =
+          <span class="green">Versatility</span> >
           <span class="orange">Critical Strike</span> >
           <span class="purple">Mastery</span> >> <span class="red">Haste</span>.
-          You want to try and prioritize
-          <span class="green">Versatility</span> and
-          <span class="orange">Critical Strike</span> on every piece of gear.
-          Ideally, you want as little <span class="purple">Mastery</span> and
-          <span class="red">Haste</span> as possible.
         </p>
         <div id="stats">
           <img
@@ -128,14 +123,13 @@
             id="crit-strike"
             src="images/critical-strike.jpg"
             onclick="updateInfo(this)"
-          /><!--
-                    
-                    --><img
+          /><!--   
+          --><img
             id="mast"
             src="images/mastery.jpg"
             onclick="updateInfo(this)"
           /><!--
-                    --><img
+          --><img
             id="haste"
             src="images/haste.jpg"
             onclick="updateInfo(this)"
@@ -152,16 +146,15 @@
       <section id="tier-set" class="info-section middle-spacing">
         <h2>Tier Set</h2>
         <p>
-          Even though the secondaries on our tier set this season isn't great,
-          the set bonuses make up for it. Not only does it give us a huge damage
-          increase overall, mainly through the use of
+          Our tier set this season is very good. It gives us a solid damage
+          increase and causes us to randomly proc
           <a
-            href="https://www.wowhead.com/spell=121253/keg-smash"
+            href="https://www.wowhead.com/spell=243435/fortifying-brew"
             target="_blank"
             class="orange"
-            >Keg Smash</a
-          >, but it also provides us with a small amount of constant damage
-          reduction.
+            >Fortifying Brew</a
+          >. With Master of Harmony being stronger this season, too, this tier
+          set is only made better.
         </p>
         <div id="tier-pieces">
           <img
@@ -192,13 +185,13 @@
           />
           <h3>
             <a
-              href="https://www.wowhead.com/item=212047/gatecrashers-horns"
+              href="https://www.wowhead.com/ptr-2/item=229298/ageless-serpents-mane"
               target="_blank"
-              >Gatecrasher's Horns</a
+              >Ageless Serpent's Mane</a
             >
           </h3>
           <h4 class="tier-type orange">Head</h4>
-          <p class="description">Critical Strike / Versatility</p>
+          <p class="description">Haste / Mastery</p>
         </div>
       </section>
       <section id="equipment" class="info-section">
@@ -219,12 +212,12 @@
             />
             <h3>
               <a
-                href="https://www.wowhead.com/item=212047/gatecrashers-horns"
+                href="https://www.wowhead.com/ptr-2/item=229298/ageless-serpents-mane"
                 target="_blank"
-                >Gatecrasher's Horns</a
+                >Ageless Serpent's Mane</a
               >
             </h3>
-            <p class="description">Critical Strike / Versatility</p>
+            <p class="description">Haste / Mastery</p>
           </div>
           <div id="shoulders">
             <p class="sub-header orange">Shoulders</p>
@@ -234,40 +227,30 @@
               src="images/tier-shoulders.jpg"
               onclick="updateInfo(this)"
             />
-            <img
-              id="whispering-umbral-mantle"
-              src="images/whispering-umbral-mantle.jpg"
-              onclick="updateInfo(this)"
-            />
-            <img
-              id="rune-branded-mantle"
-              src="images/rune-branded-mantle.jpg"
-              onclick="updateInfo(this)"
-            />
             <h3>
               <a
-                href="https://www.wowhead.com/item=212045/gatecrashers-enduring-effigy"
+                href="https://www.wowhead.com/ptr-2/item=229296/ageless-serpents-shoulderpads"
                 target="_blank"
-                >Gatecrasher's Enduring Effigy</a
+                >Ageless Serpent's Shoulderpads</a
               >
             </h3>
-            <p class="description">Haste / Mastery</p>
+            <p class="description">Critical Strike / Haste</p>
           </div>
         </div>
         <div class="grid-container">
           <div id="neck">
             <p class="sub-header orange">Neck</p>
             <img
-              id="elders-hemolymphal-periapt"
+              id="flickering-glowtorc"
               class="selected"
-              src="images/elders-hemolymphal-periapt.jpg"
+              src="images/flickering-glowtorc.jpg"
               onclick="updateInfo(this)"
             />
             <h3>
               <a
-                href="https://www.wowhead.com/item=221181/elders-hemolymphal-periapt"
+                href="https://www.wowhead.com/ptr-2/item=221103/flickering-glowtorc"
                 target="_blank"
-                >Elder's Hemolymphal Periapt</a
+                >Flickering Glowtorc</a
               >
             </h3>
             <p class="description">Critical Strike / Versatility</p>
@@ -275,16 +258,16 @@
           <div id="back">
             <p class="sub-header orange">Back</p>
             <img
-              id="swarmcallers-shroud"
+              id="candlebearers-shroud"
               class="selected"
-              src="images/swarmcallers-shroud.jpg"
+              src="images/candlebearers-shroud.jpg"
               onclick="updateInfo(this)"
             />
             <h3>
               <a
-                href="https://www.wowhead.com/item=221154/swarmcallers-shroud"
+                href="https://www.wowhead.com/ptr-2/item=221109/candlebearers-shroud"
                 target="_blank"
-                >Swarmcaller's Shroud</a
+                >Candlebearers Shroud</a
               >
             </h3>
             <p class="description">Critical Strike / Versatility</p>
@@ -301,58 +284,63 @@
             />
             <h3>
               <a
-                href="https://www.wowhead.com/item=212050/gatecrashers-gi?bonus=10373"
+                href="https://www.wowhead.com/ptr-2/item=229301/ageless-serpents-inked-coils"
                 target="_blank"
-                >Gatecrasher's Gi</a
+                >Ageless Serpent's Inked Coils</a
               >
             </h3>
-            <p class="description">Critical Strike / Versatility</p>
+            <p class="description">Critical Strike / Haste</p>
           </div>
           <div id="wrist">
             <p class="sub-header orange">Wrist</p>
             <img
-              id="sanguine-experiments-bandages"
+              id="hustlers-ante-uppers"
               class="selected"
-              src="images/sanguine-experiments-bandages.jpg"
+              src="images/hustlers-ante-uppers.jpg"
+              onclick="updateInfo(this)"
+            /><!--
+            --><img
+              id="rune-branded-armbands"
+              src="images/rune-branded-armbands.jpg"
               onclick="updateInfo(this)"
             />
             <h3>
               <a
-                href="https://www.wowhead.com/item=225588/sanguine-experiments-bandages"
+                href="https://www.wowhead.com/ptr-2/item=228885/hustlers-ante-uppers"
                 target="_blank"
-                >Sanguine Experiment's Bandages</a
+                >Hustler's Ante-Uppers</a
               >
             </h3>
-            <p class="description">Critical Strike / Versatility</p>
+            <p class="description">Versatility / Mastery</p>
           </div>
         </div>
         <div class="grid-container">
           <div id="hands">
             <p class="sub-header orange">Hands</p>
             <img
-              id="thousand-scar-impalers"
+              id="enforcers-sticky-fingers"
               class="selected"
-              src="images/thousand-scar-impalers.jpg"
-              onclick="updateInfo(this)"
-            /><!--
-            --><img
-              id="tier-gloves"
-              src="images/tier-gloves.jpg"
+              src="images/enforcers-sticky-fingers.jpg"
               onclick="updateInfo(this)"
             /><!--
             --><img
               id="rune-branded-grasps"
               src="images/rune-branded-grasps.jpg"
               onclick="updateInfo(this)"
+            /><!--
+            --><img
+              id="self-sanitizing-handwraps"
+              src="images/self-sanitizing-handwraps.jpg"
+              onclick="updateInfo(this)"
             />
             <h3>
               <a
-                href="https://www.wowhead.com/item=212432/thousand-scar-impalers"
+                href="https://www.wowhead.com/ptr-2/item=228863/enforcers-sticky-fingers"
                 target="_blank"
-                >Thousand Scar Impalers</a
+                >Enforcer's Sticky Fingers</a
               >
             </h3>
-            <p class="description">Critical Strike / Haste</p>
+            <p class="description">Critical Strike / Versatility</p>
           </div>
           <div id="waist">
             <p class="sub-header orange">Waist</p>
@@ -393,16 +381,16 @@
           <div id="feet">
             <p class="sub-header orange">Feet</p>
             <img
-              id="viscera-stitched-footpads"
+              id="ageless-serpents-ankleweights"
               class="selected"
-              src="images/viscera-stitched-footpads.jpg"
+              src="images/ageless-serpents-ankleweights.jpg"
               onclick="updateInfo(this)"
             />
             <h3>
               <a
-                href="https://www.wowhead.com/item=178731/viscera-stitched-footpads"
+                href="https://www.wowhead.com/ptr-2/item=229300/ageless-serpents-ankleweights"
                 target="_blank"
-                >Viscera Stitched Footpads</a
+                >Ageless Serpent's Ankleweights</a
               >
             </h3>
             <p class="description">Critical Strike / Versatility</p>
@@ -412,117 +400,113 @@
           <div id="rings">
             <p class="sub-header orange">Rings</p>
             <img
-              id="cyrces-circlet"
+              id="miniature-roulette-wheel"
               class="selected"
-              src="images/cyrces-circlet.jpg"
+              src="images/miniature-roulette-wheel.jpg"
               onclick="updateInfo(this)"
             /><!--
             --><img
-              id="seal-of-the-poisoned-pact"
-              src="images/seal-of-the-poisoned-pact.jpg"
+              id="ritual-bone-band"
+              src="images/ritual-bone-band.jpg"
               onclick="updateInfo(this)"
             /><!--
             --><img
-              id="ritual-commanders-ring"
-              src="images/ritual-commanders-ring.jpg"
+              id="ring-of-perpetual-conflict"
+              src="images/ring-of-perpetual-conflict.jpg"
               onclick="updateInfo(this)"
             /><!--
             --><img
-              id="ring-of-dun-algaz"
-              src="images/ring-of-dun-algaz.jpg"
+              id="ring-of-earthen-craftsmanship"
+              src="images/ring-of-earthen-craftsmanship.jpg"
               onclick="updateInfo(this)"
             />
             <h3>
               <a
-                href="https://www.wowhead.com/item=228411/cyrces-circlet"
+                href="https://www.wowhead.com/ptr-2/item=228843/miniature-roulette-wheel"
                 target="_blank"
-                >Cyrce's Circlet</a
+                >Miniature Roulette Wheel</a
               >
             </h3>
             <p class="description">
-              This is the new ring from Siren Isle and it is very strong. The
-              gems that you want to run on it are Legendary Skipper's Citrine,
-              Fathomdweller's Runed Citrine, and Stormbringer's Runed Cintrine
-              or Thunderlord's Crackling Citrine. Stormbringer's provides more
-              survivability and consistency, while Thunderlord's provides more
-              ST. Thunderlord's is really good in keys like City of Threads and
-              Dawnbreaker where it's a lot of ST and low target count pulls.
+              Versatility > Critical Strike or Critical Strike > Verastility
             </p>
           </div>
           <div id="weapons">
             <p class="sub-header orange">Weapons</p>
             <img
-              id="harvesters-interdiction"
+              id="giga-bank-breaker"
               class="selected"
-              src="images/harvesters-interdiction.jpg"
+              src="images/giga-bank-breaker.jpg"
               onclick="updateInfo(this)"
             /><!--
             --><img
-              id="spire-of-transfused-horrors"
-              src="images/spire-of-transfused-horrors.jpg"
+              id="charged-halberd"
+              src="images/charged-halberd.jpg"
+              onclick="updateInfo(this)"
+            /><!--
+            --><img
+              id="gallytech-turbo-tiller"
+              src="images/gallytech-turbo-tiller.jpg"
               onclick="updateInfo(this)"
             />
             <h3>
               <a
-                href="https://www.wowhead.com/item=221159/harvesters-interdiction"
+                href="https://www.wowhead.com/ptr-2/item=228905/giga-bank-breaker"
                 target="_blank"
-                >Harvester's Interdiction</a
+                >Giga Bank-Breaker</a
               >
             </h3>
-            <p class="description">
-              Versatility / Mastery - Gives a proc to your attacks.
-            </p>
+            <p class="description">Critical Strike / Mastery</p>
           </div>
         </div>
         <div id="trinkets">
           <p class="sub-header orange">Trinkets</p>
           <img
-            id="ovinaxs-mercurial-egg"
+            id="signet-of-the-priory"
             class="selected"
-            src="images/ovinaxs-mercurial-egg.jpg"
+            src="images/signet-of-the-priory.jpg"
             onclick="updateInfo(this)"
           /><!--
           --><img
-            id="dead-eye-spyglass"
-            src="images/dead-eye-spyglass.jpg"
+            id="house-of-cards"
+            src="images/house-of-cards.jpg"
             onclick="updateInfo(this)"
           />
           <!--
           --><img
-            id="refracting-aggression-module"
-            src="images/refracting-aggression-module.jpg"
+            id="improvised-seaforium-pacemaker"
+            src="images/improvised-seaforium-pacemaker.jpg"
             onclick="updateInfo(this)"
           />
           <!--
           --><img
-            id="swarmlords-authority"
-            src="images/swarmlords-authority.jpg"
+            id="ringing-ritual-mud"
+            src="images/ringing-ritual-mud.jpg"
             onclick="updateInfo(this)"
           />
           <!--
           --><img
-            id="ara-kara-sacbrood"
-            src="images/ara-kara-sacbrood.jpg"
-            onclick="updateInfo(this)"
-          /><!--
-          --><img
-            id="empowering-crystal-of-anubikkaj"
-            src="images/empowering-crystal-of-anubikkaj.jpg"
+            id="chromebustible-bomb-suit"
+            src="images/chromebustible-bomb-suit.jpg"
             onclick="updateInfo(this)"
           />
           <h3>
             <a
-              href="https://www.wowhead.com/item=220305/ovinaxs-mercurial-egg"
+              href="https://www.wowhead.com/ptr-2/item=219308/signet-of-the-priory"
               target="_blank"
-              >Ovi'nax's Mercurial Egg</a
+              >Signet of the Priory</a
             >
           </h3>
           <p class="description">
-            This trinket grants us increased Agility when we are standing still,
-            stacking up to 30 times. When we are moving, we gain an increase to
-            our highest secondary stat, stacking up to 30 times. This egg is
-            very strong, as it is a very helpful stat increase. If you can get
-            it from raid, make sure you always run it.
+            This trinket is an on-use that increases your highest secondary stat
+            by a lot, which is great for your
+            <a
+              href="https://www.wowhead.com/spell=387184/weapons-of-order"
+              target="_blank"
+              class="orange"
+              >Weapons of Order</a
+            >
+            window. This should always be ran.
           </p>
         </div>
       </section>
@@ -684,20 +668,20 @@
               onclick="updateInfo(this)"
             /><!--
             --><img
-              id="versatile-ruby"
-              src="images/versatile-ruby.jpg"
+              id="masterful-sapphire"
+              src="images/masterful-sapphire.jpg"
               onclick="updateInfo(this)"
             />
             <h3>
               <a
-                href="https://www.wowhead.com/beta/item=213467/deadly-sapphire"
+                href="https://www.wowhead.com/item=213473/masterful-sapphire"
                 target="_blank"
-                >Deadly Sapphire</a
+                >Masterful Sapphire</a
               >
             </h3>
             <p class="description">
-              Increases Versatility by 147 and Critical Strike by 49. Run this
-              if you want more Versatility than Critical Strike.
+              Increases Versatility by 147 and Mastery by 49. Run this if you
+              want more Versatility than Critical Strike.
             </p>
           </div>
         </div>
