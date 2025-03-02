@@ -1842,50 +1842,86 @@ const infoArray = [
 
   // dungeons
   {
+    id: "mechagonworkshop",
+    name: "<a href='https://www.wowhead.com/zone=10225/operation-mechagon' target='_blank'>Operation Mechagon: Workshop</a>",
+    value: "Easy",
+    dungeonRoute: "mechagonworkshop-route",
+  },
+  {
+    id: "themotherlode",
+    name: "<a href='https://www.wowhead.com/zone=8064/the-motherlode' target='_blank'>The MOTHERLODE!!</a>",
+    value: "Hard",
+    dungeonRoute: "themotherlode-route",
+  },
+  {
+    id: "theaterofpain",
+    name: "<a href='https://www.wowhead.com/zone=12841/theater-of-pain' target='_blank'>Theater of Pain</a>",
+    value: "Medium",
+    dungeonRoute: "theaterofpain-route",
+  },
+  {
+    id: "cinderbrewmeadery",
+    name: "<a href='https://www.wowhead.com/zone=15103/cinderbrew-meadery' target='_blank'>Cinderbew Meadery</a>",
+    value: "Medium",
+    dungeonRoute: "cinderbrewmeadery-route",
+  },
+  {
+    id: "darkflamecleft",
+    name: "<a href='https://www.wowhead.com/zone=14882/darkflame-cleft' target='_blank'>Darkflame Cleft</a>",
+    value: "Easy",
+    dungeonRoute: "darkflamecleft-route",
+  },
+  {
+    id: "operationfloodgate",
+    name: "<a href='https://www.wowhead.com/ptr-2/zone=15452/operation-floodgate' target='_blank'>Operation: Floogate</a>",
+    value: "Easy",
+    dungeonRoute: "operationfloodgate-route",
+  },
+  {
+    id: "prioryofthesacredflame",
+    name: "<a href='https://www.wowhead.com/zone=14954/priory-of-the-sacred-flame' target='_blank'>Priory of the Sacred Flame</a>",
+    value: "Hard",
+    dungeonRoute: "prioryofthesacredflame-route",
+  },
+  {
+    id: "therookery",
+    name: "<a href='https://www.wowhead.com/zone=14938/the-rookery' target='_blank'>The Rookery</a>",
+    value: "Easy",
+    dungeonRoute: "therookery-route",
+  },
+  {
     id: "the-azure-vault",
     name: "<a href='https://www.wowhead.com/zone=13954/the-azure-vault' target='_blank'>The Azure Vault</a>",
-    description:
-      "This dungeon is super easy for Brewmaster because all of the damage is extremely predictable and ccable. The only things that are a little tricky to live sometimes are bosses, but that is what Brewmaster excels at. Make sure that you take <a href='https://www.wowhead.com/spell=122278/dampen-harm' target='_blank' class='orange'>Dampen Harm</a> in this dungeon, as it is extremely important for the first and last boss.",
     value: "Easy",
     dungeonRoute: "the-azure-vault-route",
   },
   {
     id: "brackenhide-hollow",
     name: "<a href='https://www.wowhead.com/zone=13991/brackenhide-hollow target='_blank'>Brackenhide Hollow</a>",
-    description:
-      "This dungeon is very easy for Brewmaster to live, as all of the damage pretty much just comes from melees. All of the tank busters hit relatively softly, and each boss is very straightforward.",
     value: "Easy",
     dungeonRoute: "brackenhide-hollow-route",
   },
   {
     id: "algethar-academy",
     name: "<a href='https://www.wowhead.com/zone=14032/algethar-academy' target='_blank'>Algeth'ar Academy</a>",
-    description:
-      "This trash isn't overly hard, but there are a few bleeds and magic attacks that can kill you if you are not careful. Outside of this, though, it is a lot of physical damage that is easy to mitigate as Brewmaster. You want to take Versatility as your buff.",
     value: "Easy",
     dungeonRoute: "algethar-academy-route",
   },
   {
     id: "neltharus",
     name: "<a href='https://www.wowhead.com/zone=14011/neltharus' target='_blank'>Neltharus</a>",
-    description:
-      "Neltharus is a little tricky to survive sometimes. There are a lot of magic damage tank busters that you can't dodge, so if you are not careful they can kill you pretty easily. Chargath is now scary too, as a massive tank buster was added to him this season. You won't necessarily struggle in this dungeon, but you do have to be careful.",
     value: "Medium",
     dungeonRoute: "neltharus-route",
   },
   {
     id: "the-nokhud-offensive",
     name: "<a href='https://www.wowhead.com/zone=13982/the-nokhud-offensive' target='_blank'>The Nokhud Offensive</a>",
-    description:
-      "The Nokhud Offensive has some nasty tank busters, especially the Arcing Strike ability used by the Primalist Arcblades. You can, however, <a href='https://www.wowhead.com/spell=109132/roll' target='_blank' class='orange'>Roll</a> or backpedal out of it, making it much easier to live. The spirit area of the dungeon has a lot of casts that need to be interrupted, so it can be tricky living there, too. Because everything is avoidable with good play, this dungeon is only Medium difficulty.",
     value: "Medium",
     dungeonRoute: "the-nokhud-offensive-route",
   },
   {
     id: "ruby-life-pools",
     name: "<a href='https://www.wowhead.com/zone=14063/ruby-life-pools' target='_blank'>Ruby Life Pools</a>",
-    description:
-      "On both fortified and tyrannical, this dungeon is super painful because of all of the magic damage. Because we have a lot more defensive stats and trinkets this season, it is not the hardest dungeon for us to live, but it is still very challenging.",
     value: "Hard",
     dungeonRoute: "ruby-life-pools-route",
   },
@@ -1900,777 +1936,104 @@ const infoArray = [
   {
     id: "uldaman-legacy-of-tyr",
     name: "<a href='https://www.wowhead.com/zone=13968/uldaman' target='_blank'>Uldaman: Legacy of Tyr</a>",
-    description:
-      "Just like Halls of Infusion, this dungeon has a ton of magic damage and bleeds, making it extremely difficult for us to live. On top of this, though, even the melee damage of the mobs and bosses is extremely painful. You want to make sure that you run <a href='https://www.wowhead.com/spell=122278/dampen-harm' target='_blank' class='orange'>Dampen Harm</a> in this dungeon because you can't rely on dodging Chomp from the Vicious Basilisks, and you can't rely on ccing the casters forever.",
     value: "Hard",
     dungeonRoute: "uldaman-legacy-of-tyr-route",
   },
   {
     id: "ataldazar",
     name: "<a href='https://www.wowhead.com/zone=9028/ataldazar' target='_blank'>Atal'Dazar</a>",
-    description:
-      "Atal'Dazar is a very easy dungeon this season. There aren't any mobs that do a lot of tank damage, and all group damage is avoidable or easily healable. Yazma, especially on Tyrannical, can really suck though.",
     value: "Easy",
     dungeonRoute: "ataldazar-route",
   },
   {
     id: "black-rook-hold",
     name: "<a href='https://www.wowhead.com/zone=7805/black-rook-hold' target='_blank'>Black Rook Hold</a>",
-    description:
-      "Blackrook Hold is the easiest dungeon this season. The timer is super lenient and all of the mobs' damage is easily avoidable. Luckily, Smashspite the Hateful, which is typically challenging, can be made much easier by cheesing him (more discussed down below). The first packs can be really strong on Fortified, however, and Lord Kur'talos Ravencrest can be really RNG on super high keys.",
     value: "Easy",
     dungeonRoute: "black-rook-hold-route",
   },
   {
     id: "darkheart-thicket",
     name: "<a href='https://www.wowhead.com/zone=7673/darkheart-thicket' target='_blank'>Darkheart Thicket</a>",
-    description:
-      "Darkheart Thicket is another easy dungeon. The only difficult mobs, which are the bears, can be skipped. Oakheart can be pretty brutal on high keys, but as long as you play well, you can live.",
     value: "Easy",
     dungeonRoute: "darkheart-thicket-route",
   },
   {
     id: "doti-fall",
     name: "<a href='https://www.wowhead.com/zone=14514/dawn-of-the-infinite' target='_blank'>Dawn of the Infinite: Galakrond's Fall</a>",
-    description:
-      "On Fortified, Dawn of the Infinite: Galakrond's Fall is relatively easy. The time area before Manifested Timeways can be challenging for you and your group to live, but the timer is lenient. On Tyrannical, however, this dungeon becomes much more challenging, with Manifested Timeways, Blight of Galakrond, and Iridikron the Stonescaled all becoming extremely dangerous for the group.",
     value: "Medium",
     dungeonRoute: "doti-fall-route",
   },
   {
     id: "doti-rise",
     name: "<a href='https://www.wowhead.com/zone=14514/dawn-of-the-infinite' target='_blank'>Dawn of the Infinite: Murozond's Rise</a>",
-    description:
-      "Dawn of the Infinite: Murozond's Rise is the hardest dungeon this season. The timer is extremely tight on both Fortified and Tyrannical. After the first area, all of the mobs do a lot of tank and group damage, along with every boss being very dangerous. Timing this dungeon relies heavily on the speed at which you can pull, mainly in the sand area.",
     value: "Hard",
     dungeonRoute: "doti-rise-route",
   },
   {
     id: "the-everbloom",
     name: "<a href='https://www.wowhead.com/zone=7109/the-everbloom' target='_blank'>The Everbloom</a>",
-    description:
-      "The Everbloom is nearly just as hard as Dawn of the Infinite: Murozond's Rise. The Everbloom does a ridiculous amount of tank damage the entire time, and the last three bosses are all very deadly to your group. Ancient Protectors and the pack before Archmage Sol require so many interrupts that it is basically impossible to stop them all (so long as you are playing Brewmaster).",
     value: "Hard",
     dungeonRoute: "the-everbloom-route",
   },
   {
     id: "throne-of-the-tides",
     name: "<a href='https://www.wowhead.com/zone=5004/throne-of-the-tides' target='_blank'>Throne of the Tides</a>",
-    description:
-      "Just like the two previously discussed dungeons, Throne of the Tides, too, is challenging. The entire dungeon does a lot of tank and group damage, while also requiring a ton of coordinated interrupts. Once you get to medium key levels, the last three bosses each become very dangerous. Once you get to the high key levels, all of the bosses become very dangerous.",
     value: "Hard",
     dungeonRoute: "throne-of-the-tides-route",
   },
   {
     id: "waycrest-manor",
     name: "<a href='https://www.wowhead.com/zone=9424/waycrest-manor' target='_blank'>Waycrest Manor</a>",
-    description:
-      "Waycrest Manor is a pretty easy dungeon. Due to some of the mobs being overtuned, every route is very similar, each avoiding said mobs. The mobs that are typically pulled are pretty easy to kill, as long as things get interrupted. Heartsbane Triad is dangerous for the group, however, especially on Tyrannical. As Brewmaster, Soulbound Goliath is made much easier due to us not having to cleanse in fire as much as other tanks. As long as the thorns die fast enough and the healer is ready for the fire, your group should be fine.",
     value: "Easy",
     dungeonRoute: "waycrest-manor-route",
   },
   {
     id: "grim-batol",
     name: "<a href='https://www.wowhead.com/beta/zone=4950/grim-batol' target='_blank'>Grim Batol</a>",
-    description: "TODO",
     value: "Hard",
     dungeonRoute: "grim-batol-route",
   },
   {
     id: "siege-of-boralus",
     name: "<a href='https://www.wowhead.com/beta/zone=9354/siege-of-boralus' target='_blank'>Siege of Boralus</a>",
-    description: "TODO",
     value: "Medium",
     dungeonRoute: "siege-of-boralus-route",
   },
   {
     id: "mists-of-tirna-scithe",
     name: "<a href='https://www.wowhead.com/beta/zone=13334/mists-of-tirna-scithe' target='_blank'>Mists of Tirna Scithe</a>",
-    description: "TODO",
     value: "Easy",
     dungeonRoute: "mists-of-tirna-scithe-route",
   },
   {
     id: "necrotic-wake",
     name: "<a href='https://www.wowhead.com/beta/zone=12916/the-necrotic-wake' target='_blank'>The Necrotic Wake</a>",
-    description: "TODO",
     value: "Hard",
     dungeonRoute: "necrotic-wake-route",
   },
   {
     id: "ara-kara",
     name: "<a href='https://www.wowhead.com/beta/zone=15093/ara-kara-city-of-echoes' target='_blank'>Ara-Kara: City of Echoes</a>",
-    description: "TODO",
     value: "Medium",
     dungeonRoute: "ara-kara-route",
   },
   {
     id: "city-of-threads",
     name: "<a href='https://www.wowhead.com/beta/zone=14979/city-of-threads' target='_blank'>City of Threads</a>",
-    description: "TODO",
     value: "Medium",
     dungeonRoute: "city-of-threads-route",
   },
   {
     id: "the-dawnbreaker",
     name: "<a href='https://www.wowhead.com/beta/zone=14971/the-dawnbreaker' target='_blank'>The Dawnbreaker</a>",
-    description: "TODO",
     value: "Medium",
     dungeonRoute: "the-dawnbreaker-route",
   },
   {
     id: "the-stonevault",
     name: "<a href='https://www.wowhead.com/beta/zone=14883/the-stonevault' target='_blank'>The Stonevault</a>",
-    description: "TODO",
     value: "Hard",
     dungeonRoute: "the-stonevault-route",
-  },
-
-  // dungeon bosses
-  {
-    id: "vexamus",
-    name: "<a href='https://www.wowhead.com/npc=194181/vexamus' target='_blank'>Vexamus</a>",
-    description:
-      "Vexamus is relatively easy as a Brewmaster, so long as you are careful and cycle your defensives for every Arcane Expulsion. If your group is struggling to live, you can help out by pressing a large defensive and grabbing two or three orbs, too.",
-    value: "Medium",
-  },
-  {
-    id: "overgrown-ancient",
-    name: "<a href='https://www.wowhead.com/npc=196482/overgrown-ancient' target='_blank'>Overgrown Ancient</a>",
-    description:
-      "This boss's tank buster, Barkbreaker, can be very scary, as not only does it hit for a decent amount, but it increases all physical damage you take afterwards. Not only do you have to deal with this tank buster, but the Hungry Lashers that spawns also do a ton of tank damage. You want to make sure that you are using a defensive for each tank buster, and you are prepared to tank a bunch of damage when the Hungry Lashers come out.",
-    value: "Hard",
-  },
-  {
-    id: "crawth",
-    name: "<a href='https://www.wowhead.com/npc=191736/crawth' target='_blank'>Crawth</a>",
-    description:
-      "Even though this boss's tank damage has been nerfed this season, it is still very challenging. Its tank buster, Savage Peck, hits hard initially, and puts a nasty bleed on you afterwards. If you are a dwarf, this fight becomes slightly easier, as you can dispel the bleed, but, otherwise, you will likely have to cycle a defensive or two for each Savage Peck.",
-    value: "Hard",
-  },
-  {
-    id: "echo-of-doragosa",
-    name: "<a href='https://www.wowhead.com/npc=190609/echo-of-doragosa' target='_blank'>Echo of Doragosa</a>",
-    description:
-      "This boss's tank damage is pretty much nonexistent. You just want to make sure that you are watching your Overwhelming Power stacks, so you can place the Arcane Rifts in good locations.",
-    value: "Easy",
-  },
-  {
-    id: "hackclaws-war-band",
-    name: "<a href='https://www.wowhead.com/npc=186122/rira-hackclaw' target='_blank'>Hackclaw's War-Band</a>",
-    description:
-      "This boss's tank damage is super low, as long as you cast a defensive for each Savage Charge. As Brewmaster, in lower keys, you can instant <a href='https://www.wowhead.com/spell=115080/touch-of-death' target='_blank' class='orange'>Touch of Death</a> the first Hextrick Totem, making the fight even easier.",
-    value: "Easy",
-  },
-  {
-    id: "treemouth",
-    name: "<a href='https://www.wowhead.com/npc=186120/treemouth' target='_blank'>Treemouth</a>",
-    description:
-      "As Brewmaster, this boss is extremely easy. His tank buster, Vine Whip, does very little damage, especially if you use a defensive. Because of our strength against physical damage bosses, it is actually easier for us to not get consumed and instead just eat his auto attacks with his enrage stacks.",
-    value: "Easy",
-  },
-  {
-    id: "gutshot",
-    name: "<a href='https://www.wowhead.com/npc=186116/gutshot' target='_blank'>Gutshot</a>",
-    description:
-      "This boss isn't necessarily hard, but if you make a mistake, you can definitely die. Just like any tank buster, you want to cycle your defensives for each one. Regarding the hyenas on this fight, they melee pretty hard, especially when enraged, so be careful about that.",
-    value: "Medium",
-  },
-  {
-    id: "decatriarch-wratheye",
-    name: "<a href='https://www.wowhead.com/npc=186121/decatriarch-wratheye' target='_blank'>Decatriarch Wratheye</a>",
-    description:
-      "This boss can be a little tricky, especially when you are first learning how to deal with the massive heal absorb on her tank buster, Decaystrike. I recommend using a defensive for the initial hit of it, and in between every Decaystrike, to try and get as many <a href='https://www.wowhead.com/spell=124502/gift-of-the-ox' target='_blank' class='orange'>Gift of the Ox</a> orbs as possible. This way, you can instantly <a href='https://www.wowhead.com/spell=115072/expel-harm' target='_blank' class='orange'>Expel Harm</a>, soaking in all of the orbs and removing the heal absorb on you.",
-    value: "Medium",
-  },
-  {
-    id: "watcher-irideus",
-    name: "<a href='https://www.wowhead.com/npc=189719/watcher-irideus' target='_blank'>Watcher Irideus</a>",
-    description:
-      "This boss has no tank damage at all since you can step out of Titanic Fist. You just want to make sure that you the Nullification Devices die on the boss and that you are not in their circle.",
-    value: "Easy",
-  },
-  {
-    id: "gulping-goliath",
-    name: "<a href='https://www.wowhead.com/npc=189722/gulping-goliath' target='_blank'>Gulping Goliath</a>",
-    description:
-      "Similar to the previous boss, there is pretty much no tank damage. When you get Gulped, you just want to make sure that you are below five stacks of Gulp Swog Toxin, as it applies another five stacks, instantly killing you at ten.",
-    value: "Easy",
-  },
-  {
-    id: "khajin-the-unyielding",
-    name: "<a href='https://www.wowhead.com/npc=189727/khajin-the-unyielding' target='_blank'>Khajin the Unyielding</a>",
-    description:
-      "This boss does a decent amount of sustain tank damage, but it's nothing too serious. She can become scary, however, if you are not watching the cooldown timer on her Frost Shock. As long as you have a small defensive for each Frost Shock, and you cycle the rest of your defensives throughout the fight when needed, you will be fine.",
-    value: "Medium",
-  },
-  {
-    id: "primal-tsunami",
-    name: "<a href='https://www.wowhead.com/npc=189729/primal-tsunami' target='_blank'>Primal Tsunami</a>",
-    description:
-      "This boss's tank buster, Squall Buffet, does a ton of tank damage. You want to make sure that you have at least two defensives for each one. Not only this, but you also have to be careful of where you are standing when it happens, because you can be knocked back into orbs, instantly killing you. When you get knocked back by Squall Buffet, you want to make sure that you get back into melee range instantly via <a href='https://www.wowhead.com/spell=101643/transcendence' target='_blank' class='orange'>Transcendence</a>.",
-    value: "Hard",
-  },
-  {
-    id: "chargath-bane-of-scales",
-    name: "<a href='https://www.wowhead.com/npc=189340/chargath-bane-of-scales' target='_blank'>Chargath, Bane of Scales</a>",
-    description:
-      "Chargath's Fiery Focus has been reworked this season and turned into a massive tank buster. The first hit will be a charge which does a ton of damage. Afterwards, he proceeds to channel into you for lighter, but still painful attacks. You want to make sure that you use multiple defensives for each Fiery Focus, especially if your group is slow to do chains.",
-    value: "Hard",
-  },
-  {
-    id: "forgemaster-gorek",
-    name: "<a href='https://www.wowhead.com/npc=189478/forgemaster-gorek' target='_blank'>Forgemaster Gorek</a>",
-    description:
-      "This boss's tank damage is extremely low, making it very easy for us to live. You just want to make sure that you have a defensive for each one, and when it knocks you back, that you roll out of it right after the circle appears.",
-    value: "Easy",
-  },
-  {
-    id: "magmatusk",
-    name: "<a href='https://www.wowhead.com/npc=181861/magmatusk' target='_blank'>Magmatusk</a>",
-    description:
-      "This boss has pretty much no tank damage. The only trick to this boss is making sure that you don't hold him in the fire on the floor.",
-    value: "Easy",
-  },
-  {
-    id: "warlord-sargha",
-    name: "<a href='https://www.wowhead.com/npc=189901/warlord-sargha' target='_blank'>Warlord Sargha</a>",
-    description:
-      "This boss has also been given a tank buster this season. Luckily, it only occurs during Magma Shield, which isn't too common and can be canceled quickly. You want to make sure that you use a defensive or two for each one, especially if your group is slow to break her shield.",
-    value: "Easy",
-  },
-  {
-    id: "melidrussa-chillworn",
-    name: "<a href='https://www.wowhead.com/npc=188252/melidrussa-chillworn' target='_blank'>Melidrussa Chillworn</a>",
-    description:
-      "This boss does a ridiculous amount of tank damage, especially because we are weak to magic damage. She spam casts Frigid Shard, which hits us extremely hard. You want to try your best to cycle your defensives to whenever needed.",
-    value: "Hard",
-  },
-  {
-    id: "kokia-blazehoof",
-    name: "<a href='https://www.wowhead.com/npc=189232/kokia-blazehoof' target='_blank'>Kokia Blazehoof</a>",
-    description:
-      "Not only do the initial hits of this boss's tank buster, Searing Blows, do a lot of damage, but they apply a stacking bleed, which does an insane amount of damage. You likely will have to use two defensive for each one, so cycling them can get extremely tricky. If you are a dwarf, your racial becomes very useful on this fight.",
-    value: "Hard",
-  },
-  {
-    id: "kyrakka",
-    name: "<a href='https://www.wowhead.com/npc=199790/kyrakka' target='_blank'>Kyrakka and Erkhart Stormvein</a>",
-    description:
-      "This boss radiates high magic damage out to the entire party, enough so to even hurt you. Not only this, but Erkhart Stormvein's tank buster, Stormslam, hits extremely hard, doing both physical damage and magic damage. It is important to have a defensive for each tank buster, as well as cycling any extras for whenever needed.",
-    value: "Hard",
-  },
-  {
-    id: "leymor",
-    name: "<a href='https://www.wowhead.com/npc=186644/leymor' target='_blank'>Leymor</a>",
-    description:
-      "This season, Leymor's Erupting Fissure is now locked onto the tank, forcing you to eat it. This does massive damage, requiring a defensive for each one. Not only this, but he also applies a huge magic DoT called Infused Strike, which will require another defensive or two over its duration. This boss is extremely challenging to live, and requires very good play, especially in high keys.",
-    value: "Hard",
-  },
-  {
-    id: "azureblade",
-    name: "<a href='https://www.wowhead.com/npc=186739/azureblade' target='_blank'>Azureblade</a>",
-    description:
-      "Azureblade isn't too difficult to live, so long as you are prepared for every tank buster, Arcane Cleave. Just like any tank buster, you want to make sure that you have a defensive for each one. A good trick for this boss, too, is that you can move out of the way of Arcane Cleave the last second, either via <a href='https://www.wowhead.com/spell=109132/roll' target='_blank' class='orange'>Roll</a> or <a href='https://www.wowhead.com/spell=101643/transcendence' target='_blank' class='orange'>Transcendence</a>. Just be careful not to hit your party members with it.",
-    value: "Medium",
-  },
-  {
-    id: "telash-greywing",
-    name: "<a href='https://www.wowhead.com/npc=199614/telash-greywing' target='_blank'>Telash Greywing</a>",
-    description:
-      "Telash doesn't really do any tank damage, especially since he has no tank buster. There also aren't really any tricks with him that make the fight easier.",
-    value: "Easy",
-  },
-  {
-    id: "umbrelskul",
-    name: "<a href='https://www.wowhead.com/npc=186738/umbrelskul' target='_blank'>Umbrelskul</a>",
-    description:
-      "This season, the snare has been removed from the boss, making him much less annoying to tank. He is still very dangerous, though, as his tank buster, Dragon Strike, hits ridiculously hard. Not only this, but the crystals that he summons also radiate for a lot of damage, enough so that it even hurts you a little bit.",
-    value: "Hard",
-  },
-  {
-    id: "granyth",
-    name: "<a href='https://www.wowhead.com/npc=186616/granyth' target='_blank'>Granyth</a>",
-    description:
-      "This boss doesn't do any tank damage. When the adds come out, you want to make sure that you try and cc them onto the boss, that way you are damaging both of them at the same time.",
-    value: "Easy",
-  },
-  {
-    id: "the-raging-tempest",
-    name: "<a href='https://www.wowhead.com/npc=186615/the-raging-tempest' target='_blank'>The Raging Tempest</a>",
-    description:
-      "Luckily, The Raging Tempest doesn't have a tank buster, so this fight isn't incredibly difficult. Still, he does a ton of group-wide magic damage, and it even hurts us quite a bit. As long as you play smart, cycling your defensives when needed throughout the fight, you should be fine.",
-    value: "Medium",
-  },
-  {
-    id: "teera-and-maruuk",
-    name: "<a href='https://www.wowhead.com/npc=195723/teera' target='_blank'>Teera and Maruuk</a>",
-    description:
-      "This boss does a lot of tank damage. Maruuk's tank buster, Brutalize, hits extremely hard, requiring a good defensive for each one. Teera's Gale Arrow, which targets every person in the party, also hits extremely hard. When this is about to go off, it can help to have everyone stack, that way no one can get hit by the tornadoes that shoot out afterwards. To top it off, there is a ton of consistent group-wide magic damage that hurts you quite a bit, as well.",
-    value: "Hard",
-  },
-  {
-    id: "balakar-khan",
-    name: "<a href='https://www.wowhead.com/npc=186151/balakar-khan' target='_blank'>Balakar Khan</a>",
-    description:
-      "Balakar Khan's tank busters are very dangerous, especially in his second phase. In the first phase, he applies a bleed to you with Rending Strike, which hits extremely hard. He also casts Savage Strikes when you have the bleed, which hits you for a lot of damage. In the second phase, these get upgraded, doing magic damage, which is especially bad for Brewmaster. This boss requires careful play, cycling defensives for each tank buster. In the second phase, you can save <a href='https://www.wowhead.com/spell=122783/diffuse-magic' target='_blank' class='orange'>Diffuse Magic</a> for Conductive Strike, sending it back to him (which does a lot of damage), as well as not letting him cast Thunder Strike until the next Conductive Strike.",
-    value: "Hard",
-  },
-  {
-    id: "the-lost-dwarves",
-    name: "<a href='https://www.wowhead.com/npc=6906/baelog' target='_blank'>The Lost Dwarves</a>",
-    description:
-      "This boss's tank damage is a complete joke. While there is a tank buster, it doesn't hit hard at all. While it is a good idea to defensive each tank buster, you can get away without it in low and medium keys.",
-    value: "Easy",
-  },
-  {
-    id: "bromach",
-    name: "<a href='https://www.wowhead.com/npc=184018/bromach' target='_blank'>Bromach</a>",
-    description:
-      "Thankfully, Bromach doesn't have a tank buster. He can be dangerous when his Quaking Totem is out, however, as it radiates a lot of magic damage, and there will be a good amount of adds hitting you, as well. It is recommended that you have a defensive or two up for each Quaking Totem.",
-    value: "Medium",
-  },
-  {
-    id: "sentinel-talondras",
-    name: "<a href='https://www.wowhead.com/npc=184124/sentinel-talondras' target='_blank'>Sentinel Talondras</a>",
-    description:
-      "This boss does a lot of tank damage, and is kind of annoying to tank. While you are having to run her around to orbs the entire fight, she melees extremely hard. You also have no way to help your party with the Earthen Shards, which is a strong bleed that can easily kill your healer and dps.",
-    value: "Hard",
-  },
-  {
-    id: "emberon",
-    name: "<a href='https://www.wowhead.com/npc=184422/emberon' target='_blank'>Emberon</a>",
-    description:
-      "Emberon's Searing Clap does a lot of damage and happens very frequently. Not only does it hit hard, but it also applies a strong magic DoT on you and your entire party. You want to try your best to have a defensive for each one. If you feel like you are living easily enough, you can reflect the magic DoT back to him by using <a href='https://www.wowhead.com/spell=122783/diffuse-magic' target='_blank' class='orange'>Diffuse Magic</a>, doing a ton of damage.",
-    value: "Hard",
-  },
-  {
-    id: "chrono-lord-deios",
-    name: "<a href='https://www.wowhead.com/npc=184125/chrono-lord-deios' target='_blank'>Chrono-Lord Deios</a>",
-    description:
-      "This boss does a ton of damage to you and your party. He constantly is doing high magic AoE damage, as well as having a strong tank buster that requires a defensive. Not only this, but he can be super annoying to tank when the room gets small, because it's hard to position him properly for your melee party members.",
-    value: "Hard",
-  },
-  {
-    id: "priestess-alunza",
-    name: "<a href='https://www.wowhead.com/npc=129614/priestess-alunza' target='_blank'>Priestess Alun'za</a>",
-    description:
-      "This boss is extremely easy. There is pretty much no tank damage, very little group wide damage, and she dies extremely fast, even on tyrannical. There aren't really any tricks for her, either, besides imprisoning one of the ads when they spawn so you don't have to kill it.",
-    value: "Easy",
-  },
-  {
-    id: "volkaal",
-    name: "<a href='https://www.wowhead.com/npc=129399/volkaal' target='_blank'>Vol'kaal</a>",
-    description:
-      "This boss is pretty easy as long as everyone kills the totems at the same time. There are no tricks, you just want to slowly rotate him around the room once the totems are dead.",
-    value: "Easy",
-  },
-  {
-    id: "rezan",
-    name: "<a href='https://www.wowhead.com/npc=143577/rezan' target='_blank'>Rezan</a>",
-    description:
-      "Rezan is easy for your group, but it can be very challenging to live for you as a tank. Make sure that you use two defensives for each tank buster and position him to one of the sides of the room.",
-    value: "Medium",
-  },
-  {
-    id: "yazma",
-    name: "<a href='https://www.wowhead.com/npc=129412/yazma' target='_blank'>Yazma</a>",
-    description:
-      "This boss is a nightmare, especially on tyrannical. She lives forever, and all of the spiders can get extremely overwhelming. The best strategy for this boss is for everyone to stack on you, as you rotate away from the spiders around the room.",
-    value: "Hard",
-  },
-
-  {
-    id: "the-amalgam-of-souls",
-    name: "<a href='https://www.wowhead.com/npc=98542/amalgam-of-souls' target='_blank'>The Amalgam of Souls</a>",
-    description:
-      "This boss is super simple. You just dps him, making sure to face him away from the party as much as possible. When the spirits come out, you are really good at controlling them with <a href='https://www.wowhead.com/spell=119381/leg-sweep' target='_blank' class='orange'>Leg Sweep</a> and <a href='https://www.wowhead.com/spell=116844/ring-of-peace' target='_blank' class='orange'>Ring of Peace</a>.",
-    value: "Easy",
-  },
-  {
-    id: "illysanna-ravencrest",
-    name: "<a href='https://www.wowhead.com/npc=98696/illysanna-ravencrest' target='_blank'>Illysanna Ravencrest</a>",
-    description:
-      "This boss's group bleed damage can be a little difficult to heal through for your healer. As the tank, there are no tricks for her, however.",
-    value: "Medium",
-  },
-  {
-    id: "smashspite-the-hateful",
-    name: "<a href='https://www.wowhead.com/npc=98949/smashspite-the-hateful' target='_blank'>Smashspite the Hateful</a>",
-    description:
-      "This boss can be decently hard for most groups, but with a Brewmaster, it becomes much easier. You want to make sure that you have a way to track your dodge percent. This way, you can make sure that you have 100% or more stagger for every Hateful Charge, allowing you to soak the hit and not take any damage (more discussed in <a href='interface.html'>interface & macros</a>). If you soak every single charge, this drastically reduces the amount of group damage going out.",
-    value: "Easy",
-  },
-  {
-    id: "lord-kurtalos-ravencrest",
-    name: "<a href='https://www.wowhead.com/npc=94923/lord-kurtalos-ravencrest' target='_blank'>Lord Kur'talos Ravencrest</a>",
-    description:
-      "This boss is pretty hard, especially in higher keys. At the start, the tank buster does a lot of damage, and the bleed stays on you for the entire fight. The random hits to your party are also really brutal. In the second phase, it is just a lot of consistent healing required from the healer. Unfortunately, there are no tricks to make this boss easier for you and your group.",
-    value: "Hard",
-  },
-
-  {
-    id: "archdruid-glaidalis",
-    name: "<a href='https://www.wowhead.com/npc=96512/archdruid-glaidalis' target='_blank'>Achdruid Glaidalis</a>",
-    description:
-      "This boss is super easy if you know the trick. You want to make sure that you tank this boss a small distance from a wall, facing away from your team, and using a defensive for the first hit of his tank buster, Primal Rampage. If you have enough distance between him and the wall behind you, then you should be able to <a href='https://www.wowhead.com/spell=109132/roll' target='_blank' class='orange'>Roll</a> out and not get hit by the second hit. The rest of the fight is really easy, and you just rotate him around the room, moving away from the bad stuff on the floor.",
-    value: "Easy",
-  },
-  {
-    id: "oakheart",
-    name: "<a href='https://www.wowhead.com/npc=103344/oakheart' target='_blank'>Oakheart</a>",
-    description:
-      "This boss is extremely difficult. His Crushing Grip requires multiple defensives to live, and it happens very frequently. Luckily, his Nightmare Breath is dodgeable if you <a href='https://www.wowhead.com/spell=109132/roll' target='_blank' class='orange'>Roll</a> backwards right when he starts the cast. His stomp ability also does a bunch of damage to the entire group.",
-    value: "Hard",
-  },
-  {
-    id: "dresaron",
-    name: "<a href='https://www.wowhead.com/npc=99200/dresaron' target='_blank'>Dresaron</a>",
-    description:
-      "This boss is extremely easy. He does no tank damage, and his group damage is very predictable, making it easy to outheal. There are no tricks to make this boss easier.",
-    value: "Easy",
-  },
-  {
-    id: "shade-of-xavius",
-    name: "<a href='https://www.wowhead.com/npc=99192/shade-of-xavius' target='_blank'>Shade of Xavius</a>",
-    description:
-      "This boss's difficulty depends on how well you do his mechanics in the second phase. He doesn't really do any tank damage, but once he hits 50% health, bad stuff starts raining all over the room. As the tank, your job is to drag him out of the circles, or he gets a stacking damage increase. If he gets too many stacks, on a higher key, he will end up just instant killing one of your allies.",
-    value: "Medium",
-  },
-
-  {
-    id: "chronikar",
-    name: "<a href='https://www.wowhead.com/npc=198995/chronikar' target='_blank'>Chronikar</a>",
-    description:
-      "This boss is extremely easy. There really are no tricks to it. If you want to make it even easier than it already is, you can save up on <a href='https://www.wowhead.com/spell=124502/gift-of-the-ox' target='_blank' class='orange'>Gift of the Ox</a> orbs and instant heal off the heal absorb from Chronoshear.",
-    value: "Easy",
-  },
-  {
-    id: "manifested-timeways",
-    name: "<a href='https://www.wowhead.com/npc=206238/manifested-timeways' target='_blank'>Manifested Timeways</a>",
-    description:
-      "This boss is extremely difficult, especially since there is nothing that you can do to make it easier. The group takes a lot of burst AoE damage. Luckily for you, however, it's easy to live as a tank.",
-    value: "Hard",
-  },
-  {
-    id: "blight-of-galakrond",
-    name: "<a href='https://www.wowhead.com/npc=207639/blight-of-galakrond' target='_blank'>Blight of Galakrond</a>",
-    description:
-      "This boss is relatively difficult. It does a bunch of group wide damage, and because everything is magic damage, it also does a decent amount of damage to us. You can make it slightly easier by making sure that you also grab the Corrosion during Death Winds.",
-    value: "Hard",
-  },
-  {
-    id: "iridikron-the-stonescaled",
-    name: "<a href='https://www.wowhead.com/npc=194907/iridikron' target='_blank'>Iridikron the Stonescaled</a>",
-    description:
-      "This boss is pretty easy for you to live, as long as you pop multiple defensives for each group soak. It does a lot of damage to the party, however, but if the group uses defensives well, it isn't the hardest boss in the world. Unfortunately, there is no way to make the boss any easier.",
-    value: "Medium",
-  },
-
-  {
-    id: "tyr-the-infinite-keeper",
-    name: "<a href='https://www.wowhead.com/npc=198998/tyr-the-infinite-keeper' target='_blank'>Tyr, the Infinite Keeper</a>",
-    description:
-      "This boss is super hard. He takes forever to kill, requires a lot of healing, and his tank buster can delete you if you aren't prepared for it. There really aren't any tricks for him, either. You just want to face him away from your party the entire time, baiting his attacks to the outside.",
-    value: "Hard",
-  },
-  {
-    id: "morchie",
-    name: "<a href='https://www.wowhead.com/npc=202789/morchie' target='_blank'>Morchie</a>",
-    description:
-      "Morchie's difficult can fluctuate greatly depending on how well your group performs. Her tank buster always does a massive amount of damage to you, and when the ads are trapped, a gross debuff is put on the entire party. You can slightly help with the ads by using your ccs and <a href='https://www.wowhead.com/spell=116844/ring-of-peace' target='_blank' class='orange'>Ring of Peace</a>, but overall, there isn't too much you can do to help your party.",
-    value: "Medium",
-  },
-  {
-    id: "time-lost-battlefield",
-    name: "<a href='https://www.wowhead.com/npc=209208/anduin-lothar' target='_blank'>Time-Lost Battlefield</a>",
-    description:
-      "This boss is extremely difficult. Not only does his tank buster hit for a decent amount, but it reduces the amount of healing you receive by 75% for 5 seconds. He also does a huge amount of group wide damage, especially if your allies run him through the ads. Make sure that you don't ever hold this boss in the center of the room, and are always on the outside, to prevent him from killing the ads.",
-    value: "Hard",
-  },
-  {
-    id: "chrono-lord-deios-doti",
-    name: "<a href='https://www.wowhead.com/npc=199000/chrono-lord-deios' target='_blank'>Chrono-Lord Deios</a>",
-    description:
-      "This boss is disgusting. He melees you for a ridiculous amount, his tank buster hits stupidly hard, and the ads hit hard, too. To top it off, he does a good amount of group wide damage in phase 2. Unfortunately, we can't do anything to help with this boss.",
-    value: "Hard",
-  },
-  {
-    id: "witherbark",
-    name: "<a href='https://www.wowhead.com/npc=81522/witherbark' target='_blank'>Witherbark</a>",
-    description:
-      "This is the easiest boss this season. There is no trick, you just pull him to the back of the room, facing him away from your group. When he goes into his Brittle Bark stage you want to pop cds and burst him down as fast as possible.",
-    value: "Easy",
-  },
-  {
-    id: "ancient-protectors",
-    name: "<a href='https://www.wowhead.com/npc=83894/dulhu' target='_blank'>Ancient Protectors</a>",
-    description:
-      "This boss is super difficult. We have no way to make it easier, and there are so many interrupts that it is impossible to get them all. The group wide is ridiculously high, but luckily, the tank damage isn't too bad.",
-    value: "Hard",
-  },
-  {
-    id: "archmage-sol",
-    name: "<a href='https://www.wowhead.com/npc=82682/archmage-sol' target='_blank'>Archmage Sol</a>",
-    description:
-      "This boss is also very difficult. Her mechanics can get overwhelming at times, making it easy to mess up, and she does an extremely high amount of burst AoE damage. Not only this, but everything she does is magic damage, so her casts do a lot of damage to us, too. You want to make sure that you move her a large distance during Spatial Compression, making it easier for your group to dodge the mechanics.",
-    value: "Hard",
-  },
-  {
-    id: "yalnu",
-    name: "<a href='https://www.wowhead.com/npc=83846/yalnu' target='_blank'>Yalnu</a>",
-    description:
-      "This boss is very easy as a tank, but for the group, it is incredibly difficult. When the tree ad comes out, his AoE damage is ridiculously high. If the tree ad doesn't die within a few seconds, it is likely a wipe on higher keys. This boss is really funny as a Brewmaster, though, because our tier set is glitched, causing it to do much higher damage than it should.",
-    value: "Hard",
-  },
-
-  {
-    id: "lady-nazjar",
-    name: "<a href='https://www.wowhead.com/npc=40586/lady-nazjar' target='_blank'>Lady Naz'jar</a>",
-    description:
-      "This boss is super easy on low to medium keys and can be a little scary for your healer on high keys. When the ads spawn, make sure that you are standing on one of the ranged ads so that you can interrupt her and move everything into the middle for easy grouping.",
-    value: "Easy",
-  },
-  {
-    id: "commander-ulthok",
-    name: "<a href='https://www.wowhead.com/npc=40765/commander-ulthok' target='_blank'>Commander Ulthok, the Festering Prince</a>",
-    description:
-      "This boss does a lot of group wide damage, does a good amount of tank damage, and can have troublesome positions for pugs. To make this fight as easy as possible, you want to make sure that your party is stacked on you the entire time. You want to position the puddles that spawn the slimes between you guys and the boss. If done correctly, the slimes will never be able to reach you.",
-    value: "Hard",
-  },
-  {
-    id: "mindbender-ghursha",
-    name: "<a href='https://www.wowhead.com/npc=40788/mindbender-ghursha' target='_blank'>Mindbender Ghur'sha</a>",
-    description:
-      "This boss is extremely dangerous. His Flame Shock that he applies to random party members does a lot of damage, and it can't be instantly dispelled later into the fight. When his totem goes out, he also does a lot of tank damage, so make sure that you use at least two defensives for each totem. Once the mindbender is separated from the draenei, you can hold it near the bubbles at the front of the room for a quicker way to line of sight.",
-    value: "Hard",
-  },
-  {
-    id: "ozumat",
-    name: "<a href='https://www.wowhead.com/npc=44566/ozumat' target='_blank'>Ozumat</a>",
-    description:
-      "This boss does a lot of group wide damage, but luckily, his tank damage is pretty low, so long as you use a defensive for each tank buster. If your group fails to do mechanics, however, it is pretty much a guaranteed wipe. There isn't really anything we can do to help on this boss.",
-    value: "Hard",
-  },
-
-  {
-    id: "heartsbane-triad",
-    name: "<a href='https://www.wowhead.com/npc=135360/sister-briar' target='_blank'>Heartsbane Triad</a>",
-    description:
-      "This boss is super painful for the group. There are so many interrupts that it's literally impossible to interrupt everything. There are also no tricks to helping out your party, so you just have to have faith in everyone else.",
-    value: "Hard",
-  },
-  {
-    id: "soulbound-goliath",
-    name: "<a href='https://www.wowhead.com/npc=131667/soulbound-goliath' target='_blank'>Soulbound Goliath</a>",
-    description:
-      "As a Brewmaster, it is pretty easy to live this boss. When you want to clear the stacks in the fire is primarily up to you and the key level, but we can go pretty high since he does pure physical damage. What makes this boss so difficult, is that the thorns do ridiculous amounts of damage and have a lot of health. If your healer isn't ready for the fire, it can also be extremely deadly. To make this boss easier, make sure that you are tracking when the thorns will come out, ensuring that you don't overlap it with the fire.",
-    value: "Hard",
-  },
-  {
-    id: "raal-the-gluttonous",
-    name: "<a href='https://www.wowhead.com/npc=131863/raal-the-gluttonous' target='_blank'>Raal the Gluttonous</a>",
-    description:
-      "This boss isn't too difficult, outside of how long he takes to kill and the random one shots that can happen to your party. Brewmaster is really good for this boss due to all of the control we can have on ads, such as <a href='https://www.wowhead.com/spell=115078/paralysis' target='_blank' class='orange'>Paralysis</a>, <a href='https://www.wowhead.com/spell=119381/leg-sweep' target='_blank' class='orange'>Leg Sweep</a>, and <a href='https://www.wowhead.com/spell=116844/ring-of-peace' target='_blank' class='orange'>Ring of Peace</a>.",
-    value: "Medium",
-  },
-  {
-    id: "lord-and-lady-waycrest",
-    name: "<a href='https://www.wowhead.com/npc=131527/lord-waycrest' target='_blank'>Lord and Lady Waycrest</a>",
-    description:
-      "This boss is pretty easy. Make sure that you hold them in the upper left corner of the room so you don't pull the ad across the room. Both her group and tank damage are pretty low, and the mechanics are very simple.",
-    value: "Easy",
-  },
-  {
-    id: "gorak-tul",
-    name: "<a href='https://www.wowhead.com/npc=144324/gorak-tul' target='_blank'>Gorak Tul</a>",
-    description:
-      "This boss is extremely easy. As long as you interrupt Dark Lightning and cc the ads when they try casting, nothing can go wrong. There is pretty much no group wide damage, and literally no tank damage.",
-    value: "Easy",
-  },
-  {
-    id: "general-umbriss",
-    name: "<a href='https://www.wowhead.com/beta/npc=39625/general-umbriss' target='_blank'>General Umbriss</a>",
-    description:
-      "There aren't really any tricks for this boss. Just make sure that you have a defensive for Skullsplitter, as it can hurt quite a bit if you don't.",
-    value: "Medium",
-  },
-  {
-    id: "forgemaster-throngus",
-    name: "<a href='https://www.wowhead.com/beta/npc=40177/forgemaster-throngus' target='_blank'>Forgemaster Throngus</a>",
-    description:
-      "This boss is pretty straightforward. You want to make sure that you have two defensives up for each Fiery Cleave, and that you kite the during Molten Mace. It is also helpful to help bait the frontal to avoid running out of room quickly.",
-    value: "Medium",
-  },
-  {
-    id: "drahga-shadowburner",
-    name: "<a href='https://www.wowhead.com/beta/npc=40319/drahga-shadowburner' target='_blank'>Drahga Shadowburner</a>",
-    description:
-      "This boss is very easy, as he hits pretty soft. There is a trick where you can tank him in the upper right corner (facing where he spawns) once he hops on his dragon. This will make it so the adds spawn stacked on each other and your dps can get a lot more uptime on the boss. You will have to eat the frontal, however, so make sure you treat that as a tank buster and defensive it.",
-    value: "Easy",
-  },
-  {
-    id: "erudax",
-    name: "<a href='https://www.wowhead.com/beta/npc=40484/erudax' target='_blank'>Erudax, the Duke of Below</a>",
-    description:
-      "This boss isn't too bad, as long as you make sure you have proper defensive use. Look out for his tank buster, Crush, as it does a combination of physical and magic damage. Other than that, this boss is pretty easy for Brewmaster.",
-    value: "Medium",
-  },
-  {
-    id: "chopper-redhook",
-    name: "<a href='https://www.wowhead.com/beta/npc=144160/chopper-redhook' target='_blank'>Chopper Redhook</a>",
-    description:
-      "This boss is very easy. You want to try and bait the frontals from the adds away from the boss, that way they don't hit your party when he pulls them in. You can also use a defensive to soak a bomb if your party will not be able to kite him into them soon enough.",
-    value: "Easy",
-  },
-  {
-    id: "dread-captain-lockwood",
-    name: "<a href='https://www.wowhead.com/beta/npc=129208/dread-captain-lockwood' target='_blank'>Dread Captain Lockwood</a>",
-    description:
-      "This boss is really easy for tanks. All you have to do is make sure that you face Crimson Swipe away from the party.",
-    value: "Easy",
-  },
-  {
-    id: "hadal-darkfathom",
-    name: "<a href='https://www.wowhead.com/beta/npc=130836/hadal-darkfathom' target='_blank'>Hadal Darkfathom</a>",
-    description:
-      "Just like the boss before, the only catch to this boss is making sure that you face the tank buster, Crashing Tide, away from the party. Outside of that, there is nothing special about this boss, he just does a decent amount of constant tank damage.",
-    value: "Medium",
-  },
-  {
-    id: "viqgoth",
-    name: "<a href='https://www.wowhead.com/beta/npc=128652/viqgoth' target='_blank'>Viq'Goth</a>",
-    description:
-      "This boss's mechanics are very easy for a tank. He does a decent amount of tank damage, however, so you want to make sure that you are using defensives where needed.",
-    value: "Medium",
-  },
-  {
-    id: "ingra-maloch",
-    name: "<a href='https://www.wowhead.com/beta/npc=164567/ingra-maloch' target='_blank'>Ingra Maloch</a>",
-    description:
-      "This boss is a complete joke for tanks. You want to try and cycle your interrupt with the rest of your party for Spirit Bolt, and that's it.",
-    value: "Easy",
-  },
-  {
-    id: "mistcaller",
-    name: "<a href='https://www.wowhead.com/beta/npc=170217/mistcaller' target='_blank'>Mistcaller</a>",
-    description:
-      "This boss does no tank damage, so long as you interrupt Patty Cake. When the Illusionary Vulpin spawns during Freeze Tag, you can <a href='https://www.wowhead.com/spell=115078/paralysis' target='_blank' class='orange'>Paralysis</a> it to make the boss much easier.",
-    value: "Easy",
-  },
-  {
-    id: "tredova",
-    name: "<a href='https://www.wowhead.com/beta/npc=164517/tredova' target='_blank'>Tred'ova</a>",
-    description: `Just like the other two bosses in this dungeon, there are no tank busters. The only "trick" to this boss is controlling the Gormling Larva with <a href='https://www.wowhead.com/spell=119381/leg-sweep' target='_blank' class='orange'>Leg Sweep</a> and <a href='https://www.wowhead.com/spell=116844/ring-of-peace' target='_blank' class='orange'>Ring of Peace</a>.`,
-    value: "Easy",
-  },
-  {
-    id: "blightbone",
-    name: "<a href='https://www.wowhead.com/beta/npc=162691/blightbone' target='_blank'>Blightbone</a>",
-    description: `Blightbone is a weird boss to decide the difficulty of. If you pull a bunch of trash with him, then he is on the tougher side to live. If you don't, however, he is pretty easy to live. He has a pretty hard hitting tank buster, called Crunch, which needs a defensive, especially if there are other mobs hitting you at the same time. Other than that, there isn't really anything special for this boss.`,
-    value: "Medium",
-  },
-  {
-    id: "amarth-the-harvester",
-    name: "<a href='https://www.wowhead.com/beta/npc=162692/amarth' target='_blank'>Amarth, The Harvester</a>",
-    description: `Mechanically, this boss is easy for tanks, but he does a lot of constant magic damage to you. A good strategy on this boss is to <a href='https://www.wowhead.com/spell=115078/paralysis' target='_blank' class='orange'>Paralysis</a> one of the mages, while your party kills the other one.`,
-    value: "Medium",
-  },
-  {
-    id: "surgeon-stitchflesh",
-    name: "<a href='https://www.wowhead.com/beta/npc=166882/surgeon-stitchflesh' target='_blank'>Surgeon Stitchflesh</a>",
-    description: `This boss does a lot of tank damage, especially if your party messes up. There aren't really tricks to the boss, however, as your main job is to help line up the Meat Hooks and to have a defensive for each Mutilate.`,
-    value: "Medium",
-  },
-  {
-    id: "nalthor-the-rimebinder",
-    name: "<a href='https://www.wowhead.com/beta/npc=166945/nalthor-the-rimebinder' target='_blank'>Nalthor the Rimebinder</a>",
-    description: `This boss constantly hits really hard, so proper defensive rotation is important. While you can dispel Frozen Binds with <a href='https://www.wowhead.com/spell=116841/tigers-lust' target='_blank' class='orange'>Tiger's Lust</a> to help your healer, you should be very careful doing so, as it will root anyone else caught in the AoE.`,
-    value: "Hard",
-  },
-  {
-    id: "avanoxx",
-    name: "<a href='https://www.wowhead.com/beta/npc=213179/avanoxx' target='_blank'>Avanoxx</a>",
-    description: `This boss's tank beater can do a lot damage, especially if you don't have a defensive for it. You want to make sure that no Starved Crawlers can touch the boss, as this will enrage her, increasing her damage done by 50%. Luckily, <a href='https://www.wowhead.com/spell=116844/ring-of-peace' target='_blank' class='orange'>Ring of Peace</a> is a great tool for this.`,
-    value: "Medium",
-  },
-  {
-    id: "anubzekt",
-    name: "<a href='https://www.wowhead.com/beta/npc=215405/anubzekt' target='_blank'>Anub'zekt</a>",
-    description: `Anub'zekt is another easy boss for Brewmaster, as he does very little damage. You want to make sure that you aim Impale away from the group, as it will hit any allies caught in its path. There are no tricks for this boss.`,
-    value: "Easy",
-  },
-  {
-    id: "kikatal-the-harvester",
-    name: "<a href='https://www.wowhead.com/beta/npc=215407/kikatal-the-harvester' target='_blank'>Ki'katal the Harvester</a>",
-    description: `This boss has no tank busters, making it extremely easy for us. The mechanics are straightforward, and you have a ton of tools to help free allies from the purple puddles.`,
-    value: "Easy",
-  },
-  {
-    id: "orator-krixvizk",
-    name: "<a href='https://www.wowhead.com/beta/npc=216619/orator-krixvizk' target='_blank'>Orator Krix'vizk</a>",
-    description: `Orator Krix'vizk isn't too hard, so long as you are careful. You want to make sure you have a defensive for each tank buster, Subjugate, and that you are not moving the boss around too much. If you pull the boss too for away from a party member, they will take a lot of damage.`,
-    value: "Medium",
-  },
-  {
-    id: "fangs-of-the-queen",
-    name: "<a href='https://www.wowhead.com/beta/npc=216648/nx' target='_blank'>Fangs of the Queen</a>",
-    description: `This boss has a few mechanics to it, but it's not too bad. If you are afflicted with Freezing Blood, make sure that you are near a party member, or you will take a good amount of magic damage over time. If you are targeted by Ice Sickles, you want to make sure that no party members are between you and the boss, aswell. Lastly, the tank buster, Shade Slash, should be turned away from the party to avoid cleaving them. You will want to have a defensive up for each Shade Slash, too.`,
-    value: "Medium",
-  },
-  {
-    id: "the-coaglamation",
-    name: "<a href='https://www.wowhead.com/beta/npc=216320/the-coaglamation' target='_blank'>The Coaglamation</a>",
-    description: `This boss does a ton of tank damage. He also puts a nasty healing reduction on you after his tank buster. To help your party out, it can be a good idea to pick up as much of the black blood traveling towards the boss as possible. Do be careful, however, as it will put a heal absorb on you.`,
-    value: "Hard",
-  },
-  {
-    id: "izo",
-    name: "<a href='https://www.wowhead.com/beta/npc=216658/izo-the-grand-splicer' target='_blank'>Izo, the Grand Splicer</a>",
-    description: `This boss isn't too bad, outside of a tank buster that you have to be careful of. Process of Elimination, the tank buster, does a good amount of damage and will require a defensive or two. You also want to stay away from any party members as it's happening, or it will hit them, too. Outside of the tank buster, however, it is pretty easy for Brewmaster.`,
-    value: "Medium",
-  },
-  {
-    id: "speaker-shadowcrown",
-    name: "<a href='https://www.wowhead.com/beta/npc=211087/speaker-shadowcrown' target='_blank'>Speaker Shadowcrown</a>",
-    description: `This boss requires a lot of movement, mainly through the use of skyriding. The only somewhat difficult part for Brewmaster, however, is the tank buster Obsidian Beam. It hits for a good amount of magic damage, requiring a defensive for each one.`,
-    value: "Medium",
-  },
-  {
-    id: "anubikkaj",
-    name: "<a href='https://www.wowhead.com/beta/npc=211089/anubikkaj' target='_blank'>Anub'ikkaj</a>",
-    description: `This boss is really easy mechanically, but you have to look out for his tank buster, Terrifying Slam. Not only does it hit for a good amount, requiring a defensive, but it will fear any party members caught in the 15 yd radius. There are no tricks to this boss.`,
-    value: "Medium",
-  },
-  {
-    id: "rashanan",
-    name: "<a href='https://www.wowhead.com/beta/npc=224552/rashanan' target='_blank'>Rasha'nan</a>",
-    description: `This boss is very easy for us and has simple mechanics. There are no tricks for this boss.`,
-    value: "Easy",
-  },
-  {
-    id: "edna",
-    name: "<a href='https://www.wowhead.com/beta/npc=210108/e-d-n-a' target='_blank'>E.D.N.A.</a>",
-    description: `This boss's mechanics are very simple. You want to make sure that you have a defensive for each tank buster, and that you are cycling defensives where needed for the constant ticking damage.`,
-    value: "Medium",
-  },
-  {
-    id: "skarmorak",
-    name: "<a href='https://www.wowhead.com/beta/npc=210156/skarmorak' target='_blank'>Skarmorak</a>",
-    description: `This boss does a good amount of tank damage, but it is easily survivable with proper defensive useage. You want to look out for his tank buster, Crystalline Smash. Besides this, there is nothing specific for us to deal with as the tank.`,
-    value: "Easy",
-  },
-  {
-    id: "master-machinists",
-    name: "<a href='https://www.wowhead.com/beta/npc=213216/speaker-dorlita' target='_blank'>Master Machinists</a>",
-    description: `This boss's damage isn't bad on us, especially if you use a defensive or two on each tank buster. If needed, you can also use a small defensive during the ticking damage phase. You want to make sure that you are holding the boss on the steaming vent at all times.`,
-    value: "Easy",
-  },
-  {
-    id: "void-speaker-eirich",
-    name: "<a href='https://www.wowhead.com/beta/npc=213119/void-speaker-eirich' target='_blank'>Void Speaker Eirich</a>",
-    description: `This boss is extremely easy as a tank. There is no special tank buster or mechanics that we have to deal with. The only mechanics that we have to deal with are mechanics that the rest of the party has to deal with, too.`,
-    value: "Easy",
   },
 ];
 
@@ -2685,25 +2048,15 @@ function menuFunc(submenu) {
 }
 
 function updateInfo(element) {
-  if (element.classList.contains("selected")) {
-    return;
-  }
+  if (element.classList.contains("selected")) return;
+
   const name = element.parentNode.getElementsByTagName("h3")[0];
   const value = element.parentNode.getElementsByTagName("h4")[0];
-  let description;
-
-  // assigns description
-  for (const desc of element.parentNode.getElementsByTagName("p")) {
-    if (desc.classList.contains("description")) {
-      description = desc;
-    }
-  }
 
   for (let i = 0; i < infoArray.length; i++) {
     if (infoArray[i].id === element.id) {
-      // updates name, description, and value
+      // updates name and value
       name.innerHTML = infoArray[i].name;
-      description.innerHTML = infoArray[i].description;
 
       // updates tier type
       if (value) {
@@ -2725,12 +2078,6 @@ function updateInfo(element) {
         document
           .getElementById(infoArray[i].dungeonRoute)
           .classList.add("display");
-
-        const bosses = document.getElementById(infoArray[i].id + "-bosses");
-        bosses.parentNode
-          .getElementsByClassName("display")[0]
-          .classList.remove("display");
-        bosses.classList.add("display");
       }
     }
   }
@@ -2749,46 +2096,6 @@ function updateInfo(element) {
 function copyToClipboard(element) {
   const importCode = element.getAttribute("import-code");
   navigator.clipboard.writeText(importCode);
-}
-
-function changeAffix(element) {
-  const route =
-    element.parentNode.parentNode.getElementsByClassName("route")[0];
-  const lustTimings =
-    element.parentNode.parentNode.getElementsByClassName("lust-timings")[0];
-  const importCode =
-    element.parentNode.parentNode.getElementsByClassName("mdt-copy")[0];
-
-  if (
-    element.innerHTML.includes("Fortified") &&
-    !element.classList.contains("chosen")
-  ) {
-    element.classList.add("chosen");
-    element.parentNode
-      .getElementsByClassName("tyran")[0]
-      .classList.remove("chosen");
-
-    route.src = "images/" + element.parentNode.parentNode.id + "-fortified.png";
-    lustTimings.innerHTML =
-      "<span class='red'>Bloodlust Timings:</span> " +
-      lustTimings.getAttribute("fort");
-    importCode.setAttribute("import-code", importCode.getAttribute("fort"));
-  } else if (
-    element.innerHTML.includes("Tyrannical") &&
-    !element.classList.contains("chosen")
-  ) {
-    element.classList.add("chosen");
-    element.parentNode
-      .getElementsByClassName("fort")[0]
-      .classList.remove("chosen");
-
-    route.src =
-      "images/" + element.parentNode.parentNode.id + "-tyrannical.png";
-    lustTimings.innerHTML =
-      "<span class='red'>Bloodlust Timings:</span> " +
-      lustTimings.getAttribute("tyran");
-    importCode.setAttribute("import-code", importCode.getAttribute("tyran"));
-  }
 }
 
 if (
