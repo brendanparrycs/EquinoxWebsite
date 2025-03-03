@@ -2052,11 +2052,23 @@ function updateInfo(element) {
 
   const name = element.parentNode.getElementsByTagName("h3")[0];
   const value = element.parentNode.getElementsByTagName("h4")[0];
+  let description;
+
+  // assigns description
+  for (const desc of element.parentNode.getElementsByTagName("p")) {
+    if (desc.classList.contains("description")) {
+      description = desc;
+    }
+  }
 
   for (let i = 0; i < infoArray.length; i++) {
     if (infoArray[i].id === element.id) {
       // updates name and value
       name.innerHTML = infoArray[i].name;
+
+      if (description) {
+        description.innerHTML = infoArray[i].description;
+      }
 
       // updates tier type
       if (value) {
