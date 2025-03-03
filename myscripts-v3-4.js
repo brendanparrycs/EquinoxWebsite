@@ -1873,7 +1873,7 @@ const infoArray = [
   },
   {
     id: "operationfloodgate",
-    name: "<a href='https://www.wowhead.com/ptr-2/zone=15452/operation-floodgate' target='_blank'>Operation: Floogate</a>",
+    name: "<a href='https://www.wowhead.com/ptr-2/zone=15452/operation-floodgate' target='_blank'>Operation: Floodgate</a>",
     value: "Easy",
     dungeonRoute: "operationfloodgate-route",
   },
